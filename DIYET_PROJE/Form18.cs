@@ -36,28 +36,28 @@ namespace DIYET_PROJE
 
 
             //Point leri temizleme.
-            foreach (var series in chart1.Series)
+            foreach (var series in chartRapor.Series)
             {
                 series.Points.Clear();
             }
 
             //Grafiğe değer ekleme
-            chart1.Series["Makro"].Points.Add(oy1);
-            chart1.Series["Makro"].Points.Add(oy2);
-            chart1.Series["Makro"].Points.Add(oy3);
+            chartRapor.Series["Makro"].Points.Add(oy1);
+            chartRapor.Series["Makro"].Points.Add(oy2);
+            chartRapor.Series["Makro"].Points.Add(oy3);
 
 
             //x ekseninde öğrenci isimlerini belirleme
-            chart1.Series["Makro"].Points[0].AxisLabel = "Karbonhidrat";
-            chart1.Series["Makro"].Points[1].AxisLabel = "Protein";
-            chart1.Series["Makro"].Points[2].AxisLabel = "Yag";
+            chartRapor.Series["Makro"].Points[0].AxisLabel = "Karbonhidrat";
+            chartRapor.Series["Makro"].Points[1].AxisLabel = "Protein";
+            chartRapor.Series["Makro"].Points[2].AxisLabel = "Yag";
 
 
 
             //Sütun renklerini belirleme
-            chart1.Series["Makro"].Points[0].Color = Color.SkyBlue;
-            chart1.Series["Makro"].Points[1].Color = Color.LightCoral;
-            chart1.Series["Makro"].Points[2].Color = Color.Violet;
+            chartRapor.Series["Makro"].Points[0].Color = Color.SkyBlue;
+            chartRapor.Series["Makro"].Points[1].Color = Color.LightCoral;
+            chartRapor.Series["Makro"].Points[2].Color = Color.Violet;
         }
     }
 }
