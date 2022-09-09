@@ -28,73 +28,73 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.rjButton1 = new DIYET_PROJE.RJButton();
-            this.rjButton2 = new DIYET_PROJE.RJButton();
-            this.rjButton3 = new DIYET_PROJE.RJButton();
+            this.btnGirisYapForm2 = new DIYET_PROJE.RJButton();
+            this.btnUyeOlForm2 = new DIYET_PROJE.RJButton();
+            this.btnUyeOlmadanDevamEt = new DIYET_PROJE.RJButton();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // rjButton1
+            // btnGirisYapForm2
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.Snow;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.Snow;
-            this.rjButton1.BorderColor = System.Drawing.Color.Transparent;
-            this.rjButton1.BorderRadius = 20;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rjButton1.ForeColor = System.Drawing.Color.Black;
-            this.rjButton1.Location = new System.Drawing.Point(318, 303);
-            this.rjButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(364, 82);
-            this.rjButton1.TabIndex = 0;
-            this.rjButton1.Text = "Giriş Yap";
-            this.rjButton1.TextColor = System.Drawing.Color.Black;
-            this.rjButton1.UseVisualStyleBackColor = false;
+            this.btnGirisYapForm2.BackColor = System.Drawing.Color.Snow;
+            this.btnGirisYapForm2.BackgroundColor = System.Drawing.Color.Snow;
+            this.btnGirisYapForm2.BorderColor = System.Drawing.Color.Transparent;
+            this.btnGirisYapForm2.BorderRadius = 20;
+            this.btnGirisYapForm2.BorderSize = 0;
+            this.btnGirisYapForm2.FlatAppearance.BorderSize = 0;
+            this.btnGirisYapForm2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGirisYapForm2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnGirisYapForm2.ForeColor = System.Drawing.Color.Black;
+            this.btnGirisYapForm2.Location = new System.Drawing.Point(318, 303);
+            this.btnGirisYapForm2.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGirisYapForm2.Name = "btnGirisYapForm2";
+            this.btnGirisYapForm2.Size = new System.Drawing.Size(364, 82);
+            this.btnGirisYapForm2.TabIndex = 0;
+            this.btnGirisYapForm2.Text = "Giriş Yap";
+            this.btnGirisYapForm2.TextColor = System.Drawing.Color.Black;
+            this.btnGirisYapForm2.UseVisualStyleBackColor = false;
             // 
-            // rjButton2
+            // btnUyeOlForm2
             // 
-            this.rjButton2.BackColor = System.Drawing.Color.Snow;
-            this.rjButton2.BackgroundColor = System.Drawing.Color.Snow;
-            this.rjButton2.BorderColor = System.Drawing.Color.Transparent;
-            this.rjButton2.BorderRadius = 20;
-            this.rjButton2.BorderSize = 0;
-            this.rjButton2.FlatAppearance.BorderSize = 0;
-            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rjButton2.ForeColor = System.Drawing.Color.Black;
-            this.rjButton2.Location = new System.Drawing.Point(318, 393);
-            this.rjButton2.Margin = new System.Windows.Forms.Padding(4);
-            this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(364, 82);
-            this.rjButton2.TabIndex = 1;
-            this.rjButton2.Text = "Üye Ol";
-            this.rjButton2.TextColor = System.Drawing.Color.Black;
-            this.rjButton2.UseVisualStyleBackColor = false;
+            this.btnUyeOlForm2.BackColor = System.Drawing.Color.Snow;
+            this.btnUyeOlForm2.BackgroundColor = System.Drawing.Color.Snow;
+            this.btnUyeOlForm2.BorderColor = System.Drawing.Color.Transparent;
+            this.btnUyeOlForm2.BorderRadius = 20;
+            this.btnUyeOlForm2.BorderSize = 0;
+            this.btnUyeOlForm2.FlatAppearance.BorderSize = 0;
+            this.btnUyeOlForm2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUyeOlForm2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnUyeOlForm2.ForeColor = System.Drawing.Color.Black;
+            this.btnUyeOlForm2.Location = new System.Drawing.Point(318, 393);
+            this.btnUyeOlForm2.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUyeOlForm2.Name = "btnUyeOlForm2";
+            this.btnUyeOlForm2.Size = new System.Drawing.Size(364, 82);
+            this.btnUyeOlForm2.TabIndex = 1;
+            this.btnUyeOlForm2.Text = "Üye Ol";
+            this.btnUyeOlForm2.TextColor = System.Drawing.Color.Black;
+            this.btnUyeOlForm2.UseVisualStyleBackColor = false;
             // 
-            // rjButton3
+            // btnUyeOlmadanDevamEt
             // 
-            this.rjButton3.BackColor = System.Drawing.Color.Snow;
-            this.rjButton3.BackgroundColor = System.Drawing.Color.Snow;
-            this.rjButton3.BorderColor = System.Drawing.Color.Transparent;
-            this.rjButton3.BorderRadius = 20;
-            this.rjButton3.BorderSize = 0;
-            this.rjButton3.FlatAppearance.BorderSize = 0;
-            this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rjButton3.ForeColor = System.Drawing.Color.Black;
-            this.rjButton3.Location = new System.Drawing.Point(318, 484);
-            this.rjButton3.Margin = new System.Windows.Forms.Padding(4);
-            this.rjButton3.Name = "rjButton3";
-            this.rjButton3.Size = new System.Drawing.Size(364, 82);
-            this.rjButton3.TabIndex = 2;
-            this.rjButton3.Text = "Üye Olmadan Devam Et";
-            this.rjButton3.TextColor = System.Drawing.Color.Black;
-            this.rjButton3.UseVisualStyleBackColor = false;
+            this.btnUyeOlmadanDevamEt.BackColor = System.Drawing.Color.Snow;
+            this.btnUyeOlmadanDevamEt.BackgroundColor = System.Drawing.Color.Snow;
+            this.btnUyeOlmadanDevamEt.BorderColor = System.Drawing.Color.Transparent;
+            this.btnUyeOlmadanDevamEt.BorderRadius = 20;
+            this.btnUyeOlmadanDevamEt.BorderSize = 0;
+            this.btnUyeOlmadanDevamEt.FlatAppearance.BorderSize = 0;
+            this.btnUyeOlmadanDevamEt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUyeOlmadanDevamEt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnUyeOlmadanDevamEt.ForeColor = System.Drawing.Color.Black;
+            this.btnUyeOlmadanDevamEt.Location = new System.Drawing.Point(318, 484);
+            this.btnUyeOlmadanDevamEt.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUyeOlmadanDevamEt.Name = "btnUyeOlmadanDevamEt";
+            this.btnUyeOlmadanDevamEt.Size = new System.Drawing.Size(364, 82);
+            this.btnUyeOlmadanDevamEt.TabIndex = 2;
+            this.btnUyeOlmadanDevamEt.Text = "Üye Olmadan Devam Et";
+            this.btnUyeOlmadanDevamEt.TextColor = System.Drawing.Color.Black;
+            this.btnUyeOlmadanDevamEt.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
@@ -104,7 +104,7 @@
             this.label2.Location = new System.Drawing.Point(386, 538);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(228, 17);
+            this.label2.Size = new System.Drawing.Size(215, 16);
             this.label2.TabIndex = 4;
             this.label2.Text = "(Sadece Vücut Analizi Yapılacaktır)";
             // 
@@ -130,9 +130,9 @@
             this.ClientSize = new System.Drawing.Size(1005, 629);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.rjButton3);
-            this.Controls.Add(this.rjButton2);
-            this.Controls.Add(this.rjButton1);
+            this.Controls.Add(this.btnUyeOlmadanDevamEt);
+            this.Controls.Add(this.btnUyeOlForm2);
+            this.Controls.Add(this.btnGirisYapForm2);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form2";
             this.Text = "Form2";
@@ -144,9 +144,9 @@
 
         #endregion
 
-        private RJButton rjButton1;
-        private RJButton rjButton2;
-        private RJButton rjButton3;
+        private RJButton btnGirisYapForm2;
+        private RJButton btnUyeOlForm2;
+        private RJButton btnUyeOlmadanDevamEt;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
