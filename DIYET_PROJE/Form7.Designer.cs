@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.rjButton1 = new DIYET_PROJE.RJButton();
-            this.rjButton2 = new DIYET_PROJE.RJButton();
-            this.rjButton3 = new DIYET_PROJE.RJButton();
-            this.rjButton4 = new DIYET_PROJE.RJButton();
+            this.btnPekHareketliDegil = new DIYET_PROJE.RJButton();
+            this.btnAzHareketli = new DIYET_PROJE.RJButton();
+            this.btnAktif = new DIYET_PROJE.RJButton();
+            this.btnCokHareketli = new DIYET_PROJE.RJButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,90 +39,90 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.rjButton5 = new DIYET_PROJE.RJButton();
+            this.btnGeriAktiviteDuzeyi = new DIYET_PROJE.RJButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // rjButton1
+            // btnPekHareketliDegil
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.White;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.White;
-            this.rjButton1.BorderColor = System.Drawing.Color.LightCoral;
-            this.rjButton1.BorderRadius = 20;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rjButton1.ForeColor = System.Drawing.Color.Black;
-            this.rjButton1.Location = new System.Drawing.Point(140, 102);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(472, 69);
-            this.rjButton1.TabIndex = 0;
-            this.rjButton1.Text = "Pek Hareketli Değil";
-            this.rjButton1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.rjButton1.TextColor = System.Drawing.Color.Black;
-            this.rjButton1.UseVisualStyleBackColor = false;
+            this.btnPekHareketliDegil.BackColor = System.Drawing.Color.White;
+            this.btnPekHareketliDegil.BackgroundColor = System.Drawing.Color.White;
+            this.btnPekHareketliDegil.BorderColor = System.Drawing.Color.LightCoral;
+            this.btnPekHareketliDegil.BorderRadius = 20;
+            this.btnPekHareketliDegil.BorderSize = 0;
+            this.btnPekHareketliDegil.FlatAppearance.BorderSize = 0;
+            this.btnPekHareketliDegil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPekHareketliDegil.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnPekHareketliDegil.ForeColor = System.Drawing.Color.Black;
+            this.btnPekHareketliDegil.Location = new System.Drawing.Point(140, 102);
+            this.btnPekHareketliDegil.Name = "btnPekHareketliDegil";
+            this.btnPekHareketliDegil.Size = new System.Drawing.Size(472, 69);
+            this.btnPekHareketliDegil.TabIndex = 0;
+            this.btnPekHareketliDegil.Text = "Pek Hareketli Değil";
+            this.btnPekHareketliDegil.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnPekHareketliDegil.TextColor = System.Drawing.Color.Black;
+            this.btnPekHareketliDegil.UseVisualStyleBackColor = false;
             // 
-            // rjButton2
+            // btnAzHareketli
             // 
-            this.rjButton2.BackColor = System.Drawing.Color.White;
-            this.rjButton2.BackgroundColor = System.Drawing.Color.White;
-            this.rjButton2.BorderColor = System.Drawing.Color.LightCoral;
-            this.rjButton2.BorderRadius = 20;
-            this.rjButton2.BorderSize = 0;
-            this.rjButton2.FlatAppearance.BorderSize = 0;
-            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rjButton2.ForeColor = System.Drawing.Color.Black;
-            this.rjButton2.Location = new System.Drawing.Point(140, 181);
-            this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(472, 69);
-            this.rjButton2.TabIndex = 1;
-            this.rjButton2.Text = "Az Hareketli";
-            this.rjButton2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.rjButton2.TextColor = System.Drawing.Color.Black;
-            this.rjButton2.UseVisualStyleBackColor = false;
+            this.btnAzHareketli.BackColor = System.Drawing.Color.White;
+            this.btnAzHareketli.BackgroundColor = System.Drawing.Color.White;
+            this.btnAzHareketli.BorderColor = System.Drawing.Color.LightCoral;
+            this.btnAzHareketli.BorderRadius = 20;
+            this.btnAzHareketli.BorderSize = 0;
+            this.btnAzHareketli.FlatAppearance.BorderSize = 0;
+            this.btnAzHareketli.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAzHareketli.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAzHareketli.ForeColor = System.Drawing.Color.Black;
+            this.btnAzHareketli.Location = new System.Drawing.Point(140, 181);
+            this.btnAzHareketli.Name = "btnAzHareketli";
+            this.btnAzHareketli.Size = new System.Drawing.Size(472, 69);
+            this.btnAzHareketli.TabIndex = 1;
+            this.btnAzHareketli.Text = "Az Hareketli";
+            this.btnAzHareketli.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnAzHareketli.TextColor = System.Drawing.Color.Black;
+            this.btnAzHareketli.UseVisualStyleBackColor = false;
             // 
-            // rjButton3
+            // btnAktif
             // 
-            this.rjButton3.BackColor = System.Drawing.Color.White;
-            this.rjButton3.BackgroundColor = System.Drawing.Color.White;
-            this.rjButton3.BorderColor = System.Drawing.Color.LightCoral;
-            this.rjButton3.BorderRadius = 20;
-            this.rjButton3.BorderSize = 0;
-            this.rjButton3.FlatAppearance.BorderSize = 0;
-            this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rjButton3.ForeColor = System.Drawing.Color.Black;
-            this.rjButton3.Location = new System.Drawing.Point(140, 266);
-            this.rjButton3.Name = "rjButton3";
-            this.rjButton3.Size = new System.Drawing.Size(472, 69);
-            this.rjButton3.TabIndex = 2;
-            this.rjButton3.Text = "Aktif";
-            this.rjButton3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.rjButton3.TextColor = System.Drawing.Color.Black;
-            this.rjButton3.UseVisualStyleBackColor = false;
+            this.btnAktif.BackColor = System.Drawing.Color.White;
+            this.btnAktif.BackgroundColor = System.Drawing.Color.White;
+            this.btnAktif.BorderColor = System.Drawing.Color.LightCoral;
+            this.btnAktif.BorderRadius = 20;
+            this.btnAktif.BorderSize = 0;
+            this.btnAktif.FlatAppearance.BorderSize = 0;
+            this.btnAktif.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAktif.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAktif.ForeColor = System.Drawing.Color.Black;
+            this.btnAktif.Location = new System.Drawing.Point(140, 266);
+            this.btnAktif.Name = "btnAktif";
+            this.btnAktif.Size = new System.Drawing.Size(472, 69);
+            this.btnAktif.TabIndex = 2;
+            this.btnAktif.Text = "Aktif";
+            this.btnAktif.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnAktif.TextColor = System.Drawing.Color.Black;
+            this.btnAktif.UseVisualStyleBackColor = false;
             // 
-            // rjButton4
+            // btnCokHareketli
             // 
-            this.rjButton4.BackColor = System.Drawing.Color.White;
-            this.rjButton4.BackgroundColor = System.Drawing.Color.White;
-            this.rjButton4.BorderColor = System.Drawing.Color.LightCoral;
-            this.rjButton4.BorderRadius = 20;
-            this.rjButton4.BorderSize = 0;
-            this.rjButton4.FlatAppearance.BorderSize = 0;
-            this.rjButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rjButton4.ForeColor = System.Drawing.Color.Black;
-            this.rjButton4.Location = new System.Drawing.Point(140, 355);
-            this.rjButton4.Name = "rjButton4";
-            this.rjButton4.Size = new System.Drawing.Size(472, 69);
-            this.rjButton4.TabIndex = 3;
-            this.rjButton4.Text = "Çok Hareketli";
-            this.rjButton4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.rjButton4.TextColor = System.Drawing.Color.Black;
-            this.rjButton4.UseVisualStyleBackColor = false;
+            this.btnCokHareketli.BackColor = System.Drawing.Color.White;
+            this.btnCokHareketli.BackgroundColor = System.Drawing.Color.White;
+            this.btnCokHareketli.BorderColor = System.Drawing.Color.LightCoral;
+            this.btnCokHareketli.BorderRadius = 20;
+            this.btnCokHareketli.BorderSize = 0;
+            this.btnCokHareketli.FlatAppearance.BorderSize = 0;
+            this.btnCokHareketli.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCokHareketli.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnCokHareketli.ForeColor = System.Drawing.Color.Black;
+            this.btnCokHareketli.Location = new System.Drawing.Point(140, 355);
+            this.btnCokHareketli.Name = "btnCokHareketli";
+            this.btnCokHareketli.Size = new System.Drawing.Size(472, 69);
+            this.btnCokHareketli.TabIndex = 3;
+            this.btnCokHareketli.Text = "Çok Hareketli";
+            this.btnCokHareketli.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnCokHareketli.TextColor = System.Drawing.Color.Black;
+            this.btnCokHareketli.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -205,25 +205,25 @@
             this.label7.TabIndex = 10;
             this.label7.Text = "Aktivite Düzeyi";
             // 
-            // rjButton5
+            // btnGeriAktiviteDuzeyi
             // 
-            this.rjButton5.BackColor = System.Drawing.Color.Transparent;
-            this.rjButton5.BackgroundColor = System.Drawing.Color.Transparent;
-            this.rjButton5.BackgroundImage = global::DIYET_PROJE.Properties.Resources.Back_Button_PNG_Pic;
-            this.rjButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.rjButton5.BorderColor = System.Drawing.Color.LightCoral;
-            this.rjButton5.BorderRadius = 0;
-            this.rjButton5.BorderSize = 0;
-            this.rjButton5.FlatAppearance.BorderSize = 0;
-            this.rjButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton5.ForeColor = System.Drawing.Color.Black;
-            this.rjButton5.Location = new System.Drawing.Point(25, 453);
-            this.rjButton5.Margin = new System.Windows.Forms.Padding(2);
-            this.rjButton5.Name = "rjButton5";
-            this.rjButton5.Size = new System.Drawing.Size(34, 37);
-            this.rjButton5.TabIndex = 35;
-            this.rjButton5.TextColor = System.Drawing.Color.Black;
-            this.rjButton5.UseVisualStyleBackColor = false;
+            this.btnGeriAktiviteDuzeyi.BackColor = System.Drawing.Color.Transparent;
+            this.btnGeriAktiviteDuzeyi.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnGeriAktiviteDuzeyi.BackgroundImage = global::DIYET_PROJE.Properties.Resources.Back_Button_PNG_Pic;
+            this.btnGeriAktiviteDuzeyi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGeriAktiviteDuzeyi.BorderColor = System.Drawing.Color.LightCoral;
+            this.btnGeriAktiviteDuzeyi.BorderRadius = 0;
+            this.btnGeriAktiviteDuzeyi.BorderSize = 0;
+            this.btnGeriAktiviteDuzeyi.FlatAppearance.BorderSize = 0;
+            this.btnGeriAktiviteDuzeyi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGeriAktiviteDuzeyi.ForeColor = System.Drawing.Color.Black;
+            this.btnGeriAktiviteDuzeyi.Location = new System.Drawing.Point(25, 453);
+            this.btnGeriAktiviteDuzeyi.Margin = new System.Windows.Forms.Padding(2);
+            this.btnGeriAktiviteDuzeyi.Name = "btnGeriAktiviteDuzeyi";
+            this.btnGeriAktiviteDuzeyi.Size = new System.Drawing.Size(34, 37);
+            this.btnGeriAktiviteDuzeyi.TabIndex = 35;
+            this.btnGeriAktiviteDuzeyi.TextColor = System.Drawing.Color.Black;
+            this.btnGeriAktiviteDuzeyi.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -246,7 +246,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(754, 511);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.rjButton5);
+            this.Controls.Add(this.btnGeriAktiviteDuzeyi);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -254,10 +254,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.rjButton4);
-            this.Controls.Add(this.rjButton3);
-            this.Controls.Add(this.rjButton2);
-            this.Controls.Add(this.rjButton1);
+            this.Controls.Add(this.btnCokHareketli);
+            this.Controls.Add(this.btnAktif);
+            this.Controls.Add(this.btnAzHareketli);
+            this.Controls.Add(this.btnPekHareketliDegil);
             this.Name = "Form7";
             this.Text = "Form7";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -268,10 +268,10 @@
 
         #endregion
 
-        private RJButton rjButton1;
-        private RJButton rjButton2;
-        private RJButton rjButton3;
-        private RJButton rjButton4;
+        private RJButton btnPekHareketliDegil;
+        private RJButton btnAzHareketli;
+        private RJButton btnAktif;
+        private RJButton btnCokHareketli;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -279,7 +279,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private RJButton rjButton5;
+        private RJButton btnGeriAktiviteDuzeyi;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

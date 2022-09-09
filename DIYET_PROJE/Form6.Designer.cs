@@ -71,6 +71,24 @@
             // 
             // btnKilomuKorumakIstiyorum
             // 
+
+            this.rjButton2.BackColor = System.Drawing.Color.Snow;
+            this.rjButton2.BackgroundColor = System.Drawing.Color.Snow;
+            this.rjButton2.BorderColor = System.Drawing.Color.LightCoral;
+            this.rjButton2.BorderRadius = 20;
+            this.rjButton2.BorderSize = 0;
+            this.rjButton2.FlatAppearance.BorderSize = 0;
+            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.rjButton2.ForeColor = System.Drawing.Color.Black;
+            this.rjButton2.Location = new System.Drawing.Point(248, 210);
+            this.rjButton2.Name = "rjButton2";
+            this.rjButton2.Size = new System.Drawing.Size(273, 67);
+            this.rjButton2.TabIndex = 7;
+            this.rjButton2.Text = "Kilomu Korumak İstiyorum";
+            this.rjButton2.TextColor = System.Drawing.Color.Black;
+            this.rjButton2.UseVisualStyleBackColor = false;
+
             this.btnKilomuKorumakIstiyorum.BackColor = System.Drawing.Color.Snow;
             this.btnKilomuKorumakIstiyorum.BackgroundColor = System.Drawing.Color.Snow;
             this.btnKilomuKorumakIstiyorum.BorderColor = System.Drawing.Color.LightCoral;
@@ -89,6 +107,7 @@
             this.btnKilomuKorumakIstiyorum.TextColor = System.Drawing.Color.Black;
             this.btnKilomuKorumakIstiyorum.UseVisualStyleBackColor = false;
             this.btnKilomuKorumakIstiyorum.Click += new System.EventHandler(this.rjButton2_Click);
+
             // 
             // btnKiloAlmakIstıyorum
             // 

@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblYakilanKalori = new System.Windows.Forms.Label();
+            this.lblAlinanKalori = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.rjProgressBar1 = new DIYET_PROJE.CustomControls.RJControls.RJProgressBar();
+            this.prbGunlukKaloriHedef = new DIYET_PROJE.CustomControls.RJControls.RJProgressBar();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -42,7 +42,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -55,39 +54,57 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
+            this.lblKaloriEgzersiz = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
-            this.rjButton5 = new DIYET_PROJE.RJButton();
-            this.rjButton4 = new DIYET_PROJE.RJButton();
-            this.rjButton3 = new DIYET_PROJE.RJButton();
-            this.rjButton2 = new DIYET_PROJE.RJButton();
-            this.rjButton1 = new DIYET_PROJE.RJButton();
+            this.btnEgzersizEkle = new DIYET_PROJE.RJButton();
+            this.btnAperatifEkle = new DIYET_PROJE.RJButton();
+            this.btnAksamEkle = new DIYET_PROJE.RJButton();
+            this.btnOglenEkle = new DIYET_PROJE.RJButton();
+            this.btnKahvaltiEkle = new DIYET_PROJE.RJButton();
             this.label30 = new System.Windows.Forms.Label();
-            this.rjButton6 = new DIYET_PROJE.RJButton();
+            this.btnGeriOgunEkle = new DIYET_PROJE.RJButton();
+            this.lblKalori = new System.Windows.Forms.Label();
+            this.lblKarbonhidratKahvalti = new System.Windows.Forms.Label();
+            this.lblProteinKahvalti = new System.Windows.Forms.Label();
+            this.lblYagKahvalti = new System.Windows.Forms.Label();
+            this.lblKaloriOglen = new System.Windows.Forms.Label();
+            this.lblKarbonhidratOglen = new System.Windows.Forms.Label();
+            this.lblProteinOglen = new System.Windows.Forms.Label();
+            this.lblYagOglen = new System.Windows.Forms.Label();
+            this.lblKaloriKahvalti = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.lblKaloriAksam = new System.Windows.Forms.Label();
+            this.lblKarbonhidratAksam = new System.Windows.Forms.Label();
+            this.lblProteinAksam = new System.Windows.Forms.Label();
+            this.lblYagAksam = new System.Windows.Forms.Label();
+            this.lblKaloriAperatif = new System.Windows.Forms.Label();
+            this.lblKarbonhidratAperatif = new System.Windows.Forms.Label();
+            this.lblProteinAperatif = new System.Windows.Forms.Label();
+            this.lblYagAperatif = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label4
+            // lblYakilanKalori
             // 
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(397, 404);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(16, 23);
-            this.label4.TabIndex = 30;
-            this.label4.Text = "0";
+            this.lblYakilanKalori.BackColor = System.Drawing.Color.Transparent;
+            this.lblYakilanKalori.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblYakilanKalori.ForeColor = System.Drawing.Color.Black;
+            this.lblYakilanKalori.Location = new System.Drawing.Point(397, 404);
+            this.lblYakilanKalori.Name = "lblYakilanKalori";
+            this.lblYakilanKalori.Size = new System.Drawing.Size(16, 23);
+            this.lblYakilanKalori.TabIndex = 30;
+            this.lblYakilanKalori.Text = "0";
             // 
-            // label3
+            // lblAlinanKalori
             // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(396, 379);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(16, 23);
-            this.label3.TabIndex = 29;
-            this.label3.Text = "0";
+            this.lblAlinanKalori.BackColor = System.Drawing.Color.Transparent;
+            this.lblAlinanKalori.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblAlinanKalori.ForeColor = System.Drawing.Color.Black;
+            this.lblAlinanKalori.Location = new System.Drawing.Point(396, 379);
+            this.lblAlinanKalori.Name = "lblAlinanKalori";
+            this.lblAlinanKalori.Size = new System.Drawing.Size(16, 23);
+            this.lblAlinanKalori.TabIndex = 29;
+            this.lblAlinanKalori.Text = "0";
             // 
             // label2
             // 
@@ -113,23 +130,23 @@
             this.label1.TabIndex = 27;
             this.label1.Text = "Alınan kalori:";
             // 
-            // rjProgressBar1
+            // prbGunlukKaloriHedef
             // 
-            this.rjProgressBar1.ChannelColor = System.Drawing.Color.Gray;
-            this.rjProgressBar1.ChannelHeight = 10;
-            this.rjProgressBar1.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rjProgressBar1.ForeBackColor = System.Drawing.Color.Transparent;
-            this.rjProgressBar1.ForeColor = System.Drawing.Color.Black;
-            this.rjProgressBar1.Location = new System.Drawing.Point(455, 398);
-            this.rjProgressBar1.Name = "rjProgressBar1";
-            this.rjProgressBar1.ShowMaximun = false;
-            this.rjProgressBar1.ShowValue = DIYET_PROJE.CustomControls.RJControls.TextPosition.Right;
-            this.rjProgressBar1.Size = new System.Drawing.Size(124, 23);
-            this.rjProgressBar1.SliderColor = System.Drawing.Color.SteelBlue;
-            this.rjProgressBar1.SliderHeight = 10;
-            this.rjProgressBar1.SymbolAfter = "";
-            this.rjProgressBar1.SymbolBefore = "";
-            this.rjProgressBar1.TabIndex = 31;
+            this.prbGunlukKaloriHedef.ChannelColor = System.Drawing.Color.Gray;
+            this.prbGunlukKaloriHedef.ChannelHeight = 10;
+            this.prbGunlukKaloriHedef.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.prbGunlukKaloriHedef.ForeBackColor = System.Drawing.Color.Transparent;
+            this.prbGunlukKaloriHedef.ForeColor = System.Drawing.Color.Black;
+            this.prbGunlukKaloriHedef.Location = new System.Drawing.Point(455, 398);
+            this.prbGunlukKaloriHedef.Name = "prbGunlukKaloriHedef";
+            this.prbGunlukKaloriHedef.ShowMaximun = false;
+            this.prbGunlukKaloriHedef.ShowValue = DIYET_PROJE.CustomControls.RJControls.TextPosition.Right;
+            this.prbGunlukKaloriHedef.Size = new System.Drawing.Size(124, 23);
+            this.prbGunlukKaloriHedef.SliderColor = System.Drawing.Color.SteelBlue;
+            this.prbGunlukKaloriHedef.SliderHeight = 10;
+            this.prbGunlukKaloriHedef.SymbolAfter = "";
+            this.prbGunlukKaloriHedef.SymbolBefore = "";
+            this.prbGunlukKaloriHedef.TabIndex = 31;
             // 
             // label5
             // 
@@ -239,18 +256,6 @@
             this.label12.Size = new System.Drawing.Size(86, 17);
             this.label12.TabIndex = 44;
             this.label12.Text = "Karbonhidrat:";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(190, 114);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(44, 17);
-            this.label11.TabIndex = 43;
-            this.label11.Text = "Kalori:";
             // 
             // label15
             // 
@@ -396,17 +401,17 @@
             this.label26.TabIndex = 55;
             this.label26.Text = "Kalori:";
             // 
-            // label27
+            // lblKaloriEgzersiz
             // 
-            this.label27.AutoSize = true;
-            this.label27.BackColor = System.Drawing.Color.Transparent;
-            this.label27.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label27.Location = new System.Drawing.Point(191, 404);
-            this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(44, 17);
-            this.label27.TabIndex = 51;
-            this.label27.Text = "Kalori:";
+            this.lblKaloriEgzersiz.AutoSize = true;
+            this.lblKaloriEgzersiz.BackColor = System.Drawing.Color.Transparent;
+            this.lblKaloriEgzersiz.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblKaloriEgzersiz.Location = new System.Drawing.Point(191, 404);
+            this.lblKaloriEgzersiz.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblKaloriEgzersiz.Name = "lblKaloriEgzersiz";
+            this.lblKaloriEgzersiz.Size = new System.Drawing.Size(44, 17);
+            this.lblKaloriEgzersiz.TabIndex = 51;
+            this.lblKaloriEgzersiz.Text = "Kalori:";
             // 
             // label28
             // 
@@ -432,105 +437,105 @@
             this.label29.Size = new System.Drawing.Size(0, 46);
             this.label29.TabIndex = 60;
             // 
-            // rjButton5
+            // btnEgzersizEkle
             // 
-            this.rjButton5.BackColor = System.Drawing.Color.Transparent;
-            this.rjButton5.BackgroundColor = System.Drawing.Color.Transparent;
-            this.rjButton5.BackgroundImage = global::DIYET_PROJE.Properties.Resources.Artboard_62;
-            this.rjButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.rjButton5.BorderColor = System.Drawing.Color.LightCoral;
-            this.rjButton5.BorderRadius = 0;
-            this.rjButton5.BorderSize = 0;
-            this.rjButton5.FlatAppearance.BorderSize = 0;
-            this.rjButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton5.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rjButton5.ForeColor = System.Drawing.Color.Black;
-            this.rjButton5.Location = new System.Drawing.Point(80, 348);
-            this.rjButton5.Name = "rjButton5";
-            this.rjButton5.Size = new System.Drawing.Size(98, 106);
-            this.rjButton5.TabIndex = 4;
-            this.rjButton5.TextColor = System.Drawing.Color.Black;
-            this.rjButton5.UseVisualStyleBackColor = false;
+            this.btnEgzersizEkle.BackColor = System.Drawing.Color.Transparent;
+            this.btnEgzersizEkle.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnEgzersizEkle.BackgroundImage = global::DIYET_PROJE.Properties.Resources.Artboard_62;
+            this.btnEgzersizEkle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEgzersizEkle.BorderColor = System.Drawing.Color.LightCoral;
+            this.btnEgzersizEkle.BorderRadius = 0;
+            this.btnEgzersizEkle.BorderSize = 0;
+            this.btnEgzersizEkle.FlatAppearance.BorderSize = 0;
+            this.btnEgzersizEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEgzersizEkle.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnEgzersizEkle.ForeColor = System.Drawing.Color.Black;
+            this.btnEgzersizEkle.Location = new System.Drawing.Point(80, 348);
+            this.btnEgzersizEkle.Name = "btnEgzersizEkle";
+            this.btnEgzersizEkle.Size = new System.Drawing.Size(98, 106);
+            this.btnEgzersizEkle.TabIndex = 4;
+            this.btnEgzersizEkle.TextColor = System.Drawing.Color.Black;
+            this.btnEgzersizEkle.UseVisualStyleBackColor = false;
             // 
-            // rjButton4
+            // btnAperatifEkle
             // 
-            this.rjButton4.BackColor = System.Drawing.Color.Transparent;
-            this.rjButton4.BackgroundColor = System.Drawing.Color.Transparent;
-            this.rjButton4.BackgroundImage = global::DIYET_PROJE.Properties.Resources.Artboard_53;
-            this.rjButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.rjButton4.BorderColor = System.Drawing.Color.LightCoral;
-            this.rjButton4.BorderRadius = 0;
-            this.rjButton4.BorderSize = 0;
-            this.rjButton4.FlatAppearance.BorderSize = 0;
-            this.rjButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton4.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rjButton4.ForeColor = System.Drawing.Color.Black;
-            this.rjButton4.Location = new System.Drawing.Point(320, 219);
-            this.rjButton4.Name = "rjButton4";
-            this.rjButton4.Size = new System.Drawing.Size(98, 106);
-            this.rjButton4.TabIndex = 3;
-            this.rjButton4.TextColor = System.Drawing.Color.Black;
-            this.rjButton4.UseVisualStyleBackColor = false;
+            this.btnAperatifEkle.BackColor = System.Drawing.Color.Transparent;
+            this.btnAperatifEkle.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnAperatifEkle.BackgroundImage = global::DIYET_PROJE.Properties.Resources.Artboard_53;
+            this.btnAperatifEkle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAperatifEkle.BorderColor = System.Drawing.Color.LightCoral;
+            this.btnAperatifEkle.BorderRadius = 0;
+            this.btnAperatifEkle.BorderSize = 0;
+            this.btnAperatifEkle.FlatAppearance.BorderSize = 0;
+            this.btnAperatifEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAperatifEkle.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAperatifEkle.ForeColor = System.Drawing.Color.Black;
+            this.btnAperatifEkle.Location = new System.Drawing.Point(320, 219);
+            this.btnAperatifEkle.Name = "btnAperatifEkle";
+            this.btnAperatifEkle.Size = new System.Drawing.Size(98, 106);
+            this.btnAperatifEkle.TabIndex = 3;
+            this.btnAperatifEkle.TextColor = System.Drawing.Color.Black;
+            this.btnAperatifEkle.UseVisualStyleBackColor = false;
             // 
-            // rjButton3
+            // btnAksamEkle
             // 
-            this.rjButton3.BackColor = System.Drawing.Color.Transparent;
-            this.rjButton3.BackgroundColor = System.Drawing.Color.Transparent;
-            this.rjButton3.BackgroundImage = global::DIYET_PROJE.Properties.Resources.Artboard_32;
-            this.rjButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.rjButton3.BorderColor = System.Drawing.Color.LightCoral;
-            this.rjButton3.BorderRadius = 0;
-            this.rjButton3.BorderSize = 0;
-            this.rjButton3.FlatAppearance.BorderSize = 0;
-            this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton3.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rjButton3.ForeColor = System.Drawing.Color.Black;
-            this.rjButton3.Location = new System.Drawing.Point(80, 219);
-            this.rjButton3.Name = "rjButton3";
-            this.rjButton3.Size = new System.Drawing.Size(98, 106);
-            this.rjButton3.TabIndex = 2;
-            this.rjButton3.TextColor = System.Drawing.Color.Black;
-            this.rjButton3.UseVisualStyleBackColor = false;
+            this.btnAksamEkle.BackColor = System.Drawing.Color.Transparent;
+            this.btnAksamEkle.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnAksamEkle.BackgroundImage = global::DIYET_PROJE.Properties.Resources.Artboard_32;
+            this.btnAksamEkle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAksamEkle.BorderColor = System.Drawing.Color.LightCoral;
+            this.btnAksamEkle.BorderRadius = 0;
+            this.btnAksamEkle.BorderSize = 0;
+            this.btnAksamEkle.FlatAppearance.BorderSize = 0;
+            this.btnAksamEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAksamEkle.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAksamEkle.ForeColor = System.Drawing.Color.Black;
+            this.btnAksamEkle.Location = new System.Drawing.Point(80, 219);
+            this.btnAksamEkle.Name = "btnAksamEkle";
+            this.btnAksamEkle.Size = new System.Drawing.Size(98, 106);
+            this.btnAksamEkle.TabIndex = 2;
+            this.btnAksamEkle.TextColor = System.Drawing.Color.Black;
+            this.btnAksamEkle.UseVisualStyleBackColor = false;
             // 
-            // rjButton2
+            // btnOglenEkle
             // 
-            this.rjButton2.BackColor = System.Drawing.Color.Transparent;
-            this.rjButton2.BackgroundColor = System.Drawing.Color.Transparent;
-            this.rjButton2.BackgroundImage = global::DIYET_PROJE.Properties.Resources.Artboard_22;
-            this.rjButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.rjButton2.BorderColor = System.Drawing.Color.LightCoral;
-            this.rjButton2.BorderRadius = 0;
-            this.rjButton2.BorderSize = 0;
-            this.rjButton2.FlatAppearance.BorderSize = 0;
-            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton2.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rjButton2.ForeColor = System.Drawing.Color.Black;
-            this.rjButton2.Location = new System.Drawing.Point(320, 82);
-            this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(98, 106);
-            this.rjButton2.TabIndex = 1;
-            this.rjButton2.TextColor = System.Drawing.Color.Black;
-            this.rjButton2.UseVisualStyleBackColor = false;
+            this.btnOglenEkle.BackColor = System.Drawing.Color.Transparent;
+            this.btnOglenEkle.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnOglenEkle.BackgroundImage = global::DIYET_PROJE.Properties.Resources.Artboard_22;
+            this.btnOglenEkle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnOglenEkle.BorderColor = System.Drawing.Color.LightCoral;
+            this.btnOglenEkle.BorderRadius = 0;
+            this.btnOglenEkle.BorderSize = 0;
+            this.btnOglenEkle.FlatAppearance.BorderSize = 0;
+            this.btnOglenEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOglenEkle.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnOglenEkle.ForeColor = System.Drawing.Color.Black;
+            this.btnOglenEkle.Location = new System.Drawing.Point(320, 82);
+            this.btnOglenEkle.Name = "btnOglenEkle";
+            this.btnOglenEkle.Size = new System.Drawing.Size(98, 106);
+            this.btnOglenEkle.TabIndex = 1;
+            this.btnOglenEkle.TextColor = System.Drawing.Color.Black;
+            this.btnOglenEkle.UseVisualStyleBackColor = false;
             // 
-            // rjButton1
+            // btnKahvaltiEkle
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.Transparent;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.Transparent;
-            this.rjButton1.BackgroundImage = global::DIYET_PROJE.Properties.Resources.Artboard_13;
-            this.rjButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.rjButton1.BorderColor = System.Drawing.Color.LightCoral;
-            this.rjButton1.BorderRadius = 0;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rjButton1.ForeColor = System.Drawing.Color.Black;
-            this.rjButton1.Location = new System.Drawing.Point(73, 82);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(101, 110);
-            this.rjButton1.TabIndex = 0;
-            this.rjButton1.TextColor = System.Drawing.Color.Black;
-            this.rjButton1.UseVisualStyleBackColor = false;
+            this.btnKahvaltiEkle.BackColor = System.Drawing.Color.Transparent;
+            this.btnKahvaltiEkle.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnKahvaltiEkle.BackgroundImage = global::DIYET_PROJE.Properties.Resources.Artboard_13;
+            this.btnKahvaltiEkle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnKahvaltiEkle.BorderColor = System.Drawing.Color.LightCoral;
+            this.btnKahvaltiEkle.BorderRadius = 0;
+            this.btnKahvaltiEkle.BorderSize = 0;
+            this.btnKahvaltiEkle.FlatAppearance.BorderSize = 0;
+            this.btnKahvaltiEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKahvaltiEkle.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnKahvaltiEkle.ForeColor = System.Drawing.Color.Black;
+            this.btnKahvaltiEkle.Location = new System.Drawing.Point(73, 82);
+            this.btnKahvaltiEkle.Name = "btnKahvaltiEkle";
+            this.btnKahvaltiEkle.Size = new System.Drawing.Size(101, 110);
+            this.btnKahvaltiEkle.TabIndex = 0;
+            this.btnKahvaltiEkle.TextColor = System.Drawing.Color.Black;
+            this.btnKahvaltiEkle.UseVisualStyleBackColor = false;
             // 
             // label30
             // 
@@ -546,25 +551,206 @@
             this.label30.Text = "Gün içindeki öğünlerini ve egzersizlerini ekle";
             this.label30.Click += new System.EventHandler(this.label30_Click);
             // 
-            // rjButton6
+            // btnGeriOgunEkle
             // 
-            this.rjButton6.BackColor = System.Drawing.Color.Transparent;
-            this.rjButton6.BackgroundColor = System.Drawing.Color.Transparent;
-            this.rjButton6.BackgroundImage = global::DIYET_PROJE.Properties.Resources.Back_Button_PNG_Pic;
-            this.rjButton6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.rjButton6.BorderColor = System.Drawing.Color.LightCoral;
-            this.rjButton6.BorderRadius = 0;
-            this.rjButton6.BorderSize = 0;
-            this.rjButton6.FlatAppearance.BorderSize = 0;
-            this.rjButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton6.ForeColor = System.Drawing.Color.Black;
-            this.rjButton6.Location = new System.Drawing.Point(30, 446);
-            this.rjButton6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.rjButton6.Name = "rjButton6";
-            this.rjButton6.Size = new System.Drawing.Size(38, 41);
-            this.rjButton6.TabIndex = 62;
-            this.rjButton6.TextColor = System.Drawing.Color.Black;
-            this.rjButton6.UseVisualStyleBackColor = false;
+            this.btnGeriOgunEkle.BackColor = System.Drawing.Color.Transparent;
+            this.btnGeriOgunEkle.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnGeriOgunEkle.BackgroundImage = global::DIYET_PROJE.Properties.Resources.Back_Button_PNG_Pic;
+            this.btnGeriOgunEkle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGeriOgunEkle.BorderColor = System.Drawing.Color.LightCoral;
+            this.btnGeriOgunEkle.BorderRadius = 0;
+            this.btnGeriOgunEkle.BorderSize = 0;
+            this.btnGeriOgunEkle.FlatAppearance.BorderSize = 0;
+            this.btnGeriOgunEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGeriOgunEkle.ForeColor = System.Drawing.Color.Black;
+            this.btnGeriOgunEkle.Location = new System.Drawing.Point(30, 446);
+            this.btnGeriOgunEkle.Margin = new System.Windows.Forms.Padding(2);
+            this.btnGeriOgunEkle.Name = "btnGeriOgunEkle";
+            this.btnGeriOgunEkle.Size = new System.Drawing.Size(38, 41);
+            this.btnGeriOgunEkle.TabIndex = 62;
+            this.btnGeriOgunEkle.TextColor = System.Drawing.Color.Black;
+            this.btnGeriOgunEkle.UseVisualStyleBackColor = false;
+            // 
+            // lblKalori
+            // 
+            this.lblKalori.AutoSize = true;
+            this.lblKalori.BackColor = System.Drawing.Color.Transparent;
+            this.lblKalori.Location = new System.Drawing.Point(240, 114);
+            this.lblKalori.Name = "lblKalori";
+            this.lblKalori.Size = new System.Drawing.Size(0, 13);
+            this.lblKalori.TabIndex = 63;
+            // 
+            // lblKarbonhidratKahvalti
+            // 
+            this.lblKarbonhidratKahvalti.AutoSize = true;
+            this.lblKarbonhidratKahvalti.BackColor = System.Drawing.Color.Transparent;
+            this.lblKarbonhidratKahvalti.Location = new System.Drawing.Point(279, 133);
+            this.lblKarbonhidratKahvalti.Name = "lblKarbonhidratKahvalti";
+            this.lblKarbonhidratKahvalti.Size = new System.Drawing.Size(35, 13);
+            this.lblKarbonhidratKahvalti.TabIndex = 64;
+            this.lblKarbonhidratKahvalti.Text = "label4";
+            // 
+            // lblProteinKahvalti
+            // 
+            this.lblProteinKahvalti.AutoSize = true;
+            this.lblProteinKahvalti.BackColor = System.Drawing.Color.Transparent;
+            this.lblProteinKahvalti.Location = new System.Drawing.Point(240, 150);
+            this.lblProteinKahvalti.Name = "lblProteinKahvalti";
+            this.lblProteinKahvalti.Size = new System.Drawing.Size(41, 13);
+            this.lblProteinKahvalti.TabIndex = 65;
+            this.lblProteinKahvalti.Text = "label31";
+            // 
+            // lblYagKahvalti
+            // 
+            this.lblYagKahvalti.AutoSize = true;
+            this.lblYagKahvalti.BackColor = System.Drawing.Color.Transparent;
+            this.lblYagKahvalti.Location = new System.Drawing.Point(226, 167);
+            this.lblYagKahvalti.Name = "lblYagKahvalti";
+            this.lblYagKahvalti.Size = new System.Drawing.Size(41, 13);
+            this.lblYagKahvalti.TabIndex = 66;
+            this.lblYagKahvalti.Text = "label32";
+            // 
+            // lblKaloriOglen
+            // 
+            this.lblKaloriOglen.AutoSize = true;
+            this.lblKaloriOglen.BackColor = System.Drawing.Color.Transparent;
+            this.lblKaloriOglen.Location = new System.Drawing.Point(477, 114);
+            this.lblKaloriOglen.Name = "lblKaloriOglen";
+            this.lblKaloriOglen.Size = new System.Drawing.Size(41, 13);
+            this.lblKaloriOglen.TabIndex = 67;
+            this.lblKaloriOglen.Text = "label32";
+            // 
+            // lblKarbonhidratOglen
+            // 
+            this.lblKarbonhidratOglen.AutoSize = true;
+            this.lblKarbonhidratOglen.BackColor = System.Drawing.Color.Transparent;
+            this.lblKarbonhidratOglen.Location = new System.Drawing.Point(523, 133);
+            this.lblKarbonhidratOglen.Name = "lblKarbonhidratOglen";
+            this.lblKarbonhidratOglen.Size = new System.Drawing.Size(41, 13);
+            this.lblKarbonhidratOglen.TabIndex = 68;
+            this.lblKarbonhidratOglen.Text = "label32";
+            // 
+            // lblProteinOglen
+            // 
+            this.lblProteinOglen.AutoSize = true;
+            this.lblProteinOglen.BackColor = System.Drawing.Color.Transparent;
+            this.lblProteinOglen.Location = new System.Drawing.Point(485, 150);
+            this.lblProteinOglen.Name = "lblProteinOglen";
+            this.lblProteinOglen.Size = new System.Drawing.Size(41, 13);
+            this.lblProteinOglen.TabIndex = 69;
+            this.lblProteinOglen.Text = "label32";
+            // 
+            // lblYagOglen
+            // 
+            this.lblYagOglen.AutoSize = true;
+            this.lblYagOglen.BackColor = System.Drawing.Color.Transparent;
+            this.lblYagOglen.Location = new System.Drawing.Point(469, 166);
+            this.lblYagOglen.Name = "lblYagOglen";
+            this.lblYagOglen.Size = new System.Drawing.Size(41, 13);
+            this.lblYagOglen.TabIndex = 70;
+            this.lblYagOglen.Text = "label32";
+            // 
+            // lblKaloriKahvalti
+            // 
+            this.lblKaloriKahvalti.AutoSize = true;
+            this.lblKaloriKahvalti.BackColor = System.Drawing.Color.Transparent;
+            this.lblKaloriKahvalti.Location = new System.Drawing.Point(246, 112);
+            this.lblKaloriKahvalti.Name = "lblKaloriKahvalti";
+            this.lblKaloriKahvalti.Size = new System.Drawing.Size(41, 13);
+            this.lblKaloriKahvalti.TabIndex = 72;
+            this.lblKaloriKahvalti.Text = "label32";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.BackColor = System.Drawing.Color.Transparent;
+            this.label33.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label33.Location = new System.Drawing.Point(191, 110);
+            this.label33.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(44, 17);
+            this.label33.TabIndex = 71;
+            this.label33.Text = "Kalori:";
+            // 
+            // lblKaloriAksam
+            // 
+            this.lblKaloriAksam.AutoSize = true;
+            this.lblKaloriAksam.BackColor = System.Drawing.Color.Transparent;
+            this.lblKaloriAksam.Location = new System.Drawing.Point(246, 258);
+            this.lblKaloriAksam.Name = "lblKaloriAksam";
+            this.lblKaloriAksam.Size = new System.Drawing.Size(41, 13);
+            this.lblKaloriAksam.TabIndex = 73;
+            this.lblKaloriAksam.Text = "label32";
+            // 
+            // lblKarbonhidratAksam
+            // 
+            this.lblKarbonhidratAksam.AutoSize = true;
+            this.lblKarbonhidratAksam.BackColor = System.Drawing.Color.Transparent;
+            this.lblKarbonhidratAksam.Location = new System.Drawing.Point(280, 275);
+            this.lblKarbonhidratAksam.Name = "lblKarbonhidratAksam";
+            this.lblKarbonhidratAksam.Size = new System.Drawing.Size(41, 13);
+            this.lblKarbonhidratAksam.TabIndex = 74;
+            this.lblKarbonhidratAksam.Text = "label32";
+            // 
+            // lblProteinAksam
+            // 
+            this.lblProteinAksam.AutoSize = true;
+            this.lblProteinAksam.BackColor = System.Drawing.Color.Transparent;
+            this.lblProteinAksam.Location = new System.Drawing.Point(247, 292);
+            this.lblProteinAksam.Name = "lblProteinAksam";
+            this.lblProteinAksam.Size = new System.Drawing.Size(41, 13);
+            this.lblProteinAksam.TabIndex = 75;
+            this.lblProteinAksam.Text = "label32";
+            // 
+            // lblYagAksam
+            // 
+            this.lblYagAksam.AutoSize = true;
+            this.lblYagAksam.BackColor = System.Drawing.Color.Transparent;
+            this.lblYagAksam.Location = new System.Drawing.Point(227, 309);
+            this.lblYagAksam.Name = "lblYagAksam";
+            this.lblYagAksam.Size = new System.Drawing.Size(41, 13);
+            this.lblYagAksam.TabIndex = 76;
+            this.lblYagAksam.Text = "label32";
+            // 
+            // lblKaloriAperatif
+            // 
+            this.lblKaloriAperatif.AutoSize = true;
+            this.lblKaloriAperatif.BackColor = System.Drawing.Color.Transparent;
+            this.lblKaloriAperatif.Location = new System.Drawing.Point(501, 256);
+            this.lblKaloriAperatif.Name = "lblKaloriAperatif";
+            this.lblKaloriAperatif.Size = new System.Drawing.Size(41, 13);
+            this.lblKaloriAperatif.TabIndex = 77;
+            this.lblKaloriAperatif.Text = "label32";
+            // 
+            // lblKarbonhidratAperatif
+            // 
+            this.lblKarbonhidratAperatif.AutoSize = true;
+            this.lblKarbonhidratAperatif.BackColor = System.Drawing.Color.Transparent;
+            this.lblKarbonhidratAperatif.Location = new System.Drawing.Point(531, 275);
+            this.lblKarbonhidratAperatif.Name = "lblKarbonhidratAperatif";
+            this.lblKarbonhidratAperatif.Size = new System.Drawing.Size(41, 13);
+            this.lblKarbonhidratAperatif.TabIndex = 78;
+            this.lblKarbonhidratAperatif.Text = "label32";
+            // 
+            // lblProteinAperatif
+            // 
+            this.lblProteinAperatif.AutoSize = true;
+            this.lblProteinAperatif.BackColor = System.Drawing.Color.Transparent;
+            this.lblProteinAperatif.Location = new System.Drawing.Point(501, 294);
+            this.lblProteinAperatif.Name = "lblProteinAperatif";
+            this.lblProteinAperatif.Size = new System.Drawing.Size(41, 13);
+            this.lblProteinAperatif.TabIndex = 79;
+            this.lblProteinAperatif.Text = "label32";
+            // 
+            // lblYagAperatif
+            // 
+            this.lblYagAperatif.AutoSize = true;
+            this.lblYagAperatif.BackColor = System.Drawing.Color.Transparent;
+            this.lblYagAperatif.Location = new System.Drawing.Point(485, 309);
+            this.lblYagAperatif.Name = "lblYagAperatif";
+            this.lblYagAperatif.Size = new System.Drawing.Size(41, 13);
+            this.lblYagAperatif.TabIndex = 80;
+            this.lblYagAperatif.Text = "label32";
             // 
             // Form9
             // 
@@ -573,7 +759,25 @@
             this.BackgroundImage = global::DIYET_PROJE.Properties.Resources.WhatsApp_Image_2022_09_07_at_22_47_37;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(646, 510);
-            this.Controls.Add(this.rjButton6);
+            this.Controls.Add(this.lblYagAperatif);
+            this.Controls.Add(this.lblProteinAperatif);
+            this.Controls.Add(this.lblKarbonhidratAperatif);
+            this.Controls.Add(this.lblKaloriAperatif);
+            this.Controls.Add(this.lblYagAksam);
+            this.Controls.Add(this.lblProteinAksam);
+            this.Controls.Add(this.lblKarbonhidratAksam);
+            this.Controls.Add(this.lblKaloriAksam);
+            this.Controls.Add(this.lblKaloriKahvalti);
+            this.Controls.Add(this.label33);
+            this.Controls.Add(this.lblYagOglen);
+            this.Controls.Add(this.lblProteinOglen);
+            this.Controls.Add(this.lblKarbonhidratOglen);
+            this.Controls.Add(this.lblKaloriOglen);
+            this.Controls.Add(this.lblYagKahvalti);
+            this.Controls.Add(this.lblProteinKahvalti);
+            this.Controls.Add(this.lblKarbonhidratKahvalti);
+            this.Controls.Add(this.lblKalori);
+            this.Controls.Add(this.btnGeriOgunEkle);
             this.Controls.Add(this.label30);
             this.Controls.Add(this.label29);
             this.Controls.Add(this.label28);
@@ -584,7 +788,7 @@
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label21);
-            this.Controls.Add(this.label27);
+            this.Controls.Add(this.lblKaloriEgzersiz);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label16);
@@ -593,23 +797,22 @@
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.rjProgressBar1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.prbGunlukKaloriHedef);
+            this.Controls.Add(this.lblYakilanKalori);
+            this.Controls.Add(this.lblAlinanKalori);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.rjButton5);
-            this.Controls.Add(this.rjButton4);
-            this.Controls.Add(this.rjButton3);
-            this.Controls.Add(this.rjButton2);
-            this.Controls.Add(this.rjButton1);
+            this.Controls.Add(this.btnEgzersizEkle);
+            this.Controls.Add(this.btnAperatifEkle);
+            this.Controls.Add(this.btnAksamEkle);
+            this.Controls.Add(this.btnOglenEkle);
+            this.Controls.Add(this.btnKahvaltiEkle);
             this.Name = "Form9";
             this.Text = "Form9";
             this.ResumeLayout(false);
@@ -619,16 +822,16 @@
 
         #endregion
 
-        private RJButton rjButton1;
-        private RJButton rjButton2;
-        private RJButton rjButton3;
-        private RJButton rjButton4;
-        private RJButton rjButton5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private RJButton btnKahvaltiEkle;
+        private RJButton btnOglenEkle;
+        private RJButton btnAksamEkle;
+        private RJButton btnAperatifEkle;
+        private RJButton btnEgzersizEkle;
+        private System.Windows.Forms.Label lblYakilanKalori;
+        private System.Windows.Forms.Label lblAlinanKalori;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private CustomControls.RJControls.RJProgressBar rjProgressBar1;
+        private CustomControls.RJControls.RJProgressBar prbGunlukKaloriHedef;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
@@ -638,7 +841,6 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
@@ -651,10 +853,28 @@
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label lblKaloriEgzersiz;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
-        private RJButton rjButton6;
+        private RJButton btnGeriOgunEkle;
+        private System.Windows.Forms.Label lblKalori;
+        private System.Windows.Forms.Label lblKarbonhidratKahvalti;
+        private System.Windows.Forms.Label lblProteinKahvalti;
+        private System.Windows.Forms.Label lblYagKahvalti;
+        private System.Windows.Forms.Label lblKaloriOglen;
+        private System.Windows.Forms.Label lblKarbonhidratOglen;
+        private System.Windows.Forms.Label lblProteinOglen;
+        private System.Windows.Forms.Label lblYagOglen;
+        private System.Windows.Forms.Label lblKaloriKahvalti;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label lblKaloriAksam;
+        private System.Windows.Forms.Label lblKarbonhidratAksam;
+        private System.Windows.Forms.Label lblProteinAksam;
+        private System.Windows.Forms.Label lblYagAksam;
+        private System.Windows.Forms.Label lblKaloriAperatif;
+        private System.Windows.Forms.Label lblKarbonhidratAperatif;
+        private System.Windows.Forms.Label lblProteinAperatif;
+        private System.Windows.Forms.Label lblYagAperatif;
     }
 }

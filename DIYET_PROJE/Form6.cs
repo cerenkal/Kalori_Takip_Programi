@@ -17,14 +17,5 @@ namespace DIYET_PROJE
             InitializeComponent();
         }
 
-        private void rjButton2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void rjButton1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -28,115 +28,115 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.rjButton4 = new DIYET_PROJE.RJButton();
-            this.rjButton3 = new DIYET_PROJE.RJButton();
-            this.rjButton2 = new DIYET_PROJE.RJButton();
-            this.rjButton1 = new DIYET_PROJE.RJButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnGeriKahvaltiEkle = new DIYET_PROJE.RJButton();
+            this.btnSilKahvalti = new DIYET_PROJE.RJButton();
+            this.btnEkleKahvalti = new DIYET_PROJE.RJButton();
+            this.btnAnasayfaKahvalti = new DIYET_PROJE.RJButton();
+            this.txtKahvalti = new System.Windows.Forms.TextBox();
+            this.dgvKahvalti = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKahvalti)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // rjButton4
+            // btnGeriKahvaltiEkle
             // 
-            this.rjButton4.BackColor = System.Drawing.Color.Transparent;
-            this.rjButton4.BackgroundColor = System.Drawing.Color.Transparent;
-            this.rjButton4.BackgroundImage = global::DIYET_PROJE.Properties.Resources.Back_Button_PNG_Pic;
-            this.rjButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.rjButton4.BorderColor = System.Drawing.Color.LightCoral;
-            this.rjButton4.BorderRadius = 0;
-            this.rjButton4.BorderSize = 0;
-            this.rjButton4.FlatAppearance.BorderSize = 0;
-            this.rjButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton4.ForeColor = System.Drawing.Color.Black;
-            this.rjButton4.Location = new System.Drawing.Point(243, 393);
-            this.rjButton4.Name = "rjButton4";
-            this.rjButton4.Size = new System.Drawing.Size(45, 45);
-            this.rjButton4.TabIndex = 25;
-            this.rjButton4.TextColor = System.Drawing.Color.Black;
-            this.rjButton4.UseVisualStyleBackColor = false;
+            this.btnGeriKahvaltiEkle.BackColor = System.Drawing.Color.Transparent;
+            this.btnGeriKahvaltiEkle.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnGeriKahvaltiEkle.BackgroundImage = global::DIYET_PROJE.Properties.Resources.Back_Button_PNG_Pic;
+            this.btnGeriKahvaltiEkle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGeriKahvaltiEkle.BorderColor = System.Drawing.Color.LightCoral;
+            this.btnGeriKahvaltiEkle.BorderRadius = 0;
+            this.btnGeriKahvaltiEkle.BorderSize = 0;
+            this.btnGeriKahvaltiEkle.FlatAppearance.BorderSize = 0;
+            this.btnGeriKahvaltiEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGeriKahvaltiEkle.ForeColor = System.Drawing.Color.Black;
+            this.btnGeriKahvaltiEkle.Location = new System.Drawing.Point(243, 393);
+            this.btnGeriKahvaltiEkle.Name = "btnGeriKahvaltiEkle";
+            this.btnGeriKahvaltiEkle.Size = new System.Drawing.Size(45, 45);
+            this.btnGeriKahvaltiEkle.TabIndex = 25;
+            this.btnGeriKahvaltiEkle.TextColor = System.Drawing.Color.Black;
+            this.btnGeriKahvaltiEkle.UseVisualStyleBackColor = false;
             // 
-            // rjButton3
+            // btnSilKahvalti
             // 
-            this.rjButton3.BackColor = System.Drawing.Color.Transparent;
-            this.rjButton3.BackgroundColor = System.Drawing.Color.Transparent;
-            this.rjButton3.BackgroundImage = global::DIYET_PROJE.Properties.Resources.remove_FILL0_wght400_GRAD0_opsz481;
-            this.rjButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.rjButton3.BorderColor = System.Drawing.Color.LightCoral;
-            this.rjButton3.BorderRadius = 0;
-            this.rjButton3.BorderSize = 0;
-            this.rjButton3.FlatAppearance.BorderSize = 0;
-            this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton3.ForeColor = System.Drawing.Color.Black;
-            this.rjButton3.Location = new System.Drawing.Point(397, 393);
-            this.rjButton3.Name = "rjButton3";
-            this.rjButton3.Size = new System.Drawing.Size(45, 45);
-            this.rjButton3.TabIndex = 24;
-            this.rjButton3.TextColor = System.Drawing.Color.Black;
-            this.rjButton3.UseVisualStyleBackColor = false;
+            this.btnSilKahvalti.BackColor = System.Drawing.Color.Transparent;
+            this.btnSilKahvalti.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnSilKahvalti.BackgroundImage = global::DIYET_PROJE.Properties.Resources.remove_FILL0_wght400_GRAD0_opsz481;
+            this.btnSilKahvalti.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSilKahvalti.BorderColor = System.Drawing.Color.LightCoral;
+            this.btnSilKahvalti.BorderRadius = 0;
+            this.btnSilKahvalti.BorderSize = 0;
+            this.btnSilKahvalti.FlatAppearance.BorderSize = 0;
+            this.btnSilKahvalti.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSilKahvalti.ForeColor = System.Drawing.Color.Black;
+            this.btnSilKahvalti.Location = new System.Drawing.Point(397, 393);
+            this.btnSilKahvalti.Name = "btnSilKahvalti";
+            this.btnSilKahvalti.Size = new System.Drawing.Size(45, 45);
+            this.btnSilKahvalti.TabIndex = 24;
+            this.btnSilKahvalti.TextColor = System.Drawing.Color.Black;
+            this.btnSilKahvalti.UseVisualStyleBackColor = false;
             // 
-            // rjButton2
+            // btnEkleKahvalti
             // 
-            this.rjButton2.BackColor = System.Drawing.Color.Transparent;
-            this.rjButton2.BackgroundColor = System.Drawing.Color.Transparent;
-            this.rjButton2.BackgroundImage = global::DIYET_PROJE.Properties.Resources.add_FILL0_wght400_GRAD0_opsz481;
-            this.rjButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.rjButton2.BorderColor = System.Drawing.Color.LightCoral;
-            this.rjButton2.BorderRadius = 0;
-            this.rjButton2.BorderSize = 0;
-            this.rjButton2.FlatAppearance.BorderSize = 0;
-            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rjButton2.ForeColor = System.Drawing.Color.Black;
-            this.rjButton2.Location = new System.Drawing.Point(453, 393);
-            this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(45, 45);
-            this.rjButton2.TabIndex = 23;
-            this.rjButton2.TextColor = System.Drawing.Color.Black;
-            this.rjButton2.UseVisualStyleBackColor = false;
+            this.btnEkleKahvalti.BackColor = System.Drawing.Color.Transparent;
+            this.btnEkleKahvalti.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnEkleKahvalti.BackgroundImage = global::DIYET_PROJE.Properties.Resources.add_FILL0_wght400_GRAD0_opsz481;
+            this.btnEkleKahvalti.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEkleKahvalti.BorderColor = System.Drawing.Color.LightCoral;
+            this.btnEkleKahvalti.BorderRadius = 0;
+            this.btnEkleKahvalti.BorderSize = 0;
+            this.btnEkleKahvalti.FlatAppearance.BorderSize = 0;
+            this.btnEkleKahvalti.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEkleKahvalti.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnEkleKahvalti.ForeColor = System.Drawing.Color.Black;
+            this.btnEkleKahvalti.Location = new System.Drawing.Point(453, 393);
+            this.btnEkleKahvalti.Name = "btnEkleKahvalti";
+            this.btnEkleKahvalti.Size = new System.Drawing.Size(45, 45);
+            this.btnEkleKahvalti.TabIndex = 23;
+            this.btnEkleKahvalti.TextColor = System.Drawing.Color.Black;
+            this.btnEkleKahvalti.UseVisualStyleBackColor = false;
             // 
-            // rjButton1
+            // btnAnasayfaKahvalti
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.Transparent;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.Transparent;
-            this.rjButton1.BackgroundImage = global::DIYET_PROJE.Properties.Resources._171532;
-            this.rjButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.rjButton1.BorderColor = System.Drawing.Color.LightCoral;
-            this.rjButton1.BorderRadius = 0;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.ForeColor = System.Drawing.Color.Black;
-            this.rjButton1.Location = new System.Drawing.Point(311, 393);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(40, 40);
-            this.rjButton1.TabIndex = 22;
-            this.rjButton1.TextColor = System.Drawing.Color.Black;
-            this.rjButton1.UseVisualStyleBackColor = false;
+            this.btnAnasayfaKahvalti.BackColor = System.Drawing.Color.Transparent;
+            this.btnAnasayfaKahvalti.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnAnasayfaKahvalti.BackgroundImage = global::DIYET_PROJE.Properties.Resources._171532;
+            this.btnAnasayfaKahvalti.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAnasayfaKahvalti.BorderColor = System.Drawing.Color.LightCoral;
+            this.btnAnasayfaKahvalti.BorderRadius = 0;
+            this.btnAnasayfaKahvalti.BorderSize = 0;
+            this.btnAnasayfaKahvalti.FlatAppearance.BorderSize = 0;
+            this.btnAnasayfaKahvalti.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnasayfaKahvalti.ForeColor = System.Drawing.Color.Black;
+            this.btnAnasayfaKahvalti.Location = new System.Drawing.Point(311, 393);
+            this.btnAnasayfaKahvalti.Name = "btnAnasayfaKahvalti";
+            this.btnAnasayfaKahvalti.Size = new System.Drawing.Size(40, 40);
+            this.btnAnasayfaKahvalti.TabIndex = 22;
+            this.btnAnasayfaKahvalti.TextColor = System.Drawing.Color.Black;
+            this.btnAnasayfaKahvalti.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // txtKahvalti
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(243, 201);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(260, 23);
-            this.textBox1.TabIndex = 21;
-            this.textBox1.Text = "Lütfen aradığınız ürünü giriniz";
+            this.txtKahvalti.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtKahvalti.Location = new System.Drawing.Point(243, 201);
+            this.txtKahvalti.Name = "txtKahvalti";
+            this.txtKahvalti.Size = new System.Drawing.Size(260, 23);
+            this.txtKahvalti.TabIndex = 21;
+            this.txtKahvalti.Text = "Lütfen aradığınız ürünü giriniz";
             // 
-            // dataGridView1
+            // dgvKahvalti
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(243, 218);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(260, 170);
-            this.dataGridView1.TabIndex = 20;
+            this.dgvKahvalti.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvKahvalti.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvKahvalti.Location = new System.Drawing.Point(243, 218);
+            this.dgvKahvalti.Name = "dgvKahvalti";
+            this.dgvKahvalti.RowHeadersWidth = 51;
+            this.dgvKahvalti.Size = new System.Drawing.Size(260, 170);
+            this.dgvKahvalti.TabIndex = 20;
             // 
             // label1
             // 
@@ -195,15 +195,15 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.rjButton4);
-            this.Controls.Add(this.rjButton3);
-            this.Controls.Add(this.rjButton2);
-            this.Controls.Add(this.rjButton1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btnGeriKahvaltiEkle);
+            this.Controls.Add(this.btnSilKahvalti);
+            this.Controls.Add(this.btnEkleKahvalti);
+            this.Controls.Add(this.btnAnasayfaKahvalti);
+            this.Controls.Add(this.txtKahvalti);
+            this.Controls.Add(this.dgvKahvalti);
             this.Controls.Add(this.label1);
             this.Name = "Form10";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKahvalti)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -212,12 +212,12 @@
 
         #endregion
 
-        private RJButton rjButton4;
-        private RJButton rjButton3;
-        private RJButton rjButton2;
-        private RJButton rjButton1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private RJButton btnGeriKahvaltiEkle;
+        private RJButton btnSilKahvalti;
+        private RJButton btnEkleKahvalti;
+        private RJButton btnAnasayfaKahvalti;
+        private System.Windows.Forms.TextBox txtKahvalti;
+        private System.Windows.Forms.DataGridView dgvKahvalti;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
