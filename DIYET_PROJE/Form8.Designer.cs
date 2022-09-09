@@ -28,152 +28,151 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnKaloriTakibi = new DIYET_PROJE.RJButton();
-            this.btnPratikTariflerVeEgzersizler = new DIYET_PROJE.RJButton();
-            this.btnKacKalori = new DIYET_PROJE.RJButton();
-            this.btnSuTakibi = new DIYET_PROJE.RJButton();
-            this.btnHedefler = new DIYET_PROJE.RJButton();
-            this.btnRaporlar = new DIYET_PROJE.RJButton();
-            this.btnVucutAnalizi = new DIYET_PROJE.RJButton();
+            this.btnAnasayfaKaloriTakibi = new DIYET_PROJE.RJButton();
+            this.btnAnasayfaPratikTariflerVeEgzersizler = new DIYET_PROJE.RJButton();
+            this.btnAnasayfaKacKalori = new DIYET_PROJE.RJButton();
+            this.btnAnasayfaSuTakibi = new DIYET_PROJE.RJButton();
+            this.btnAnasayfaHedefler = new DIYET_PROJE.RJButton();
+            this.btnAnasayfaRaporlar = new DIYET_PROJE.RJButton();
+            this.btnAnasayfaVucutAnalizi = new DIYET_PROJE.RJButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnKaloriTakibi
+            // btnAnasayfaKaloriTakibi
             // 
-            this.btnKaloriTakibi.BackColor = System.Drawing.Color.Snow;
-            this.btnKaloriTakibi.BackgroundColor = System.Drawing.Color.Snow;
-            this.btnKaloriTakibi.BorderColor = System.Drawing.Color.LightCoral;
-            this.btnKaloriTakibi.BorderRadius = 20;
-            this.btnKaloriTakibi.BorderSize = 0;
-            this.btnKaloriTakibi.FlatAppearance.BorderSize = 0;
-            this.btnKaloriTakibi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKaloriTakibi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnKaloriTakibi.ForeColor = System.Drawing.Color.Black;
-            this.btnKaloriTakibi.Location = new System.Drawing.Point(40, 109);
-            this.btnKaloriTakibi.Name = "btnKaloriTakibi";
-            this.btnKaloriTakibi.Size = new System.Drawing.Size(285, 41);
-            this.btnKaloriTakibi.TabIndex = 0;
-            this.btnKaloriTakibi.Text = "Kalori Takibi";
-            this.btnKaloriTakibi.TextColor = System.Drawing.Color.Black;
-            this.btnKaloriTakibi.UseVisualStyleBackColor = false;
+            this.btnAnasayfaKaloriTakibi.BackColor = System.Drawing.Color.Snow;
+            this.btnAnasayfaKaloriTakibi.BackgroundColor = System.Drawing.Color.Snow;
+            this.btnAnasayfaKaloriTakibi.BorderColor = System.Drawing.Color.LightCoral;
+            this.btnAnasayfaKaloriTakibi.BorderRadius = 20;
+            this.btnAnasayfaKaloriTakibi.BorderSize = 0;
+            this.btnAnasayfaKaloriTakibi.FlatAppearance.BorderSize = 0;
+            this.btnAnasayfaKaloriTakibi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnasayfaKaloriTakibi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAnasayfaKaloriTakibi.ForeColor = System.Drawing.Color.Black;
+            this.btnAnasayfaKaloriTakibi.Location = new System.Drawing.Point(40, 109);
+            this.btnAnasayfaKaloriTakibi.Name = "btnAnasayfaKaloriTakibi";
+            this.btnAnasayfaKaloriTakibi.Size = new System.Drawing.Size(285, 41);
+            this.btnAnasayfaKaloriTakibi.TabIndex = 0;
+            this.btnAnasayfaKaloriTakibi.Text = "Kalori Takibi";
+            this.btnAnasayfaKaloriTakibi.TextColor = System.Drawing.Color.Black;
+            this.btnAnasayfaKaloriTakibi.UseVisualStyleBackColor = false;
             // 
-            // btnPratikTariflerVeEgzersizler
+            // btnAnasayfaPratikTariflerVeEgzersizler
             // 
-            this.btnPratikTariflerVeEgzersizler.BackColor = System.Drawing.Color.Snow;
-            this.btnPratikTariflerVeEgzersizler.BackgroundColor = System.Drawing.Color.Snow;
-            this.btnPratikTariflerVeEgzersizler.BorderColor = System.Drawing.Color.LightCoral;
-            this.btnPratikTariflerVeEgzersizler.BorderRadius = 20;
-            this.btnPratikTariflerVeEgzersizler.BorderSize = 0;
-            this.btnPratikTariflerVeEgzersizler.FlatAppearance.BorderSize = 0;
-            this.btnPratikTariflerVeEgzersizler.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPratikTariflerVeEgzersizler.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnPratikTariflerVeEgzersizler.ForeColor = System.Drawing.Color.Black;
-            this.btnPratikTariflerVeEgzersizler.Location = new System.Drawing.Point(40, 318);
-            this.btnPratikTariflerVeEgzersizler.Name = "btnPratikTariflerVeEgzersizler";
-            this.btnPratikTariflerVeEgzersizler.Size = new System.Drawing.Size(285, 41);
-            this.btnPratikTariflerVeEgzersizler.TabIndex = 1;
-            this.btnPratikTariflerVeEgzersizler.Text = "Pratik Tarifler ve Egzersizler";
-            this.btnPratikTariflerVeEgzersizler.TextColor = System.Drawing.Color.Black;
-            this.btnPratikTariflerVeEgzersizler.UseVisualStyleBackColor = false;
-            this.btnPratikTariflerVeEgzersizler.Click += new System.EventHandler
+            this.btnAnasayfaPratikTariflerVeEgzersizler.BackColor = System.Drawing.Color.Snow;
+            this.btnAnasayfaPratikTariflerVeEgzersizler.BackgroundColor = System.Drawing.Color.Snow;
+            this.btnAnasayfaPratikTariflerVeEgzersizler.BorderColor = System.Drawing.Color.LightCoral;
+            this.btnAnasayfaPratikTariflerVeEgzersizler.BorderRadius = 20;
+            this.btnAnasayfaPratikTariflerVeEgzersizler.BorderSize = 0;
+            this.btnAnasayfaPratikTariflerVeEgzersizler.FlatAppearance.BorderSize = 0;
+            this.btnAnasayfaPratikTariflerVeEgzersizler.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnasayfaPratikTariflerVeEgzersizler.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAnasayfaPratikTariflerVeEgzersizler.ForeColor = System.Drawing.Color.Black;
+            this.btnAnasayfaPratikTariflerVeEgzersizler.Location = new System.Drawing.Point(40, 318);
+            this.btnAnasayfaPratikTariflerVeEgzersizler.Name = "btnAnasayfaPratikTariflerVeEgzersizler";
+            this.btnAnasayfaPratikTariflerVeEgzersizler.Size = new System.Drawing.Size(285, 41);
+            this.btnAnasayfaPratikTariflerVeEgzersizler.TabIndex = 1;
+            this.btnAnasayfaPratikTariflerVeEgzersizler.Text = "Pratik Tarifler ve Egzersizler";
+            this.btnAnasayfaPratikTariflerVeEgzersizler.TextColor = System.Drawing.Color.Black;
+            this.btnAnasayfaPratikTariflerVeEgzersizler.UseVisualStyleBackColor = false;
             // 
-            // btnKacKalori
+            // btnAnasayfaKacKalori
             // 
-            this.btnKacKalori.BackColor = System.Drawing.Color.Snow;
-            this.btnKacKalori.BackgroundColor = System.Drawing.Color.Snow;
-            this.btnKacKalori.BorderColor = System.Drawing.Color.LightCoral;
-            this.btnKacKalori.BorderRadius = 20;
-            this.btnKacKalori.BorderSize = 0;
-            this.btnKacKalori.FlatAppearance.BorderSize = 0;
-            this.btnKacKalori.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKacKalori.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnKacKalori.ForeColor = System.Drawing.Color.Black;
-            this.btnKacKalori.Location = new System.Drawing.Point(40, 161);
-            this.btnKacKalori.Name = "btnKacKalori";
-            this.btnKacKalori.Size = new System.Drawing.Size(285, 41);
-            this.btnKacKalori.TabIndex = 2;
-            this.btnKacKalori.Text = "Kaç Kalori?";
-            this.btnKacKalori.TextColor = System.Drawing.Color.Black;
-            this.btnKacKalori.UseVisualStyleBackColor = false;
+            this.btnAnasayfaKacKalori.BackColor = System.Drawing.Color.Snow;
+            this.btnAnasayfaKacKalori.BackgroundColor = System.Drawing.Color.Snow;
+            this.btnAnasayfaKacKalori.BorderColor = System.Drawing.Color.LightCoral;
+            this.btnAnasayfaKacKalori.BorderRadius = 20;
+            this.btnAnasayfaKacKalori.BorderSize = 0;
+            this.btnAnasayfaKacKalori.FlatAppearance.BorderSize = 0;
+            this.btnAnasayfaKacKalori.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnasayfaKacKalori.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAnasayfaKacKalori.ForeColor = System.Drawing.Color.Black;
+            this.btnAnasayfaKacKalori.Location = new System.Drawing.Point(40, 161);
+            this.btnAnasayfaKacKalori.Name = "btnAnasayfaKacKalori";
+            this.btnAnasayfaKacKalori.Size = new System.Drawing.Size(285, 41);
+            this.btnAnasayfaKacKalori.TabIndex = 2;
+            this.btnAnasayfaKacKalori.Text = "Kaç Kalori?";
+            this.btnAnasayfaKacKalori.TextColor = System.Drawing.Color.Black;
+            this.btnAnasayfaKacKalori.UseVisualStyleBackColor = false;
             // 
-            // btnSuTakibi
+            // btnAnasayfaSuTakibi
             // 
-            this.btnSuTakibi.BackColor = System.Drawing.Color.Snow;
-            this.btnSuTakibi.BackgroundColor = System.Drawing.Color.Snow;
-            this.btnSuTakibi.BorderColor = System.Drawing.Color.LightCoral;
-            this.btnSuTakibi.BorderRadius = 20;
-            this.btnSuTakibi.BorderSize = 0;
-            this.btnSuTakibi.FlatAppearance.BorderSize = 0;
-            this.btnSuTakibi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSuTakibi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnSuTakibi.ForeColor = System.Drawing.Color.Black;
-            this.btnSuTakibi.Location = new System.Drawing.Point(40, 213);
-            this.btnSuTakibi.Name = "btnSuTakibi";
-            this.btnSuTakibi.Size = new System.Drawing.Size(285, 41);
-            this.btnSuTakibi.TabIndex = 3;
-            this.btnSuTakibi.Text = "Su Takibi";
-            this.btnSuTakibi.TextColor = System.Drawing.Color.Black;
-            this.btnSuTakibi.UseVisualStyleBackColor = false;
+            this.btnAnasayfaSuTakibi.BackColor = System.Drawing.Color.Snow;
+            this.btnAnasayfaSuTakibi.BackgroundColor = System.Drawing.Color.Snow;
+            this.btnAnasayfaSuTakibi.BorderColor = System.Drawing.Color.LightCoral;
+            this.btnAnasayfaSuTakibi.BorderRadius = 20;
+            this.btnAnasayfaSuTakibi.BorderSize = 0;
+            this.btnAnasayfaSuTakibi.FlatAppearance.BorderSize = 0;
+            this.btnAnasayfaSuTakibi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnasayfaSuTakibi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAnasayfaSuTakibi.ForeColor = System.Drawing.Color.Black;
+            this.btnAnasayfaSuTakibi.Location = new System.Drawing.Point(40, 213);
+            this.btnAnasayfaSuTakibi.Name = "btnAnasayfaSuTakibi";
+            this.btnAnasayfaSuTakibi.Size = new System.Drawing.Size(285, 41);
+            this.btnAnasayfaSuTakibi.TabIndex = 3;
+            this.btnAnasayfaSuTakibi.Text = "Su Takibi";
+            this.btnAnasayfaSuTakibi.TextColor = System.Drawing.Color.Black;
+            this.btnAnasayfaSuTakibi.UseVisualStyleBackColor = false;
             // 
-            // btnHedefler
+            // btnAnasayfaHedefler
             // 
-            this.btnHedefler.BackColor = System.Drawing.Color.Snow;
-            this.btnHedefler.BackgroundColor = System.Drawing.Color.Snow;
-            this.btnHedefler.BorderColor = System.Drawing.Color.LightCoral;
-            this.btnHedefler.BorderRadius = 20;
-            this.btnHedefler.BorderSize = 0;
-            this.btnHedefler.FlatAppearance.BorderSize = 0;
-            this.btnHedefler.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHedefler.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnHedefler.ForeColor = System.Drawing.Color.Black;
-            this.btnHedefler.Location = new System.Drawing.Point(40, 373);
-            this.btnHedefler.Name = "btnHedefler";
-            this.btnHedefler.Size = new System.Drawing.Size(285, 41);
-            this.btnHedefler.TabIndex = 4;
-            this.btnHedefler.Text = "Hedefler";
-            this.btnHedefler.TextColor = System.Drawing.Color.Black;
-            this.btnHedefler.UseVisualStyleBackColor = false;
+            this.btnAnasayfaHedefler.BackColor = System.Drawing.Color.Snow;
+            this.btnAnasayfaHedefler.BackgroundColor = System.Drawing.Color.Snow;
+            this.btnAnasayfaHedefler.BorderColor = System.Drawing.Color.LightCoral;
+            this.btnAnasayfaHedefler.BorderRadius = 20;
+            this.btnAnasayfaHedefler.BorderSize = 0;
+            this.btnAnasayfaHedefler.FlatAppearance.BorderSize = 0;
+            this.btnAnasayfaHedefler.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnasayfaHedefler.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAnasayfaHedefler.ForeColor = System.Drawing.Color.Black;
+            this.btnAnasayfaHedefler.Location = new System.Drawing.Point(40, 373);
+            this.btnAnasayfaHedefler.Name = "btnAnasayfaHedefler";
+            this.btnAnasayfaHedefler.Size = new System.Drawing.Size(285, 41);
+            this.btnAnasayfaHedefler.TabIndex = 4;
+            this.btnAnasayfaHedefler.Text = "Hedefler";
+            this.btnAnasayfaHedefler.TextColor = System.Drawing.Color.Black;
+            this.btnAnasayfaHedefler.UseVisualStyleBackColor = false;
             // 
-            // btnRaporlar
+            // btnAnasayfaRaporlar
             // 
-            this.btnRaporlar.BackColor = System.Drawing.Color.Snow;
-            this.btnRaporlar.BackgroundColor = System.Drawing.Color.Snow;
-            this.btnRaporlar.BorderColor = System.Drawing.Color.LightCoral;
-            this.btnRaporlar.BorderRadius = 20;
-            this.btnRaporlar.BorderSize = 0;
-            this.btnRaporlar.FlatAppearance.BorderSize = 0;
-            this.btnRaporlar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRaporlar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnRaporlar.ForeColor = System.Drawing.Color.Black;
-            this.btnRaporlar.Location = new System.Drawing.Point(40, 426);
-            this.btnRaporlar.Name = "btnRaporlar";
-            this.btnRaporlar.Size = new System.Drawing.Size(285, 41);
-            this.btnRaporlar.TabIndex = 5;
-            this.btnRaporlar.Text = "Raporlar";
-            this.btnRaporlar.TextColor = System.Drawing.Color.Black;
-            this.btnRaporlar.UseVisualStyleBackColor = false;
+            this.btnAnasayfaRaporlar.BackColor = System.Drawing.Color.Snow;
+            this.btnAnasayfaRaporlar.BackgroundColor = System.Drawing.Color.Snow;
+            this.btnAnasayfaRaporlar.BorderColor = System.Drawing.Color.LightCoral;
+            this.btnAnasayfaRaporlar.BorderRadius = 20;
+            this.btnAnasayfaRaporlar.BorderSize = 0;
+            this.btnAnasayfaRaporlar.FlatAppearance.BorderSize = 0;
+            this.btnAnasayfaRaporlar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnasayfaRaporlar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAnasayfaRaporlar.ForeColor = System.Drawing.Color.Black;
+            this.btnAnasayfaRaporlar.Location = new System.Drawing.Point(40, 426);
+            this.btnAnasayfaRaporlar.Name = "btnAnasayfaRaporlar";
+            this.btnAnasayfaRaporlar.Size = new System.Drawing.Size(285, 41);
+            this.btnAnasayfaRaporlar.TabIndex = 5;
+            this.btnAnasayfaRaporlar.Text = "Raporlar";
+            this.btnAnasayfaRaporlar.TextColor = System.Drawing.Color.Black;
+            this.btnAnasayfaRaporlar.UseVisualStyleBackColor = false;
             // 
-            // btnVucutAnalizi
+            // btnAnasayfaVucutAnalizi
             // 
-            this.btnVucutAnalizi.BackColor = System.Drawing.Color.Snow;
-            this.btnVucutAnalizi.BackgroundColor = System.Drawing.Color.Snow;
-            this.btnVucutAnalizi.BorderColor = System.Drawing.Color.LightCoral;
-            this.btnVucutAnalizi.BorderRadius = 20;
-            this.btnVucutAnalizi.BorderSize = 0;
-            this.btnVucutAnalizi.FlatAppearance.BorderSize = 0;
-            this.btnVucutAnalizi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVucutAnalizi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnVucutAnalizi.ForeColor = System.Drawing.Color.Black;
-            this.btnVucutAnalizi.Location = new System.Drawing.Point(40, 266);
-            this.btnVucutAnalizi.Name = "btnVucutAnalizi";
-            this.btnVucutAnalizi.Size = new System.Drawing.Size(285, 41);
-            this.btnVucutAnalizi.TabIndex = 6;
-            this.btnVucutAnalizi.Text = "Vücut Analizi";
-            this.btnVucutAnalizi.TextColor = System.Drawing.Color.Black;
-            this.btnVucutAnalizi.UseVisualStyleBackColor = false;
+            this.btnAnasayfaVucutAnalizi.BackColor = System.Drawing.Color.Snow;
+            this.btnAnasayfaVucutAnalizi.BackgroundColor = System.Drawing.Color.Snow;
+            this.btnAnasayfaVucutAnalizi.BorderColor = System.Drawing.Color.LightCoral;
+            this.btnAnasayfaVucutAnalizi.BorderRadius = 20;
+            this.btnAnasayfaVucutAnalizi.BorderSize = 0;
+            this.btnAnasayfaVucutAnalizi.FlatAppearance.BorderSize = 0;
+            this.btnAnasayfaVucutAnalizi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnasayfaVucutAnalizi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAnasayfaVucutAnalizi.ForeColor = System.Drawing.Color.Black;
+            this.btnAnasayfaVucutAnalizi.Location = new System.Drawing.Point(40, 266);
+            this.btnAnasayfaVucutAnalizi.Name = "btnAnasayfaVucutAnalizi";
+            this.btnAnasayfaVucutAnalizi.Size = new System.Drawing.Size(285, 41);
+            this.btnAnasayfaVucutAnalizi.TabIndex = 6;
+            this.btnAnasayfaVucutAnalizi.Text = "Vücut Analizi";
+            this.btnAnasayfaVucutAnalizi.TextColor = System.Drawing.Color.Black;
+            this.btnAnasayfaVucutAnalizi.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -224,13 +223,13 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnVucutAnalizi);
-            this.Controls.Add(this.btnRaporlar);
-            this.Controls.Add(this.btnHedefler);
-            this.Controls.Add(this.btnSuTakibi);
-            this.Controls.Add(this.btnKacKalori);
-            this.Controls.Add(this.btnPratikTariflerVeEgzersizler);
-            this.Controls.Add(this.btnKaloriTakibi);
+            this.Controls.Add(this.btnAnasayfaVucutAnalizi);
+            this.Controls.Add(this.btnAnasayfaRaporlar);
+            this.Controls.Add(this.btnAnasayfaHedefler);
+            this.Controls.Add(this.btnAnasayfaSuTakibi);
+            this.Controls.Add(this.btnAnasayfaKacKalori);
+            this.Controls.Add(this.btnAnasayfaPratikTariflerVeEgzersizler);
+            this.Controls.Add(this.btnAnasayfaKaloriTakibi);
             this.Name = "Form8";
             this.Text = "Form8";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -241,13 +240,13 @@
 
         #endregion
 
-        private RJButton btnKaloriTakibi;
-        private RJButton btnPratikTariflerVeEgzersizler;
-        private RJButton btnKacKalori;
-        private RJButton btnSuTakibi;
-        private RJButton btnHedefler;
-        private RJButton btnRaporlar;
-        private RJButton btnVucutAnalizi;
+        private RJButton btnAnasayfaKaloriTakibi;
+        private RJButton btnAnasayfaPratikTariflerVeEgzersizler;
+        private RJButton btnAnasayfaKacKalori;
+        private RJButton btnAnasayfaSuTakibi;
+        private RJButton btnAnasayfaHedefler;
+        private RJButton btnAnasayfaRaporlar;
+        private RJButton btnAnasayfaVucutAnalizi;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
