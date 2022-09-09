@@ -34,13 +34,15 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.rjButton1 = new DIYET_PROJE.RJButton();
+            this.txtAdUyeOl = new System.Windows.Forms.TextBox();
+            this.txtSoyadUyeOl = new System.Windows.Forms.TextBox();
+            this.txtEmailUyeOl = new System.Windows.Forms.TextBox();
+            this.txtSifreUyeOl = new System.Windows.Forms.TextBox();
+            this.txtSifreTekrar = new System.Windows.Forms.TextBox();
+            this.btnUyeOlForm4 = new DIYET_PROJE.RJButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -122,70 +124,70 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "Şifre Tekrar : ";
             // 
-            // textBox1
+            // txtAdUyeOl
             // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(385, 169);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(271, 22);
-            this.textBox1.TabIndex = 6;
+            this.txtAdUyeOl.BackColor = System.Drawing.Color.White;
+            this.txtAdUyeOl.Location = new System.Drawing.Point(385, 169);
+            this.txtAdUyeOl.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAdUyeOl.Name = "txtAdUyeOl";
+            this.txtAdUyeOl.Size = new System.Drawing.Size(271, 22);
+            this.txtAdUyeOl.TabIndex = 6;
             // 
-            // textBox2
+            // txtSoyadUyeOl
             // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(385, 210);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(271, 22);
-            this.textBox2.TabIndex = 7;
+            this.txtSoyadUyeOl.BackColor = System.Drawing.Color.White;
+            this.txtSoyadUyeOl.Location = new System.Drawing.Point(385, 210);
+            this.txtSoyadUyeOl.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSoyadUyeOl.Name = "txtSoyadUyeOl";
+            this.txtSoyadUyeOl.Size = new System.Drawing.Size(271, 22);
+            this.txtSoyadUyeOl.TabIndex = 7;
             // 
-            // textBox3
+            // txtEmailUyeOl
             // 
-            this.textBox3.BackColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(385, 252);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(271, 22);
-            this.textBox3.TabIndex = 8;
+            this.txtEmailUyeOl.BackColor = System.Drawing.Color.White;
+            this.txtEmailUyeOl.Location = new System.Drawing.Point(385, 252);
+            this.txtEmailUyeOl.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEmailUyeOl.Name = "txtEmailUyeOl";
+            this.txtEmailUyeOl.Size = new System.Drawing.Size(271, 22);
+            this.txtEmailUyeOl.TabIndex = 8;
             // 
-            // textBox4
+            // txtSifreUyeOl
             // 
-            this.textBox4.BackColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(385, 290);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(271, 22);
-            this.textBox4.TabIndex = 9;
+            this.txtSifreUyeOl.BackColor = System.Drawing.Color.White;
+            this.txtSifreUyeOl.Location = new System.Drawing.Point(385, 290);
+            this.txtSifreUyeOl.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSifreUyeOl.Name = "txtSifreUyeOl";
+            this.txtSifreUyeOl.Size = new System.Drawing.Size(271, 22);
+            this.txtSifreUyeOl.TabIndex = 9;
             // 
-            // textBox5
+            // txtSifreTekrar
             // 
-            this.textBox5.BackColor = System.Drawing.Color.White;
-            this.textBox5.Location = new System.Drawing.Point(385, 326);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(271, 22);
-            this.textBox5.TabIndex = 10;
+            this.txtSifreTekrar.BackColor = System.Drawing.Color.White;
+            this.txtSifreTekrar.Location = new System.Drawing.Point(385, 326);
+            this.txtSifreTekrar.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSifreTekrar.Name = "txtSifreTekrar";
+            this.txtSifreTekrar.Size = new System.Drawing.Size(271, 22);
+            this.txtSifreTekrar.TabIndex = 10;
             // 
-            // rjButton1
+            // btnUyeOlForm4
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.LightSalmon;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.LightSalmon;
-            this.rjButton1.BorderColor = System.Drawing.Color.LightSalmon;
-            this.rjButton1.BorderRadius = 20;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rjButton1.ForeColor = System.Drawing.Color.Black;
-            this.rjButton1.Location = new System.Drawing.Point(378, 384);
-            this.rjButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(285, 65);
-            this.rjButton1.TabIndex = 11;
-            this.rjButton1.Text = "Üye Ol";
-            this.rjButton1.TextColor = System.Drawing.Color.Black;
-            this.rjButton1.UseVisualStyleBackColor = false;
+            this.btnUyeOlForm4.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnUyeOlForm4.BackgroundColor = System.Drawing.Color.LightSalmon;
+            this.btnUyeOlForm4.BorderColor = System.Drawing.Color.LightSalmon;
+            this.btnUyeOlForm4.BorderRadius = 20;
+            this.btnUyeOlForm4.BorderSize = 0;
+            this.btnUyeOlForm4.FlatAppearance.BorderSize = 0;
+            this.btnUyeOlForm4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUyeOlForm4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnUyeOlForm4.ForeColor = System.Drawing.Color.Black;
+            this.btnUyeOlForm4.Location = new System.Drawing.Point(385, 404);
+            this.btnUyeOlForm4.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUyeOlForm4.Name = "btnUyeOlForm4";
+            this.btnUyeOlForm4.Size = new System.Drawing.Size(285, 65);
+            this.btnUyeOlForm4.TabIndex = 11;
+            this.btnUyeOlForm4.Text = "Üye Ol";
+            this.btnUyeOlForm4.TextColor = System.Drawing.Color.Black;
+            this.btnUyeOlForm4.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -199,6 +201,25 @@
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(385, 361);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(206, 16);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "Şifreniz 8 karakterden oluşmalıdır.";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.SystemColors.Control;
+            this.label8.Location = new System.Drawing.Point(385, 381);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(429, 16);
+            this.label8.TabIndex = 20;
+            this.label8.Text = "Şifreniz en az bir adet büyük harf, küçük harf ve özel karakter içermelidir.";
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -206,13 +227,15 @@
             this.BackgroundImage = global::DIYET_PROJE.Properties.Resources.WhatsApp_Image_2022_09_07_at_22_471;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1005, 629);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.rjButton1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnUyeOlForm4);
+            this.Controls.Add(this.txtSifreTekrar);
+            this.Controls.Add(this.txtSifreUyeOl);
+            this.Controls.Add(this.txtEmailUyeOl);
+            this.Controls.Add(this.txtSoyadUyeOl);
+            this.Controls.Add(this.txtAdUyeOl);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -236,12 +259,14 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private RJButton rjButton1;
+        private System.Windows.Forms.TextBox txtAdUyeOl;
+        private System.Windows.Forms.TextBox txtSoyadUyeOl;
+        private System.Windows.Forms.TextBox txtEmailUyeOl;
+        private System.Windows.Forms.TextBox txtSifreUyeOl;
+        private System.Windows.Forms.TextBox txtSifreTekrar;
+        private RJButton btnUyeOlForm4;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }

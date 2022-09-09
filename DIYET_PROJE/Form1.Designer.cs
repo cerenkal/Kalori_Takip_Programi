@@ -32,7 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.rjButton1 = new DIYET_PROJE.RJButton();
+            this.btnGirisYapForm1 = new DIYET_PROJE.RJButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,25 +84,25 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Programı";
             // 
-            // rjButton1
+            // btnGirisYapForm1
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.LightSalmon;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.LightSalmon;
-            this.rjButton1.BorderColor = System.Drawing.Color.LightCoral;
-            this.rjButton1.BorderRadius = 20;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(401, 453);
-            this.rjButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(200, 76);
-            this.rjButton1.TabIndex = 4;
-            this.rjButton1.Text = "Giriş Yap";
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
+            this.btnGirisYapForm1.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnGirisYapForm1.BackgroundColor = System.Drawing.Color.LightSalmon;
+            this.btnGirisYapForm1.BorderColor = System.Drawing.Color.LightCoral;
+            this.btnGirisYapForm1.BorderRadius = 20;
+            this.btnGirisYapForm1.BorderSize = 0;
+            this.btnGirisYapForm1.FlatAppearance.BorderSize = 0;
+            this.btnGirisYapForm1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGirisYapForm1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnGirisYapForm1.ForeColor = System.Drawing.Color.White;
+            this.btnGirisYapForm1.Location = new System.Drawing.Point(401, 453);
+            this.btnGirisYapForm1.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGirisYapForm1.Name = "btnGirisYapForm1";
+            this.btnGirisYapForm1.Size = new System.Drawing.Size(200, 76);
+            this.btnGirisYapForm1.TabIndex = 4;
+            this.btnGirisYapForm1.Text = "Giriş Yap";
+            this.btnGirisYapForm1.TextColor = System.Drawing.Color.White;
+            this.btnGirisYapForm1.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -111,7 +111,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1005, 629);
             this.ControlBox = false;
-            this.Controls.Add(this.rjButton1);
+            this.Controls.Add(this.btnGirisYapForm1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -130,7 +130,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private RJButton rjButton1;
+        private RJButton btnGirisYapForm1;
     }
 }
 
