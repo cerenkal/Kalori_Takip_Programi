@@ -30,15 +30,15 @@
         {
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tstAperatifAra = new System.Windows.Forms.TextBox();
+            this.dgvAperatifListe = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.rjButton5 = new DIYET_PROJE.RJButton();
-            this.rjButton6 = new DIYET_PROJE.RJButton();
-            this.rjButton7 = new DIYET_PROJE.RJButton();
-            this.rjButton8 = new DIYET_PROJE.RJButton();
+            this.btnAperatifSilme = new DIYET_PROJE.RJButton();
+            this.btnAperatifEkleme = new DIYET_PROJE.RJButton();
+            this.btnAperitifGeri = new DIYET_PROJE.RJButton();
+            this.btnAperatifAnasayfa = new DIYET_PROJE.RJButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAperatifListe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,10 +48,9 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(20, 63);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(27, 78);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(374, 15);
+            this.label3.Size = new System.Drawing.Size(446, 18);
             this.label3.TabIndex = 36;
             this.label3.Text = "Lütfen ara öğün ve aperatif olarak tükettiğiniz tüm besinleri ekleyiniz";
             // 
@@ -61,159 +60,160 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(16, 31);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(21, 38);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(159, 33);
+            this.label2.Size = new System.Drawing.Size(199, 41);
             this.label2.TabIndex = 35;
             this.label2.Text = "Aperatif Ekle";
             // 
-            // textBox1
+            // tstAperatifAra
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(253, 161);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(260, 23);
-            this.textBox1.TabIndex = 30;
-            this.textBox1.Text = "Lütfen aradığınız ürünü giriniz";
+            this.tstAperatifAra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tstAperatifAra.Location = new System.Drawing.Point(337, 198);
+            this.tstAperatifAra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tstAperatifAra.Name = "tstAperatifAra";
+            this.tstAperatifAra.Size = new System.Drawing.Size(345, 26);
+            this.tstAperatifAra.TabIndex = 30;
+            this.tstAperatifAra.Text = "Lütfen aradığınız ürünü giriniz";
             // 
-            // dataGridView1
+            // dgvAperatifListe
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(253, 175);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(260, 170);
-            this.dataGridView1.TabIndex = 29;
+            this.dgvAperatifListe.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvAperatifListe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAperatifListe.Location = new System.Drawing.Point(337, 215);
+            this.dgvAperatifListe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvAperatifListe.Name = "dgvAperatifListe";
+            this.dgvAperatifListe.RowHeadersWidth = 51;
+            this.dgvAperatifListe.Size = new System.Drawing.Size(347, 209);
+            this.dgvAperatifListe.TabIndex = 29;
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.LightSalmon;
             this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(251, 119);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(335, 146);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(262, 39);
+            this.label1.Size = new System.Drawing.Size(349, 48);
             this.label1.TabIndex = 28;
             this.label1.Text = "APERATİFLER";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // rjButton5
+            // btnAperatifSilme
             // 
-            this.rjButton5.BackColor = System.Drawing.Color.Transparent;
-            this.rjButton5.BackgroundColor = System.Drawing.Color.Transparent;
-            this.rjButton5.BackgroundImage = global::DIYET_PROJE.Properties.Resources.remove_FILL0_wght400_GRAD0_opsz481;
-            this.rjButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.rjButton5.BorderColor = System.Drawing.Color.LightCoral;
-            this.rjButton5.BorderRadius = 0;
-            this.rjButton5.BorderSize = 0;
-            this.rjButton5.FlatAppearance.BorderSize = 0;
-            this.rjButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton5.ForeColor = System.Drawing.Color.Black;
-            this.rjButton5.Location = new System.Drawing.Point(417, 350);
-            this.rjButton5.Name = "rjButton5";
-            this.rjButton5.Size = new System.Drawing.Size(45, 45);
-            this.rjButton5.TabIndex = 42;
-            this.rjButton5.TextColor = System.Drawing.Color.Black;
-            this.rjButton5.UseVisualStyleBackColor = false;
+            this.btnAperatifSilme.BackColor = System.Drawing.Color.Transparent;
+            this.btnAperatifSilme.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnAperatifSilme.BackgroundImage = global::DIYET_PROJE.Properties.Resources.remove_FILL0_wght400_GRAD0_opsz481;
+            this.btnAperatifSilme.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAperatifSilme.BorderColor = System.Drawing.Color.LightCoral;
+            this.btnAperatifSilme.BorderRadius = 0;
+            this.btnAperatifSilme.BorderSize = 0;
+            this.btnAperatifSilme.FlatAppearance.BorderSize = 0;
+            this.btnAperatifSilme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAperatifSilme.ForeColor = System.Drawing.Color.Black;
+            this.btnAperatifSilme.Location = new System.Drawing.Point(556, 431);
+            this.btnAperatifSilme.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAperatifSilme.Name = "btnAperatifSilme";
+            this.btnAperatifSilme.Size = new System.Drawing.Size(60, 55);
+            this.btnAperatifSilme.TabIndex = 42;
+            this.btnAperatifSilme.TextColor = System.Drawing.Color.Black;
+            this.btnAperatifSilme.UseVisualStyleBackColor = false;
             // 
-            // rjButton6
+            // btnAperatifEkleme
             // 
-            this.rjButton6.BackColor = System.Drawing.Color.Transparent;
-            this.rjButton6.BackgroundColor = System.Drawing.Color.Transparent;
-            this.rjButton6.BackgroundImage = global::DIYET_PROJE.Properties.Resources.add_FILL0_wght400_GRAD0_opsz481;
-            this.rjButton6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.rjButton6.BorderColor = System.Drawing.Color.LightCoral;
-            this.rjButton6.BorderRadius = 0;
-            this.rjButton6.BorderSize = 0;
-            this.rjButton6.FlatAppearance.BorderSize = 0;
-            this.rjButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rjButton6.ForeColor = System.Drawing.Color.Black;
-            this.rjButton6.Location = new System.Drawing.Point(468, 350);
-            this.rjButton6.Name = "rjButton6";
-            this.rjButton6.Size = new System.Drawing.Size(45, 45);
-            this.rjButton6.TabIndex = 41;
-            this.rjButton6.TextColor = System.Drawing.Color.Black;
-            this.rjButton6.UseVisualStyleBackColor = false;
+            this.btnAperatifEkleme.BackColor = System.Drawing.Color.Transparent;
+            this.btnAperatifEkleme.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnAperatifEkleme.BackgroundImage = global::DIYET_PROJE.Properties.Resources.add_FILL0_wght400_GRAD0_opsz481;
+            this.btnAperatifEkleme.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAperatifEkleme.BorderColor = System.Drawing.Color.LightCoral;
+            this.btnAperatifEkleme.BorderRadius = 0;
+            this.btnAperatifEkleme.BorderSize = 0;
+            this.btnAperatifEkleme.FlatAppearance.BorderSize = 0;
+            this.btnAperatifEkleme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAperatifEkleme.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAperatifEkleme.ForeColor = System.Drawing.Color.Black;
+            this.btnAperatifEkleme.Location = new System.Drawing.Point(624, 431);
+            this.btnAperatifEkleme.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAperatifEkleme.Name = "btnAperatifEkleme";
+            this.btnAperatifEkleme.Size = new System.Drawing.Size(60, 55);
+            this.btnAperatifEkleme.TabIndex = 41;
+            this.btnAperatifEkleme.TextColor = System.Drawing.Color.Black;
+            this.btnAperatifEkleme.UseVisualStyleBackColor = false;
             // 
-            // rjButton7
+            // btnAperitifGeri
             // 
-            this.rjButton7.BackColor = System.Drawing.Color.Transparent;
-            this.rjButton7.BackgroundColor = System.Drawing.Color.Transparent;
-            this.rjButton7.BackgroundImage = global::DIYET_PROJE.Properties.Resources.Back_Button_PNG_Pic;
-            this.rjButton7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.rjButton7.BorderColor = System.Drawing.Color.LightCoral;
-            this.rjButton7.BorderRadius = 0;
-            this.rjButton7.BorderSize = 0;
-            this.rjButton7.FlatAppearance.BorderSize = 0;
-            this.rjButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton7.ForeColor = System.Drawing.Color.Black;
-            this.rjButton7.Location = new System.Drawing.Point(255, 349);
-            this.rjButton7.Margin = new System.Windows.Forms.Padding(2);
-            this.rjButton7.Name = "rjButton7";
-            this.rjButton7.Size = new System.Drawing.Size(40, 40);
-            this.rjButton7.TabIndex = 40;
-            this.rjButton7.TextColor = System.Drawing.Color.Black;
-            this.rjButton7.UseVisualStyleBackColor = false;
+            this.btnAperitifGeri.BackColor = System.Drawing.Color.Transparent;
+            this.btnAperitifGeri.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnAperitifGeri.BackgroundImage = global::DIYET_PROJE.Properties.Resources.Back_Button_PNG_Pic;
+            this.btnAperitifGeri.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAperitifGeri.BorderColor = System.Drawing.Color.LightCoral;
+            this.btnAperitifGeri.BorderRadius = 0;
+            this.btnAperitifGeri.BorderSize = 0;
+            this.btnAperitifGeri.FlatAppearance.BorderSize = 0;
+            this.btnAperitifGeri.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAperitifGeri.ForeColor = System.Drawing.Color.Black;
+            this.btnAperitifGeri.Location = new System.Drawing.Point(340, 430);
+            this.btnAperitifGeri.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAperitifGeri.Name = "btnAperitifGeri";
+            this.btnAperitifGeri.Size = new System.Drawing.Size(53, 49);
+            this.btnAperitifGeri.TabIndex = 40;
+            this.btnAperitifGeri.TextColor = System.Drawing.Color.Black;
+            this.btnAperitifGeri.UseVisualStyleBackColor = false;
             // 
-            // rjButton8
+            // btnAperatifAnasayfa
             // 
-            this.rjButton8.BackColor = System.Drawing.Color.Transparent;
-            this.rjButton8.BackgroundColor = System.Drawing.Color.Transparent;
-            this.rjButton8.BackgroundImage = global::DIYET_PROJE.Properties.Resources._171532;
-            this.rjButton8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.rjButton8.BorderColor = System.Drawing.Color.LightCoral;
-            this.rjButton8.BorderRadius = 0;
-            this.rjButton8.BorderSize = 0;
-            this.rjButton8.FlatAppearance.BorderSize = 0;
-            this.rjButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton8.ForeColor = System.Drawing.Color.Black;
-            this.rjButton8.Location = new System.Drawing.Point(314, 349);
-            this.rjButton8.Margin = new System.Windows.Forms.Padding(2);
-            this.rjButton8.Name = "rjButton8";
-            this.rjButton8.Size = new System.Drawing.Size(35, 35);
-            this.rjButton8.TabIndex = 39;
-            this.rjButton8.TextColor = System.Drawing.Color.Black;
-            this.rjButton8.UseVisualStyleBackColor = false;
+            this.btnAperatifAnasayfa.BackColor = System.Drawing.Color.Transparent;
+            this.btnAperatifAnasayfa.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnAperatifAnasayfa.BackgroundImage = global::DIYET_PROJE.Properties.Resources._171532;
+            this.btnAperatifAnasayfa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAperatifAnasayfa.BorderColor = System.Drawing.Color.LightCoral;
+            this.btnAperatifAnasayfa.BorderRadius = 0;
+            this.btnAperatifAnasayfa.BorderSize = 0;
+            this.btnAperatifAnasayfa.FlatAppearance.BorderSize = 0;
+            this.btnAperatifAnasayfa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAperatifAnasayfa.ForeColor = System.Drawing.Color.Black;
+            this.btnAperatifAnasayfa.Location = new System.Drawing.Point(419, 430);
+            this.btnAperatifAnasayfa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAperatifAnasayfa.Name = "btnAperatifAnasayfa";
+            this.btnAperatifAnasayfa.Size = new System.Drawing.Size(47, 43);
+            this.btnAperatifAnasayfa.TabIndex = 39;
+            this.btnAperatifAnasayfa.TextColor = System.Drawing.Color.Black;
+            this.btnAperatifAnasayfa.UseVisualStyleBackColor = false;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.ErrorImage = null;
             this.pictureBox2.Image = global::DIYET_PROJE.Properties.Resources.womfit_logo;
-            this.pictureBox2.Location = new System.Drawing.Point(666, 416);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Location = new System.Drawing.Point(888, 512);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(77, 84);
+            this.pictureBox2.Size = new System.Drawing.Size(103, 103);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 43;
             this.pictureBox2.TabStop = false;
             // 
             // Form13
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::DIYET_PROJE.Properties.Resources.WhatsApp_Image_2022_09_07_at_22_47_37;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(754, 511);
+            this.ClientSize = new System.Drawing.Size(1005, 629);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.rjButton5);
-            this.Controls.Add(this.rjButton6);
-            this.Controls.Add(this.rjButton7);
-            this.Controls.Add(this.rjButton8);
+            this.Controls.Add(this.btnAperatifSilme);
+            this.Controls.Add(this.btnAperatifEkleme);
+            this.Controls.Add(this.btnAperitifGeri);
+            this.Controls.Add(this.btnAperatifAnasayfa);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.tstAperatifAra);
+            this.Controls.Add(this.dgvAperatifListe);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form13";
             this.Text = "Form13";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAperatifListe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -224,13 +224,13 @@
 
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox tstAperatifAra;
+        private System.Windows.Forms.DataGridView dgvAperatifListe;
         private System.Windows.Forms.Label label1;
-        private RJButton rjButton5;
-        private RJButton rjButton6;
-        private RJButton rjButton7;
-        private RJButton rjButton8;
+        private RJButton btnAperatifSilme;
+        private RJButton btnAperatifEkleme;
+        private RJButton btnAperitifGeri;
+        private RJButton btnAperatifAnasayfa;
         private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
