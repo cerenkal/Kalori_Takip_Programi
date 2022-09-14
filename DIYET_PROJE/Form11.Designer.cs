@@ -32,14 +32,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dgvOgleYemegiListele = new System.Windows.Forms.DataGridView();
             this.txtArananUrunOgleYemegi = new System.Windows.Forms.TextBox();
             this.btnOgleYemegiAnasayfa = new DIYET_PROJE.RJButton();
             this.btnOgleYemegiGeri = new DIYET_PROJE.RJButton();
             this.btnOgleYemegiEkle = new DIYET_PROJE.RJButton();
             this.btnOgleYemegiSilme = new DIYET_PROJE.RJButton();
+            this.dgvOgleYemegiKullaniciListesi = new System.Windows.Forms.DataGridView();
+            this.dgvOgleYemegiListe = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvOgleYemegiListele)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvOgleYemegiKullaniciListesi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvOgleYemegiListe)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -74,7 +76,7 @@
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Image = global::DIYET_PROJE.Properties.Resources.womfit_logo;
             this.pictureBox1.Location = new System.Drawing.Point(666, 416);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(77, 84);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -86,32 +88,21 @@
             this.label1.BackColor = System.Drawing.Color.LightSalmon;
             this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(245, 125);
+            this.label1.Location = new System.Drawing.Point(172, 125);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(262, 39);
+            this.label1.Size = new System.Drawing.Size(374, 39);
             this.label1.TabIndex = 28;
             this.label1.Text = "ÖĞLE YEMEĞİ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dgvOgleYemegiListele
-            // 
-            this.dgvOgleYemegiListele.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dgvOgleYemegiListele.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvOgleYemegiListele.Location = new System.Drawing.Point(247, 180);
-            this.dgvOgleYemegiListele.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dgvOgleYemegiListele.Name = "dgvOgleYemegiListele";
-            this.dgvOgleYemegiListele.RowHeadersWidth = 51;
-            this.dgvOgleYemegiListele.Size = new System.Drawing.Size(260, 170);
-            this.dgvOgleYemegiListele.TabIndex = 29;
-            // 
             // txtArananUrunOgleYemegi
             // 
             this.txtArananUrunOgleYemegi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtArananUrunOgleYemegi.Location = new System.Drawing.Point(247, 166);
-            this.txtArananUrunOgleYemegi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtArananUrunOgleYemegi.Location = new System.Drawing.Point(172, 166);
+            this.txtArananUrunOgleYemegi.Margin = new System.Windows.Forms.Padding(2);
             this.txtArananUrunOgleYemegi.Name = "txtArananUrunOgleYemegi";
-            this.txtArananUrunOgleYemegi.Size = new System.Drawing.Size(260, 23);
+            this.txtArananUrunOgleYemegi.Size = new System.Drawing.Size(374, 23);
             this.txtArananUrunOgleYemegi.TabIndex = 30;
             this.txtArananUrunOgleYemegi.Text = "Lütfen aradığınız ürünü giriniz";
             // 
@@ -127,8 +118,8 @@
             this.btnOgleYemegiAnasayfa.FlatAppearance.BorderSize = 0;
             this.btnOgleYemegiAnasayfa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOgleYemegiAnasayfa.ForeColor = System.Drawing.Color.Black;
-            this.btnOgleYemegiAnasayfa.Location = new System.Drawing.Point(313, 355);
-            this.btnOgleYemegiAnasayfa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnOgleYemegiAnasayfa.Location = new System.Drawing.Point(226, 355);
+            this.btnOgleYemegiAnasayfa.Margin = new System.Windows.Forms.Padding(2);
             this.btnOgleYemegiAnasayfa.Name = "btnOgleYemegiAnasayfa";
             this.btnOgleYemegiAnasayfa.Size = new System.Drawing.Size(35, 35);
             this.btnOgleYemegiAnasayfa.TabIndex = 31;
@@ -147,8 +138,8 @@
             this.btnOgleYemegiGeri.FlatAppearance.BorderSize = 0;
             this.btnOgleYemegiGeri.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOgleYemegiGeri.ForeColor = System.Drawing.Color.Black;
-            this.btnOgleYemegiGeri.Location = new System.Drawing.Point(247, 355);
-            this.btnOgleYemegiGeri.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnOgleYemegiGeri.Location = new System.Drawing.Point(172, 355);
+            this.btnOgleYemegiGeri.Margin = new System.Windows.Forms.Padding(2);
             this.btnOgleYemegiGeri.Name = "btnOgleYemegiGeri";
             this.btnOgleYemegiGeri.Size = new System.Drawing.Size(40, 40);
             this.btnOgleYemegiGeri.TabIndex = 34;
@@ -168,7 +159,7 @@
             this.btnOgleYemegiEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOgleYemegiEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnOgleYemegiEkle.ForeColor = System.Drawing.Color.Black;
-            this.btnOgleYemegiEkle.Location = new System.Drawing.Point(462, 355);
+            this.btnOgleYemegiEkle.Location = new System.Drawing.Point(321, 356);
             this.btnOgleYemegiEkle.Name = "btnOgleYemegiEkle";
             this.btnOgleYemegiEkle.Size = new System.Drawing.Size(45, 45);
             this.btnOgleYemegiEkle.TabIndex = 37;
@@ -187,12 +178,31 @@
             this.btnOgleYemegiSilme.FlatAppearance.BorderSize = 0;
             this.btnOgleYemegiSilme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOgleYemegiSilme.ForeColor = System.Drawing.Color.Black;
-            this.btnOgleYemegiSilme.Location = new System.Drawing.Point(411, 355);
+            this.btnOgleYemegiSilme.Location = new System.Drawing.Point(501, 356);
             this.btnOgleYemegiSilme.Name = "btnOgleYemegiSilme";
             this.btnOgleYemegiSilme.Size = new System.Drawing.Size(45, 45);
             this.btnOgleYemegiSilme.TabIndex = 38;
             this.btnOgleYemegiSilme.TextColor = System.Drawing.Color.Black;
             this.btnOgleYemegiSilme.UseVisualStyleBackColor = false;
+            // 
+            // dgvOgleYemegiKullaniciListesi
+            // 
+            this.dgvOgleYemegiKullaniciListesi.BackgroundColor = System.Drawing.Color.White;
+            this.dgvOgleYemegiKullaniciListesi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvOgleYemegiKullaniciListesi.Location = new System.Drawing.Point(362, 187);
+            this.dgvOgleYemegiKullaniciListesi.Name = "dgvOgleYemegiKullaniciListesi";
+            this.dgvOgleYemegiKullaniciListesi.Size = new System.Drawing.Size(184, 163);
+            this.dgvOgleYemegiKullaniciListesi.TabIndex = 41;
+            // 
+            // dgvOgleYemegiListe
+            // 
+            this.dgvOgleYemegiListe.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvOgleYemegiListe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvOgleYemegiListe.Location = new System.Drawing.Point(172, 187);
+            this.dgvOgleYemegiListe.Name = "dgvOgleYemegiListe";
+            this.dgvOgleYemegiListe.RowHeadersWidth = 51;
+            this.dgvOgleYemegiListe.Size = new System.Drawing.Size(194, 163);
+            this.dgvOgleYemegiListe.TabIndex = 40;
             // 
             // Form11
             // 
@@ -201,6 +211,8 @@
             this.BackgroundImage = global::DIYET_PROJE.Properties.Resources.WhatsApp_Image_2022_09_07_at_22_471;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(754, 511);
+            this.Controls.Add(this.dgvOgleYemegiKullaniciListesi);
+            this.Controls.Add(this.dgvOgleYemegiListe);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnOgleYemegiSilme);
             this.Controls.Add(this.btnOgleYemegiEkle);
@@ -209,12 +221,12 @@
             this.Controls.Add(this.btnOgleYemegiGeri);
             this.Controls.Add(this.btnOgleYemegiAnasayfa);
             this.Controls.Add(this.txtArananUrunOgleYemegi);
-            this.Controls.Add(this.dgvOgleYemegiListele);
             this.Controls.Add(this.label1);
             this.Name = "Form11";
             this.Text = "Form11";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvOgleYemegiListele)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvOgleYemegiKullaniciListesi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvOgleYemegiListe)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -226,11 +238,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dgvOgleYemegiListele;
         private System.Windows.Forms.TextBox txtArananUrunOgleYemegi;
         private RJButton btnOgleYemegiAnasayfa;
         private RJButton btnOgleYemegiGeri;
         private RJButton btnOgleYemegiEkle;
         private RJButton btnOgleYemegiSilme;
+        private System.Windows.Forms.DataGridView dgvOgleYemegiKullaniciListesi;
+        private System.Windows.Forms.DataGridView dgvOgleYemegiListe;
     }
 }

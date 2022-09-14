@@ -31,15 +31,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtEgzersiz = new System.Windows.Forms.TextBox();
-            this.dgvArananEgzersiz = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnEgzersizSilme = new DIYET_PROJE.RJButton();
             this.btnEgzersizEkleme = new DIYET_PROJE.RJButton();
             this.btnEgzersiGeri = new DIYET_PROJE.RJButton();
             this.btnEgzersiAnasayfa = new DIYET_PROJE.RJButton();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvArananEgzersiz)).BeginInit();
+            this.dgvEgzersizKullanicininListesi = new System.Windows.Forms.DataGridView();
+            this.dgvEgzersizListe = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEgzersizKullanicininListesi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEgzersizListe)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -71,33 +73,22 @@
             // txtEgzersiz
             // 
             this.txtEgzersiz.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtEgzersiz.Location = new System.Drawing.Point(246, 160);
-            this.txtEgzersiz.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEgzersiz.Location = new System.Drawing.Point(188, 160);
+            this.txtEgzersiz.Margin = new System.Windows.Forms.Padding(2);
             this.txtEgzersiz.Name = "txtEgzersiz";
-            this.txtEgzersiz.Size = new System.Drawing.Size(260, 23);
+            this.txtEgzersiz.Size = new System.Drawing.Size(374, 23);
             this.txtEgzersiz.TabIndex = 30;
             this.txtEgzersiz.Text = "Lütfen aradığınız egzersizi girin";
-            // 
-            // dgvArananEgzersiz
-            // 
-            this.dgvArananEgzersiz.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dgvArananEgzersiz.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvArananEgzersiz.Location = new System.Drawing.Point(246, 173);
-            this.dgvArananEgzersiz.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dgvArananEgzersiz.Name = "dgvArananEgzersiz";
-            this.dgvArananEgzersiz.RowHeadersWidth = 51;
-            this.dgvArananEgzersiz.Size = new System.Drawing.Size(260, 170);
-            this.dgvArananEgzersiz.TabIndex = 29;
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.LightSalmon;
             this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(244, 118);
+            this.label1.Location = new System.Drawing.Point(188, 118);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(262, 39);
+            this.label1.Size = new System.Drawing.Size(374, 39);
             this.label1.TabIndex = 28;
             this.label1.Text = "EGZERSİZLER";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -108,7 +99,7 @@
             this.pictureBox2.ErrorImage = null;
             this.pictureBox2.Image = global::DIYET_PROJE.Properties.Resources.womfit_logo;
             this.pictureBox2.Location = new System.Drawing.Point(666, 416);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(77, 84);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -127,7 +118,7 @@
             this.btnEgzersizSilme.FlatAppearance.BorderSize = 0;
             this.btnEgzersizSilme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEgzersizSilme.ForeColor = System.Drawing.Color.Black;
-            this.btnEgzersizSilme.Location = new System.Drawing.Point(410, 348);
+            this.btnEgzersizSilme.Location = new System.Drawing.Point(517, 341);
             this.btnEgzersizSilme.Name = "btnEgzersizSilme";
             this.btnEgzersizSilme.Size = new System.Drawing.Size(45, 45);
             this.btnEgzersizSilme.TabIndex = 48;
@@ -147,7 +138,7 @@
             this.btnEgzersizEkleme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEgzersizEkleme.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnEgzersizEkleme.ForeColor = System.Drawing.Color.Black;
-            this.btnEgzersizEkleme.Location = new System.Drawing.Point(461, 348);
+            this.btnEgzersizEkleme.Location = new System.Drawing.Point(337, 341);
             this.btnEgzersizEkleme.Name = "btnEgzersizEkleme";
             this.btnEgzersizEkleme.Size = new System.Drawing.Size(45, 45);
             this.btnEgzersizEkleme.TabIndex = 47;
@@ -166,10 +157,10 @@
             this.btnEgzersiGeri.FlatAppearance.BorderSize = 0;
             this.btnEgzersiGeri.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEgzersiGeri.ForeColor = System.Drawing.Color.Black;
-            this.btnEgzersiGeri.Location = new System.Drawing.Point(248, 347);
-            this.btnEgzersiGeri.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEgzersiGeri.Location = new System.Drawing.Point(188, 345);
+            this.btnEgzersiGeri.Margin = new System.Windows.Forms.Padding(2);
             this.btnEgzersiGeri.Name = "btnEgzersiGeri";
-            this.btnEgzersiGeri.Size = new System.Drawing.Size(40, 40);
+            this.btnEgzersiGeri.Size = new System.Drawing.Size(37, 41);
             this.btnEgzersiGeri.TabIndex = 46;
             this.btnEgzersiGeri.TextColor = System.Drawing.Color.Black;
             this.btnEgzersiGeri.UseVisualStyleBackColor = false;
@@ -186,13 +177,32 @@
             this.btnEgzersiAnasayfa.FlatAppearance.BorderSize = 0;
             this.btnEgzersiAnasayfa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEgzersiAnasayfa.ForeColor = System.Drawing.Color.Black;
-            this.btnEgzersiAnasayfa.Location = new System.Drawing.Point(307, 347);
-            this.btnEgzersiAnasayfa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEgzersiAnasayfa.Location = new System.Drawing.Point(247, 345);
+            this.btnEgzersiAnasayfa.Margin = new System.Windows.Forms.Padding(2);
             this.btnEgzersiAnasayfa.Name = "btnEgzersiAnasayfa";
-            this.btnEgzersiAnasayfa.Size = new System.Drawing.Size(35, 35);
+            this.btnEgzersiAnasayfa.Size = new System.Drawing.Size(32, 36);
             this.btnEgzersiAnasayfa.TabIndex = 45;
             this.btnEgzersiAnasayfa.TextColor = System.Drawing.Color.Black;
             this.btnEgzersiAnasayfa.UseVisualStyleBackColor = false;
+            // 
+            // dgvEgzersizKullanicininListesi
+            // 
+            this.dgvEgzersizKullanicininListesi.BackgroundColor = System.Drawing.Color.White;
+            this.dgvEgzersizKullanicininListesi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEgzersizKullanicininListesi.Location = new System.Drawing.Point(378, 179);
+            this.dgvEgzersizKullanicininListesi.Name = "dgvEgzersizKullanicininListesi";
+            this.dgvEgzersizKullanicininListesi.Size = new System.Drawing.Size(184, 163);
+            this.dgvEgzersizKullanicininListesi.TabIndex = 50;
+            // 
+            // dgvEgzersizListe
+            // 
+            this.dgvEgzersizListe.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvEgzersizListe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEgzersizListe.Location = new System.Drawing.Point(188, 179);
+            this.dgvEgzersizListe.Name = "dgvEgzersizListe";
+            this.dgvEgzersizListe.RowHeadersWidth = 51;
+            this.dgvEgzersizListe.Size = new System.Drawing.Size(194, 163);
+            this.dgvEgzersizListe.TabIndex = 49;
             // 
             // Form14
             // 
@@ -201,6 +211,8 @@
             this.BackgroundImage = global::DIYET_PROJE.Properties.Resources.WhatsApp_Image_2022_09_07_at_22_471;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(754, 511);
+            this.Controls.Add(this.dgvEgzersizKullanicininListesi);
+            this.Controls.Add(this.dgvEgzersizListe);
             this.Controls.Add(this.btnEgzersizSilme);
             this.Controls.Add(this.btnEgzersizEkleme);
             this.Controls.Add(this.btnEgzersiGeri);
@@ -209,12 +221,12 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtEgzersiz);
-            this.Controls.Add(this.dgvArananEgzersiz);
             this.Controls.Add(this.label1);
             this.Name = "Form14";
             this.Text = "Form14";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvArananEgzersiz)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEgzersizKullanicininListesi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEgzersizListe)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -225,12 +237,13 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtEgzersiz;
-        private System.Windows.Forms.DataGridView dgvArananEgzersiz;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private RJButton btnEgzersizSilme;
         private RJButton btnEgzersizEkleme;
         private RJButton btnEgzersiGeri;
         private RJButton btnEgzersiAnasayfa;
+        private System.Windows.Forms.DataGridView dgvEgzersizKullanicininListesi;
+        private System.Windows.Forms.DataGridView dgvEgzersizListe;
     }
 }
