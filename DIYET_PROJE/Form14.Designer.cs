@@ -39,6 +39,9 @@
             this.btnEgzersiAnasayfa = new DIYET_PROJE.RJButton();
             this.dgvEgzersizKullanicininListesi = new System.Windows.Forms.DataGridView();
             this.dgvEgzersizListe = new System.Windows.Forms.DataGridView();
+            this.btnEgzersizAra = new System.Windows.Forms.Button();
+            this.txtEgzersizMiktar = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEgzersizKullanicininListesi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEgzersizListe)).BeginInit();
@@ -72,11 +75,12 @@
             // 
             // txtEgzersiz
             // 
-            this.txtEgzersiz.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtEgzersiz.Location = new System.Drawing.Point(188, 160);
+            this.txtEgzersiz.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtEgzersiz.Location = new System.Drawing.Point(11, 159);
             this.txtEgzersiz.Margin = new System.Windows.Forms.Padding(2);
+            this.txtEgzersiz.Multiline = true;
             this.txtEgzersiz.Name = "txtEgzersiz";
-            this.txtEgzersiz.Size = new System.Drawing.Size(374, 23);
+            this.txtEgzersiz.Size = new System.Drawing.Size(459, 38);
             this.txtEgzersiz.TabIndex = 30;
             this.txtEgzersiz.Text = "Lütfen aradığınız egzersizi girin";
             // 
@@ -85,10 +89,10 @@
             this.label1.BackColor = System.Drawing.Color.LightSalmon;
             this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(188, 118);
+            this.label1.Location = new System.Drawing.Point(11, 96);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(374, 39);
+            this.label1.Size = new System.Drawing.Size(497, 61);
             this.label1.TabIndex = 28;
             this.label1.Text = "EGZERSİZLER";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -98,7 +102,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.ErrorImage = null;
             this.pictureBox2.Image = global::DIYET_PROJE.Properties.Resources.womfit_logo;
-            this.pictureBox2.Location = new System.Drawing.Point(666, 416);
+            this.pictureBox2.Location = new System.Drawing.Point(936, 526);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(77, 84);
@@ -118,7 +122,7 @@
             this.btnEgzersizSilme.FlatAppearance.BorderSize = 0;
             this.btnEgzersizSilme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEgzersizSilme.ForeColor = System.Drawing.Color.Black;
-            this.btnEgzersizSilme.Location = new System.Drawing.Point(517, 341);
+            this.btnEgzersizSilme.Location = new System.Drawing.Point(903, 409);
             this.btnEgzersizSilme.Name = "btnEgzersizSilme";
             this.btnEgzersizSilme.Size = new System.Drawing.Size(45, 45);
             this.btnEgzersizSilme.TabIndex = 48;
@@ -138,7 +142,7 @@
             this.btnEgzersizEkleme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEgzersizEkleme.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnEgzersizEkleme.ForeColor = System.Drawing.Color.Black;
-            this.btnEgzersizEkleme.Location = new System.Drawing.Point(337, 341);
+            this.btnEgzersizEkleme.Location = new System.Drawing.Point(429, 409);
             this.btnEgzersizEkleme.Name = "btnEgzersizEkleme";
             this.btnEgzersizEkleme.Size = new System.Drawing.Size(45, 45);
             this.btnEgzersizEkleme.TabIndex = 47;
@@ -157,7 +161,7 @@
             this.btnEgzersiGeri.FlatAppearance.BorderSize = 0;
             this.btnEgzersiGeri.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEgzersiGeri.ForeColor = System.Drawing.Color.Black;
-            this.btnEgzersiGeri.Location = new System.Drawing.Point(188, 345);
+            this.btnEgzersiGeri.Location = new System.Drawing.Point(26, 547);
             this.btnEgzersiGeri.Margin = new System.Windows.Forms.Padding(2);
             this.btnEgzersiGeri.Name = "btnEgzersiGeri";
             this.btnEgzersiGeri.Size = new System.Drawing.Size(37, 41);
@@ -177,7 +181,7 @@
             this.btnEgzersiAnasayfa.FlatAppearance.BorderSize = 0;
             this.btnEgzersiAnasayfa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEgzersiAnasayfa.ForeColor = System.Drawing.Color.Black;
-            this.btnEgzersiAnasayfa.Location = new System.Drawing.Point(247, 345);
+            this.btnEgzersiAnasayfa.Location = new System.Drawing.Point(85, 547);
             this.btnEgzersiAnasayfa.Margin = new System.Windows.Forms.Padding(2);
             this.btnEgzersiAnasayfa.Name = "btnEgzersiAnasayfa";
             this.btnEgzersiAnasayfa.Size = new System.Drawing.Size(32, 36);
@@ -189,20 +193,49 @@
             // 
             this.dgvEgzersizKullanicininListesi.BackgroundColor = System.Drawing.Color.White;
             this.dgvEgzersizKullanicininListesi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEgzersizKullanicininListesi.Location = new System.Drawing.Point(378, 179);
+            this.dgvEgzersizKullanicininListesi.Location = new System.Drawing.Point(517, 203);
             this.dgvEgzersizKullanicininListesi.Name = "dgvEgzersizKullanicininListesi";
-            this.dgvEgzersizKullanicininListesi.Size = new System.Drawing.Size(184, 163);
+            this.dgvEgzersizKullanicininListesi.Size = new System.Drawing.Size(496, 200);
             this.dgvEgzersizKullanicininListesi.TabIndex = 50;
             // 
             // dgvEgzersizListe
             // 
             this.dgvEgzersizListe.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvEgzersizListe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEgzersizListe.Location = new System.Drawing.Point(188, 179);
+            this.dgvEgzersizListe.Location = new System.Drawing.Point(12, 203);
             this.dgvEgzersizListe.Name = "dgvEgzersizListe";
             this.dgvEgzersizListe.RowHeadersWidth = 51;
-            this.dgvEgzersizListe.Size = new System.Drawing.Size(194, 163);
+            this.dgvEgzersizListe.Size = new System.Drawing.Size(496, 200);
             this.dgvEgzersizListe.TabIndex = 49;
+            // 
+            // btnEgzersizAra
+            // 
+            this.btnEgzersizAra.BackColor = System.Drawing.Color.Transparent;
+            this.btnEgzersizAra.BackgroundImage = global::DIYET_PROJE.Properties.Resources.search_FILL0_wght400_GRAD0_opsz48__1_;
+            this.btnEgzersizAra.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEgzersizAra.Location = new System.Drawing.Point(471, 159);
+            this.btnEgzersizAra.Name = "btnEgzersizAra";
+            this.btnEgzersizAra.Size = new System.Drawing.Size(37, 38);
+            this.btnEgzersizAra.TabIndex = 51;
+            this.btnEgzersizAra.UseVisualStyleBackColor = false;
+            // 
+            // txtEgzersizMiktar
+            // 
+            this.txtEgzersizMiktar.Location = new System.Drawing.Point(203, 420);
+            this.txtEgzersizMiktar.Name = "txtEgzersizMiktar";
+            this.txtEgzersizMiktar.Size = new System.Drawing.Size(157, 20);
+            this.txtEgzersizMiktar.TabIndex = 53;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.Location = new System.Drawing.Point(133, 420);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(64, 20);
+            this.label5.TabIndex = 52;
+            this.label5.Text = "Miktar : ";
             // 
             // Form14
             // 
@@ -210,7 +243,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::DIYET_PROJE.Properties.Resources.WhatsApp_Image_2022_09_07_at_22_471;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(754, 511);
+            this.ClientSize = new System.Drawing.Size(1024, 621);
+            this.Controls.Add(this.txtEgzersizMiktar);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.btnEgzersizAra);
             this.Controls.Add(this.dgvEgzersizKullanicininListesi);
             this.Controls.Add(this.dgvEgzersizListe);
             this.Controls.Add(this.btnEgzersizSilme);
@@ -245,5 +281,8 @@
         private RJButton btnEgzersiAnasayfa;
         private System.Windows.Forms.DataGridView dgvEgzersizKullanicininListesi;
         private System.Windows.Forms.DataGridView dgvEgzersizListe;
+        private System.Windows.Forms.Button btnEgzersizAra;
+        private System.Windows.Forms.TextBox txtEgzersizMiktar;
+        private System.Windows.Forms.Label label5;
     }
 }

@@ -39,6 +39,9 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.dgvAperatifKullanicininListesi = new System.Windows.Forms.DataGridView();
             this.dgvAperatifListe = new System.Windows.Forms.DataGridView();
+            this.btnAperatifAra = new System.Windows.Forms.Button();
+            this.txtAperatifMiktar = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAperatifKullanicininListesi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAperatifListe)).BeginInit();
@@ -72,11 +75,12 @@
             // 
             // tstAperatifAra
             // 
-            this.tstAperatifAra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tstAperatifAra.Location = new System.Drawing.Point(187, 161);
-            this.tstAperatifAra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tstAperatifAra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tstAperatifAra.Location = new System.Drawing.Point(11, 179);
+            this.tstAperatifAra.Margin = new System.Windows.Forms.Padding(2);
+            this.tstAperatifAra.Multiline = true;
             this.tstAperatifAra.Name = "tstAperatifAra";
-            this.tstAperatifAra.Size = new System.Drawing.Size(374, 23);
+            this.tstAperatifAra.Size = new System.Drawing.Size(459, 38);
             this.tstAperatifAra.TabIndex = 30;
             this.tstAperatifAra.Text = "Lütfen aradığınız ürünü giriniz";
             // 
@@ -85,10 +89,10 @@
             this.label1.BackColor = System.Drawing.Color.LightSalmon;
             this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(187, 119);
+            this.label1.Location = new System.Drawing.Point(11, 114);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(374, 39);
+            this.label1.Size = new System.Drawing.Size(497, 62);
             this.label1.TabIndex = 28;
             this.label1.Text = "APERATİFLER";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -105,7 +109,7 @@
             this.btnAperatifSilme.FlatAppearance.BorderSize = 0;
             this.btnAperatifSilme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAperatifSilme.ForeColor = System.Drawing.Color.Black;
-            this.btnAperatifSilme.Location = new System.Drawing.Point(516, 344);
+            this.btnAperatifSilme.Location = new System.Drawing.Point(905, 426);
             this.btnAperatifSilme.Name = "btnAperatifSilme";
             this.btnAperatifSilme.Size = new System.Drawing.Size(45, 45);
             this.btnAperatifSilme.TabIndex = 42;
@@ -125,7 +129,7 @@
             this.btnAperatifEkleme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAperatifEkleme.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnAperatifEkleme.ForeColor = System.Drawing.Color.Black;
-            this.btnAperatifEkleme.Location = new System.Drawing.Point(336, 344);
+            this.btnAperatifEkleme.Location = new System.Drawing.Point(425, 426);
             this.btnAperatifEkleme.Name = "btnAperatifEkleme";
             this.btnAperatifEkleme.Size = new System.Drawing.Size(45, 45);
             this.btnAperatifEkleme.TabIndex = 41;
@@ -144,8 +148,8 @@
             this.btnAperitifGeri.FlatAppearance.BorderSize = 0;
             this.btnAperitifGeri.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAperitifGeri.ForeColor = System.Drawing.Color.Black;
-            this.btnAperitifGeri.Location = new System.Drawing.Point(187, 349);
-            this.btnAperitifGeri.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAperitifGeri.Location = new System.Drawing.Point(50, 526);
+            this.btnAperitifGeri.Margin = new System.Windows.Forms.Padding(2);
             this.btnAperitifGeri.Name = "btnAperitifGeri";
             this.btnAperitifGeri.Size = new System.Drawing.Size(40, 40);
             this.btnAperitifGeri.TabIndex = 40;
@@ -164,8 +168,8 @@
             this.btnAperatifAnasayfa.FlatAppearance.BorderSize = 0;
             this.btnAperatifAnasayfa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAperatifAnasayfa.ForeColor = System.Drawing.Color.Black;
-            this.btnAperatifAnasayfa.Location = new System.Drawing.Point(246, 349);
-            this.btnAperatifAnasayfa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAperatifAnasayfa.Location = new System.Drawing.Point(109, 526);
+            this.btnAperatifAnasayfa.Margin = new System.Windows.Forms.Padding(2);
             this.btnAperatifAnasayfa.Name = "btnAperatifAnasayfa";
             this.btnAperatifAnasayfa.Size = new System.Drawing.Size(35, 35);
             this.btnAperatifAnasayfa.TabIndex = 39;
@@ -177,8 +181,8 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.ErrorImage = null;
             this.pictureBox2.Image = global::DIYET_PROJE.Properties.Resources.womfit_logo;
-            this.pictureBox2.Location = new System.Drawing.Point(666, 416);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(936, 526);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(77, 84);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -189,20 +193,49 @@
             // 
             this.dgvAperatifKullanicininListesi.BackgroundColor = System.Drawing.Color.White;
             this.dgvAperatifKullanicininListesi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAperatifKullanicininListesi.Location = new System.Drawing.Point(377, 181);
+            this.dgvAperatifKullanicininListesi.Location = new System.Drawing.Point(517, 220);
             this.dgvAperatifKullanicininListesi.Name = "dgvAperatifKullanicininListesi";
-            this.dgvAperatifKullanicininListesi.Size = new System.Drawing.Size(184, 163);
+            this.dgvAperatifKullanicininListesi.Size = new System.Drawing.Size(496, 200);
             this.dgvAperatifKullanicininListesi.TabIndex = 45;
             // 
             // dgvAperatifListe
             // 
             this.dgvAperatifListe.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvAperatifListe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAperatifListe.Location = new System.Drawing.Point(187, 181);
+            this.dgvAperatifListe.Location = new System.Drawing.Point(12, 220);
             this.dgvAperatifListe.Name = "dgvAperatifListe";
             this.dgvAperatifListe.RowHeadersWidth = 51;
-            this.dgvAperatifListe.Size = new System.Drawing.Size(194, 163);
+            this.dgvAperatifListe.Size = new System.Drawing.Size(496, 200);
             this.dgvAperatifListe.TabIndex = 44;
+            // 
+            // btnAperatifAra
+            // 
+            this.btnAperatifAra.BackColor = System.Drawing.Color.Transparent;
+            this.btnAperatifAra.BackgroundImage = global::DIYET_PROJE.Properties.Resources.search_FILL0_wght400_GRAD0_opsz48__1_;
+            this.btnAperatifAra.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAperatifAra.Location = new System.Drawing.Point(471, 179);
+            this.btnAperatifAra.Name = "btnAperatifAra";
+            this.btnAperatifAra.Size = new System.Drawing.Size(37, 38);
+            this.btnAperatifAra.TabIndex = 49;
+            this.btnAperatifAra.UseVisualStyleBackColor = false;
+            // 
+            // txtAperatifMiktar
+            // 
+            this.txtAperatifMiktar.Location = new System.Drawing.Point(175, 439);
+            this.txtAperatifMiktar.Name = "txtAperatifMiktar";
+            this.txtAperatifMiktar.Size = new System.Drawing.Size(157, 20);
+            this.txtAperatifMiktar.TabIndex = 51;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.Location = new System.Drawing.Point(105, 439);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(64, 20);
+            this.label5.TabIndex = 50;
+            this.label5.Text = "Miktar : ";
             // 
             // Form13
             // 
@@ -210,7 +243,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::DIYET_PROJE.Properties.Resources.WhatsApp_Image_2022_09_07_at_22_47_37;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(754, 511);
+            this.ClientSize = new System.Drawing.Size(1024, 621);
+            this.Controls.Add(this.txtAperatifMiktar);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.btnAperatifAra);
             this.Controls.Add(this.dgvAperatifKullanicininListesi);
             this.Controls.Add(this.dgvAperatifListe);
             this.Controls.Add(this.pictureBox2);
@@ -245,5 +281,8 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.DataGridView dgvAperatifKullanicininListesi;
         private System.Windows.Forms.DataGridView dgvAperatifListe;
+        private System.Windows.Forms.Button btnAperatifAra;
+        private System.Windows.Forms.TextBox txtAperatifMiktar;
+        private System.Windows.Forms.Label label5;
     }
 }
