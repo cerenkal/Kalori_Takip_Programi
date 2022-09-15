@@ -20,9 +20,9 @@ namespace Entities.Concrete
         public DateTime VerilisTarihi { get; set; }
 
         public List<Kullanici> Kullanicilar { get; set; }
+        public List<BesinBilgileri> BesinBilgileri { get; set; }
 
-        public int BesinMakrolarID { get; set; }
-        public BesinMakrolar BesinMakrolar { get; set; }
+       
 
         public DateTime CreatedDate { get; set; } = DateTime.Now;
         public DateTime? ModifiedDate { get; set; }

@@ -31,6 +31,16 @@ namespace DataAccess.Mapping
 
 
 
+            this.HasMany(b => b.MakroBesinRaporlari)
+                .WithMany(r => r.BesinBilgileri)
+                .Map(x =>
+                {
+                    x.MapLeftKey("MakroBesinRaporRefID");
+                    x.MapRightKey("BesinBilgisiRefID");
+                    x.ToTable("BesinRaporu");
+
+                });
+
 
 
         }

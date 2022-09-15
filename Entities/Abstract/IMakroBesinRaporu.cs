@@ -19,7 +19,7 @@ namespace Entities.Abstract
 
         List<Kullanici> Kullanicilar { get; set; }
 
-        int BesinMakrolarID { get; set; }
-        BesinMakrolar BesinMakrolar { get; set; }
+         List<BesinBilgileri> BesinBilgileri { get; set; }
+
     }
 }

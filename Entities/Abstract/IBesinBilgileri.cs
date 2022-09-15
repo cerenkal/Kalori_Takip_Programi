@@ -1,4 +1,5 @@
 ﻿using Entities.Concrete;
+using Entities.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,11 +12,15 @@ namespace Entities.Abstract
     {
         int ID { get; set; }
         string BesinAdi { get; set; }
-        float BesinGramaji { get; set; }
-        int BesinAdeti { get; set; }
+         OlcuBirimi OlcuBirimi { get; set; }
+        float GramKarsiligi { get; set; }
 
-        int BesinMakrolarID { get; set; }
-        BesinMakrolar BesinMakrolar { get; set; }
+         float Kalori { get; set; }
+         float Karbonhidrat { get; set; }
+         float Protein { get; set; }
+         float Yag { get; set; }
+
+        List<MakroBesinRaporu> MakroBesinRaporlari { get; set; }
         List<TuketilenBesin> TuketilenBesinler { get; set; }
     }
 }

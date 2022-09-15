@@ -32,9 +32,7 @@ namespace DataAccess.Mapping
                 .WithRequired(k => k.MakroBesinRaporu)
                 .HasForeignKey(k => k.MakroBesinRaporuID);
 
-            this.HasRequired(t => t.BesinMakrolar)
-             .WithMany(s => s.MakroBesinRaporlari)
-             .HasForeignKey(t => t.BesinMakrolarID);
+   
 
 
         }
