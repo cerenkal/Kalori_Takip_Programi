@@ -11,7 +11,7 @@ namespace DataAccess.Context
 {
     public class KaloriTakipDBContext : DbContext
     {
-        public KaloriTakipDBContext() : base("Server=DESKTOP-CJELTSN\\MSSQLSERVER2019;Database=KaloriTakipProjesiDB;Uid=sa;Pwd=1234")
+        public KaloriTakipDBContext() : base("Server=DESKTOP-CJELTSN\\MSSQLSERVER2019;Database=3KaloriTakipProjesiDB;Uid=sa;Pwd=1234")
         //Server=CERENKALPC;Database=StudentCourseDB;Uid=sa;Pwd=123
         {
             Database.SetInitializer(new CreateDatabaseIfNotExists<KaloriTakipDBContext>()); // yazmasakda olur
@@ -19,7 +19,6 @@ namespace DataAccess.Context
 
         public DbSet<AktiviteBilgileri> AktiviteBilgileri { get; set; }
         public DbSet<BesinBilgileri> BesinBilgileri { get; set; }
-        public DbSet<BesinMakrolar> BesinMakrolar { get; set; }
         public DbSet<EgzersizVerisi> EgzersizVerileri { get; set; }
         public DbSet<Kullanici> Kullanicilar { get; set; }
         public DbSet<KullniciHedefBilgileri> KullaniciHedefBilgileri { get; set; }
@@ -37,7 +36,6 @@ namespace DataAccess.Context
 
             modelBuilder.Configurations.Add(new AktiviteBilgileriMapping());
             modelBuilder.Configurations.Add(new BesinBilgileriMapping());
-            modelBuilder.Configurations.Add(new BesinMakrolarMapping());
             modelBuilder.Configurations.Add(new EgzersizVerisiMapping());
             modelBuilder.Configurations.Add(new KullaniciHedefBilgileriMapping());
             modelBuilder.Configurations.Add(new KullaniciMapping());

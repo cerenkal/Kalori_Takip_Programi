@@ -54,7 +54,6 @@
     <Compile Include="Abstract\IAktiviteBilgileri.cs" />
     <Compile Include="Abstract\IBaseEntity.cs" />
     <Compile Include="Abstract\IBesinBilgileri.cs" />
-    <Compile Include="Abstract\IBesinMakrolar.cs" />
     <Compile Include="Abstract\IEgzersizVerisi.cs" />
     <Compile Include="Abstract\IKullanici.cs" />
     <Compile Include="Abstract\IKullaniciHedefBilgileri.cs" />
@@ -66,7 +65,6 @@
     <Compile Include="Abstract\IVucutAnalizi.cs" />
     <Compile Include="Concrete\AktiviteBilgileri.cs" />
     <Compile Include="Concrete\BesinBilgileri.cs" />
-    <Compile Include="Concrete\BesinMakrolar.cs" />
     <Compile Include="Concrete\EgzersizVerisi.cs" />
     <Compile Include="Concrete\Kullanici.cs" />
     <Compile Include="Concrete\KullniciHedefBilgileri.cs" />
@@ -80,6 +78,7 @@
     <Compile Include="Enums\Egzersiz.cs" />
     <Compile Include="Enums\Hedef.cs" />
     <Compile Include="Enums\Ogun.cs" />
+    <Compile Include="Enums\OlcuBirimi.cs" />
     <Compile Include="Enums\Status.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

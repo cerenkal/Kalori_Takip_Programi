@@ -12,14 +12,15 @@ namespace Entities.Concrete
     {
         public int ID { get; set; }
         public string BesinAdi { get; set; }
-        public float BesinGramaji { get; set; }
-        public int BesinAdeti { get; set; }
+        public OlcuBirimi OlcuBirimi { get; set; }
+        public float GramKarsiligi { get; set; }
+        public float Kalori { get; set; }
+        public float Karbonhidrat { get; set; }
+        public float Protein { get; set; }
+        public float Yag { get; set; }
 
 
-
-
-        public int BesinMakrolarID { get; set; }
-        public BesinMakrolar BesinMakrolar { get; set; }
+        public List<MakroBesinRaporu> MakroBesinRaporlari { get; set; }
         public List<TuketilenBesin> TuketilenBesinler { get; set; }
 
         public DateTime CreatedDate { get; set; } = DateTime.Now;
@@ -29,5 +30,6 @@ namespace Entities.Concrete
         public string DeletedBy { get; set; }
         public string ModifiedBy { get; set; }
         public Status Status { get; set; } = Status.Active;
+        
     }
 }

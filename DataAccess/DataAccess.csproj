@@ -54,7 +54,6 @@
     <Compile Include="ConcreteRepository\AktiviteBilgileriRepository.cs" />
     <Compile Include="ConcreteRepository\BaseRepository.cs" />
     <Compile Include="ConcreteRepository\BesinBilgileriRepository.cs" />
-    <Compile Include="ConcreteRepository\BesinMakrolarRepository.cs" />
     <Compile Include="ConcreteRepository\EgzersizVerisiRepository.cs" />
     <Compile Include="ConcreteRepository\KullaniciHedefBilgileriRepository.cs" />
     <Compile Include="ConcreteRepository\KullaniciRepository.cs" />
@@ -67,7 +66,6 @@
     <Compile Include="Context\KaloriTakipDBContext.cs" />
     <Compile Include="Mapping\AktiviteBilgileriMapping.cs" />
     <Compile Include="Mapping\BesinBilgileriMapping.cs" />
-    <Compile Include="Mapping\BesinMakrolarMapping.cs" />
     <Compile Include="Mapping\EgzersizVerisiMapping.cs" />
     <Compile Include="Mapping\KullaniciHedefBilgileriMapping.cs" />
     <Compile Include="Mapping\KullaniciMapping.cs" />
