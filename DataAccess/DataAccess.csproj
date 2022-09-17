@@ -75,6 +75,7 @@
     <Compile Include="Mapping\TariflerMapping.cs" />
     <Compile Include="Mapping\TuketilenBesinMapping.cs" />
     <Compile Include="Mapping\VucutAnaliziMapping.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
