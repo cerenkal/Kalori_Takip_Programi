@@ -11,7 +11,7 @@ namespace DataAccess.Context
 {
     public class KaloriTakipDBContext : DbContext
     {
-        public KaloriTakipDBContext() : base("Server=DESKTOP-CJELTSN\\MSSQLSERVER2019;Database=3KaloriTakipProjesiDB;Uid=sa;Pwd=1234")
+        public KaloriTakipDBContext() : base("Server=DESKTOP-CJELTSN\\MSSQLSERVER2019;Database=KaloriTakipProjesiDB;Uid=sa;Pwd=1234")
         //Server=CERENKALPC;Database=StudentCourseDB;Uid=sa;Pwd=123
         {
             Database.SetInitializer(new CreateDatabaseIfNotExists<KaloriTakipDBContext>()); // yazmasakda olur
