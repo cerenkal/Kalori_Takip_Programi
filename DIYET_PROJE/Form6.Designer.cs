@@ -61,19 +61,17 @@
             this.btnKiloVermekIstiyorum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnKiloVermekIstiyorum.ForeColor = System.Drawing.Color.Black;
             this.btnKiloVermekIstiyorum.Location = new System.Drawing.Point(331, 362);
-            this.btnKiloVermekIstiyorum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnKiloVermekIstiyorum.Margin = new System.Windows.Forms.Padding(4);
             this.btnKiloVermekIstiyorum.Name = "btnKiloVermekIstiyorum";
             this.btnKiloVermekIstiyorum.Size = new System.Drawing.Size(364, 82);
             this.btnKiloVermekIstiyorum.TabIndex = 8;
             this.btnKiloVermekIstiyorum.Text = "Kilo Vermek İstiyorum";
             this.btnKiloVermekIstiyorum.TextColor = System.Drawing.Color.Black;
             this.btnKiloVermekIstiyorum.UseVisualStyleBackColor = false;
+            this.btnKiloVermekIstiyorum.Click += new System.EventHandler(this.btnKiloVermekIstiyorum_Click);
             // 
             // btnKilomuKorumakIstiyorum
             // 
-
-            
-
             this.btnKilomuKorumakIstiyorum.BackColor = System.Drawing.Color.Snow;
             this.btnKilomuKorumakIstiyorum.BackgroundColor = System.Drawing.Color.Snow;
             this.btnKilomuKorumakIstiyorum.BorderColor = System.Drawing.Color.LightCoral;
@@ -84,14 +82,14 @@
             this.btnKilomuKorumakIstiyorum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnKilomuKorumakIstiyorum.ForeColor = System.Drawing.Color.Black;
             this.btnKilomuKorumakIstiyorum.Location = new System.Drawing.Point(331, 258);
-            this.btnKilomuKorumakIstiyorum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnKilomuKorumakIstiyorum.Margin = new System.Windows.Forms.Padding(4);
             this.btnKilomuKorumakIstiyorum.Name = "btnKilomuKorumakIstiyorum";
             this.btnKilomuKorumakIstiyorum.Size = new System.Drawing.Size(364, 82);
             this.btnKilomuKorumakIstiyorum.TabIndex = 7;
             this.btnKilomuKorumakIstiyorum.Text = "Kilomu Korumak İstiyorum";
             this.btnKilomuKorumakIstiyorum.TextColor = System.Drawing.Color.Black;
             this.btnKilomuKorumakIstiyorum.UseVisualStyleBackColor = false;
-
+            this.btnKilomuKorumakIstiyorum.Click += new System.EventHandler(this.btnKilomuKorumakIstiyorum_Click);
             // 
             // btnKiloAlmakIstıyorum
             // 
@@ -105,13 +103,14 @@
             this.btnKiloAlmakIstıyorum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnKiloAlmakIstıyorum.ForeColor = System.Drawing.Color.Black;
             this.btnKiloAlmakIstıyorum.Location = new System.Drawing.Point(331, 156);
-            this.btnKiloAlmakIstıyorum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnKiloAlmakIstıyorum.Margin = new System.Windows.Forms.Padding(4);
             this.btnKiloAlmakIstıyorum.Name = "btnKiloAlmakIstıyorum";
             this.btnKiloAlmakIstıyorum.Size = new System.Drawing.Size(364, 82);
             this.btnKiloAlmakIstıyorum.TabIndex = 6;
             this.btnKiloAlmakIstıyorum.Text = "Kilo Almak İstiyorum";
             this.btnKiloAlmakIstıyorum.TextColor = System.Drawing.Color.Black;
             this.btnKiloAlmakIstıyorum.UseVisualStyleBackColor = false;
+            this.btnKiloAlmakIstıyorum.Click += new System.EventHandler(this.btnKiloAlmakIstıyorum_Click);
             // 
             // pictureBox1
             // 
@@ -138,7 +137,7 @@
             this.Controls.Add(this.btnKilomuKorumakIstiyorum);
             this.Controls.Add(this.btnKiloAlmakIstıyorum);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form6";
             this.Text = "Form6";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

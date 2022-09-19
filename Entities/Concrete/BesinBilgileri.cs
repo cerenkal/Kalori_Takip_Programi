@@ -18,6 +18,8 @@ namespace Entities.Concrete
         public float Karbonhidrat { get; set; }
         public float Protein { get; set; }
         public float Yag { get; set; }
+        public float ToplamKalori { get; set; }
+
 
 
         public List<MakroBesinRaporu> MakroBesinRaporlari { get; set; }

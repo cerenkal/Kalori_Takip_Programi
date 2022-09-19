@@ -27,10 +27,6 @@ namespace DIYET_PROJE
 
         
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
 
     
 
@@ -63,7 +59,6 @@ namespace DIYET_PROJE
 
         private void dgvKahvaltiListe_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
         }
 
         private void label1_Click(object sender, EventArgs e)

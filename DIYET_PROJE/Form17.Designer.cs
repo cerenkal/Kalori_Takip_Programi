@@ -138,7 +138,7 @@ namespace DIYET_PROJE
             // txtTarifMakaleAra
             // 
             this.txtTarifMakaleAra.Location = new System.Drawing.Point(517, 102);
-            this.txtTarifMakaleAra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTarifMakaleAra.Margin = new System.Windows.Forms.Padding(4);
             this.txtTarifMakaleAra.Name = "txtTarifMakaleAra";
             this.txtTarifMakaleAra.Size = new System.Drawing.Size(360, 22);
             this.txtTarifMakaleAra.TabIndex = 47;
@@ -197,6 +197,7 @@ namespace DIYET_PROJE
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form17";
             this.Text = "Form17";
+            this.Load += new System.EventHandler(this.Form17_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTariflerListele)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

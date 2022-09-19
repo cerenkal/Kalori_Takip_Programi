@@ -32,11 +32,11 @@ namespace DataAccess.Mapping
 
             this.Property(x => x.Status).HasColumnName("Statu");
 
-            this.HasRequired(k => k.KullniciHedefBilgileri)
+            this.HasOptional(k => k.KullniciHedefBilgileri)
                 .WithMany(kh => kh.Kullanicilar)
                 .HasForeignKey(k => k.KullniciHedefBilgileriID);
 
-            this.HasRequired(k => k.AktiviteBilgileri)
+            this.HasOptional(k => k.AktiviteBilgileri)
                 .WithMany(ab => ab.Kullanicilar)
                 .HasForeignKey(k => k.AktiviteBilgileriID);
 
@@ -51,17 +51,17 @@ namespace DataAccess.Mapping
                 });
 
 
-            this.HasRequired(k => k.SuVerisi)
+            this.HasOptional(k => k.SuVerisi)
                 .WithMany(s => s.Kullanicilar)
                 .HasForeignKey(k => k.SuVerisiID);
 
 
-            this.HasRequired(k => k.VucutAnalizi)
+            this.HasOptional(k => k.VucutAnalizi)
                 .WithMany(v => v.Kullanicilar)
                 .HasForeignKey(k => k.VucutAnaliziID);
 
 
-            this.HasRequired(k => k.MakroBesinRaporu)
+            this.HasOptional(k => k.MakroBesinRaporu)
                 .WithMany(mr => mr.Kullanicilar)
                 .HasForeignKey(k => k.MakroBesinRaporuID);
         }

@@ -16,8 +16,6 @@
 
         protected override void Seed(DataAccess.Context.KaloriTakipDBContext context)
         {
-
-
             //BALIKLAR VE DENİZ ÜRÜNLERİ
 
             BesinBilgileri somon = new BesinBilgileri() { BesinAdi = "Somon", OlcuBirimi = OlcuBirimi.Gram, Kalori = 2.08F, Karbonhidrat = 0, Protein = 0.19F, Yag = 0.13F, CreatedBy = "Ayşe" };
@@ -490,7 +488,7 @@
             context.BesinBilgileri.Add(SiyahZeytin);
 
             BesinBilgileri YesilZeytin = new BesinBilgileri() { BesinAdi = "Yeşil Zeytin", OlcuBirimi = OlcuBirimi.Adet, Kalori = 6F, Karbonhidrat = 0.15F, Protein = 0.05F, Yag = 0.61F, GramKarsiligi = 4, CreatedBy = "Ayşe" };
-            context.BesinBilgileri.Add(YesilErik);
+            context.BesinBilgileri.Add(YesilZeytin);
 
             BesinBilgileri Bal = new BesinBilgileri() { BesinAdi = "Bal", OlcuBirimi = OlcuBirimi.TatliKasigi, Kalori = 30F, Karbonhidrat = 8.25F, Protein = 0.04F, Yag = 0F, GramKarsiligi = 10, CreatedBy = "Ayşe" };
             context.BesinBilgileri.Add(Bal);
@@ -1284,7 +1282,7 @@
             context.BesinBilgileri.Add(madenSuyu);
 
 
-            BesinBilgileri bergamotCayi = new BesinBilgileri() { BesinAdi = "Bergamot Çayı (150 ml)", Kalori = 2.6F, Karbonhidrat = 0, Protein = 0, Yag = 0, CreatedBy = "Ceren" };
+            BesinBilgileri bergamotCayi = new BesinBilgileri() { BesinAdi = "Bergamot Çayı (150 ml)", OlcuBirimi = OlcuBirimi.CayBardagi, Kalori = 2.6F, Karbonhidrat = 0, Protein = 0, Yag = 0, CreatedBy = "Ceren" };
             context.BesinBilgileri.Add(bergamotCayi);
 
             BesinBilgileri boza = new BesinBilgileri() { BesinAdi = "Boza", OlcuBirimi = OlcuBirimi.SuBardagi, Kalori = 279, Karbonhidrat = 60, Protein = 45, Yag = 1.8F, CreatedBy = "Ceren" };
@@ -1867,7 +1865,7 @@
             Tarifler ananaslıCheesecakeBar = new Tarifler()
             {
                 TarifAdi = "Ananaslı Cheesecake Bar",
-                Aciklamasi = "Malzemeler :\n1 paket burçak bisküvi \n2 yemek kaşığı Eritilmiş tereyağı\r\n\r\nKrenası için:\n100 gr yağsız krem ​​peynir\n100 gr  tuzsuz tereyağı\n3 yumurta \n1 yemek kaşığı bal\nYarım bardak ananas suyu\n1 paket vanilin\nÜzeri için Ananas ve kiraz (isteğe bağlı).\r\n\r\nNasıl Yapılır ?\nTabanı için bir parça tereyağı ve bisküvileri rondodan geçirin.\nKalıbın zeminine yerleştirince 5 dakika fırınlayın\nDolgusu için, bir el mikseri kullanarak geniş bir kapta krem ​​peyniri tamamen pürüzsüz olana kadar yaklaşık 1 dakika yüksek hızda çırpın\nOrta-yüksek hızda, tamamen birleşene kadar tereyağını da çırpın\nArdından yumurta ve yumurta sarısını birleştirene kadar çırpın\nSon olarak, her şey birleşene ve topak kalmayana kadar şeker, ananas suyu ve vanilyayı çırpın\nDolguyu kabuğun üzerine dökün ve 30 dakika pişirin\nArdından sertleşene kadar, 4 saat veya bir geceye kadar buzdolabında saklayın.\nSoğuduktan sonra kalıptan çıkarın ve kareler halinde kesin. Ananas ve kirazla süsleyin ve buzdolabında saklayın."
+                Aciklamasi = "Malzemeler :\n1 paket burçak bisküvi \n2 yemek kaşığı Eritilmiş tereyağı\r\n\r\nKrenası için:\n100 gr yağsız krem peynir\n100 gr  tuzsuz tereyağı\n3 yumurta \n1 yemek kaşığı bal\nYarım bardak ananas suyu\n1 paket vanilin\nÜzeri için Ananas ve kiraz (isteğe bağlı).\r\n\r\nNasıl Yapılır ?\nTabanı için bir parça tereyağı ve bisküvileri rondodan geçirin.\nKalıbın zeminine yerleştirince 5 dakika fırınlayın\nDolgusu için, bir el mikseri kullanarak geniş bir kapta krem peyniri tamamen pürüzsüz olana kadar yaklaşık 1 dakika yüksek hızda çırpın\nOrta-yüksek hızda, tamamen birleşene kadar tereyağını da çırpın\nArdından yumurta ve yumurta sarısını birleştirene kadar çırpın\nSon olarak, her şey birleşene ve topak kalmayana kadar şeker, ananas suyu ve vanilyayı çırpın\nDolguyu kabuğun üzerine dökün ve 30 dakika pişirin\nArdından sertleşene kadar, 4 saat veya bir geceye kadar buzdolabında saklayın.\nSoğuduktan sonra kalıptan çıkarın ve kareler halinde kesin. Ananas ve kirazla süsleyin ve buzdolabında saklayın."
 
             };
 
@@ -2195,7 +2193,7 @@
             Makaleler sinavCekmeninPufNoktalari = new Makaleler()
             {
                 MakaleAdi = "Şınav Çekmenin Püf Noktaları",
-                Aciklamasi = "Şınav çekmek çok basit gibi görünen ama pek çok inceliği olan komplike bir harekettir. Şınav çekmek için herhangi bir ekipmana ihtiyacınız yoktur ve kendi vücut ağırlığınızla her an, her yerde yapabileceğiniz bir egzersizdir.\nŞınav yere yüz üstü uzanarak, ayak uçlarınızın üzerinde durup, ellerinizden güç alarak kollarınızla gövdenizi yukarı doğru kaldırdığınız ve tekrar göğsünüzü yere değmeyecek şekilde aşağı indirdiğiniz bir kuvvet egzersizidir. Pek çok kasınızı aynı anda kullandığınız için, bu hareketi doğru bir şekilde ve uzun süreyle yapabilmek için genel sağlığınızın ve kondisyon seviyenizin iyi durumda olması gerekir\nYere paralel uzanın ve parmak uçlarınız tam karşıya bakacak şekilde ellerinizi omuz genişliğinden biraz daha geniş açarak, avuç içlerinizi yere koyun.\nAyak parmaklarınızı yere koyun ve kollarınızdan kuvvet alarak göğsünüzü yerden kaldırın.\nŞınav çekerken doğru nefes alıp vermek çok önemlidir. Gövdenizi aşağı doğru indirirken nefes almalı, yukarı doğru kaldırırken nefes vermelisiniz.\nŞınav çekerken kalçanızı yukarı doğru kaldırmamalısınız. Başınız, kalçanız ve ayaklarınız aynı hizada olmalıdır.\nSırtınız ve kalçanız aynı hizada olacak şekilde, karın kaslarınızı sıkarak tekrar yavaşça dirseklerinizi bükün ve göğsünüzü yere doğru indirin.\nGöğsünüzü yere değdirmeden hareketi sonlandırın. Bu, bir tekrardır. Üst üste yapabildiğiniz kadar çok tekrar yapın ve aralarda mola vererek birkaç set halinde egzersizi tamamlayın."
+                Aciklamasi = "Şınav çekmek çok basit gibi görünen ama pek çok inceliği olan komplike bir harekettir. Şınav çekmek için herhangi bir ekipmana ihtiyacınız yoktur ve kendi vücut ağırlığınızla her an, her yerde yapabileceğiniz bir egzersizdir.\nŞınav yere yüz üstü uzanarak, ayak uçlarınızın üzerinde durup, ellerinizden güç alarak kollarınızla gövdenizi yukarı doğru kaldırdığınız ve tekrar göğsünüzü yere değmeyecek şekilde aşağı indirdiğiniz bir kuvvet egzersizidir. Pek çok kasınızı aynı anda kullandığınız için, bu hareketi doğru bir şekilde ve uzun süreyle yapabilmek için genel sağlığınızın ve kondisyon seviyenizin iyi durumda olması gerekir\nYere paralel uzanın ve parmak uçlarınız tam karşıya bakacak şekilde ellerinizi omuz genişliğinden biraz daha geniş açarak, avuç içlerinizi yere koyun.\nAyak parmaklarınızı yere koyun ve kollarınızdan kuvvet alarak göğsünüzü yerden kaldırın.\nŞınav çekerken doğru nefes alıp vermek çok önemlidir. Göv/*deniz*/i aşağı doğru indirirken nefes almalı, yukarı doğru kaldırırken nefes vermelisiniz.\nŞınav çekerken kalçanızı yukarı doğru kaldırmamalısınız. Başınız, kalçanız ve ayaklarınız aynı hizada olmalıdır.\nSırtınız ve kalçanız aynı hizada olacak şekilde, karın kaslarınızı sıkarak tekrar yavaşça dirseklerinizi bükün ve göğsünüzü yere doğru indirin.\nGöğsünüzü yere değdirmeden hareketi sonlandırın. Bu, bir tekrardır. Üst üste yapabildiğiniz kadar çok tekrar yapın ve aralarda mola vererek birkaç set halinde egzersizi tamamlayın."
 
             };
 
@@ -2248,45 +2246,45 @@
 
             //Alkoller 
 
-            BesinBilgileri beyazSarap = new BesinBilgileri() { BesinAdi = "Beyaz Şarap(1 Kadeh)", Kalori = 125, Karbonhidrat = 3.81F, Protein = 0.1F, Yag = 0, CreatedBy = "Tuba" };
+            BesinBilgileri beyazSarap = new BesinBilgileri() { BesinAdi = "Beyaz Şarap(1 Kadeh)", OlcuBirimi = OlcuBirimi.MLitre, Kalori = 125, Karbonhidrat = 3.81F, Protein = 0.1F, Yag = 0, CreatedBy = "Tuba" };
             context.BesinBilgileri.Add(beyazSarap);
 
 
-            BesinBilgileri kirmiziŞarap = new BesinBilgileri() { BesinAdi = "Kırmızı Şarap(1 Kadeh)", Kalori = 125, Karbonhidrat = 3.85F, Protein = 0.1F, Yag = 0, CreatedBy = "Tuba" };
+            BesinBilgileri kirmiziŞarap = new BesinBilgileri() { BesinAdi = "Kırmızı Şarap(1 Kadeh)", OlcuBirimi = OlcuBirimi.MLitre, Kalori = 125, Karbonhidrat = 3.85F, Protein = 0.1F, Yag = 0, CreatedBy = "Tuba" };
             context.BesinBilgileri.Add(kirmiziŞarap);
 
-            BesinBilgileri bira = new BesinBilgileri() { BesinAdi = "Bira(330cc)", Kalori = 139, Karbonhidrat = 10.3F, Protein = 1.65F, Yag = 0, CreatedBy = "Tuba" };
+            BesinBilgileri bira = new BesinBilgileri() { BesinAdi = "Bira(330cc)", Kalori = 139, OlcuBirimi = OlcuBirimi.MLitre, Karbonhidrat = 10.3F, Protein = 1.65F, Yag = 0, CreatedBy = "Tuba" };
             context.BesinBilgileri.Add(bira);
 
-            BesinBilgileri cin = new BesinBilgileri() { BesinAdi = "Cin(100cc)", Kalori = 231, Karbonhidrat = 0, Protein = 0, Yag = 0, CreatedBy = "Tuba" };
+            BesinBilgileri cin = new BesinBilgileri() { BesinAdi = "Cin(100cc)", Kalori = 231, OlcuBirimi = OlcuBirimi.MLitre, Karbonhidrat = 0, Protein = 0, Yag = 0, CreatedBy = "Tuba" };
             context.BesinBilgileri.Add(cin);
 
 
-            BesinBilgileri raki = new BesinBilgileri() { BesinAdi = "Raki(1 duble)", Kalori = 186, Karbonhidrat = 0.33F, Protein = 0, Yag = 0, CreatedBy = "Tuba" };
+            BesinBilgileri raki = new BesinBilgileri() { BesinAdi = "Raki(1 duble)", OlcuBirimi = OlcuBirimi.MLitre, Kalori = 186, Karbonhidrat = 0.33F, Protein = 0, Yag = 0, CreatedBy = "Tuba" };
             context.BesinBilgileri.Add(raki);
 
-            BesinBilgileri votka = new BesinBilgileri() { BesinAdi = "Votka(1 kadeh)", Kalori = 116, Karbonhidrat = 0, Protein = 0, Yag = 0, CreatedBy = "Tuba" };
+            BesinBilgileri votka = new BesinBilgileri() { BesinAdi = "Votka(1 kadeh)", OlcuBirimi = OlcuBirimi.MLitre, Kalori = 116, Karbonhidrat = 0, Protein = 0, Yag = 0, CreatedBy = "Tuba" };
             context.BesinBilgileri.Add(votka);
 
-            BesinBilgileri viski = new BesinBilgileri() { BesinAdi = "Viski(1 kadeh)", Kalori = 125, Karbonhidrat = 0.06F, Protein = 0, Yag = 0, CreatedBy = "Tuba" };
+            BesinBilgileri viski = new BesinBilgileri() { BesinAdi = "Viski(1 kadeh)", OlcuBirimi = OlcuBirimi.MLitre, Kalori = 125, Karbonhidrat = 0.06F, Protein = 0, Yag = 0, CreatedBy = "Tuba" };
             context.BesinBilgileri.Add(raki);
 
 
-            BesinBilgileri visneLikörü = new BesinBilgileri() { BesinAdi = "Visne Likörü(şat bardağı)", Kalori = 131, Karbonhidrat = 15.21F, Protein = 0, Yag = 0, CreatedBy = "Tuba" };
+            BesinBilgileri visneLikörü = new BesinBilgileri() { BesinAdi = "Visne Likörü(şat bardağı)", OlcuBirimi = OlcuBirimi.MLitre, Kalori = 131, Karbonhidrat = 15.21F, Protein = 0, Yag = 0, CreatedBy = "Tuba" };
             context.BesinBilgileri.Add(visneLikörü);
 
 
-            BesinBilgileri portakalLikörü = new BesinBilgileri() { BesinAdi = "Portakal Likörü(şat bardağı)", Kalori = 96, Karbonhidrat = 7.5F, Protein = 0, Yag = 0, CreatedBy = "Tuba" };
+            BesinBilgileri portakalLikörü = new BesinBilgileri() { BesinAdi = "Portakal Likörü(şat bardağı)", OlcuBirimi = OlcuBirimi.MLitre, Kalori = 96, Karbonhidrat = 7.5F, Protein = 0, Yag = 0, CreatedBy = "Tuba" };
             context.BesinBilgileri.Add(portakalLikörü);
 
 
-            BesinBilgileri sampanya = new BesinBilgileri() { BesinAdi = "Şampanya(1 kadeh)", Kalori = 80, Karbonhidrat = 1.47F, Protein = 0.32F, Yag = 0, CreatedBy = "Tuba" };
+            BesinBilgileri sampanya = new BesinBilgileri() { BesinAdi = "Şampanya(1 kadeh)", OlcuBirimi = OlcuBirimi.MLitre, Kalori = 80, Karbonhidrat = 1.47F, Protein = 0.32F, Yag = 0, CreatedBy = "Tuba" };
             context.BesinBilgileri.Add(sampanya);
 
-            BesinBilgileri brandy = new BesinBilgileri() { BesinAdi = "Brandy(1 kadeh)", Kalori = 220, Karbonhidrat = 0, Protein = 0, Yag = 0, CreatedBy = "Tuba" };
+            BesinBilgileri brandy = new BesinBilgileri() { BesinAdi = "Brandy(1 kadeh)", OlcuBirimi = OlcuBirimi.MLitre, Kalori = 220, Karbonhidrat = 0, Protein = 0, Yag = 0, CreatedBy = "Tuba" };
             context.BesinBilgileri.Add(brandy);
 
-            BesinBilgileri tekila = new BesinBilgileri() { BesinAdi = "Tekila(şat bardağı)", Kalori = 138, Karbonhidrat = 7.5F, Protein = 0, Yag = 0, CreatedBy = "Tuba" };
+            BesinBilgileri tekila = new BesinBilgileri() { BesinAdi = "Tekila(şat bardağı)", OlcuBirimi = OlcuBirimi.MLitre, Kalori = 138, Karbonhidrat = 7.5F, Protein = 0, Yag = 0, CreatedBy = "Tuba" };
             context.BesinBilgileri.Add(tekila);
 
 

@@ -29,7 +29,7 @@ namespace DataAccess.Mapping
             this.Property(x => x.Status).HasColumnName("Statu");
 
             this.HasMany(v => v.Kullanicilar)
-               .WithRequired(k => k.VucutAnalizi)
+               .WithOptional(k => k.VucutAnalizi)
                .HasForeignKey(k => k.VucutAnaliziID);
         }
     }

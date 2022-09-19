@@ -16,5 +16,15 @@ namespace DIYET_PROJE
         {
             InitializeComponent();
         }
+
+        public static Form2 frm2;
+
+        private void btnGirisYapForm1_Click(object sender, EventArgs e)
+        {
+            frm2 = new Form2(); 
+            frm2.Show();
+            this.Hide();
+
+        }
     }
 }

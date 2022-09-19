@@ -43,6 +43,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -68,6 +69,7 @@
     <Compile Include="Concrete\EgzersizVerisi.cs" />
     <Compile Include="Concrete\Kullanici.cs" />
     <Compile Include="Concrete\KullniciHedefBilgileri.cs" />
+    <Compile Include="Concrete\Listeleme.cs" />
     <Compile Include="Concrete\Makaleler.cs" />
     <Compile Include="Concrete\MakroBesinRaporu.cs" />
     <Compile Include="Concrete\SuVerisi.cs" />
@@ -80,6 +82,7 @@
     <Compile Include="Enums\Ogun.cs" />
     <Compile Include="Enums\OlcuBirimi.cs" />
     <Compile Include="Enums\Status.cs" />
+    <Compile Include="Fonksiyonlar\Fonksiyonlar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

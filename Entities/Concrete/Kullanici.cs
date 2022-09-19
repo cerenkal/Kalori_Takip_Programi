@@ -10,56 +10,19 @@ namespace Entities.Concrete
 {
     public class Kullanici : IKullanici, IBaseEntity
     {
-        private string kullaniciSifre;
+     
 
         public int ID { get; set; }
         public string KullaniciAdi { get; set; }
         public string KullaniciSoyadi { get; set; }
         public string Mail { get; set; }
-        public string KullaniciSifre
-        {
-            get => kullaniciSifre;
-            set
-            {
-                int buyuk = 0;
-                int kucuk = 0;
-                int karakter = 0;
-
-                char[] Dizi = kullaniciSifre.ToCharArray();
-
-                if (Dizi.Length == 6)
-                {
-                    for (int i = 0; i < Dizi.Length; i++)
-                    {
-
-                        if (Dizi[i].ToString() == Dizi[i].ToString().ToUpper())
-                            buyuk++;
-                        if (Dizi[i].ToString() == Dizi[i].ToString().ToLower())
-                            kucuk++;
-                        if (Convert.ToInt32(Dizi[i]) >= 33 && Convert.ToInt32(Dizi[i]) <= 47)
-                        {
-                            karakter++;
-                        }
-
-                    }
-
-
-                    if (buyuk >= 1 && kucuk >= 1 && karakter >= 1 && KullaniciSifreTekrari == value)
-                        kullaniciSifre = value;
-                    else kullaniciSifre = String.Empty;
-
-
-                }
-
-                else kullaniciSifre = String.Empty;
-            }
-        }
+        public string KullaniciSifre { get; set; }
         public string KullaniciSifreTekrari { get; set; }
 
-        public int KullniciHedefBilgileriID { get; set; }
+        public virtual int? KullniciHedefBilgileriID { get; set; }
         public KullniciHedefBilgileri KullniciHedefBilgileri { get; set; }
 
-        public int AktiviteBilgileriID { get; set; }
+        public virtual int? AktiviteBilgileriID { get; set; }
         public AktiviteBilgileri AktiviteBilgileri { get; set; }
 
 
@@ -67,18 +30,18 @@ namespace Entities.Concrete
         public List<TuketilenBesin> TuketilenBesinler { get; set; }
 
 
-        public int SuVerisiID { get; set; }
+        public virtual int? SuVerisiID { get; set; }
         public SuVerisi SuVerisi { get; set; }
 
 
 
         public List<EgzersizVerisi> Egzersizler { get; set; }
 
-        public int VucutAnaliziID { get; set; }
+        public virtual int? VucutAnaliziID { get; set; }
         public VucutAnalizi VucutAnalizi { get; set; }
 
 
-        public int MakroBesinRaporuID { get; set; }
+        public virtual int? MakroBesinRaporuID { get; set; }
         public MakroBesinRaporu MakroBesinRaporu { get; set; }
 
         public DateTime CreatedDate { get; set; } = DateTime.Now;
@@ -88,5 +51,66 @@ namespace Entities.Concrete
         public string DeletedBy { get; set; }
         public string ModifiedBy { get; set; }
         public Status Status { get; set; } = Status.Active;
+     
+
+        public string sifreBelirle(string sifre)
+        {
+            
+
+            int buyuk = 0;
+            int kucuk = 0;
+            int karakter = 0;
+
+            char[] Dizi = sifre.ToCharArray();
+
+            if (Dizi.Length == 6)
+            {
+                for (int i = 0; i < Dizi.Length; i++)
+                {
+                    if (64<Dizi[i] && Dizi[i]<91)
+                    {
+                        buyuk++;
+                    }
+                    if (96 < Dizi[i] && Dizi[i] < 123)
+                    {
+                        kucuk++;
+                    }
+
+                    if (32 < Dizi[i] && Dizi[i] < 48)
+                    {
+                        karakter++;
+                    }
+
+
+
+                }
+
+
+                if (buyuk >= 1 && kucuk >= 1 && karakter >= 1 && KullaniciSifreTekrari == sifre)
+                {
+                    KullaniciSifre = sifre;
+                    return KullaniciSifre;
+                }
+
+
+                else
+                {
+                    KullaniciSifre = String.Empty;
+                    return KullaniciSifre;
+
+                }
+
+
+            }
+
+            else
+            {
+                KullaniciSifre = String.Empty;
+                return KullaniciSifre;
+
+            }
+
+
+        }
     }
 }
