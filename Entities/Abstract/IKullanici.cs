@@ -16,24 +16,24 @@ namespace Entities.Abstract
         string KullaniciSifre { get; set; }
         string KullaniciSifreTekrari { get; set; }
 
-        int KullniciHedefBilgileriID { get; set; }
+        int? KullniciHedefBilgileriID { get; set; }
         KullniciHedefBilgileri KullniciHedefBilgileri { get; set; }
 
-        int AktiviteBilgileriID { get; set; }
+        int? AktiviteBilgileriID { get; set; }
         AktiviteBilgileri AktiviteBilgileri { get; set; }
 
 
         List<TuketilenBesin> TuketilenBesinler { get; set; }
 
-        int SuVerisiID { get; set; }
+        int? SuVerisiID { get; set; }
         SuVerisi SuVerisi { get; set; }
 
         List<EgzersizVerisi> Egzersizler { get; set; }
 
-        int VucutAnaliziID { get; set; }
+        int? VucutAnaliziID { get; set; }
         VucutAnalizi VucutAnalizi { get; set; }
 
-        int MakroBesinRaporuID { get; set; }
+        int? MakroBesinRaporuID { get; set; }
         MakroBesinRaporu MakroBesinRaporu { get; set; }
     }
 }

@@ -26,5 +26,21 @@ namespace DIYET_PROJE
         {
 
         }
+
+        private void btnAksamEkle_Click(object sender, EventArgs e)
+        {
+            Form12 frm12 = new Form12();
+            frm12.Show();
+            this.Hide();
+
+        }
+
+        private void Form9_Load(object sender, EventArgs e)
+        {
+            lblKaloriAksam.Text = Form12.toplamKalori.ToString();
+            lblKarbonhidratAksam.Text = Form12.toplamCarb.ToString();
+            lblProteinAksam.Text = Form12.toplamProtein.ToString();
+            lblYagAksam.Text = Form12.toplamYag.ToString();
+        }
     }
 }

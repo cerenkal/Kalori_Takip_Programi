@@ -21,16 +21,6 @@ namespace DataAccess.ConcreteRepository
             _table = _kaloriTakipDBContext.Set<T>();
         }
 
-        public int Save()
-        {
-            return _kaloriTakipDBContext.SaveChanges();
-        }
-
-        public bool Update(T entity)
-        {
-            _kaloriTakipDBContext.Entry<T>(entity).State = EntityState.Modified;
-            return Save() > 0;
-        }
 
         public bool Delete(T entity)
         {
@@ -54,8 +44,16 @@ namespace DataAccess.ConcreteRepository
         }
 
 
+        public int Save()
+        {
+            return _kaloriTakipDBContext.SaveChanges();
+        }
 
 
-
+        public bool Update(T entity)
+        {
+            _kaloriTakipDBContext.Entry<T>(entity).State = EntityState.Modified;
+            return Save() > 0;
+        }
     }
 }

@@ -103,6 +103,7 @@
             this.btnGirisYapForm1.Text = "Giriş Yap";
             this.btnGirisYapForm1.TextColor = System.Drawing.Color.White;
             this.btnGirisYapForm1.UseVisualStyleBackColor = false;
+            this.btnGirisYapForm1.Click += new System.EventHandler(this.btnGirisYapForm1_Click);
             // 
             // Form1
             // 

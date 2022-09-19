@@ -55,6 +55,7 @@
             this.btnGirisYapForm2.Text = "Giriş Yap";
             this.btnGirisYapForm2.TextColor = System.Drawing.Color.Black;
             this.btnGirisYapForm2.UseVisualStyleBackColor = false;
+            this.btnGirisYapForm2.Click += new System.EventHandler(this.btnGirisYapForm2_Click);
             // 
             // btnUyeOlForm2
             // 
@@ -75,6 +76,7 @@
             this.btnUyeOlForm2.Text = "Üye Ol";
             this.btnUyeOlForm2.TextColor = System.Drawing.Color.Black;
             this.btnUyeOlForm2.UseVisualStyleBackColor = false;
+            this.btnUyeOlForm2.Click += new System.EventHandler(this.btnUyeOlForm2_Click);
             // 
             // btnUyeOlmadanDevamEt
             // 
@@ -95,6 +97,7 @@
             this.btnUyeOlmadanDevamEt.Text = "Üye Olmadan Devam Et";
             this.btnUyeOlmadanDevamEt.TextColor = System.Drawing.Color.Black;
             this.btnUyeOlmadanDevamEt.UseVisualStyleBackColor = false;
+            this.btnUyeOlmadanDevamEt.Click += new System.EventHandler(this.btnUyeOlmadanDevamEt_Click);
             // 
             // label2
             // 
@@ -104,9 +107,10 @@
             this.label2.Location = new System.Drawing.Point(386, 538);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(215, 16);
+            this.label2.Size = new System.Drawing.Size(228, 17);
             this.label2.TabIndex = 4;
             this.label2.Text = "(Sadece Vücut Analizi Yapılacaktır)";
+      
             // 
             // pictureBox1
             // 

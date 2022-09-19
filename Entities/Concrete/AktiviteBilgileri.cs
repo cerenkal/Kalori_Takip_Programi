@@ -12,18 +12,10 @@ namespace Entities.Concrete
     {
         public int ID { get; set; }
 
-        private float aktiviteKatSayi1;
+        public float AktiviteKatSayi { get; set; }
 
         public Aktivite Aktivite { get; set; }
-        public float AktiviteKatSayi
-        {
-            get => aktiviteKatSayi1;
-            set
-            {
-                aktiviteKatSayi1 = AktiviteKatsayisiHesapla(Aktivite);
-
-            }
-        }
+      
 
         public List<Kullanici> Kullanicilar { get; set; }
 
@@ -34,6 +26,7 @@ namespace Entities.Concrete
         public string DeletedBy { get; set; }
         public string ModifiedBy { get; set; }
         public Status Status { get; set; } = Status.Active;
+      
 
         public float AktiviteKatsayisiHesapla(Aktivite aktivite)
         {

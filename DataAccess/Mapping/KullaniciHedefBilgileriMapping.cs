@@ -29,8 +29,10 @@ namespace DataAccess.Mapping
             this.Property(x => x.Status).HasColumnName("Statu");
 
             this.HasMany(h => h.Kullanicilar)
-                .WithRequired(k => k.KullniciHedefBilgileri)
+                .WithOptional(k => k.KullniciHedefBilgileri)
                 .HasForeignKey(k => k.KullniciHedefBilgileriID);
+
+
         }
     }
 }

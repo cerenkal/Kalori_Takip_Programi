@@ -36,12 +36,12 @@
             this.btnSilmeAksamYemegi = new DIYET_PROJE.RJButton();
             this.btnEklemeAksamYemegi = new DIYET_PROJE.RJButton();
             this.btnGeriAksamYemegi = new DIYET_PROJE.RJButton();
-            this.btnAnasayfaAksamYemegi = new DIYET_PROJE.RJButton();
             this.dgvAksamKullanicininListesi = new System.Windows.Forms.DataGridView();
             this.dgvAksamListe = new System.Windows.Forms.DataGridView();
             this.btnAksamAra = new System.Windows.Forms.Button();
             this.txtAksamMiktar = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.lblOlcu = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAksamKullanicininListesi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAksamListe)).BeginInit();
@@ -53,10 +53,9 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(17, 70);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(23, 86);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(330, 15);
+            this.label3.Size = new System.Drawing.Size(392, 18);
             this.label3.TabIndex = 36;
             this.label3.Text = "Lütfen akşam yemeğinde tükettiğiniz tüm besinleri ekleyiniz";
             // 
@@ -66,33 +65,32 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(12, 38);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(16, 47);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(231, 33);
+            this.label2.Size = new System.Drawing.Size(289, 41);
             this.label2.TabIndex = 35;
             this.label2.Text = "Akşam Yemeği Ekle";
             // 
             // txtArananUrunAksamYemegi
             // 
             this.txtArananUrunAksamYemegi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtArananUrunAksamYemegi.Location = new System.Drawing.Point(15, 184);
-            this.txtArananUrunAksamYemegi.Margin = new System.Windows.Forms.Padding(2);
+            this.txtArananUrunAksamYemegi.Location = new System.Drawing.Point(20, 226);
+            this.txtArananUrunAksamYemegi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtArananUrunAksamYemegi.Multiline = true;
             this.txtArananUrunAksamYemegi.Name = "txtArananUrunAksamYemegi";
-            this.txtArananUrunAksamYemegi.Size = new System.Drawing.Size(459, 38);
+            this.txtArananUrunAksamYemegi.Size = new System.Drawing.Size(611, 46);
             this.txtArananUrunAksamYemegi.TabIndex = 30;
             this.txtArananUrunAksamYemegi.Text = "Lütfen aradığınız ürünü giriniz";
+            this.txtArananUrunAksamYemegi.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtArananUrunAksamYemegi_MouseClick);
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.LightSalmon;
             this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(14, 117);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(19, 144);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(497, 65);
+            this.label1.Size = new System.Drawing.Size(663, 80);
             this.label1.TabIndex = 28;
             this.label1.Text = "AKŞAM YEMEĞİ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -102,10 +100,10 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.ErrorImage = null;
             this.pictureBox2.Image = global::DIYET_PROJE.Properties.Resources.womfit_logo;
-            this.pictureBox2.Location = new System.Drawing.Point(936, 526);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Location = new System.Drawing.Point(1248, 647);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(77, 84);
+            this.pictureBox2.Size = new System.Drawing.Size(103, 103);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 41;
             this.pictureBox2.TabStop = false;
@@ -122,12 +120,14 @@
             this.btnSilmeAksamYemegi.FlatAppearance.BorderSize = 0;
             this.btnSilmeAksamYemegi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSilmeAksamYemegi.ForeColor = System.Drawing.Color.Black;
-            this.btnSilmeAksamYemegi.Location = new System.Drawing.Point(939, 438);
+            this.btnSilmeAksamYemegi.Location = new System.Drawing.Point(1252, 539);
+            this.btnSilmeAksamYemegi.Margin = new System.Windows.Forms.Padding(4);
             this.btnSilmeAksamYemegi.Name = "btnSilmeAksamYemegi";
-            this.btnSilmeAksamYemegi.Size = new System.Drawing.Size(45, 45);
+            this.btnSilmeAksamYemegi.Size = new System.Drawing.Size(60, 55);
             this.btnSilmeAksamYemegi.TabIndex = 45;
             this.btnSilmeAksamYemegi.TextColor = System.Drawing.Color.Black;
             this.btnSilmeAksamYemegi.UseVisualStyleBackColor = false;
+            this.btnSilmeAksamYemegi.Click += new System.EventHandler(this.btnSilmeAksamYemegi_Click);
             // 
             // btnEklemeAksamYemegi
             // 
@@ -142,12 +142,14 @@
             this.btnEklemeAksamYemegi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEklemeAksamYemegi.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnEklemeAksamYemegi.ForeColor = System.Drawing.Color.Black;
-            this.btnEklemeAksamYemegi.Location = new System.Drawing.Point(436, 438);
+            this.btnEklemeAksamYemegi.Location = new System.Drawing.Point(581, 539);
+            this.btnEklemeAksamYemegi.Margin = new System.Windows.Forms.Padding(4);
             this.btnEklemeAksamYemegi.Name = "btnEklemeAksamYemegi";
-            this.btnEklemeAksamYemegi.Size = new System.Drawing.Size(45, 45);
+            this.btnEklemeAksamYemegi.Size = new System.Drawing.Size(60, 55);
             this.btnEklemeAksamYemegi.TabIndex = 44;
             this.btnEklemeAksamYemegi.TextColor = System.Drawing.Color.Black;
             this.btnEklemeAksamYemegi.UseVisualStyleBackColor = false;
+            this.btnEklemeAksamYemegi.Click += new System.EventHandler(this.btnEklemeAksamYemegi_Click);
             // 
             // btnGeriAksamYemegi
             // 
@@ -161,69 +163,58 @@
             this.btnGeriAksamYemegi.FlatAppearance.BorderSize = 0;
             this.btnGeriAksamYemegi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGeriAksamYemegi.ForeColor = System.Drawing.Color.Black;
-            this.btnGeriAksamYemegi.Location = new System.Drawing.Point(35, 526);
-            this.btnGeriAksamYemegi.Margin = new System.Windows.Forms.Padding(2);
+            this.btnGeriAksamYemegi.Location = new System.Drawing.Point(47, 647);
+            this.btnGeriAksamYemegi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGeriAksamYemegi.Name = "btnGeriAksamYemegi";
-            this.btnGeriAksamYemegi.Size = new System.Drawing.Size(40, 40);
+            this.btnGeriAksamYemegi.Size = new System.Drawing.Size(53, 49);
             this.btnGeriAksamYemegi.TabIndex = 43;
             this.btnGeriAksamYemegi.TextColor = System.Drawing.Color.Black;
             this.btnGeriAksamYemegi.UseVisualStyleBackColor = false;
-            // 
-            // btnAnasayfaAksamYemegi
-            // 
-            this.btnAnasayfaAksamYemegi.BackColor = System.Drawing.Color.Transparent;
-            this.btnAnasayfaAksamYemegi.BackgroundColor = System.Drawing.Color.Transparent;
-            this.btnAnasayfaAksamYemegi.BackgroundImage = global::DIYET_PROJE.Properties.Resources._171532;
-            this.btnAnasayfaAksamYemegi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAnasayfaAksamYemegi.BorderColor = System.Drawing.Color.LightCoral;
-            this.btnAnasayfaAksamYemegi.BorderRadius = 0;
-            this.btnAnasayfaAksamYemegi.BorderSize = 0;
-            this.btnAnasayfaAksamYemegi.FlatAppearance.BorderSize = 0;
-            this.btnAnasayfaAksamYemegi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAnasayfaAksamYemegi.ForeColor = System.Drawing.Color.Black;
-            this.btnAnasayfaAksamYemegi.Location = new System.Drawing.Point(88, 526);
-            this.btnAnasayfaAksamYemegi.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAnasayfaAksamYemegi.Name = "btnAnasayfaAksamYemegi";
-            this.btnAnasayfaAksamYemegi.Size = new System.Drawing.Size(35, 35);
-            this.btnAnasayfaAksamYemegi.TabIndex = 42;
-            this.btnAnasayfaAksamYemegi.TextColor = System.Drawing.Color.Black;
-            this.btnAnasayfaAksamYemegi.UseVisualStyleBackColor = false;
+            this.btnGeriAksamYemegi.Click += new System.EventHandler(this.btnGeriAksamYemegi_Click);
             // 
             // dgvAksamKullanicininListesi
             // 
             this.dgvAksamKullanicininListesi.BackgroundColor = System.Drawing.Color.White;
             this.dgvAksamKullanicininListesi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAksamKullanicininListesi.Location = new System.Drawing.Point(517, 226);
+            this.dgvAksamKullanicininListesi.Location = new System.Drawing.Point(689, 278);
+            this.dgvAksamKullanicininListesi.Margin = new System.Windows.Forms.Padding(4);
             this.dgvAksamKullanicininListesi.Name = "dgvAksamKullanicininListesi";
-            this.dgvAksamKullanicininListesi.Size = new System.Drawing.Size(496, 200);
+            this.dgvAksamKullanicininListesi.RowHeadersWidth = 51;
+            this.dgvAksamKullanicininListesi.Size = new System.Drawing.Size(661, 246);
             this.dgvAksamKullanicininListesi.TabIndex = 47;
+            this.dgvAksamKullanicininListesi.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAksamKullanicininListesi_CellContentClick);
             // 
             // dgvAksamListe
             // 
             this.dgvAksamListe.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvAksamListe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAksamListe.Location = new System.Drawing.Point(15, 226);
+            this.dgvAksamListe.Location = new System.Drawing.Point(20, 278);
+            this.dgvAksamListe.Margin = new System.Windows.Forms.Padding(4);
             this.dgvAksamListe.Name = "dgvAksamListe";
             this.dgvAksamListe.RowHeadersWidth = 51;
-            this.dgvAksamListe.Size = new System.Drawing.Size(496, 200);
+            this.dgvAksamListe.Size = new System.Drawing.Size(661, 246);
             this.dgvAksamListe.TabIndex = 46;
+            this.dgvAksamListe.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAksamListe_CellContentClick);
             // 
             // btnAksamAra
             // 
             this.btnAksamAra.BackColor = System.Drawing.Color.Transparent;
             this.btnAksamAra.BackgroundImage = global::DIYET_PROJE.Properties.Resources.search_FILL0_wght400_GRAD0_opsz48__1_;
             this.btnAksamAra.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAksamAra.Location = new System.Drawing.Point(474, 184);
+            this.btnAksamAra.Location = new System.Drawing.Point(632, 226);
+            this.btnAksamAra.Margin = new System.Windows.Forms.Padding(4);
             this.btnAksamAra.Name = "btnAksamAra";
-            this.btnAksamAra.Size = new System.Drawing.Size(37, 38);
+            this.btnAksamAra.Size = new System.Drawing.Size(49, 47);
             this.btnAksamAra.TabIndex = 48;
             this.btnAksamAra.UseVisualStyleBackColor = false;
+            this.btnAksamAra.Click += new System.EventHandler(this.btnAksamAra_Click);
             // 
             // txtAksamMiktar
             // 
-            this.txtAksamMiktar.Location = new System.Drawing.Point(204, 449);
+            this.txtAksamMiktar.Location = new System.Drawing.Point(109, 555);
+            this.txtAksamMiktar.Margin = new System.Windows.Forms.Padding(4);
             this.txtAksamMiktar.Name = "txtAksamMiktar";
-            this.txtAksamMiktar.Size = new System.Drawing.Size(157, 20);
+            this.txtAksamMiktar.Size = new System.Drawing.Size(208, 22);
             this.txtAksamMiktar.TabIndex = 50;
             // 
             // label5
@@ -231,19 +222,30 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(134, 449);
+            this.label5.Location = new System.Drawing.Point(16, 555);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 20);
+            this.label5.Size = new System.Drawing.Size(81, 25);
             this.label5.TabIndex = 49;
             this.label5.Text = "Miktar : ";
             // 
+            // lblOlcu
+            // 
+            this.lblOlcu.AutoSize = true;
+            this.lblOlcu.Location = new System.Drawing.Point(324, 558);
+            this.lblOlcu.Name = "lblOlcu";
+            this.lblOlcu.Size = new System.Drawing.Size(40, 17);
+            this.lblOlcu.TabIndex = 51;
+            this.lblOlcu.Text = "gram";
+            // 
             // Form12
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::DIYET_PROJE.Properties.Resources.WhatsApp_Image_2022_09_07_at_22_471;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1024, 621);
+            this.ClientSize = new System.Drawing.Size(1365, 764);
+            this.Controls.Add(this.lblOlcu);
             this.Controls.Add(this.txtAksamMiktar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnAksamAra);
@@ -252,12 +254,12 @@
             this.Controls.Add(this.btnSilmeAksamYemegi);
             this.Controls.Add(this.btnEklemeAksamYemegi);
             this.Controls.Add(this.btnGeriAksamYemegi);
-            this.Controls.Add(this.btnAnasayfaAksamYemegi);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtArananUrunAksamYemegi);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form12";
             this.Text = "Form12";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -278,11 +280,11 @@
         private RJButton btnSilmeAksamYemegi;
         private RJButton btnEklemeAksamYemegi;
         private RJButton btnGeriAksamYemegi;
-        private RJButton btnAnasayfaAksamYemegi;
         private System.Windows.Forms.DataGridView dgvAksamKullanicininListesi;
         private System.Windows.Forms.DataGridView dgvAksamListe;
         private System.Windows.Forms.Button btnAksamAra;
         private System.Windows.Forms.TextBox txtAksamMiktar;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblOlcu;
     }
 }

@@ -16,7 +16,29 @@ namespace DIYET_PROJE
         {
             InitializeComponent();
         }
+        Form16 frm16;
+        private void btnAnasayfaSuTakibi_Click(object sender, EventArgs e)
+        {
+            frm16 = new Form16();
+            frm16.Show();
+            this.Hide();
+        }
 
-       
+        Form3 frm3;
+        private void btnAnasayfaVucutAnalizi_Click(object sender, EventArgs e)
+        {
+
+            frm3 = new Form3();
+            frm3.Show();
+            this.Hide();
+        }
+
+        private void btnAnasayfaKaloriTakibi_Click(object sender, EventArgs e)
+        {
+            Form9 frm9 = new Form9();
+            frm9.Show();
+            this.Hide();
+
+        }
     }
 }

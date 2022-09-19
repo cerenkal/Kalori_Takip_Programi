@@ -11,19 +11,14 @@ namespace Entities.Concrete
     public class KullniciHedefBilgileri : IKullaniciHedefBilgileri, IBaseEntity
 
     {
-        private float hedefKatSayi;
+       
 
         public int ID { get; set; }
         public Hedef Hedef { get; set; }
-        public float HedefKatSayi
-        {
-            get => hedefKatSayi;
-            set
-            {
-                hedefKatSayi = KatSayiDon(Hedef);
 
-            }
-        }
+        public float HedefKatSayi { get; set; }
+
+
         public List<Kullanici> Kullanicilar { get; set; }
 
         public DateTime CreatedDate { get; set; } = DateTime.Now;
@@ -33,7 +28,7 @@ namespace Entities.Concrete
         public string DeletedBy { get; set; }
         public string ModifiedBy { get; set; }
         public Status Status { get; set; } = Status.Active;
-
+     
 
         public float KatSayiDon(Hedef hedef)
         {

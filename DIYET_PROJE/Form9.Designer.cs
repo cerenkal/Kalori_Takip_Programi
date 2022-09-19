@@ -46,10 +46,6 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -82,6 +78,11 @@
             this.lblKarbonhidratAperatif = new System.Windows.Forms.Label();
             this.lblProteinAperatif = new System.Windows.Forms.Label();
             this.lblYagAperatif = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.lblEgzersizKalori = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblYakilanKalori
@@ -89,9 +90,10 @@
             this.lblYakilanKalori.BackColor = System.Drawing.Color.Transparent;
             this.lblYakilanKalori.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblYakilanKalori.ForeColor = System.Drawing.Color.Black;
-            this.lblYakilanKalori.Location = new System.Drawing.Point(397, 404);
+            this.lblYakilanKalori.Location = new System.Drawing.Point(555, 508);
+            this.lblYakilanKalori.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblYakilanKalori.Name = "lblYakilanKalori";
-            this.lblYakilanKalori.Size = new System.Drawing.Size(16, 23);
+            this.lblYakilanKalori.Size = new System.Drawing.Size(21, 28);
             this.lblYakilanKalori.TabIndex = 30;
             this.lblYakilanKalori.Text = "0";
             // 
@@ -100,9 +102,10 @@
             this.lblAlinanKalori.BackColor = System.Drawing.Color.Transparent;
             this.lblAlinanKalori.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblAlinanKalori.ForeColor = System.Drawing.Color.Black;
-            this.lblAlinanKalori.Location = new System.Drawing.Point(396, 379);
+            this.lblAlinanKalori.Location = new System.Drawing.Point(554, 477);
+            this.lblAlinanKalori.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAlinanKalori.Name = "lblAlinanKalori";
-            this.lblAlinanKalori.Size = new System.Drawing.Size(16, 23);
+            this.lblAlinanKalori.Size = new System.Drawing.Size(21, 28);
             this.lblAlinanKalori.TabIndex = 29;
             this.lblAlinanKalori.Text = "0";
             // 
@@ -112,9 +115,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(317, 404);
+            this.label2.Location = new System.Drawing.Point(449, 508);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 17);
+            this.label2.Size = new System.Drawing.Size(107, 21);
             this.label2.TabIndex = 28;
             this.label2.Text = "Yakılan kalori:";
             // 
@@ -124,9 +128,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(317, 379);
+            this.label1.Location = new System.Drawing.Point(449, 477);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 17);
+            this.label1.Size = new System.Drawing.Size(102, 21);
             this.label1.TabIndex = 27;
             this.label1.Text = "Alınan kalori:";
             // 
@@ -137,11 +142,12 @@
             this.prbGunlukKaloriHedef.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.prbGunlukKaloriHedef.ForeBackColor = System.Drawing.Color.Transparent;
             this.prbGunlukKaloriHedef.ForeColor = System.Drawing.Color.Black;
-            this.prbGunlukKaloriHedef.Location = new System.Drawing.Point(455, 398);
+            this.prbGunlukKaloriHedef.Location = new System.Drawing.Point(633, 501);
+            this.prbGunlukKaloriHedef.Margin = new System.Windows.Forms.Padding(4);
             this.prbGunlukKaloriHedef.Name = "prbGunlukKaloriHedef";
             this.prbGunlukKaloriHedef.ShowMaximun = false;
             this.prbGunlukKaloriHedef.ShowValue = DIYET_PROJE.CustomControls.RJControls.TextPosition.Right;
-            this.prbGunlukKaloriHedef.Size = new System.Drawing.Size(124, 23);
+            this.prbGunlukKaloriHedef.Size = new System.Drawing.Size(165, 28);
             this.prbGunlukKaloriHedef.SliderColor = System.Drawing.Color.SteelBlue;
             this.prbGunlukKaloriHedef.SliderHeight = 10;
             this.prbGunlukKaloriHedef.SymbolAfter = "";
@@ -154,9 +160,10 @@
             this.label5.BackColor = System.Drawing.Color.PeachPuff;
             this.label5.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(182, 90);
+            this.label5.Location = new System.Drawing.Point(221, 112);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 18);
+            this.label5.Size = new System.Drawing.Size(87, 23);
             this.label5.TabIndex = 32;
             this.label5.Text = "KAHVALTI";
             // 
@@ -166,9 +173,10 @@
             this.label6.BackColor = System.Drawing.Color.PeachPuff;
             this.label6.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(422, 91);
+            this.label6.Location = new System.Drawing.Point(641, 112);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(51, 18);
+            this.label6.Size = new System.Drawing.Size(65, 23);
             this.label6.TabIndex = 33;
             this.label6.Text = "ÖĞLEN";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -179,9 +187,10 @@
             this.label7.BackColor = System.Drawing.Color.PeachPuff;
             this.label7.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(180, 232);
+            this.label7.Location = new System.Drawing.Point(219, 267);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(54, 18);
+            this.label7.Size = new System.Drawing.Size(70, 23);
             this.label7.TabIndex = 34;
             this.label7.Text = "AKŞAM";
             // 
@@ -191,9 +200,10 @@
             this.label8.BackColor = System.Drawing.Color.PeachPuff;
             this.label8.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(185, 376);
+            this.label8.Location = new System.Drawing.Point(196, 461);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 18);
+            this.label8.Size = new System.Drawing.Size(83, 23);
             this.label8.TabIndex = 35;
             this.label8.Text = "EGZERSİZ";
             // 
@@ -203,9 +213,10 @@
             this.label9.BackColor = System.Drawing.Color.PeachPuff;
             this.label9.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(430, 234);
+            this.label9.Location = new System.Drawing.Point(629, 299);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(66, 18);
+            this.label9.Size = new System.Drawing.Size(86, 23);
             this.label9.TabIndex = 36;
             this.label9.Text = "APERATİF";
             // 
@@ -215,9 +226,10 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(10, 15);
+            this.label10.Location = new System.Drawing.Point(13, 18);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(144, 33);
+            this.label10.Size = new System.Drawing.Size(175, 40);
             this.label10.TabIndex = 37;
             this.label10.Text = "ÖĞÜN EKLE";
             // 
@@ -226,10 +238,9 @@
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label14.Location = new System.Drawing.Point(189, 165);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Location = new System.Drawing.Point(221, 210);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(32, 17);
+            this.label14.Size = new System.Drawing.Size(38, 21);
             this.label14.TabIndex = 46;
             this.label14.Text = "Yağ:";
             // 
@@ -238,10 +249,9 @@
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label13.Location = new System.Drawing.Point(189, 148);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Location = new System.Drawing.Point(193, 186);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(53, 17);
+            this.label13.Size = new System.Drawing.Size(66, 21);
             this.label13.TabIndex = 45;
             this.label13.Text = "Protein:";
             // 
@@ -250,10 +260,9 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label12.Location = new System.Drawing.Point(189, 131);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Location = new System.Drawing.Point(154, 162);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(86, 17);
+            this.label12.Size = new System.Drawing.Size(107, 21);
             this.label12.TabIndex = 44;
             this.label12.Text = "Karbonhidrat:";
             // 
@@ -262,10 +271,9 @@
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label15.Location = new System.Drawing.Point(432, 166);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Location = new System.Drawing.Point(641, 210);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(32, 17);
+            this.label15.Size = new System.Drawing.Size(38, 21);
             this.label15.TabIndex = 50;
             this.label15.Text = "Yağ:";
             // 
@@ -274,10 +282,9 @@
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label16.Location = new System.Drawing.Point(432, 148);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label16.Location = new System.Drawing.Point(613, 188);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(53, 17);
+            this.label16.Size = new System.Drawing.Size(66, 21);
             this.label16.TabIndex = 49;
             this.label16.Text = "Protein:";
             // 
@@ -286,10 +293,9 @@
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label17.Location = new System.Drawing.Point(432, 131);
-            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Location = new System.Drawing.Point(572, 167);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(86, 17);
+            this.label17.Size = new System.Drawing.Size(107, 21);
             this.label17.TabIndex = 48;
             this.label17.Text = "Karbonhidrat:";
             // 
@@ -298,70 +304,20 @@
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label18.Location = new System.Drawing.Point(432, 114);
-            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label18.Location = new System.Drawing.Point(624, 146);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(44, 17);
+            this.label18.Size = new System.Drawing.Size(55, 21);
             this.label18.TabIndex = 47;
             this.label18.Text = "Kalori:";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label19.Location = new System.Drawing.Point(190, 307);
-            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(32, 17);
-            this.label19.TabIndex = 54;
-            this.label19.Text = "Yağ:";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label20.Location = new System.Drawing.Point(189, 290);
-            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(53, 17);
-            this.label20.TabIndex = 53;
-            this.label20.Text = "Protein:";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label21.Location = new System.Drawing.Point(189, 273);
-            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(86, 17);
-            this.label21.TabIndex = 52;
-            this.label21.Text = "Karbonhidrat:";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.Color.Transparent;
-            this.label22.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label22.Location = new System.Drawing.Point(189, 256);
-            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(44, 17);
-            this.label22.TabIndex = 51;
-            this.label22.Text = "Kalori:";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
             this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label23.Location = new System.Drawing.Point(440, 307);
-            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label23.Location = new System.Drawing.Point(641, 391);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(32, 17);
+            this.label23.Size = new System.Drawing.Size(38, 21);
             this.label23.TabIndex = 58;
             this.label23.Text = "Yağ:";
             // 
@@ -370,10 +326,9 @@
             this.label24.AutoSize = true;
             this.label24.BackColor = System.Drawing.Color.Transparent;
             this.label24.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label24.Location = new System.Drawing.Point(440, 290);
-            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label24.Location = new System.Drawing.Point(613, 370);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(53, 17);
+            this.label24.Size = new System.Drawing.Size(66, 21);
             this.label24.TabIndex = 57;
             this.label24.Text = "Protein:";
             // 
@@ -382,10 +337,9 @@
             this.label25.AutoSize = true;
             this.label25.BackColor = System.Drawing.Color.Transparent;
             this.label25.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label25.Location = new System.Drawing.Point(440, 273);
-            this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label25.Location = new System.Drawing.Point(572, 349);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(86, 17);
+            this.label25.Size = new System.Drawing.Size(107, 21);
             this.label25.TabIndex = 56;
             this.label25.Text = "Karbonhidrat:";
             // 
@@ -394,10 +348,9 @@
             this.label26.AutoSize = true;
             this.label26.BackColor = System.Drawing.Color.Transparent;
             this.label26.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label26.Location = new System.Drawing.Point(440, 256);
-            this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label26.Location = new System.Drawing.Point(624, 328);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(44, 17);
+            this.label26.Size = new System.Drawing.Size(55, 21);
             this.label26.TabIndex = 55;
             this.label26.Text = "Kalori:";
             // 
@@ -406,10 +359,9 @@
             this.lblKaloriEgzersiz.AutoSize = true;
             this.lblKaloriEgzersiz.BackColor = System.Drawing.Color.Transparent;
             this.lblKaloriEgzersiz.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblKaloriEgzersiz.Location = new System.Drawing.Point(191, 404);
-            this.lblKaloriEgzersiz.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblKaloriEgzersiz.Location = new System.Drawing.Point(193, 495);
             this.lblKaloriEgzersiz.Name = "lblKaloriEgzersiz";
-            this.lblKaloriEgzersiz.Size = new System.Drawing.Size(44, 17);
+            this.lblKaloriEgzersiz.Size = new System.Drawing.Size(55, 21);
             this.lblKaloriEgzersiz.TabIndex = 51;
             this.lblKaloriEgzersiz.Text = "Kalori:";
             // 
@@ -419,9 +371,10 @@
             this.label28.BackColor = System.Drawing.Color.Transparent;
             this.label28.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label28.ForeColor = System.Drawing.Color.Black;
-            this.label28.Location = new System.Drawing.Point(454, 378);
+            this.label28.Location = new System.Drawing.Point(631, 476);
+            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(126, 17);
+            this.label28.Size = new System.Drawing.Size(159, 21);
             this.label28.TabIndex = 59;
             this.label28.Text = "Günlük kalori hedefin";
             // 
@@ -431,10 +384,10 @@
             this.label29.BackColor = System.Drawing.Color.Transparent;
             this.label29.Font = new System.Drawing.Font("Calibri", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label29.ForeColor = System.Drawing.Color.Black;
-            this.label29.Location = new System.Drawing.Point(96, 141);
+            this.label29.Location = new System.Drawing.Point(134, 174);
             this.label29.Margin = new System.Windows.Forms.Padding(0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(0, 46);
+            this.label29.Size = new System.Drawing.Size(0, 59);
             this.label29.TabIndex = 60;
             // 
             // btnEgzersizEkle
@@ -450,9 +403,10 @@
             this.btnEgzersizEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEgzersizEkle.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnEgzersizEkle.ForeColor = System.Drawing.Color.Black;
-            this.btnEgzersizEkle.Location = new System.Drawing.Point(80, 348);
+            this.btnEgzersizEkle.Location = new System.Drawing.Point(30, 407);
+            this.btnEgzersizEkle.Margin = new System.Windows.Forms.Padding(4);
             this.btnEgzersizEkle.Name = "btnEgzersizEkle";
-            this.btnEgzersizEkle.Size = new System.Drawing.Size(98, 106);
+            this.btnEgzersizEkle.Size = new System.Drawing.Size(131, 130);
             this.btnEgzersizEkle.TabIndex = 4;
             this.btnEgzersizEkle.TextColor = System.Drawing.Color.Black;
             this.btnEgzersizEkle.UseVisualStyleBackColor = false;
@@ -470,9 +424,10 @@
             this.btnAperatifEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAperatifEkle.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnAperatifEkle.ForeColor = System.Drawing.Color.Black;
-            this.btnAperatifEkle.Location = new System.Drawing.Point(320, 219);
+            this.btnAperatifEkle.Location = new System.Drawing.Point(453, 281);
+            this.btnAperatifEkle.Margin = new System.Windows.Forms.Padding(4);
             this.btnAperatifEkle.Name = "btnAperatifEkle";
-            this.btnAperatifEkle.Size = new System.Drawing.Size(98, 106);
+            this.btnAperatifEkle.Size = new System.Drawing.Size(131, 130);
             this.btnAperatifEkle.TabIndex = 3;
             this.btnAperatifEkle.TextColor = System.Drawing.Color.Black;
             this.btnAperatifEkle.UseVisualStyleBackColor = false;
@@ -490,12 +445,14 @@
             this.btnAksamEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAksamEkle.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnAksamEkle.ForeColor = System.Drawing.Color.Black;
-            this.btnAksamEkle.Location = new System.Drawing.Point(80, 219);
+            this.btnAksamEkle.Location = new System.Drawing.Point(30, 249);
+            this.btnAksamEkle.Margin = new System.Windows.Forms.Padding(4);
             this.btnAksamEkle.Name = "btnAksamEkle";
-            this.btnAksamEkle.Size = new System.Drawing.Size(98, 106);
+            this.btnAksamEkle.Size = new System.Drawing.Size(131, 130);
             this.btnAksamEkle.TabIndex = 2;
             this.btnAksamEkle.TextColor = System.Drawing.Color.Black;
             this.btnAksamEkle.UseVisualStyleBackColor = false;
+            this.btnAksamEkle.Click += new System.EventHandler(this.btnAksamEkle_Click);
             // 
             // btnOglenEkle
             // 
@@ -510,9 +467,10 @@
             this.btnOglenEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOglenEkle.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnOglenEkle.ForeColor = System.Drawing.Color.Black;
-            this.btnOglenEkle.Location = new System.Drawing.Point(320, 82);
+            this.btnOglenEkle.Location = new System.Drawing.Point(453, 112);
+            this.btnOglenEkle.Margin = new System.Windows.Forms.Padding(4);
             this.btnOglenEkle.Name = "btnOglenEkle";
-            this.btnOglenEkle.Size = new System.Drawing.Size(98, 106);
+            this.btnOglenEkle.Size = new System.Drawing.Size(131, 130);
             this.btnOglenEkle.TabIndex = 1;
             this.btnOglenEkle.TextColor = System.Drawing.Color.Black;
             this.btnOglenEkle.UseVisualStyleBackColor = false;
@@ -530,9 +488,10 @@
             this.btnKahvaltiEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKahvaltiEkle.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnKahvaltiEkle.ForeColor = System.Drawing.Color.Black;
-            this.btnKahvaltiEkle.Location = new System.Drawing.Point(73, 82);
+            this.btnKahvaltiEkle.Location = new System.Drawing.Point(26, 104);
+            this.btnKahvaltiEkle.Margin = new System.Windows.Forms.Padding(4);
             this.btnKahvaltiEkle.Name = "btnKahvaltiEkle";
-            this.btnKahvaltiEkle.Size = new System.Drawing.Size(101, 110);
+            this.btnKahvaltiEkle.Size = new System.Drawing.Size(135, 135);
             this.btnKahvaltiEkle.TabIndex = 0;
             this.btnKahvaltiEkle.TextColor = System.Drawing.Color.Black;
             this.btnKahvaltiEkle.UseVisualStyleBackColor = false;
@@ -543,10 +502,9 @@
             this.label30.BackColor = System.Drawing.Color.Transparent;
             this.label30.Font = new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label30.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label30.Location = new System.Drawing.Point(12, 48);
-            this.label30.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label30.Location = new System.Drawing.Point(16, 59);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(269, 18);
+            this.label30.Size = new System.Drawing.Size(346, 23);
             this.label30.TabIndex = 61;
             this.label30.Text = "Gün içindeki öğünlerini ve egzersizlerini ekle";
             this.label30.Click += new System.EventHandler(this.label30_Click);
@@ -563,10 +521,10 @@
             this.btnGeriOgunEkle.FlatAppearance.BorderSize = 0;
             this.btnGeriOgunEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGeriOgunEkle.ForeColor = System.Drawing.Color.Black;
-            this.btnGeriOgunEkle.Location = new System.Drawing.Point(30, 446);
-            this.btnGeriOgunEkle.Margin = new System.Windows.Forms.Padding(2);
+            this.btnGeriOgunEkle.Location = new System.Drawing.Point(46, 549);
+            this.btnGeriOgunEkle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGeriOgunEkle.Name = "btnGeriOgunEkle";
-            this.btnGeriOgunEkle.Size = new System.Drawing.Size(38, 41);
+            this.btnGeriOgunEkle.Size = new System.Drawing.Size(51, 50);
             this.btnGeriOgunEkle.TabIndex = 62;
             this.btnGeriOgunEkle.TextColor = System.Drawing.Color.Black;
             this.btnGeriOgunEkle.UseVisualStyleBackColor = false;
@@ -575,18 +533,20 @@
             // 
             this.lblKalori.AutoSize = true;
             this.lblKalori.BackColor = System.Drawing.Color.Transparent;
-            this.lblKalori.Location = new System.Drawing.Point(240, 114);
+            this.lblKalori.Location = new System.Drawing.Point(279, 140);
+            this.lblKalori.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblKalori.Name = "lblKalori";
-            this.lblKalori.Size = new System.Drawing.Size(0, 13);
+            this.lblKalori.Size = new System.Drawing.Size(0, 17);
             this.lblKalori.TabIndex = 63;
             // 
             // lblKarbonhidratKahvalti
             // 
             this.lblKarbonhidratKahvalti.AutoSize = true;
             this.lblKarbonhidratKahvalti.BackColor = System.Drawing.Color.Transparent;
-            this.lblKarbonhidratKahvalti.Location = new System.Drawing.Point(279, 133);
+            this.lblKarbonhidratKahvalti.Location = new System.Drawing.Point(267, 164);
+            this.lblKarbonhidratKahvalti.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblKarbonhidratKahvalti.Name = "lblKarbonhidratKahvalti";
-            this.lblKarbonhidratKahvalti.Size = new System.Drawing.Size(35, 13);
+            this.lblKarbonhidratKahvalti.Size = new System.Drawing.Size(46, 17);
             this.lblKarbonhidratKahvalti.TabIndex = 64;
             this.lblKarbonhidratKahvalti.Text = "label4";
             // 
@@ -594,9 +554,10 @@
             // 
             this.lblProteinKahvalti.AutoSize = true;
             this.lblProteinKahvalti.BackColor = System.Drawing.Color.Transparent;
-            this.lblProteinKahvalti.Location = new System.Drawing.Point(240, 150);
+            this.lblProteinKahvalti.Location = new System.Drawing.Point(266, 189);
+            this.lblProteinKahvalti.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblProteinKahvalti.Name = "lblProteinKahvalti";
-            this.lblProteinKahvalti.Size = new System.Drawing.Size(41, 13);
+            this.lblProteinKahvalti.Size = new System.Drawing.Size(54, 17);
             this.lblProteinKahvalti.TabIndex = 65;
             this.lblProteinKahvalti.Text = "label31";
             // 
@@ -604,9 +565,10 @@
             // 
             this.lblYagKahvalti.AutoSize = true;
             this.lblYagKahvalti.BackColor = System.Drawing.Color.Transparent;
-            this.lblYagKahvalti.Location = new System.Drawing.Point(226, 167);
+            this.lblYagKahvalti.Location = new System.Drawing.Point(264, 214);
+            this.lblYagKahvalti.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblYagKahvalti.Name = "lblYagKahvalti";
-            this.lblYagKahvalti.Size = new System.Drawing.Size(41, 13);
+            this.lblYagKahvalti.Size = new System.Drawing.Size(54, 17);
             this.lblYagKahvalti.TabIndex = 66;
             this.lblYagKahvalti.Text = "label32";
             // 
@@ -614,9 +576,10 @@
             // 
             this.lblKaloriOglen.AutoSize = true;
             this.lblKaloriOglen.BackColor = System.Drawing.Color.Transparent;
-            this.lblKaloriOglen.Location = new System.Drawing.Point(477, 114);
+            this.lblKaloriOglen.Location = new System.Drawing.Point(680, 145);
+            this.lblKaloriOglen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblKaloriOglen.Name = "lblKaloriOglen";
-            this.lblKaloriOglen.Size = new System.Drawing.Size(41, 13);
+            this.lblKaloriOglen.Size = new System.Drawing.Size(54, 17);
             this.lblKaloriOglen.TabIndex = 67;
             this.lblKaloriOglen.Text = "label32";
             // 
@@ -624,9 +587,10 @@
             // 
             this.lblKarbonhidratOglen.AutoSize = true;
             this.lblKarbonhidratOglen.BackColor = System.Drawing.Color.Transparent;
-            this.lblKarbonhidratOglen.Location = new System.Drawing.Point(523, 133);
+            this.lblKarbonhidratOglen.Location = new System.Drawing.Point(680, 171);
+            this.lblKarbonhidratOglen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblKarbonhidratOglen.Name = "lblKarbonhidratOglen";
-            this.lblKarbonhidratOglen.Size = new System.Drawing.Size(41, 13);
+            this.lblKarbonhidratOglen.Size = new System.Drawing.Size(54, 17);
             this.lblKarbonhidratOglen.TabIndex = 68;
             this.lblKarbonhidratOglen.Text = "label32";
             // 
@@ -634,9 +598,10 @@
             // 
             this.lblProteinOglen.AutoSize = true;
             this.lblProteinOglen.BackColor = System.Drawing.Color.Transparent;
-            this.lblProteinOglen.Location = new System.Drawing.Point(485, 150);
+            this.lblProteinOglen.Location = new System.Drawing.Point(680, 195);
+            this.lblProteinOglen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblProteinOglen.Name = "lblProteinOglen";
-            this.lblProteinOglen.Size = new System.Drawing.Size(41, 13);
+            this.lblProteinOglen.Size = new System.Drawing.Size(54, 17);
             this.lblProteinOglen.TabIndex = 69;
             this.lblProteinOglen.Text = "label32";
             // 
@@ -644,9 +609,10 @@
             // 
             this.lblYagOglen.AutoSize = true;
             this.lblYagOglen.BackColor = System.Drawing.Color.Transparent;
-            this.lblYagOglen.Location = new System.Drawing.Point(469, 166);
+            this.lblYagOglen.Location = new System.Drawing.Point(680, 218);
+            this.lblYagOglen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblYagOglen.Name = "lblYagOglen";
-            this.lblYagOglen.Size = new System.Drawing.Size(41, 13);
+            this.lblYagOglen.Size = new System.Drawing.Size(54, 17);
             this.lblYagOglen.TabIndex = 70;
             this.lblYagOglen.Text = "label32";
             // 
@@ -654,9 +620,10 @@
             // 
             this.lblKaloriKahvalti.AutoSize = true;
             this.lblKaloriKahvalti.BackColor = System.Drawing.Color.Transparent;
-            this.lblKaloriKahvalti.Location = new System.Drawing.Point(246, 112);
+            this.lblKaloriKahvalti.Location = new System.Drawing.Point(268, 144);
+            this.lblKaloriKahvalti.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblKaloriKahvalti.Name = "lblKaloriKahvalti";
-            this.lblKaloriKahvalti.Size = new System.Drawing.Size(41, 13);
+            this.lblKaloriKahvalti.Size = new System.Drawing.Size(54, 17);
             this.lblKaloriKahvalti.TabIndex = 72;
             this.lblKaloriKahvalti.Text = "label32";
             // 
@@ -665,10 +632,9 @@
             this.label33.AutoSize = true;
             this.label33.BackColor = System.Drawing.Color.Transparent;
             this.label33.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label33.Location = new System.Drawing.Point(191, 110);
-            this.label33.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label33.Location = new System.Drawing.Point(206, 140);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(44, 17);
+            this.label33.Size = new System.Drawing.Size(55, 21);
             this.label33.TabIndex = 71;
             this.label33.Text = "Kalori:";
             // 
@@ -676,9 +642,10 @@
             // 
             this.lblKaloriAksam.AutoSize = true;
             this.lblKaloriAksam.BackColor = System.Drawing.Color.Transparent;
-            this.lblKaloriAksam.Location = new System.Drawing.Point(246, 258);
+            this.lblKaloriAksam.Location = new System.Drawing.Point(262, 295);
+            this.lblKaloriAksam.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblKaloriAksam.Name = "lblKaloriAksam";
-            this.lblKaloriAksam.Size = new System.Drawing.Size(41, 13);
+            this.lblKaloriAksam.Size = new System.Drawing.Size(54, 17);
             this.lblKaloriAksam.TabIndex = 73;
             this.lblKaloriAksam.Text = "label32";
             // 
@@ -686,9 +653,10 @@
             // 
             this.lblKarbonhidratAksam.AutoSize = true;
             this.lblKarbonhidratAksam.BackColor = System.Drawing.Color.Transparent;
-            this.lblKarbonhidratAksam.Location = new System.Drawing.Point(280, 275);
+            this.lblKarbonhidratAksam.Location = new System.Drawing.Point(262, 316);
+            this.lblKarbonhidratAksam.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblKarbonhidratAksam.Name = "lblKarbonhidratAksam";
-            this.lblKarbonhidratAksam.Size = new System.Drawing.Size(41, 13);
+            this.lblKarbonhidratAksam.Size = new System.Drawing.Size(54, 17);
             this.lblKarbonhidratAksam.TabIndex = 74;
             this.lblKarbonhidratAksam.Text = "label32";
             // 
@@ -696,9 +664,10 @@
             // 
             this.lblProteinAksam.AutoSize = true;
             this.lblProteinAksam.BackColor = System.Drawing.Color.Transparent;
-            this.lblProteinAksam.Location = new System.Drawing.Point(247, 292);
+            this.lblProteinAksam.Location = new System.Drawing.Point(262, 337);
+            this.lblProteinAksam.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblProteinAksam.Name = "lblProteinAksam";
-            this.lblProteinAksam.Size = new System.Drawing.Size(41, 13);
+            this.lblProteinAksam.Size = new System.Drawing.Size(54, 17);
             this.lblProteinAksam.TabIndex = 75;
             this.lblProteinAksam.Text = "label32";
             // 
@@ -706,9 +675,10 @@
             // 
             this.lblYagAksam.AutoSize = true;
             this.lblYagAksam.BackColor = System.Drawing.Color.Transparent;
-            this.lblYagAksam.Location = new System.Drawing.Point(227, 309);
+            this.lblYagAksam.Location = new System.Drawing.Point(262, 359);
+            this.lblYagAksam.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblYagAksam.Name = "lblYagAksam";
-            this.lblYagAksam.Size = new System.Drawing.Size(41, 13);
+            this.lblYagAksam.Size = new System.Drawing.Size(54, 17);
             this.lblYagAksam.TabIndex = 76;
             this.lblYagAksam.Text = "label32";
             // 
@@ -716,9 +686,10 @@
             // 
             this.lblKaloriAperatif.AutoSize = true;
             this.lblKaloriAperatif.BackColor = System.Drawing.Color.Transparent;
-            this.lblKaloriAperatif.Location = new System.Drawing.Point(501, 256);
+            this.lblKaloriAperatif.Location = new System.Drawing.Point(680, 325);
+            this.lblKaloriAperatif.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblKaloriAperatif.Name = "lblKaloriAperatif";
-            this.lblKaloriAperatif.Size = new System.Drawing.Size(41, 13);
+            this.lblKaloriAperatif.Size = new System.Drawing.Size(54, 17);
             this.lblKaloriAperatif.TabIndex = 77;
             this.lblKaloriAperatif.Text = "label32";
             // 
@@ -726,9 +697,10 @@
             // 
             this.lblKarbonhidratAperatif.AutoSize = true;
             this.lblKarbonhidratAperatif.BackColor = System.Drawing.Color.Transparent;
-            this.lblKarbonhidratAperatif.Location = new System.Drawing.Point(531, 275);
+            this.lblKarbonhidratAperatif.Location = new System.Drawing.Point(680, 348);
+            this.lblKarbonhidratAperatif.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblKarbonhidratAperatif.Name = "lblKarbonhidratAperatif";
-            this.lblKarbonhidratAperatif.Size = new System.Drawing.Size(41, 13);
+            this.lblKarbonhidratAperatif.Size = new System.Drawing.Size(54, 17);
             this.lblKarbonhidratAperatif.TabIndex = 78;
             this.lblKarbonhidratAperatif.Text = "label32";
             // 
@@ -736,9 +708,10 @@
             // 
             this.lblProteinAperatif.AutoSize = true;
             this.lblProteinAperatif.BackColor = System.Drawing.Color.Transparent;
-            this.lblProteinAperatif.Location = new System.Drawing.Point(501, 294);
+            this.lblProteinAperatif.Location = new System.Drawing.Point(680, 370);
+            this.lblProteinAperatif.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblProteinAperatif.Name = "lblProteinAperatif";
-            this.lblProteinAperatif.Size = new System.Drawing.Size(41, 13);
+            this.lblProteinAperatif.Size = new System.Drawing.Size(54, 17);
             this.lblProteinAperatif.TabIndex = 79;
             this.lblProteinAperatif.Text = "label32";
             // 
@@ -746,19 +719,80 @@
             // 
             this.lblYagAperatif.AutoSize = true;
             this.lblYagAperatif.BackColor = System.Drawing.Color.Transparent;
-            this.lblYagAperatif.Location = new System.Drawing.Point(485, 309);
+            this.lblYagAperatif.Location = new System.Drawing.Point(680, 393);
+            this.lblYagAperatif.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblYagAperatif.Name = "lblYagAperatif";
-            this.lblYagAperatif.Size = new System.Drawing.Size(41, 13);
+            this.lblYagAperatif.Size = new System.Drawing.Size(54, 17);
             this.lblYagAperatif.TabIndex = 80;
             this.lblYagAperatif.Text = "label32";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(204, 290);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(55, 21);
+            this.label3.TabIndex = 84;
+            this.label3.Text = "Kalori:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(219, 358);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(38, 21);
+            this.label4.TabIndex = 83;
+            this.label4.Text = "Yağ:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label11.Location = new System.Drawing.Point(191, 336);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(66, 21);
+            this.label11.TabIndex = 82;
+            this.label11.Text = "Protein:";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.BackColor = System.Drawing.Color.Transparent;
+            this.label27.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label27.Location = new System.Drawing.Point(152, 312);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(107, 21);
+            this.label27.TabIndex = 81;
+            this.label27.Text = "Karbonhidrat:";
+            // 
+            // lblEgzersizKalori
+            // 
+            this.lblEgzersizKalori.AutoSize = true;
+            this.lblEgzersizKalori.BackColor = System.Drawing.Color.Transparent;
+            this.lblEgzersizKalori.Location = new System.Drawing.Point(254, 498);
+            this.lblEgzersizKalori.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEgzersizKalori.Name = "lblEgzersizKalori";
+            this.lblEgzersizKalori.Size = new System.Drawing.Size(54, 17);
+            this.lblEgzersizKalori.TabIndex = 85;
+            this.lblEgzersizKalori.Text = "label32";
+            // 
             // Form9
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::DIYET_PROJE.Properties.Resources.WhatsApp_Image_2022_09_07_at_22_47_37;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(646, 510);
+            this.ClientSize = new System.Drawing.Size(861, 628);
+            this.Controls.Add(this.lblEgzersizKalori);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label27);
             this.Controls.Add(this.lblYagAperatif);
             this.Controls.Add(this.lblProteinAperatif);
             this.Controls.Add(this.lblKarbonhidratAperatif);
@@ -785,11 +819,7 @@
             this.Controls.Add(this.label24);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.label26);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.label20);
-            this.Controls.Add(this.label21);
             this.Controls.Add(this.lblKaloriEgzersiz);
-            this.Controls.Add(this.label22);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label17);
@@ -813,8 +843,10 @@
             this.Controls.Add(this.btnAksamEkle);
             this.Controls.Add(this.btnOglenEkle);
             this.Controls.Add(this.btnKahvaltiEkle);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form9";
             this.Text = "Form9";
+            this.Load += new System.EventHandler(this.Form9_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -845,10 +877,6 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
@@ -876,5 +904,10 @@
         private System.Windows.Forms.Label lblKarbonhidratAperatif;
         private System.Windows.Forms.Label lblProteinAperatif;
         private System.Windows.Forms.Label lblYagAperatif;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label lblEgzersizKalori;
     }
 }

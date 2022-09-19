@@ -56,7 +56,7 @@
             // 
             this.txtSifreGirisYap.BackColor = System.Drawing.Color.White;
             this.txtSifreGirisYap.Location = new System.Drawing.Point(373, 231);
-            this.txtSifreGirisYap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSifreGirisYap.Margin = new System.Windows.Forms.Padding(4);
             this.txtSifreGirisYap.Name = "txtSifreGirisYap";
             this.txtSifreGirisYap.Size = new System.Drawing.Size(271, 22);
             this.txtSifreGirisYap.TabIndex = 13;
@@ -65,7 +65,7 @@
             // 
             this.txtEmailGirisYap.BackColor = System.Drawing.Color.White;
             this.txtEmailGirisYap.Location = new System.Drawing.Point(373, 196);
-            this.txtEmailGirisYap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmailGirisYap.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmailGirisYap.Name = "txtEmailGirisYap";
             this.txtEmailGirisYap.Size = new System.Drawing.Size(271, 22);
             this.txtEmailGirisYap.TabIndex = 12;
@@ -108,13 +108,14 @@
             this.btnGirisYapForm5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnGirisYapForm5.ForeColor = System.Drawing.Color.Black;
             this.btnGirisYapForm5.Location = new System.Drawing.Point(379, 289);
-            this.btnGirisYapForm5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGirisYapForm5.Margin = new System.Windows.Forms.Padding(4);
             this.btnGirisYapForm5.Name = "btnGirisYapForm5";
             this.btnGirisYapForm5.Size = new System.Drawing.Size(255, 50);
             this.btnGirisYapForm5.TabIndex = 14;
             this.btnGirisYapForm5.Text = "Giriş Yap";
             this.btnGirisYapForm5.TextColor = System.Drawing.Color.Black;
             this.btnGirisYapForm5.UseVisualStyleBackColor = false;
+            this.btnGirisYapForm5.Click += new System.EventHandler(this.btnGirisYapForm5_Click);
             // 
             // pictureBox1
             // 
@@ -148,6 +149,7 @@
             this.rjButton4.TabIndex = 42;
             this.rjButton4.TextColor = System.Drawing.Color.Black;
             this.rjButton4.UseVisualStyleBackColor = false;
+            this.rjButton4.Click += new System.EventHandler(this.rjButton4_Click);
             // 
             // Form5
             // 
@@ -164,9 +166,10 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form5";
             this.Text = "Form5";
+         
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

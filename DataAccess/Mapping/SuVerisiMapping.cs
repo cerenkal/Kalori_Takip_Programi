@@ -27,7 +27,7 @@ namespace DataAccess.Mapping
             this.Property(x => x.Status).HasColumnName("Statu");
 
             this.HasMany(s => s.Kullanicilar)
-               .WithRequired(k => k.SuVerisi)
+               .WithOptional(k => k.SuVerisi)
                .HasForeignKey(k => k.SuVerisiID);
         }
     }

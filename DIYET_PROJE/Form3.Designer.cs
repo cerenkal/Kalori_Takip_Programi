@@ -137,7 +137,7 @@
             // 
             this.txtBoy.BackColor = System.Drawing.Color.White;
             this.txtBoy.Location = new System.Drawing.Point(239, 170);
-            this.txtBoy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBoy.Margin = new System.Windows.Forms.Padding(4);
             this.txtBoy.Name = "txtBoy";
             this.txtBoy.Size = new System.Drawing.Size(211, 22);
             this.txtBoy.TabIndex = 6;
@@ -146,7 +146,7 @@
             // 
             this.txtKilo.BackColor = System.Drawing.Color.White;
             this.txtKilo.Location = new System.Drawing.Point(239, 213);
-            this.txtKilo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtKilo.Margin = new System.Windows.Forms.Padding(4);
             this.txtKilo.Name = "txtKilo";
             this.txtKilo.Size = new System.Drawing.Size(211, 22);
             this.txtKilo.TabIndex = 7;
@@ -155,7 +155,7 @@
             // 
             this.txtBoyunCevresi.BackColor = System.Drawing.Color.White;
             this.txtBoyunCevresi.Location = new System.Drawing.Point(239, 341);
-            this.txtBoyunCevresi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBoyunCevresi.Margin = new System.Windows.Forms.Padding(4);
             this.txtBoyunCevresi.Name = "txtBoyunCevresi";
             this.txtBoyunCevresi.Size = new System.Drawing.Size(211, 22);
             this.txtBoyunCevresi.TabIndex = 8;
@@ -164,7 +164,7 @@
             // 
             this.txtBasenCevresi.BackColor = System.Drawing.Color.White;
             this.txtBasenCevresi.Location = new System.Drawing.Point(239, 296);
-            this.txtBasenCevresi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBasenCevresi.Margin = new System.Windows.Forms.Padding(4);
             this.txtBasenCevresi.Name = "txtBasenCevresi";
             this.txtBasenCevresi.Size = new System.Drawing.Size(211, 22);
             this.txtBasenCevresi.TabIndex = 9;
@@ -173,7 +173,7 @@
             // 
             this.txtYas.BackColor = System.Drawing.Color.White;
             this.txtYas.Location = new System.Drawing.Point(239, 255);
-            this.txtYas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtYas.Margin = new System.Windows.Forms.Padding(4);
             this.txtYas.Name = "txtYas";
             this.txtYas.Size = new System.Drawing.Size(211, 22);
             this.txtYas.TabIndex = 10;
@@ -182,7 +182,7 @@
             // 
             this.txtBelCevresi.BackColor = System.Drawing.Color.White;
             this.txtBelCevresi.Location = new System.Drawing.Point(239, 382);
-            this.txtBelCevresi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBelCevresi.Margin = new System.Windows.Forms.Padding(4);
             this.txtBelCevresi.Name = "txtBelCevresi";
             this.txtBelCevresi.Size = new System.Drawing.Size(211, 22);
             this.txtBelCevresi.TabIndex = 11;
@@ -199,13 +199,14 @@
             this.btnHesaplaVucutAnalizi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnHesaplaVucutAnalizi.ForeColor = System.Drawing.Color.White;
             this.btnHesaplaVucutAnalizi.Location = new System.Drawing.Point(251, 426);
-            this.btnHesaplaVucutAnalizi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnHesaplaVucutAnalizi.Margin = new System.Windows.Forms.Padding(4);
             this.btnHesaplaVucutAnalizi.Name = "btnHesaplaVucutAnalizi";
             this.btnHesaplaVucutAnalizi.Size = new System.Drawing.Size(195, 44);
             this.btnHesaplaVucutAnalizi.TabIndex = 12;
             this.btnHesaplaVucutAnalizi.Text = "Hesapla";
             this.btnHesaplaVucutAnalizi.TextColor = System.Drawing.Color.White;
             this.btnHesaplaVucutAnalizi.UseVisualStyleBackColor = false;
+            this.btnHesaplaVucutAnalizi.Click += new System.EventHandler(this.btnHesaplaVucutAnalizi_Click);
             // 
             // label8
             // 
@@ -315,6 +316,7 @@
             this.btnGeriVucutAnalizi.TabIndex = 35;
             this.btnGeriVucutAnalizi.TextColor = System.Drawing.Color.Black;
             this.btnGeriVucutAnalizi.UseVisualStyleBackColor = false;
+            this.btnGeriVucutAnalizi.Click += new System.EventHandler(this.btnGeriVucutAnalizi_Click);
             // 
             // lblVKI
             // 
@@ -380,7 +382,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form3";
             this.Text = "Form3";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
