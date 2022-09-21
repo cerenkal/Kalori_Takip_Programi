@@ -1,5 +1,8 @@
 ﻿using DataAccess.ConcreteRepository;
 using DataAccess.Context;
+using Entities.Concrete;
+using Entities.Enums;
+using Entities.Fonksiyonlar;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,30 +18,23 @@ namespace DIYET_PROJE
     public partial class Form10 : Form
     {
 
-        private KaloriTakipDBContext _kaloriTakipDBContext;
+        public static int tuketilenBesinID;
+        public static int silinecekBesinID;
+        public static float toplamKalori;
+        public static float toplamCarb;
+        public static float toplamYag;
+        public static float toplamProtein;
 
-        private BesinBilgileriRepository _besinBilgileriRepository;
+
+        public static List<BesinBilgileri> tuketilenkkahvaltıListesi;
+        KaloriTakipDBContext _kaloriTakipDBContext;
+      
+
         public Form10()
         {
             InitializeComponent();
             _kaloriTakipDBContext = new KaloriTakipDBContext();
-            _besinBilgileriRepository = new BesinBilgileriRepository(_kaloriTakipDBContext);
-        }
-
-        
-
-
-    
-
-        private void Form10_Load(object sender, EventArgs e)
-        {
-           
-           
-        }
-
-        private void txtKahvalti_TextChanged(object sender, EventArgs e)
-        {
-            
+            tuketilenkkahvaltıListesi = new List<BesinBilgileri>();
         }
 
         private void txtKahvalti_MouseClick(object sender, MouseEventArgs e)
@@ -46,22 +42,124 @@ namespace DIYET_PROJE
             txtKahvalti.Text = String.Empty;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnKahvaltiAra_Click(object sender, EventArgs e)
         {
-            dgvKahvaltiListe.DataSource = _kaloriTakipDBContext.BesinBilgileri.Where(x => x.BesinAdi.Contains(txtKahvalti.Text)).Select(x => new { x.BesinAdi, x.OlcuBirimi, x.Kalori,x.Karbonhidrat,x.Protein,x.Yag,x.GramKarsiligi }).ToList();
+            dgvKahvaltiListe.DataSource = _kaloriTakipDBContext.BesinBilgileri.Where(x => x.BesinAdi.Contains(txtKahvalti.Text)).Select(x => new { x.ID, x.BesinAdi, x.OlcuBirimi, x.Kalori, x.Karbonhidrat, x.Protein, x.Yag, x.GramKarsiligi, x.ToplamKalori }).ToList();
 
-            dgvKahvaltiListe.Columns[1].Width = 60;
-            dgvKahvaltiListe.Columns[2].Width = 40;
-            dgvKahvaltiListe.Columns[3].Width = 80;
+            dgvKahvaltiListe.Columns[0].Width = 0;
+            dgvKahvaltiListe.Columns[1].Width = 130;
+            dgvKahvaltiListe.Columns[2].Width = 60;
+            dgvKahvaltiListe.Columns[3].Width = 60;
             dgvKahvaltiListe.Columns[4].Width = 50;
             dgvKahvaltiListe.Columns[5].Width = 40;
+            dgvKahvaltiListe.Columns[6].Width = 40;
+            dgvKahvaltiListe.Columns[7].Width = 40;
+            dgvKahvaltiListe.Columns[8].Width = 40; ;
         }
 
-        private void dgvKahvaltiListe_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        BesinBilgileri eklenen;
+
+        private void dgvKahvaltiListe_SelectionChanged(object sender, EventArgs e)
         {
+            tuketilenBesinID = Convert.ToInt32(dgvKahvaltiListe.CurrentRow.Cells[0].Value);
+            eklenen = _kaloriTakipDBContext.BesinBilgileri.Where(x => x.ID == tuketilenBesinID).FirstOrDefault();
+
+            lblKahvaltıOlcu.Text = eklenen.OlcuBirimi.ToString();
+
         }
 
-        private void label1_Click(object sender, EventArgs e)
+
+
+        private void btnEkleKahvalti_Click(object sender, EventArgs e)
+        {
+            bool sayiMi;
+            int sayi;
+
+            if (Fonksiyonlar.BosMu(this.Controls) == false)
+            {
+                do
+                {
+                    sayiMi = int.TryParse(txtKahvaltiMiktar.Text, out sayi);
+
+                    if (!sayiMi)
+                    {
+                        MessageBox.Show("Lutfen sadece sayısal degerler giriniz");
+                        sayiMi = true;
+                    }
+
+                    else if (sayi < 0)
+                    {
+
+                        MessageBox.Show("Lutfen sadece pozitif sayılar giriniz");
+                        sayiMi = true;
+                    }
+                    else
+                    {
+
+                        tuketilenkkahvaltıListesi.Add(eklenen);
+                        dgvKahvaltiKullaniciListesi.DataSource = null;
+                        dgvKahvaltiKullaniciListesi.DataSource = tuketilenkkahvaltıListesi;
+
+                        dgvKahvaltiKullaniciListesi.Columns[0].Visible = false;
+                        dgvKahvaltiKullaniciListesi.Columns[1].Width = 120;
+
+
+                        for (int i = 2; i <16 ; i++)
+                        {
+                            dgvKahvaltiKullaniciListesi.Columns[i].Visible = false;
+                        }
+
+                        
+                    }
+
+                } while (!sayiMi);
+
+
+            }
+
+            else
+            {
+                MessageBox.Show("Lütfen secilen besin için miktar giriniz");
+            }
+        }
+
+        BesinBilgileri silinen;
+        private void btnSilKahvalti_Click(object sender, EventArgs e)
+        {
+            silinecekBesinID = Convert.ToInt32(dgvKahvaltiKullaniciListesi.CurrentRow.Cells[0].Value);
+            silinen = _kaloriTakipDBContext.BesinBilgileri.Where(x => x.ID == silinecekBesinID).FirstOrDefault();
+
+            tuketilenkkahvaltıListesi.Remove(silinen);
+
+            dgvKahvaltiKullaniciListesi.DataSource = null;
+            dgvKahvaltiKullaniciListesi.DataSource = tuketilenkkahvaltıListesi;
+
+            dgvKahvaltiKullaniciListesi.Columns[0].Visible = false;
+            dgvKahvaltiKullaniciListesi.Columns[1].Width = 120;
+
+
+            for (int i = 2; i < 16; i++)
+            {
+                dgvKahvaltiKullaniciListesi.Columns[i].Visible = false;
+            }
+        }
+
+        private void btnGeriKahvaltiEkle_Click(object sender, EventArgs e)
+        {
+            foreach (var item in tuketilenkkahvaltıListesi)
+            {
+                toplamKalori = item.Kalori * Convert.ToInt32(txtKahvaltiMiktar.Text);
+                toplamCarb = item.Karbonhidrat * Convert.ToInt32(txtKahvaltiMiktar.Text);
+                toplamProtein = item.Protein * Convert.ToInt32(txtKahvaltiMiktar.Text);
+                toplamYag = item.Yag * Convert.ToInt32(txtKahvaltiMiktar.Text);
+            }
+
+            Form9 frm9 = new Form9();
+            frm9.Show();
+            this.Hide();
+        }
+
+        private void Form10_Load(object sender, EventArgs e)
         {
 
         }

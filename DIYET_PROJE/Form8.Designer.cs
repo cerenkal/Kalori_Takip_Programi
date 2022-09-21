@@ -101,6 +101,7 @@
             this.btnAnasayfaKacKalori.Text = "Kaç Kalori?";
             this.btnAnasayfaKacKalori.TextColor = System.Drawing.Color.Black;
             this.btnAnasayfaKacKalori.UseVisualStyleBackColor = false;
+            this.btnAnasayfaKacKalori.Click += new System.EventHandler(this.btnAnasayfaKacKalori_Click);
             // 
             // btnAnasayfaSuTakibi
             // 
@@ -142,6 +143,7 @@
             this.btnAnasayfaHedefler.Text = "Hedefler";
             this.btnAnasayfaHedefler.TextColor = System.Drawing.Color.Black;
             this.btnAnasayfaHedefler.UseVisualStyleBackColor = false;
+            this.btnAnasayfaHedefler.Click += new System.EventHandler(this.btnAnasayfaHedefler_Click);
             // 
             // btnAnasayfaRaporlar
             // 

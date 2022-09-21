@@ -34,16 +34,16 @@ namespace Entities.Concrete
             switch (aktivite)
             {
                 case Aktivite.Pek_Hareketli_Degil:
-                    katSayi = 0.9F;
+                    katSayi = 1.2F;
                     break;
                 case Aktivite.Az_Hareketli:
-                    katSayi = 1.1F;
+                    katSayi = 1.375F;
                     break;
                 case Aktivite.Aktif:
-                    katSayi = 1.4F;
+                    katSayi = 1.55F;
                     break;
                 case Aktivite.Cok_Hareketli:
-                    katSayi = 1.6F;
+                    katSayi = 1.9F;
                     break;
                 default:
                     break;

@@ -41,6 +41,19 @@ namespace Entities.Fonksiyonlar
             return false;
         }
 
+        public static void TemizleLable(Control.ControlCollection koleksiyon)
+        {
+            foreach (var item in koleksiyon)
+            {
+
+                if (item is Label)
+                {
+                    (item as Label).Text = string.Empty;
+                }
+            }
+        }
+
+
 
     }
 }

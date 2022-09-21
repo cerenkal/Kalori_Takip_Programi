@@ -31,13 +31,11 @@ namespace DIYET_PROJE
         {
             this.label2 = new System.Windows.Forms.Label();
             this.btnTarifVeMakaleGeri = new DIYET_PROJE.RJButton();
-            this.brnTariflerListele = new DIYET_PROJE.RJButton();
-            this.btnMakalelerListele = new DIYET_PROJE.RJButton();
             this.dgvTariflerListele = new System.Windows.Forms.DataGridView();
             this.rtbTariflerVeMakalelerGoruntule = new System.Windows.Forms.RichTextBox();
-            this.txtTarifMakaleAra = new System.Windows.Forms.TextBox();
-            this.btnTarifMakaleAra = new DIYET_PROJE.RJButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.rdbMakaleler = new System.Windows.Forms.RadioButton();
+            this.rdbTarifler = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTariflerListele)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -74,46 +72,6 @@ namespace DIYET_PROJE
             this.btnTarifVeMakaleGeri.TextColor = System.Drawing.Color.Black;
             this.btnTarifVeMakaleGeri.UseVisualStyleBackColor = false;
             // 
-            // brnTariflerListele
-            // 
-            this.brnTariflerListele.BackColor = System.Drawing.Color.LightSalmon;
-            this.brnTariflerListele.BackgroundColor = System.Drawing.Color.LightSalmon;
-            this.brnTariflerListele.BorderColor = System.Drawing.Color.LightCoral;
-            this.brnTariflerListele.BorderRadius = 20;
-            this.brnTariflerListele.BorderSize = 0;
-            this.brnTariflerListele.FlatAppearance.BorderSize = 0;
-            this.brnTariflerListele.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.brnTariflerListele.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.brnTariflerListele.ForeColor = System.Drawing.Color.Black;
-            this.brnTariflerListele.Location = new System.Drawing.Point(63, 89);
-            this.brnTariflerListele.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.brnTariflerListele.Name = "brnTariflerListele";
-            this.brnTariflerListele.Size = new System.Drawing.Size(149, 49);
-            this.brnTariflerListele.TabIndex = 43;
-            this.brnTariflerListele.Text = "Tarifler";
-            this.brnTariflerListele.TextColor = System.Drawing.Color.Black;
-            this.brnTariflerListele.UseVisualStyleBackColor = false;
-            // 
-            // btnMakalelerListele
-            // 
-            this.btnMakalelerListele.BackColor = System.Drawing.Color.LightSalmon;
-            this.btnMakalelerListele.BackgroundColor = System.Drawing.Color.LightSalmon;
-            this.btnMakalelerListele.BorderColor = System.Drawing.Color.LightCoral;
-            this.btnMakalelerListele.BorderRadius = 20;
-            this.btnMakalelerListele.BorderSize = 0;
-            this.btnMakalelerListele.FlatAppearance.BorderSize = 0;
-            this.btnMakalelerListele.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMakalelerListele.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnMakalelerListele.ForeColor = System.Drawing.Color.Black;
-            this.btnMakalelerListele.Location = new System.Drawing.Point(229, 89);
-            this.btnMakalelerListele.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnMakalelerListele.Name = "btnMakalelerListele";
-            this.btnMakalelerListele.Size = new System.Drawing.Size(149, 49);
-            this.btnMakalelerListele.TabIndex = 44;
-            this.btnMakalelerListele.Text = "Makaleler";
-            this.btnMakalelerListele.TextColor = System.Drawing.Color.Black;
-            this.btnMakalelerListele.UseVisualStyleBackColor = false;
-            // 
             // dgvTariflerListele
             // 
             this.dgvTariflerListele.BackgroundColor = System.Drawing.SystemColors.Window;
@@ -123,8 +81,10 @@ namespace DIYET_PROJE
             this.dgvTariflerListele.Name = "dgvTariflerListele";
             this.dgvTariflerListele.RowHeadersWidth = 51;
             this.dgvTariflerListele.RowTemplate.Height = 24;
+            this.dgvTariflerListele.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvTariflerListele.Size = new System.Drawing.Size(448, 342);
             this.dgvTariflerListele.TabIndex = 45;
+            this.dgvTariflerListele.SelectionChanged += new System.EventHandler(this.dgvTariflerListele_SelectionChanged);
             // 
             // rtbTariflerVeMakalelerGoruntule
             // 
@@ -134,36 +94,6 @@ namespace DIYET_PROJE
             this.rtbTariflerVeMakalelerGoruntule.Size = new System.Drawing.Size(444, 341);
             this.rtbTariflerVeMakalelerGoruntule.TabIndex = 46;
             this.rtbTariflerVeMakalelerGoruntule.Text = "Tarifler ve makaleler burada yazacak...";
-            // 
-            // txtTarifMakaleAra
-            // 
-            this.txtTarifMakaleAra.Location = new System.Drawing.Point(517, 102);
-            this.txtTarifMakaleAra.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTarifMakaleAra.Name = "txtTarifMakaleAra";
-            this.txtTarifMakaleAra.Size = new System.Drawing.Size(360, 22);
-            this.txtTarifMakaleAra.TabIndex = 47;
-            this.txtTarifMakaleAra.Text = "Ara";
-            // 
-            // btnTarifMakaleAra
-            // 
-            this.btnTarifMakaleAra.BackColor = System.Drawing.Color.Transparent;
-            this.btnTarifMakaleAra.BackgroundColor = System.Drawing.Color.Transparent;
-            this.btnTarifMakaleAra.BackgroundImage = global::DIYET_PROJE.Properties.Resources.search_FILL0_wght400_GRAD0_opsz48__1_1;
-            this.btnTarifMakaleAra.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTarifMakaleAra.BorderColor = System.Drawing.Color.LightCoral;
-            this.btnTarifMakaleAra.BorderRadius = 0;
-            this.btnTarifMakaleAra.BorderSize = 0;
-            this.btnTarifMakaleAra.FlatAppearance.BorderSize = 0;
-            this.btnTarifMakaleAra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTarifMakaleAra.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnTarifMakaleAra.ForeColor = System.Drawing.Color.Black;
-            this.btnTarifMakaleAra.Location = new System.Drawing.Point(891, 89);
-            this.btnTarifMakaleAra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnTarifMakaleAra.Name = "btnTarifMakaleAra";
-            this.btnTarifMakaleAra.Size = new System.Drawing.Size(53, 49);
-            this.btnTarifMakaleAra.TabIndex = 48;
-            this.btnTarifMakaleAra.TextColor = System.Drawing.Color.Black;
-            this.btnTarifMakaleAra.UseVisualStyleBackColor = false;
             // 
             // pictureBox2
             // 
@@ -178,6 +108,34 @@ namespace DIYET_PROJE
             this.pictureBox2.TabIndex = 49;
             this.pictureBox2.TabStop = false;
             // 
+            // rdbMakaleler
+            // 
+            this.rdbMakaleler.AutoSize = true;
+            this.rdbMakaleler.BackColor = System.Drawing.Color.Transparent;
+            this.rdbMakaleler.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.rdbMakaleler.Location = new System.Drawing.Point(29, 112);
+            this.rdbMakaleler.Name = "rdbMakaleler";
+            this.rdbMakaleler.Size = new System.Drawing.Size(118, 29);
+            this.rdbMakaleler.TabIndex = 50;
+            this.rdbMakaleler.TabStop = true;
+            this.rdbMakaleler.Text = "Makaleler";
+            this.rdbMakaleler.UseVisualStyleBackColor = false;
+            this.rdbMakaleler.CheckedChanged += new System.EventHandler(this.rbMakaleler_CheckedChanged);
+            // 
+            // rdbTarifler
+            // 
+            this.rdbTarifler.AutoSize = true;
+            this.rdbTarifler.BackColor = System.Drawing.Color.Transparent;
+            this.rdbTarifler.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.rdbTarifler.Location = new System.Drawing.Point(172, 114);
+            this.rdbTarifler.Name = "rdbTarifler";
+            this.rdbTarifler.Size = new System.Drawing.Size(93, 29);
+            this.rdbTarifler.TabIndex = 51;
+            this.rdbTarifler.TabStop = true;
+            this.rdbTarifler.Text = "Tarifler";
+            this.rdbTarifler.UseVisualStyleBackColor = false;
+            this.rdbTarifler.CheckedChanged += new System.EventHandler(this.rbTarifler_CheckedChanged);
+            // 
             // Form17
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -185,19 +143,16 @@ namespace DIYET_PROJE
             this.BackgroundImage = global::DIYET_PROJE.Properties.Resources.WhatsApp_Image_2022_09_07_at_22_471;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1005, 629);
+            this.Controls.Add(this.rdbTarifler);
+            this.Controls.Add(this.rdbMakaleler);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.btnTarifMakaleAra);
-            this.Controls.Add(this.txtTarifMakaleAra);
             this.Controls.Add(this.rtbTariflerVeMakalelerGoruntule);
             this.Controls.Add(this.dgvTariflerListele);
-            this.Controls.Add(this.btnMakalelerListele);
-            this.Controls.Add(this.brnTariflerListele);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnTarifVeMakaleGeri);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form17";
             this.Text = "Form17";
-            this.Load += new System.EventHandler(this.Form17_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTariflerListele)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -209,12 +164,10 @@ namespace DIYET_PROJE
 
         private System.Windows.Forms.Label label2;
         private RJButton btnTarifVeMakaleGeri;
-        private RJButton brnTariflerListele;
-        private RJButton btnMakalelerListele;
         private System.Windows.Forms.DataGridView dgvTariflerListele;
         private System.Windows.Forms.RichTextBox rtbTariflerVeMakalelerGoruntule;
-        private System.Windows.Forms.TextBox txtTarifMakaleAra;
-        private RJButton btnTarifMakaleAra;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.RadioButton rdbMakaleler;
+        private System.Windows.Forms.RadioButton rdbTarifler;
     }
 }

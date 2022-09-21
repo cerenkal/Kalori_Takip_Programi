@@ -1,4 +1,7 @@
-﻿using System;
+﻿using DataAccess.Context;
+using Entities.Concrete;
+using Entities.Fonksiyonlar;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +15,148 @@ namespace DIYET_PROJE
 {
     public partial class Form13 : Form
     {
+
+        public static int tuketilenBesinID;
+        public static int silinecekBesinID;
+        public static float toplamKalori;
+        public static float toplamCarb;
+        public static float toplamYag;
+        public static float toplamProtein;
+
+
+        public static List<BesinBilgileri> tuketilenAperatifYemegiListesi;
+        KaloriTakipDBContext _kaloriTakipDBContext;
         public Form13()
         {
             InitializeComponent();
+            _kaloriTakipDBContext = new KaloriTakipDBContext();
+            tuketilenAperatifYemegiListesi = new List<BesinBilgileri>();
+        }
+
+        private void tstAperatifAra_MouseClick(object sender, MouseEventArgs e)
+        {
+            txtAperatifAra.Text = string.Empty;
+        }
+
+        private void btnAperatifAra_Click(object sender, EventArgs e)
+        {
+            dgvAperatifListe.DataSource = _kaloriTakipDBContext.BesinBilgileri.Where(x => x.BesinAdi.Contains(txtAperatifAra.Text)).Select(x => new { x.ID, x.BesinAdi, x.OlcuBirimi, x.Kalori, x.Karbonhidrat, x.Protein, x.Yag, x.GramKarsiligi, x.ToplamKalori }).ToList();
+
+
+            dgvAperatifListe.Columns[0].Width = 0;
+            dgvAperatifListe.Columns[2].Width = 130;
+            dgvAperatifListe.Columns[2].Width = 60;
+            dgvAperatifListe.Columns[3].Width = 60;
+            dgvAperatifListe.Columns[4].Width = 50;
+            dgvAperatifListe.Columns[5].Width = 40;
+            dgvAperatifListe.Columns[6].Width = 40;
+            dgvAperatifListe.Columns[7].Width = 40;
+            dgvAperatifListe.Columns[8].Width = 40;
+        }
+
+        BesinBilgileri eklenen;
+        private void dgvAperatifListe_SelectionChanged(object sender, EventArgs e)
+        {
+            tuketilenBesinID = Convert.ToInt32(dgvAperatifListe.CurrentRow.Cells[0].Value);
+            eklenen = _kaloriTakipDBContext.BesinBilgileri.Where(x => x.ID == tuketilenBesinID).FirstOrDefault();
+
+            lblAperatifOlcu.Text = eklenen.OlcuBirimi.ToString();
+        }
+
+        private void btnAperatifEkleme_Click(object sender, EventArgs e)
+        {
+            bool sayiMi;
+            int sayi;
+
+            if (Fonksiyonlar.BosMu(this.Controls) == false)
+            {
+                do
+                {
+                    sayiMi = int.TryParse(txtAperatifMiktar.Text, out sayi);
+
+                    if (!sayiMi)
+                    {
+                        MessageBox.Show("Lutfen sadece sayısal degerler giriniz");
+                        sayiMi = true;
+                    }
+
+                    else if (sayi < 0)
+                    {
+
+                        MessageBox.Show("Lutfen sadece pozitif sayılar giriniz");
+                        sayiMi = true;
+                    }
+                    else
+                    {
+
+                        tuketilenAperatifYemegiListesi.Add(eklenen);
+                        dgvAperatifKullanicininListesi.DataSource = null;
+                        dgvAperatifKullanicininListesi.DataSource = tuketilenAperatifYemegiListesi;
+
+                        dgvAperatifKullanicininListesi.Columns[0].Visible = false;
+                        dgvAperatifKullanicininListesi.Columns[1].Width = 120;
+
+
+                        for (int i = 2; i < 16; i++)
+                        {
+                            dgvAperatifKullanicininListesi.Columns[i].Visible = false;
+                        }
+
+
+                    }
+
+                } while (!sayiMi);
+
+
+            }
+
+            else
+            {
+                MessageBox.Show("Lütfen secilen besin için miktar giriniz");
+            }
+        }
+
+        BesinBilgileri silinen;
+
+        private void btnAperatifSilme_Click(object sender, EventArgs e)
+        {
+            silinecekBesinID = Convert.ToInt32(dgvAperatifKullanicininListesi.CurrentRow.Cells[0].Value);
+            silinen = _kaloriTakipDBContext.BesinBilgileri.Where(x => x.ID == silinecekBesinID).FirstOrDefault();
+
+            tuketilenAperatifYemegiListesi.Remove(silinen);
+
+            dgvAperatifKullanicininListesi.DataSource = null;
+            dgvAperatifKullanicininListesi.DataSource = tuketilenAperatifYemegiListesi;
+
+            dgvAperatifKullanicininListesi.Columns[0].Visible = false;
+            dgvAperatifKullanicininListesi.Columns[1].Width = 120;
+
+
+            for (int i = 2; i < 16; i++)
+            {
+                dgvAperatifKullanicininListesi.Columns[i].Visible = false;
+            }
+
+        }
+
+        private void btnAperitifGeri_Click(object sender, EventArgs e)
+        {
+            foreach (var item in tuketilenAperatifYemegiListesi)
+            {
+                toplamKalori = item.Kalori * Convert.ToInt32(txtAperatifMiktar.Text);
+                toplamCarb = item.Karbonhidrat * Convert.ToInt32(txtAperatifMiktar.Text);
+                toplamProtein = item.Protein * Convert.ToInt32(txtAperatifMiktar.Text);
+                toplamYag = item.Yag * Convert.ToInt32(txtAperatifMiktar.Text);
+            }
+
+            Form9 frm9 = new Form9();
+            frm9.Show();
+            this.Hide();
+        }
+
+        private void Form13_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

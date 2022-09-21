@@ -83,6 +83,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.lblEgzersizKalori = new System.Windows.Forms.Label();
+            this.lblHedef = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblYakilanKalori
@@ -90,10 +91,10 @@
             this.lblYakilanKalori.BackColor = System.Drawing.Color.Transparent;
             this.lblYakilanKalori.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblYakilanKalori.ForeColor = System.Drawing.Color.Black;
-            this.lblYakilanKalori.Location = new System.Drawing.Point(555, 508);
+            this.lblYakilanKalori.Location = new System.Drawing.Point(499, 506);
             this.lblYakilanKalori.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblYakilanKalori.Name = "lblYakilanKalori";
-            this.lblYakilanKalori.Size = new System.Drawing.Size(21, 28);
+            this.lblYakilanKalori.Size = new System.Drawing.Size(55, 28);
             this.lblYakilanKalori.TabIndex = 30;
             this.lblYakilanKalori.Text = "0";
             // 
@@ -102,10 +103,10 @@
             this.lblAlinanKalori.BackColor = System.Drawing.Color.Transparent;
             this.lblAlinanKalori.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblAlinanKalori.ForeColor = System.Drawing.Color.Black;
-            this.lblAlinanKalori.Location = new System.Drawing.Point(554, 477);
+            this.lblAlinanKalori.Location = new System.Drawing.Point(499, 477);
             this.lblAlinanKalori.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAlinanKalori.Name = "lblAlinanKalori";
-            this.lblAlinanKalori.Size = new System.Drawing.Size(21, 28);
+            this.lblAlinanKalori.Size = new System.Drawing.Size(55, 28);
             this.lblAlinanKalori.TabIndex = 29;
             this.lblAlinanKalori.Text = "0";
             // 
@@ -115,7 +116,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(449, 508);
+            this.label2.Location = new System.Drawing.Point(375, 509);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(107, 21);
@@ -128,7 +129,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(449, 477);
+            this.label1.Location = new System.Drawing.Point(380, 477);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(102, 21);
@@ -142,7 +143,7 @@
             this.prbGunlukKaloriHedef.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.prbGunlukKaloriHedef.ForeBackColor = System.Drawing.Color.Transparent;
             this.prbGunlukKaloriHedef.ForeColor = System.Drawing.Color.Black;
-            this.prbGunlukKaloriHedef.Location = new System.Drawing.Point(633, 501);
+            this.prbGunlukKaloriHedef.Location = new System.Drawing.Point(577, 502);
             this.prbGunlukKaloriHedef.Margin = new System.Windows.Forms.Padding(4);
             this.prbGunlukKaloriHedef.Name = "prbGunlukKaloriHedef";
             this.prbGunlukKaloriHedef.ShowMaximun = false;
@@ -179,7 +180,6 @@
             this.label6.Size = new System.Drawing.Size(65, 23);
             this.label6.TabIndex = 33;
             this.label6.Text = "ÖĞLEN";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
@@ -371,12 +371,12 @@
             this.label28.BackColor = System.Drawing.Color.Transparent;
             this.label28.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label28.ForeColor = System.Drawing.Color.Black;
-            this.label28.Location = new System.Drawing.Point(631, 476);
+            this.label28.Location = new System.Drawing.Point(575, 477);
             this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(159, 21);
+            this.label28.Size = new System.Drawing.Size(168, 21);
             this.label28.TabIndex = 59;
-            this.label28.Text = "Günlük kalori hedefin";
+            this.label28.Text = "Günlük kalori hedefin :";
             // 
             // label29
             // 
@@ -410,6 +410,7 @@
             this.btnEgzersizEkle.TabIndex = 4;
             this.btnEgzersizEkle.TextColor = System.Drawing.Color.Black;
             this.btnEgzersizEkle.UseVisualStyleBackColor = false;
+            this.btnEgzersizEkle.Click += new System.EventHandler(this.btnEgzersizEkle_Click);
             // 
             // btnAperatifEkle
             // 
@@ -495,6 +496,7 @@
             this.btnKahvaltiEkle.TabIndex = 0;
             this.btnKahvaltiEkle.TextColor = System.Drawing.Color.Black;
             this.btnKahvaltiEkle.UseVisualStyleBackColor = false;
+            this.btnKahvaltiEkle.Click += new System.EventHandler(this.btnKahvaltiEkle_Click);
             // 
             // label30
             // 
@@ -507,7 +509,6 @@
             this.label30.Size = new System.Drawing.Size(346, 23);
             this.label30.TabIndex = 61;
             this.label30.Text = "Gün içindeki öğünlerini ve egzersizlerini ekle";
-            this.label30.Click += new System.EventHandler(this.label30_Click);
             // 
             // btnGeriOgunEkle
             // 
@@ -528,6 +529,7 @@
             this.btnGeriOgunEkle.TabIndex = 62;
             this.btnGeriOgunEkle.TextColor = System.Drawing.Color.Black;
             this.btnGeriOgunEkle.UseVisualStyleBackColor = false;
+            this.btnGeriOgunEkle.Click += new System.EventHandler(this.btnGeriOgunEkle_Click);
             // 
             // lblKalori
             // 
@@ -642,7 +644,7 @@
             // 
             this.lblKaloriAksam.AutoSize = true;
             this.lblKaloriAksam.BackColor = System.Drawing.Color.Transparent;
-            this.lblKaloriAksam.Location = new System.Drawing.Point(262, 295);
+            this.lblKaloriAksam.Location = new System.Drawing.Point(267, 295);
             this.lblKaloriAksam.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblKaloriAksam.Name = "lblKaloriAksam";
             this.lblKaloriAksam.Size = new System.Drawing.Size(54, 17);
@@ -653,7 +655,7 @@
             // 
             this.lblKarbonhidratAksam.AutoSize = true;
             this.lblKarbonhidratAksam.BackColor = System.Drawing.Color.Transparent;
-            this.lblKarbonhidratAksam.Location = new System.Drawing.Point(262, 316);
+            this.lblKarbonhidratAksam.Location = new System.Drawing.Point(267, 316);
             this.lblKarbonhidratAksam.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblKarbonhidratAksam.Name = "lblKarbonhidratAksam";
             this.lblKarbonhidratAksam.Size = new System.Drawing.Size(54, 17);
@@ -664,7 +666,7 @@
             // 
             this.lblProteinAksam.AutoSize = true;
             this.lblProteinAksam.BackColor = System.Drawing.Color.Transparent;
-            this.lblProteinAksam.Location = new System.Drawing.Point(262, 337);
+            this.lblProteinAksam.Location = new System.Drawing.Point(267, 337);
             this.lblProteinAksam.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblProteinAksam.Name = "lblProteinAksam";
             this.lblProteinAksam.Size = new System.Drawing.Size(54, 17);
@@ -675,7 +677,7 @@
             // 
             this.lblYagAksam.AutoSize = true;
             this.lblYagAksam.BackColor = System.Drawing.Color.Transparent;
-            this.lblYagAksam.Location = new System.Drawing.Point(262, 359);
+            this.lblYagAksam.Location = new System.Drawing.Point(267, 359);
             this.lblYagAksam.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblYagAksam.Name = "lblYagAksam";
             this.lblYagAksam.Size = new System.Drawing.Size(54, 17);
@@ -781,6 +783,15 @@
             this.lblEgzersizKalori.TabIndex = 85;
             this.lblEgzersizKalori.Text = "label32";
             // 
+            // lblHedef
+            // 
+            this.lblHedef.AutoSize = true;
+            this.lblHedef.Location = new System.Drawing.Point(754, 480);
+            this.lblHedef.Name = "lblHedef";
+            this.lblHedef.Size = new System.Drawing.Size(46, 17);
+            this.lblHedef.TabIndex = 86;
+            this.lblHedef.Text = "Hedef";
+            // 
             // Form9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -788,6 +799,7 @@
             this.BackgroundImage = global::DIYET_PROJE.Properties.Resources.WhatsApp_Image_2022_09_07_at_22_47_37;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(861, 628);
+            this.Controls.Add(this.lblHedef);
             this.Controls.Add(this.lblEgzersizKalori);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
@@ -909,5 +921,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label lblEgzersizKalori;
+        private System.Windows.Forms.Label lblHedef;
     }
 }
