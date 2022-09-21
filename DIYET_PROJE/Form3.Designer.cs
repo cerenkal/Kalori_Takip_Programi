@@ -196,7 +196,7 @@
             this.btnHesaplaVucutAnalizi.BorderSize = 0;
             this.btnHesaplaVucutAnalizi.FlatAppearance.BorderSize = 0;
             this.btnHesaplaVucutAnalizi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHesaplaVucutAnalizi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnHesaplaVucutAnalizi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnHesaplaVucutAnalizi.ForeColor = System.Drawing.Color.White;
             this.btnHesaplaVucutAnalizi.Location = new System.Drawing.Point(251, 426);
             this.btnHesaplaVucutAnalizi.Margin = new System.Windows.Forms.Padding(4);
@@ -212,12 +212,12 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(563, 304);
+            this.label8.Location = new System.Drawing.Point(488, 295);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(271, 25);
+            this.label8.Size = new System.Drawing.Size(245, 25);
             this.label8.TabIndex = 13;
             this.label8.Text = "Bazal Metabolizma Hızınız:";
             // 
@@ -225,12 +225,12 @@
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(563, 187);
+            this.label9.Location = new System.Drawing.Point(529, 179);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(227, 25);
+            this.label9.Size = new System.Drawing.Size(204, 25);
             this.label9.TabIndex = 13;
             this.label9.Text = "Vücut Kitle İndeksiniz:";
             // 
@@ -238,12 +238,12 @@
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(563, 245);
+            this.label11.Location = new System.Drawing.Point(546, 237);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(206, 25);
+            this.label11.Size = new System.Drawing.Size(187, 25);
             this.label11.TabIndex = 13;
             this.label11.Text = "Vücut Yağ Oranınız:";
             // 
@@ -251,9 +251,9 @@
             // 
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(383, 50);
+            this.label13.Location = new System.Drawing.Point(376, 48);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(228, 39);
@@ -278,7 +278,7 @@
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label15.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label15.Location = new System.Drawing.Point(564, 114);
+            this.label15.Location = new System.Drawing.Point(641, 114);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(144, 29);
             this.label15.TabIndex = 16;
@@ -322,10 +322,11 @@
             // 
             this.lblVKI.AutoSize = true;
             this.lblVKI.BackColor = System.Drawing.Color.Transparent;
-            this.lblVKI.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblVKI.Location = new System.Drawing.Point(797, 191);
+            this.lblVKI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblVKI.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblVKI.Location = new System.Drawing.Point(753, 181);
             this.lblVKI.Name = "lblVKI";
-            this.lblVKI.Size = new System.Drawing.Size(82, 20);
+            this.lblVKI.Size = new System.Drawing.Size(102, 25);
             this.lblVKI.TabIndex = 36;
             this.lblVKI.Text = "SonucVKI";
             // 
@@ -333,10 +334,11 @@
             // 
             this.lblVYO.AutoSize = true;
             this.lblVYO.BackColor = System.Drawing.Color.Transparent;
-            this.lblVYO.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblVYO.Location = new System.Drawing.Point(776, 249);
+            this.lblVYO.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblVYO.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblVYO.Location = new System.Drawing.Point(753, 239);
             this.lblVYO.Name = "lblVYO";
-            this.lblVYO.Size = new System.Drawing.Size(90, 20);
+            this.lblVYO.Size = new System.Drawing.Size(112, 25);
             this.lblVYO.TabIndex = 37;
             this.lblVYO.Text = "SonucVYO";
             // 
@@ -344,10 +346,11 @@
             // 
             this.lblBMH.AutoSize = true;
             this.lblBMH.BackColor = System.Drawing.Color.Transparent;
-            this.lblBMH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblBMH.Location = new System.Drawing.Point(841, 308);
+            this.lblBMH.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblBMH.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblBMH.Location = new System.Drawing.Point(753, 296);
             this.lblBMH.Name = "lblBMH";
-            this.lblBMH.Size = new System.Drawing.Size(95, 20);
+            this.lblBMH.Size = new System.Drawing.Size(113, 25);
             this.lblBMH.TabIndex = 38;
             this.lblBMH.Text = "SonucBMH";
             // 

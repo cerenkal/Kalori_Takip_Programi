@@ -12,6 +12,7 @@ namespace DataAccess.ConcreteRepository
     {
         public EgzersizVerisiRepository(KaloriTakipDBContext kaloriTakipDBContext) : base(kaloriTakipDBContext)
         {
+
         }
     }
 }

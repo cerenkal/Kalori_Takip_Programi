@@ -16,6 +16,12 @@ namespace DIYET_PROJE
     {
         public static Form9 frm9;
         KaloriTakipDBContext _kaloriTakipDBContext;
+
+
+        public static float toplamKalori;
+        public static float toplamCarb;
+        public static float toplamYag;
+        public static float toplamProtein;
         public Form9()
         {
             InitializeComponent();
@@ -37,7 +43,7 @@ namespace DIYET_PROJE
             lblKaloriKahvalti.Text = Form10.toplamKalori.ToString();
             lblKarbonhidratKahvalti.Text = Form10.toplamCarb.ToString();
             lblProteinKahvalti.Text = Form10.toplamProtein.ToString();
-            lblYagOglen.Text = Form10.toplamKalori.ToString();
+            lblYagKahvalti.Text = Form10.toplamYag.ToString();
 
             lblKaloriOglen.Text = Form11.toplamKalori.ToString();
             lblKarbonhidratOglen.Text = Form11.toplamCarb.ToString();
@@ -60,40 +66,70 @@ namespace DIYET_PROJE
             lblAlinanKalori.Text = (Form10.toplamKalori + Form11.toplamKalori + Form12.toplamKalori + Form13.toplamKalori).ToString();
             lblYakilanKalori.Text = Form14.egzeriszToplamKalori.ToString();
 
+            toplamKalori = Form10.toplamKalori + Form11.toplamKalori + Form12.toplamKalori + Form13.toplamKalori;
+            toplamCarb = (Form10.toplamCarb + Form11.toplamCarb + Form12.toplamCarb + Form13.toplamCarb);
+            toplamYag = (Form10.toplamYag + Form11.toplamYag + Form12.toplamYag + Form13.toplamYag);
+            toplamProtein = (Form10.toplamProtein + Form11.toplamProtein + Form12.toplamProtein + Form13.toplamProtein);
 
-            var kl = 0;
+            int kl;
 
-            if (Form14.egzeriszToplamKalori>0)
+            if (Form5.ilkHedef <= 0)
             {
-                kl = (int)Form7.hedef + Form14.egzeriszToplamKalori;
+                if (Convert.ToInt32(lblAlinanKalori.Text) <= ((int)Form6.hedefNet + Form14.egzeriszToplamKalori))
+                {
+                    if (Form14.egzeriszToplamKalori > 0) kl = (int)Form6.hedefNet + Form14.egzeriszToplamKalori;
+                    else kl = (int)Form6.hedefNet;
+
+                    prbGunlukKaloriHedef.Minimum = 0;
+                    prbGunlukKaloriHedef.Maximum = kl;
+
+
+                    if (Convert.ToInt32(lblAlinanKalori.Text) > 0) prbGunlukKaloriHedef.Value = kl - Convert.ToInt32(lblAlinanKalori.Text);
+                    else prbGunlukKaloriHedef.Value = kl;
+
+                }
+                else
+                {
+                    if (Form14.egzeriszToplamKalori > 0) kl = (int)Form6.hedefNet + Form14.egzeriszToplamKalori;
+                    else kl = (int)Form6.hedefNet;
+                    prbGunlukKaloriHedef.Minimum = 0;
+                    prbGunlukKaloriHedef.Maximum = kl;
+                    prbGunlukKaloriHedef.Value = 0;
+                    prbGunlukKaloriHedef.BackColor = Color.Red;
+
+                }
             }
+
 
             else
             {
-                kl = (int)Form7.hedef;
+                if (Convert.ToInt32(lblAlinanKalori.Text) <= ((int)Form5.ilkHedef + Form14.egzeriszToplamKalori))
+                {
+                    if (Form14.egzeriszToplamKalori > 0) kl = (int)Form5.ilkHedef + +Form14.egzeriszToplamKalori;
+                    else kl = (int)Form5.ilkHedef;
+
+                    prbGunlukKaloriHedef.Minimum = 0;
+                    prbGunlukKaloriHedef.Maximum = kl;
+
+                    if (Convert.ToInt32(lblAlinanKalori.Text) > 0) prbGunlukKaloriHedef.Value = kl - Convert.ToInt32(lblAlinanKalori.Text);
+                    else prbGunlukKaloriHedef.Value = kl;
+
+
+                }
+                else
+                {
+                    if (Form14.egzeriszToplamKalori > 0) kl = (int)Form5.ilkHedef + Form14.egzeriszToplamKalori;
+                    else kl = (int)Form5.ilkHedef;
+                    prbGunlukKaloriHedef.Minimum = 0;
+                    prbGunlukKaloriHedef.Maximum = kl;
+                    prbGunlukKaloriHedef.Value = 0;
+                    prbGunlukKaloriHedef.BackColor = Color.Red;
+
+                }
             }
-       
+
 
             lblHedef.Text = kl.ToString();
-
-           
-            prbGunlukKaloriHedef.Minimum = 0;
-            prbGunlukKaloriHedef.Maximum = kl;
-
-            if (Convert.ToInt32(lblAlinanKalori.Text)>0)
-            {
-              
-                prbGunlukKaloriHedef.Value = kl - Convert.ToInt32(lblAlinanKalori.Text);
-
-
-            }
-            else
-            {
-              
-                prbGunlukKaloriHedef.Value = kl;
-            }
-       
-              
 
 
         }
@@ -117,6 +153,20 @@ namespace DIYET_PROJE
         {
             Form8 frm8 = new Form8();
             frm8.Show();
+            this.Hide();
+        }
+
+        private void btnOglenEkle_Click(object sender, EventArgs e)
+        {
+            Form11 frm11 = new Form11();
+            frm11.Show();
+            this.Hide();
+        }
+
+        private void btnAperatifEkle_Click(object sender, EventArgs e)
+        {
+            Form13 frm13 = new Form13();
+            frm13.Show();
             this.Hide();
         }
     }

@@ -59,6 +59,9 @@ namespace DIYET_PROJE
             this.btnSuEkle = new DIYET_PROJE.RJButton();
             this.label13 = new System.Windows.Forms.Label();
             this.txtSuVerisiKilo = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -88,7 +91,7 @@ namespace DIYET_PROJE
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::DIYET_PROJE.Properties.Resources.water_cup;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 99);
+            this.pictureBox1.Location = new System.Drawing.Point(24, 348);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(108, 124);
@@ -100,11 +103,11 @@ namespace DIYET_PROJE
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(34, 453);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(50, 205);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(251, 29);
+            this.label1.Size = new System.Drawing.Size(192, 25);
             this.label1.TabIndex = 38;
             this.label1.Text = "Günlük Su Hedefin : ";
             // 
@@ -112,11 +115,11 @@ namespace DIYET_PROJE
             // 
             this.lblSuHedefi.AutoSize = true;
             this.lblSuHedefi.BackColor = System.Drawing.Color.Transparent;
-            this.lblSuHedefi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblSuHedefi.Location = new System.Drawing.Point(314, 453);
+            this.lblSuHedefi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblSuHedefi.Location = new System.Drawing.Point(256, 205);
             this.lblSuHedefi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSuHedefi.Name = "lblSuHedefi";
-            this.lblSuHedefi.Size = new System.Drawing.Size(107, 29);
+            this.lblSuHedefi.Size = new System.Drawing.Size(81, 25);
             this.lblSuHedefi.TabIndex = 39;
             this.lblSuHedefi.Text = "2,5 Litre";
             // 
@@ -124,7 +127,7 @@ namespace DIYET_PROJE
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(47, 227);
+            this.label5.Location = new System.Drawing.Point(58, 476);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(50, 17);
@@ -136,7 +139,7 @@ namespace DIYET_PROJE
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.ErrorImage = null;
             this.pictureBox5.Image = global::DIYET_PROJE.Properties.Resources.womfit_logo;
-            this.pictureBox5.Location = new System.Drawing.Point(946, 500);
+            this.pictureBox5.Location = new System.Drawing.Point(947, 508);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(103, 103);
@@ -148,7 +151,7 @@ namespace DIYET_PROJE
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(153, 227);
+            this.label3.Location = new System.Drawing.Point(164, 476);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(50, 17);
@@ -159,7 +162,7 @@ namespace DIYET_PROJE
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::DIYET_PROJE.Properties.Resources.water_cup;
-            this.pictureBox2.Location = new System.Drawing.Point(121, 99);
+            this.pictureBox2.Location = new System.Drawing.Point(132, 348);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(108, 124);
@@ -171,7 +174,7 @@ namespace DIYET_PROJE
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(261, 227);
+            this.label4.Location = new System.Drawing.Point(272, 476);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(50, 17);
@@ -182,7 +185,7 @@ namespace DIYET_PROJE
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::DIYET_PROJE.Properties.Resources.water_cup;
-            this.pictureBox3.Location = new System.Drawing.Point(227, 99);
+            this.pictureBox3.Location = new System.Drawing.Point(238, 348);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(108, 124);
@@ -194,7 +197,7 @@ namespace DIYET_PROJE
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(364, 227);
+            this.label6.Location = new System.Drawing.Point(375, 476);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(50, 17);
@@ -205,7 +208,7 @@ namespace DIYET_PROJE
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = global::DIYET_PROJE.Properties.Resources.water_cup;
-            this.pictureBox4.Location = new System.Drawing.Point(330, 99);
+            this.pictureBox4.Location = new System.Drawing.Point(341, 348);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(108, 124);
@@ -217,7 +220,7 @@ namespace DIYET_PROJE
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Location = new System.Drawing.Point(460, 227);
+            this.label7.Location = new System.Drawing.Point(471, 476);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(50, 17);
@@ -228,7 +231,7 @@ namespace DIYET_PROJE
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Image = global::DIYET_PROJE.Properties.Resources.water_cup;
-            this.pictureBox6.Location = new System.Drawing.Point(426, 99);
+            this.pictureBox6.Location = new System.Drawing.Point(437, 348);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(108, 124);
@@ -240,7 +243,7 @@ namespace DIYET_PROJE
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Location = new System.Drawing.Point(562, 227);
+            this.label8.Location = new System.Drawing.Point(573, 476);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(50, 17);
@@ -251,7 +254,7 @@ namespace DIYET_PROJE
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.Image = global::DIYET_PROJE.Properties.Resources.water_cup;
-            this.pictureBox7.Location = new System.Drawing.Point(528, 99);
+            this.pictureBox7.Location = new System.Drawing.Point(539, 348);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(108, 124);
@@ -263,7 +266,7 @@ namespace DIYET_PROJE
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Location = new System.Drawing.Point(669, 227);
+            this.label9.Location = new System.Drawing.Point(682, 476);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(50, 17);
@@ -274,7 +277,7 @@ namespace DIYET_PROJE
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox8.Image = global::DIYET_PROJE.Properties.Resources.water_cup;
-            this.pictureBox8.Location = new System.Drawing.Point(635, 99);
+            this.pictureBox8.Location = new System.Drawing.Point(648, 348);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(108, 124);
@@ -286,7 +289,7 @@ namespace DIYET_PROJE
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Location = new System.Drawing.Point(772, 227);
+            this.label10.Location = new System.Drawing.Point(785, 476);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(50, 17);
@@ -297,7 +300,7 @@ namespace DIYET_PROJE
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox9.Image = global::DIYET_PROJE.Properties.Resources.water_cup;
-            this.pictureBox9.Location = new System.Drawing.Point(738, 99);
+            this.pictureBox9.Location = new System.Drawing.Point(751, 348);
             this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(108, 124);
@@ -309,7 +312,7 @@ namespace DIYET_PROJE
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Location = new System.Drawing.Point(876, 227);
+            this.label11.Location = new System.Drawing.Point(891, 476);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(50, 17);
@@ -320,7 +323,7 @@ namespace DIYET_PROJE
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox10.Image = global::DIYET_PROJE.Properties.Resources.water_cup;
-            this.pictureBox10.Location = new System.Drawing.Point(842, 99);
+            this.pictureBox10.Location = new System.Drawing.Point(857, 348);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(108, 124);
@@ -332,7 +335,7 @@ namespace DIYET_PROJE
             // 
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Location = new System.Drawing.Point(975, 227);
+            this.label12.Location = new System.Drawing.Point(990, 476);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(50, 17);
@@ -343,7 +346,7 @@ namespace DIYET_PROJE
             // 
             this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox11.Image = global::DIYET_PROJE.Properties.Resources.water_cup;
-            this.pictureBox11.Location = new System.Drawing.Point(941, 99);
+            this.pictureBox11.Location = new System.Drawing.Point(956, 348);
             this.pictureBox11.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(108, 124);
@@ -360,11 +363,11 @@ namespace DIYET_PROJE
             this.btnSuHesapla.BorderSize = 0;
             this.btnSuHesapla.FlatAppearance.BorderSize = 0;
             this.btnSuHesapla.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSuHesapla.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.btnSuHesapla.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.btnSuHesapla.ForeColor = System.Drawing.Color.White;
-            this.btnSuHesapla.Location = new System.Drawing.Point(271, 381);
+            this.btnSuHesapla.Location = new System.Drawing.Point(273, 133);
             this.btnSuHesapla.Name = "btnSuHesapla";
-            this.btnSuHesapla.Size = new System.Drawing.Size(169, 51);
+            this.btnSuHesapla.Size = new System.Drawing.Size(152, 37);
             this.btnSuHesapla.TabIndex = 84;
             this.btnSuHesapla.Text = "Hesapla";
             this.btnSuHesapla.TextColor = System.Drawing.Color.White;
@@ -404,7 +407,7 @@ namespace DIYET_PROJE
             this.btnSuSil.FlatAppearance.BorderSize = 0;
             this.btnSuSil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSuSil.ForeColor = System.Drawing.Color.Black;
-            this.btnSuSil.Location = new System.Drawing.Point(121, 288);
+            this.btnSuSil.Location = new System.Drawing.Point(238, 252);
             this.btnSuSil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSuSil.Name = "btnSuSil";
             this.btnSuSil.Size = new System.Drawing.Size(67, 62);
@@ -426,7 +429,7 @@ namespace DIYET_PROJE
             this.btnSuEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSuEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSuEkle.ForeColor = System.Drawing.Color.Black;
-            this.btnSuEkle.Location = new System.Drawing.Point(45, 288);
+            this.btnSuEkle.Location = new System.Drawing.Point(71, 252);
             this.btnSuEkle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSuEkle.Name = "btnSuEkle";
             this.btnSuEkle.Size = new System.Drawing.Size(67, 62);
@@ -439,19 +442,52 @@ namespace DIYET_PROJE
             // 
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.label13.Location = new System.Drawing.Point(40, 399);
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.label13.Location = new System.Drawing.Point(50, 139);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(83, 20);
+            this.label13.Size = new System.Drawing.Size(88, 25);
             this.label13.TabIndex = 104;
             this.label13.Text = "Kilonuz :";
             // 
             // txtSuVerisiKilo
             // 
-            this.txtSuVerisiKilo.Location = new System.Drawing.Point(129, 397);
+            this.txtSuVerisiKilo.Location = new System.Drawing.Point(144, 142);
             this.txtSuVerisiKilo.Name = "txtSuVerisiKilo";
             this.txtSuVerisiKilo.Size = new System.Drawing.Size(100, 22);
             this.txtSuVerisiKilo.TabIndex = 105;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label14.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label14.Location = new System.Drawing.Point(36, 83);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(624, 20);
+            this.label14.TabIndex = 106;
+            this.label14.Text = "Güncel kilonuzu girerek, günlük tüketmeniz gereken su miktarını hesaplayabilirsin" +
+    "iz";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Location = new System.Drawing.Point(88, 307);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(35, 17);
+            this.label15.TabIndex = 107;
+            this.label15.Text = "Ekle";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Location = new System.Drawing.Point(258, 307);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(23, 17);
+            this.label16.TabIndex = 108;
+            this.label16.Text = "Sil";
             // 
             // Form16
             // 
@@ -460,6 +496,9 @@ namespace DIYET_PROJE
             this.BackgroundImage = global::DIYET_PROJE.Properties.Resources.WhatsApp_Image_2022_09_07_at_22_471;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1084, 649);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.txtSuVerisiKilo);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
@@ -541,5 +580,8 @@ namespace DIYET_PROJE
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txtSuVerisiKilo;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
     }
 }

@@ -54,76 +54,88 @@ namespace DIYET_PROJE
 
         private void btnSuEkle_Click_1(object sender, EventArgs e)
         {
-            pictureBox1.Visible = true;
-            label5.Visible = true;
-            label5.Text = $"{parca} ml";
-            n++;
-            int sonuc = n;
 
-            if (n == 2)
+            if (toplamSu >0 )
             {
-                pictureBox2.Visible = true;
-                label3.Visible = true;
-                label3.Text = $"{parca} ml";
+
+
+                pictureBox1.Visible = true;
+                label5.Visible = true;
+                label5.Text = $"{parca} ml";
+                n++;
+                int sonuc = n;
+
+                if (n == 2)
+                {
+                    pictureBox2.Visible = true;
+                    label3.Visible = true;
+                    label3.Text = $"{parca} ml";
+                }
+
+                if (n == 3)
+                {
+                    pictureBox3.Visible = true;
+                    label4.Visible = true;
+                    label4.Text = $"{parca} ml";
+                }
+
+                if (n == 4)
+                {
+                    pictureBox4.Visible = true;
+                    label6.Visible = true;
+                    label6.Text = $"{parca} ml";
+                }
+
+                if (n == 5)
+                {
+                    pictureBox6.Visible = true;
+                    label7.Visible = true;
+                    label7.Text = $"{parca} ml";
+                }
+
+                if (n == 6)
+                {
+                    pictureBox7.Visible = true;
+                    label8.Visible = true;
+                    label8.Text = $"{parca} ml";
+                }
+
+                if (n == 7)
+                {
+                    pictureBox8.Visible = true;
+                    label9.Visible = true;
+                    label9.Text = $"{parca} ml";
+                }
+                if (n == 8)
+                {
+                    pictureBox9.Visible = true;
+                    label10.Visible = true;
+                    label10.Text = $"{parca} ml";
+
+                }
+                if (n == 9)
+                {
+                    pictureBox10.Visible = true;
+                    label11.Visible = true;
+                    label11.Text = $"{parca} ml";
+
+                }
+                if (n == 10)
+                {
+                    pictureBox11.Visible = true;
+                    label12.Visible = true;
+                    label12.Text = $"{parca} ml";
+
+                }
             }
-
-            if (n == 3)
+            else
             {
-                pictureBox3.Visible = true;
-                label4.Visible = true;
-                label4.Text = $"{parca} ml";
-            }
-
-            if (n == 4)
-            {
-                pictureBox4.Visible = true;
-                label6.Visible = true;
-                label6.Text = $"{parca} ml";
-            }
-
-            if (n == 5)
-            {
-                pictureBox6.Visible = true;
-                label7.Visible = true;
-                label7.Text = $"{parca} ml";
-            }
-
-            if (n == 6)
-            {
-                pictureBox7.Visible = true;
-                label8.Visible = true;
-                label8.Text = $"{parca} ml";
-            }
-
-            if (n == 7)
-            {
-                pictureBox8.Visible = true;
-                label9.Visible = true;
-                label9.Text = $"{parca} ml";
-            }
-            if (n == 8)
-            {
-                pictureBox9.Visible = true;
-                label10.Visible = true;
-
-            }
-            if (n == 9)
-            {
-                pictureBox10.Visible = true;
-                label11.Visible = true;
-                label11.Text = $"{parca} ml";
-
-            }
-            if (n == 10)
-            {
-                pictureBox11.Visible = true;
-                label12.Visible = true;
-                label12.Text = $"{parca} ml";
-
+                MessageBox.Show("Önce kilonuzu girerek hesaplama yapmalısınız");
             }
 
         }
 
+        int toplamSu;
         private void btnSuHesapla_Click(object sender, EventArgs e)
         {
 
@@ -133,7 +145,7 @@ namespace DIYET_PROJE
 
             SuVerisi sv = new SuVerisi();
 
-            int toplamSu = (int)(Convert.ToInt32(txtSuVerisiKilo.Text)* 0.35) * 100;
+            toplamSu = (int)(Convert.ToInt32(txtSuVerisiKilo.Text)* 0.35) * 100;
             parca = toplamSu / 10;
             lblSuHedefi.Text = $"{toplamSu} ml";
 

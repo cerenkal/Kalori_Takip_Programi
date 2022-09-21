@@ -28,12 +28,14 @@ namespace DIYET_PROJE
 
         public static List<BesinBilgileri> tuketilenkkahvaltıListesi;
         KaloriTakipDBContext _kaloriTakipDBContext;
+        TuketilenBesinRepository _tuketilenBesinRepository;
       
 
         public Form10()
         {
             InitializeComponent();
             _kaloriTakipDBContext = new KaloriTakipDBContext();
+            _tuketilenBesinRepository = new TuketilenBesinRepository(_kaloriTakipDBContext);
             tuketilenkkahvaltıListesi = new List<BesinBilgileri>();
         }
 
@@ -46,7 +48,7 @@ namespace DIYET_PROJE
         {
             dgvKahvaltiListe.DataSource = _kaloriTakipDBContext.BesinBilgileri.Where(x => x.BesinAdi.Contains(txtKahvalti.Text)).Select(x => new { x.ID, x.BesinAdi, x.OlcuBirimi, x.Kalori, x.Karbonhidrat, x.Protein, x.Yag, x.GramKarsiligi, x.ToplamKalori }).ToList();
 
-            dgvKahvaltiListe.Columns[0].Width = 0;
+            dgvKahvaltiListe.Columns[0].Width = 30;
             dgvKahvaltiListe.Columns[1].Width = 130;
             dgvKahvaltiListe.Columns[2].Width = 60;
             dgvKahvaltiListe.Columns[3].Width = 60;
@@ -68,7 +70,7 @@ namespace DIYET_PROJE
 
         }
 
-
+        int gelenTuketilenBesinID = 0;
 
         private void btnEkleKahvalti_Click(object sender, EventArgs e)
         {
@@ -103,13 +105,17 @@ namespace DIYET_PROJE
                         dgvKahvaltiKullaniciListesi.Columns[0].Visible = false;
                         dgvKahvaltiKullaniciListesi.Columns[1].Width = 120;
 
+                        for (int i = 2; i < 16; i++)
+                        { dgvKahvaltiKullaniciListesi.Columns[i].Visible = false; }
+                           
 
-                        for (int i = 2; i <16 ; i++)
-                        {
-                            dgvKahvaltiKullaniciListesi.Columns[i].Visible = false;
-                        }
+                        TuketilenBesin tb = new TuketilenBesin();
+                        tb.Ogun = Ogun.Kahvalti;
+                        tb.BesinBilgileriID = tuketilenBesinID;
+                        tb.KullaniciID = Form5.gelenID;
+                        tb.TuketilenTarih = DateTime.Today;
+                        _tuketilenBesinRepository.Add(tb);
 
-                        
                     }
 
                 } while (!sayiMi);
@@ -123,11 +129,32 @@ namespace DIYET_PROJE
             }
         }
 
+
+
         BesinBilgileri silinen;
+        string isim = string.Empty;
+
+
         private void btnSilKahvalti_Click(object sender, EventArgs e)
         {
             silinecekBesinID = Convert.ToInt32(dgvKahvaltiKullaniciListesi.CurrentRow.Cells[0].Value);
             silinen = _kaloriTakipDBContext.BesinBilgileri.Where(x => x.ID == silinecekBesinID).FirstOrDefault();
+
+            foreach (var item in tuketilenkkahvaltıListesi)
+            {
+                if (item.BesinAdi == silinen.BesinAdi)
+                    isim = item.BesinAdi;
+            }
+
+            var yeni = _kaloriTakipDBContext.TuketilenBesinler.Where(x => x.BesinBilgileri.BesinAdi == isim).Select(x => x.ID).FirstOrDefault();
+            var silinecek = _kaloriTakipDBContext.TuketilenBesinler.Where(x => x.ID == yeni).FirstOrDefault();
+
+            silinecek.Ogun = Ogun.Kahvalti;
+            silinecek.BesinBilgileriID = silinecekBesinID;
+            silinecek.KullaniciID = Form5.gelenID;
+            silinecek.TuketilenTarih = DateTime.Today;
+            silinecek.Status = Status.Deleted;
+            _kaloriTakipDBContext.SaveChanges();
 
             tuketilenkkahvaltıListesi.Remove(silinen);
 
@@ -142,6 +169,7 @@ namespace DIYET_PROJE
             {
                 dgvKahvaltiKullaniciListesi.Columns[i].Visible = false;
             }
+
         }
 
         private void btnGeriKahvaltiEkle_Click(object sender, EventArgs e)
@@ -159,9 +187,6 @@ namespace DIYET_PROJE
             this.Hide();
         }
 
-        private void Form10_Load(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

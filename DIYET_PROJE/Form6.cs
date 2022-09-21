@@ -20,6 +20,7 @@ namespace DIYET_PROJE
         KullaniciHedefBilgileriRepository kullaniciHedefBilgileriRepository;
         KullaniciRepository kullaniciRepository;
         Form8 frm8;
+        public static double hedefNet=0;
 
         public Form6()
         {
@@ -32,7 +33,7 @@ namespace DIYET_PROJE
         public static int gelenHedefID;
         private void btnKiloAlmakIstıyorum_Click(object sender, EventArgs e)
         {
-            if (Form5.frm6sayac>0)
+            if (Form5.frm6sayac > 0)
             {
                 int gelenHedefID = (int)kaloriTakipDBContext.Kullanicilar.Where(x => x.KullniciHedefBilgileriID != null && x.ID == Form5.gelenID).Select(x => x.KullniciHedefBilgileriID).FirstOrDefault();
                 var degisenKisi = kaloriTakipDBContext.Kullanicilar.Where(x => x.KullniciHedefBilgileriID == gelenHedefID).FirstOrDefault();
@@ -43,7 +44,10 @@ namespace DIYET_PROJE
                 degisenKisi.KullniciHedefBilgileriID = kh2.ID;
 
 
+
+
             }
+
 
             else
             {
@@ -59,7 +63,8 @@ namespace DIYET_PROJE
 
 
             kaloriTakipDBContext.SaveChanges();
-            Form7.hedef = Form7.hedef + 200;
+            hedefNet = Form7.hedef + 200;
+
 
             frm8 = new Form8();
             frm8.Show();
@@ -70,10 +75,8 @@ namespace DIYET_PROJE
 
         private void btnKilomuKorumakIstiyorum_Click(object sender, EventArgs e)
         {
-
             if (Form5.frm6sayac > 0)
             {
-
                 int gelenHedefID = (int)kaloriTakipDBContext.Kullanicilar.Where(x => x.KullniciHedefBilgileriID != null && x.ID == Form5.gelenID).Select(x => x.KullniciHedefBilgileriID).FirstOrDefault();
                 var degisenKisi = kaloriTakipDBContext.Kullanicilar.Where(x => x.KullniciHedefBilgileriID == gelenHedefID).FirstOrDefault();
                 KullniciHedefBilgileri kh2 = new KullniciHedefBilgileri();
@@ -81,8 +84,8 @@ namespace DIYET_PROJE
                 kh2.HedefKatSayi = kh2.KatSayiDon(Hedef.Kilo_Korumak);
                 kullaniciHedefBilgileriRepository.Add(kh2);
                 degisenKisi.KullniciHedefBilgileriID = kh2.ID;
-
             }
+
 
 
             else
@@ -97,7 +100,8 @@ namespace DIYET_PROJE
                 Form5.frm6sayac++;
             }
 
-            Form7.hedef = Form7.hedef + 0;
+
+            hedefNet = Form7.hedef + 0;
             kaloriTakipDBContext.SaveChanges();
 
             frm8 = new Form8();
@@ -118,7 +122,9 @@ namespace DIYET_PROJE
                 kullaniciHedefBilgileriRepository.Add(kh2);
                 degisenKisi.KullniciHedefBilgileriID = kh2.ID;
 
+
             }
+
 
             else
             {
@@ -132,8 +138,12 @@ namespace DIYET_PROJE
                 Form5.frm6sayac++;
             }
 
+
+
             kaloriTakipDBContext.SaveChanges();
-            Form7.hedef = Form7.hedef - 200;
+            hedefNet = Form7.hedef - 200;
+
+
 
             frm8 = new Form8();
             frm8.Show();

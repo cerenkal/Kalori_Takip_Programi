@@ -81,6 +81,7 @@
             this.btnAnasayfaPratikTariflerVeEgzersizler.Text = "Pratik Tarifler ve Egzersizler";
             this.btnAnasayfaPratikTariflerVeEgzersizler.TextColor = System.Drawing.Color.Black;
             this.btnAnasayfaPratikTariflerVeEgzersizler.UseVisualStyleBackColor = false;
+            this.btnAnasayfaPratikTariflerVeEgzersizler.Click += new System.EventHandler(this.btnAnasayfaPratikTariflerVeEgzersizler_Click);
             // 
             // btnAnasayfaKacKalori
             // 
@@ -164,6 +165,7 @@
             this.btnAnasayfaRaporlar.Text = "Raporlar";
             this.btnAnasayfaRaporlar.TextColor = System.Drawing.Color.Black;
             this.btnAnasayfaRaporlar.UseVisualStyleBackColor = false;
+            this.btnAnasayfaRaporlar.Click += new System.EventHandler(this.btnAnasayfaRaporlar_Click);
             // 
             // btnAnasayfaVucutAnalizi
             // 

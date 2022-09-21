@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtKahvalti = new System.Windows.Forms.TextBox();
             this.dgvKahvaltiListe = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
@@ -50,7 +52,7 @@
             // txtKahvalti
             // 
             this.txtKahvalti.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtKahvalti.Location = new System.Drawing.Point(16, 188);
+            this.txtKahvalti.Location = new System.Drawing.Point(172, 191);
             this.txtKahvalti.Multiline = true;
             this.txtKahvalti.Name = "txtKahvalti";
             this.txtKahvalti.Size = new System.Drawing.Size(459, 34);
@@ -61,8 +63,24 @@
             // dgvKahvaltiListe
             // 
             this.dgvKahvaltiListe.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvKahvaltiListe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvKahvaltiListe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvKahvaltiListe.Location = new System.Drawing.Point(16, 228);
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvKahvaltiListe.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvKahvaltiListe.Location = new System.Drawing.Point(172, 231);
             this.dgvKahvaltiListe.Name = "dgvKahvaltiListe";
             this.dgvKahvaltiListe.RowHeadersWidth = 50;
             this.dgvKahvaltiListe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -75,7 +93,7 @@
             this.label1.BackColor = System.Drawing.Color.LightSalmon;
             this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(16, 120);
+            this.label1.Location = new System.Drawing.Point(172, 123);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(496, 65);
             this.label1.TabIndex = 19;
@@ -98,11 +116,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(17, 80);
+            this.label3.Location = new System.Drawing.Point(17, 88);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(356, 18);
+            this.label3.Size = new System.Drawing.Size(391, 21);
             this.label3.TabIndex = 27;
             this.label3.Text = "Lütfen kahvaltınızda tükettiğiniz tüm besinleri ekleyiniz";
             // 
@@ -111,19 +129,18 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Image = global::DIYET_PROJE.Properties.Resources.womfit_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(624, 497);
+            this.pictureBox1.Location = new System.Drawing.Point(901, 510);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(77, 84);
+            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 37;
             this.pictureBox1.TabStop = false;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(16, 446);
+            this.label5.Location = new System.Drawing.Point(171, 444);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(81, 25);
             this.label5.TabIndex = 40;
@@ -131,9 +148,9 @@
             // 
             // txtKahvaltiMiktar
             // 
-            this.txtKahvaltiMiktar.Location = new System.Drawing.Point(86, 443);
+            this.txtKahvaltiMiktar.Location = new System.Drawing.Point(234, 441);
             this.txtKahvaltiMiktar.Name = "txtKahvaltiMiktar";
-            this.txtKahvaltiMiktar.Size = new System.Drawing.Size(157, 30);
+            this.txtKahvaltiMiktar.Size = new System.Drawing.Size(64, 30);
             this.txtKahvaltiMiktar.TabIndex = 42;
             // 
             // btnGeriKahvaltiEkle
@@ -148,9 +165,9 @@
             this.btnGeriKahvaltiEkle.FlatAppearance.BorderSize = 0;
             this.btnGeriKahvaltiEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGeriKahvaltiEkle.ForeColor = System.Drawing.Color.Black;
-            this.btnGeriKahvaltiEkle.Location = new System.Drawing.Point(26, 536);
+            this.btnGeriKahvaltiEkle.Location = new System.Drawing.Point(21, 546);
             this.btnGeriKahvaltiEkle.Name = "btnGeriKahvaltiEkle";
-            this.btnGeriKahvaltiEkle.Size = new System.Drawing.Size(45, 45);
+            this.btnGeriKahvaltiEkle.Size = new System.Drawing.Size(50, 51);
             this.btnGeriKahvaltiEkle.TabIndex = 25;
             this.btnGeriKahvaltiEkle.TextColor = System.Drawing.Color.Black;
             this.btnGeriKahvaltiEkle.UseVisualStyleBackColor = false;
@@ -168,7 +185,7 @@
             this.btnSilKahvalti.FlatAppearance.BorderSize = 0;
             this.btnSilKahvalti.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSilKahvalti.ForeColor = System.Drawing.Color.Black;
-            this.btnSilKahvalti.Location = new System.Drawing.Point(656, 436);
+            this.btnSilKahvalti.Location = new System.Drawing.Point(857, 435);
             this.btnSilKahvalti.Name = "btnSilKahvalti";
             this.btnSilKahvalti.Size = new System.Drawing.Size(45, 45);
             this.btnSilKahvalti.TabIndex = 24;
@@ -189,7 +206,7 @@
             this.btnEkleKahvalti.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEkleKahvalti.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnEkleKahvalti.ForeColor = System.Drawing.Color.Black;
-            this.btnEkleKahvalti.Location = new System.Drawing.Point(458, 434);
+            this.btnEkleKahvalti.Location = new System.Drawing.Point(614, 435);
             this.btnEkleKahvalti.Name = "btnEkleKahvalti";
             this.btnEkleKahvalti.Size = new System.Drawing.Size(45, 45);
             this.btnEkleKahvalti.TabIndex = 23;
@@ -202,7 +219,7 @@
             this.btnKahvaltiAra.BackColor = System.Drawing.Color.Transparent;
             this.btnKahvaltiAra.BackgroundImage = global::DIYET_PROJE.Properties.Resources.search_FILL0_wght400_GRAD0_opsz48__1_;
             this.btnKahvaltiAra.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnKahvaltiAra.Location = new System.Drawing.Point(475, 188);
+            this.btnKahvaltiAra.Location = new System.Drawing.Point(631, 191);
             this.btnKahvaltiAra.Name = "btnKahvaltiAra";
             this.btnKahvaltiAra.Size = new System.Drawing.Size(37, 34);
             this.btnKahvaltiAra.TabIndex = 43;
@@ -213,7 +230,8 @@
             // 
             this.lblKahvaltıOlcu.AutoSize = true;
             this.lblKahvaltıOlcu.BackColor = System.Drawing.Color.Transparent;
-            this.lblKahvaltıOlcu.Location = new System.Drawing.Point(272, 446);
+            this.lblKahvaltıOlcu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblKahvaltıOlcu.Location = new System.Drawing.Point(302, 445);
             this.lblKahvaltıOlcu.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblKahvaltıOlcu.Name = "lblKahvaltıOlcu";
             this.lblKahvaltıOlcu.Size = new System.Drawing.Size(56, 25);
@@ -224,17 +242,17 @@
             // 
             this.dgvKahvaltiKullaniciListesi.BackgroundColor = System.Drawing.Color.White;
             this.dgvKahvaltiKullaniciListesi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvKahvaltiKullaniciListesi.Location = new System.Drawing.Point(519, 230);
+            this.dgvKahvaltiKullaniciListesi.Location = new System.Drawing.Point(674, 231);
             this.dgvKahvaltiKullaniciListesi.Name = "dgvKahvaltiKullaniciListesi";
             this.dgvKahvaltiKullaniciListesi.RowHeadersWidth = 51;
-            this.dgvKahvaltiKullaniciListesi.Size = new System.Drawing.Size(182, 200);
+            this.dgvKahvaltiKullaniciListesi.Size = new System.Drawing.Size(228, 200);
             this.dgvKahvaltiKullaniciListesi.TabIndex = 38;
             // 
             // Form10
             // 
             this.BackgroundImage = global::DIYET_PROJE.Properties.Resources.WhatsApp_Image_2022_09_07_at_22_471;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(730, 621);
+            this.ClientSize = new System.Drawing.Size(1024, 621);
             this.Controls.Add(this.lblKahvaltıOlcu);
             this.Controls.Add(this.btnKahvaltiAra);
             this.Controls.Add(this.txtKahvaltiMiktar);
@@ -251,7 +269,6 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Name = "Form10";
-            this.Load += new System.EventHandler(this.Form10_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKahvaltiListe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKahvaltiKullaniciListesi)).EndInit();

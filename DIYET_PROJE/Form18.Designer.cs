@@ -46,6 +46,7 @@ namespace DIYET_PROJE
             this.btnRaporGeri = new DIYET_PROJE.RJButton();
             this.btnMakroBesinRaporuAlma = new DIYET_PROJE.RJButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chartRapor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -66,11 +67,11 @@ namespace DIYET_PROJE
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label1.Location = new System.Drawing.Point(35, 79);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(449, 18);
+            this.label1.Size = new System.Drawing.Size(494, 21);
             this.label1.TabIndex = 44;
             this.label1.Text = "Bu sayfada günlük tükettiğin besinlerin makro değerlerini görebilirsin";
             // 
@@ -78,54 +79,58 @@ namespace DIYET_PROJE
             // 
             this.lblRaporYag.AutoSize = true;
             this.lblRaporYag.BackColor = System.Drawing.Color.Transparent;
-            this.lblRaporYag.Location = new System.Drawing.Point(751, 186);
+            this.lblRaporYag.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblRaporYag.Location = new System.Drawing.Point(778, 341);
             this.lblRaporYag.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRaporYag.Name = "lblRaporYag";
-            this.lblRaporYag.Size = new System.Drawing.Size(36, 16);
+            this.lblRaporYag.Size = new System.Drawing.Size(23, 25);
             this.lblRaporYag.TabIndex = 74;
-            this.lblRaporYag.Text = "15 gr";
+            this.lblRaporYag.Text = "0";
             // 
             // lblRaporProtein
             // 
             this.lblRaporProtein.AutoSize = true;
             this.lblRaporProtein.BackColor = System.Drawing.Color.Transparent;
-            this.lblRaporProtein.Location = new System.Drawing.Point(751, 162);
+            this.lblRaporProtein.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblRaporProtein.Location = new System.Drawing.Point(778, 313);
             this.lblRaporProtein.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRaporProtein.Name = "lblRaporProtein";
-            this.lblRaporProtein.Size = new System.Drawing.Size(36, 16);
+            this.lblRaporProtein.Size = new System.Drawing.Size(23, 25);
             this.lblRaporProtein.TabIndex = 73;
-            this.lblRaporProtein.Text = "30 gr";
+            this.lblRaporProtein.Text = "0";
             // 
             // lblRaporKarbonhidrat
             // 
             this.lblRaporKarbonhidrat.AutoSize = true;
             this.lblRaporKarbonhidrat.BackColor = System.Drawing.Color.Transparent;
-            this.lblRaporKarbonhidrat.Location = new System.Drawing.Point(751, 142);
+            this.lblRaporKarbonhidrat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblRaporKarbonhidrat.Location = new System.Drawing.Point(778, 285);
             this.lblRaporKarbonhidrat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRaporKarbonhidrat.Name = "lblRaporKarbonhidrat";
-            this.lblRaporKarbonhidrat.Size = new System.Drawing.Size(36, 16);
+            this.lblRaporKarbonhidrat.Size = new System.Drawing.Size(23, 25);
             this.lblRaporKarbonhidrat.TabIndex = 72;
-            this.lblRaporKarbonhidrat.Text = "80 gr";
+            this.lblRaporKarbonhidrat.Text = "0";
             // 
             // lblRaporKalori
             // 
             this.lblRaporKalori.AutoSize = true;
             this.lblRaporKalori.BackColor = System.Drawing.Color.Transparent;
-            this.lblRaporKalori.Location = new System.Drawing.Point(751, 118);
+            this.lblRaporKalori.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblRaporKalori.Location = new System.Drawing.Point(778, 256);
             this.lblRaporKalori.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRaporKalori.Name = "lblRaporKalori";
-            this.lblRaporKalori.Size = new System.Drawing.Size(56, 16);
+            this.lblRaporKalori.Size = new System.Drawing.Size(23, 25);
             this.lblRaporKalori.TabIndex = 71;
-            this.lblRaporKalori.Text = "390 kcal";
+            this.lblRaporKalori.Text = "0";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
             this.label23.BackColor = System.Drawing.Color.Transparent;
-            this.label23.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label23.Location = new System.Drawing.Point(595, 181);
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label23.Location = new System.Drawing.Point(718, 341);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(38, 21);
+            this.label23.Size = new System.Drawing.Size(53, 25);
             this.label23.TabIndex = 70;
             this.label23.Text = "Yağ:";
             // 
@@ -133,10 +138,10 @@ namespace DIYET_PROJE
             // 
             this.label24.AutoSize = true;
             this.label24.BackColor = System.Drawing.Color.Transparent;
-            this.label24.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label24.Location = new System.Drawing.Point(595, 160);
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label24.Location = new System.Drawing.Point(692, 313);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(66, 21);
+            this.label24.Size = new System.Drawing.Size(79, 25);
             this.label24.TabIndex = 69;
             this.label24.Text = "Protein:";
             // 
@@ -144,10 +149,10 @@ namespace DIYET_PROJE
             // 
             this.label25.AutoSize = true;
             this.label25.BackColor = System.Drawing.Color.Transparent;
-            this.label25.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label25.Location = new System.Drawing.Point(595, 139);
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label25.Location = new System.Drawing.Point(641, 285);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(107, 21);
+            this.label25.Size = new System.Drawing.Size(130, 25);
             this.label25.TabIndex = 68;
             this.label25.Text = "Karbonhidrat:";
             // 
@@ -155,10 +160,10 @@ namespace DIYET_PROJE
             // 
             this.lbl.AutoSize = true;
             this.lbl.BackColor = System.Drawing.Color.Transparent;
-            this.lbl.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl.Location = new System.Drawing.Point(595, 118);
+            this.lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl.Location = new System.Drawing.Point(703, 256);
             this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(55, 21);
+            this.lbl.Size = new System.Drawing.Size(68, 25);
             this.lbl.TabIndex = 67;
             this.lbl.Text = "Kalori:";
             // 
@@ -169,8 +174,8 @@ namespace DIYET_PROJE
             this.chartRapor.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chartRapor.Legends.Add(legend1);
-            this.chartRapor.Location = new System.Drawing.Point(36, 101);
-            this.chartRapor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chartRapor.Location = new System.Drawing.Point(26, 182);
+            this.chartRapor.Margin = new System.Windows.Forms.Padding(4);
             this.chartRapor.Name = "chartRapor";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
@@ -180,7 +185,6 @@ namespace DIYET_PROJE
             this.chartRapor.Size = new System.Drawing.Size(535, 326);
             this.chartRapor.TabIndex = 75;
             this.chartRapor.Text = "chart1";
-            this.chartRapor.Click += new System.EventHandler(this.chart1_Click);
             // 
             // btnRaporGeri
             // 
@@ -201,7 +205,7 @@ namespace DIYET_PROJE
             this.btnRaporGeri.TabIndex = 76;
             this.btnRaporGeri.TextColor = System.Drawing.Color.Black;
             this.btnRaporGeri.UseVisualStyleBackColor = false;
-            this.btnRaporGeri.Click += new System.EventHandler(this.rjButton4_Click);
+            this.btnRaporGeri.Click += new System.EventHandler(this.btnRaporGeri_Click);
             // 
             // btnMakroBesinRaporuAlma
             // 
@@ -212,15 +216,15 @@ namespace DIYET_PROJE
             this.btnMakroBesinRaporuAlma.BorderSize = 0;
             this.btnMakroBesinRaporuAlma.FlatAppearance.BorderSize = 0;
             this.btnMakroBesinRaporuAlma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMakroBesinRaporuAlma.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnMakroBesinRaporuAlma.ForeColor = System.Drawing.Color.Black;
-            this.btnMakroBesinRaporuAlma.Location = new System.Drawing.Point(599, 309);
-            this.btnMakroBesinRaporuAlma.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMakroBesinRaporuAlma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnMakroBesinRaporuAlma.ForeColor = System.Drawing.Color.White;
+            this.btnMakroBesinRaporuAlma.Location = new System.Drawing.Point(168, 114);
+            this.btnMakroBesinRaporuAlma.Margin = new System.Windows.Forms.Padding(4);
             this.btnMakroBesinRaporuAlma.Name = "btnMakroBesinRaporuAlma";
             this.btnMakroBesinRaporuAlma.Size = new System.Drawing.Size(227, 60);
             this.btnMakroBesinRaporuAlma.TabIndex = 77;
             this.btnMakroBesinRaporuAlma.Text = "Rapor Al";
-            this.btnMakroBesinRaporuAlma.TextColor = System.Drawing.Color.Black;
+            this.btnMakroBesinRaporuAlma.TextColor = System.Drawing.Color.White;
             this.btnMakroBesinRaporuAlma.UseVisualStyleBackColor = false;
             this.btnMakroBesinRaporuAlma.Click += new System.EventHandler(this.rjButton1_Click);
             // 
@@ -237,6 +241,18 @@ namespace DIYET_PROJE
             this.pictureBox2.TabIndex = 78;
             this.pictureBox2.TabStop = false;
             // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(608, 202);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(320, 54);
+            this.label4.TabIndex = 80;
+            this.label4.Text = "GÜNLÜK RAPOR";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form18
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -244,6 +260,7 @@ namespace DIYET_PROJE
             this.BackgroundImage = global::DIYET_PROJE.Properties.Resources.WhatsApp_Image_2022_09_07_at_22_471;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1005, 629);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btnMakroBesinRaporuAlma);
             this.Controls.Add(this.btnRaporGeri);
@@ -284,5 +301,6 @@ namespace DIYET_PROJE
         private RJButton btnRaporGeri;
         private RJButton btnMakroBesinRaporuAlma;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label4;
     }
 }

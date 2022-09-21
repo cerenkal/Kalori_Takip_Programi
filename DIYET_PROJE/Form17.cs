@@ -78,5 +78,12 @@ namespace DIYET_PROJE
 
 
         }
+
+        private void btnTarifVeMakaleGeri_Click(object sender, EventArgs e)
+        {
+            Form8 frm8 = new Form8();
+            frm8.Show();
+            this.Hide();
+        }
     }
 }

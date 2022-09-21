@@ -84,8 +84,10 @@ namespace DIYET_PROJE
 
                     else
                     {
-                        MessageBox.Show("Lütfen belirtilen kriterlerde şifre girşi yaapınız");
-                        Fonksiyonlar.Temizle(this.Controls);
+                        MessageBox.Show("Lütfen belirtilen kriterlerde şifre girişi yapınız");
+                        txtSifreUyeOl.Clear();
+                        txtSifreTekrar.Clear();
+                        //Fonksiyonlar.Temizle(this.Controls);
                     }
 
                 }
