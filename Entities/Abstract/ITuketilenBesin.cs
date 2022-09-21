@@ -12,9 +12,11 @@ namespace Entities.Abstract
     {
         int ID { get; set; }
 
-        List<Kullanici> Kullanicilar { get; set; }
+        int? KullaniciID { get; set; }
+        Kullanici Kullanici { get; set; }
 
-        List<BesinBilgileri> BesinBilgileri { get; set; }
+        int? BesinBilgileriID { get; set; }
+        BesinBilgileri BesinBilgileri { get; set; }
 
         Ogun Ogun { get; set; }
         DateTime TuketilenTarih { get; set; }

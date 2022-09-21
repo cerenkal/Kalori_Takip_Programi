@@ -19,10 +19,11 @@ namespace DataAccess.Mapping
             this.Property(x => x.Egzersiz).HasColumnName("Egzersiz");
 
 
-
             this.Property(x => x.CreatedBy).HasMaxLength(50);
             this.Property(x => x.ModifiedBy).HasMaxLength(50);
             this.Property(x => x.DeletedBy).HasMaxLength(50);
+
+
 
             this.Property(x => x.CreatedDate).IsRequired();
             this.Property(x => x.DeletedDate).IsOptional();
@@ -30,14 +31,11 @@ namespace DataAccess.Mapping
 
             this.Property(x => x.Status).HasColumnName("Statu");
 
-            this.HasMany(ev => ev.Kullanicilar)
-                .WithMany(k => k.Egzersizler)
-                .Map(x =>
-                {
-                    x.MapLeftKey("KullacilarRefID");
-                    x.MapRightKey("EgzersizlerRefID");
-                    x.ToTable("KullanıcıEgzersileri");
-                });
+
+            this.HasOptional(ev => ev.Kullanici)
+               .WithMany(k => k.Egzersizler)
+               .HasForeignKey(ev => ev.KullaniciID);
         }
     }
+    
 }

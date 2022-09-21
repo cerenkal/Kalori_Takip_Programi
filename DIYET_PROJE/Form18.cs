@@ -17,22 +17,18 @@ namespace DIYET_PROJE
             InitializeComponent();
         }
 
-        private void rjButton4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void chart1_Click(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void rjButton1_Click(object sender, EventArgs e)
         {
-            double oy1, oy2, oy3;
-            oy1 = 60;
-            oy2 = 30;
-            oy3 = 15;
+            float oy1, oy2, oy3;
+            oy1 = Form9.toplamCarb;
+            oy2 = Form9.toplamProtein;
+            oy3 = Form9.toplamYag;
+
+            //oy1 = 60;
+            //oy2 = 90;
+            //oy3 = 120;
 
 
             //Point leri temizleme.
@@ -58,6 +54,18 @@ namespace DIYET_PROJE
             chartRapor.Series["Makro"].Points[0].Color = Color.SkyBlue;
             chartRapor.Series["Makro"].Points[1].Color = Color.LightCoral;
             chartRapor.Series["Makro"].Points[2].Color = Color.Violet;
+
+            lblRaporKalori.Text = Form9.toplamKalori.ToString();
+            lblRaporKarbonhidrat.Text =  Form9.toplamCarb.ToString();
+            lblRaporProtein.Text =   Form9.toplamProtein.ToString();
+            lblRaporYag.Text =  Form9.toplamYag.ToString();
+        }
+
+        private void btnRaporGeri_Click(object sender, EventArgs e)
+        {
+            Form8 frm8 = new Form8();
+            frm8.Show();
+            this.Hide();
         }
     }
 }

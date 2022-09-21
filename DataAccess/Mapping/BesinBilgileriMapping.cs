@@ -16,12 +16,13 @@ namespace DataAccess.Mapping
             this.HasKey(x => x.ID);
             this.Property(x => x.ID).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity).IsRequired();
 
-            this.Property(x => x.BesinAdi).HasMaxLength(100);
 
+            this.Property(x => x.BesinAdi).HasMaxLength(100);
 
             this.Property(x => x.CreatedBy).HasMaxLength(50);
             this.Property(x => x.ModifiedBy).HasMaxLength(50);
             this.Property(x => x.DeletedBy).HasMaxLength(50);
+
 
             this.Property(x => x.CreatedDate).IsRequired();
             this.Property(x => x.DeletedDate).IsOptional();
@@ -30,17 +31,21 @@ namespace DataAccess.Mapping
             this.Property(x => x.Status).HasColumnName("Statu");
 
 
-
             this.HasMany(b => b.MakroBesinRaporlari)
-                .WithMany(r => r.BesinBilgileri)
-                .Map(x =>
-                {
-                    x.MapLeftKey("MakroBesinRaporRefID");
-                    x.MapRightKey("BesinBilgisiRefID");
-                    x.ToTable("BesinRaporu");
+                 .WithMany(r => r.BesinBilgileri)
+                 .Map(x =>
+                 {
+                     x.MapLeftKey("MakroBesinRaporRefID");
+                     x.MapRightKey("BesinBilgisiRefID");
+                     x.ToTable("BesinRaporu");
 
-                });
 
+
+                 });
+
+            this.HasMany(b => b.TuketilenBesinler)
+                 .WithOptional(tb => tb.BesinBilgileri)
+                 .HasForeignKey(b => b.BesinBilgileriID);
 
 
         }

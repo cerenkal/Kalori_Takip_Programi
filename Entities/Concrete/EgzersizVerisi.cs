@@ -15,7 +15,8 @@ namespace Entities.Concrete
         public int ID { get; set; }
         public Egzersiz Egzersiz { get; set; }
         public int KaloriDegeri { get; set; }
-        public List<Kullanici> Kullanicilar { get; set; }
+        public virtual int? KullaniciID { get; set; }
+        public Kullanici Kullanici { get; set; }
         public DateTime CreatedDate { get; set; } = DateTime.Now;
         public DateTime? ModifiedDate { get; set; }
         public DateTime? DeletedDate { get; set; }
@@ -23,7 +24,7 @@ namespace Entities.Concrete
         public string DeletedBy { get; set; }
         public string ModifiedBy { get; set; }
         public Status Status { get; set; } = Status.Active;
-       
+
 
         public int KaloriDegeriHesapla(int sure, Egzersiz egzersiz)
         {

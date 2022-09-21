@@ -27,11 +27,13 @@ namespace DIYET_PROJE
 
         public static List<BesinBilgileri> tuketilenAksamYemegiListesi;
         KaloriTakipDBContext _kaloriTakipDBContext;
+        TuketilenBesinRepository _tuketilenBesinRepository;
 
         public Form12()
         {
             InitializeComponent();
             _kaloriTakipDBContext = new KaloriTakipDBContext();
+            _tuketilenBesinRepository = new TuketilenBesinRepository(_kaloriTakipDBContext);
             tuketilenAksamYemegiListesi = new List<BesinBilgileri>();
 
         }
@@ -47,7 +49,7 @@ namespace DIYET_PROJE
             dgvAksamListe.DataSource = _kaloriTakipDBContext.BesinBilgileri.Where(x => x.BesinAdi.Contains(txtArananUrunAksamYemegi.Text)).Select(x => new { x.ID, x.BesinAdi, x.OlcuBirimi, x.Kalori, x.Karbonhidrat, x.Protein, x.Yag, x.GramKarsiligi, x.ToplamKalori }).ToList();
 
 
-            dgvAksamListe.Columns[0].Width = 50;
+            dgvAksamListe.Columns[0].Width = 30;
             dgvAksamListe.Columns[2].Width = 130;
             dgvAksamListe.Columns[2].Width = 60;
             dgvAksamListe.Columns[3].Width = 60;
@@ -67,6 +69,7 @@ namespace DIYET_PROJE
             lblOlcu.Text = eklenen.OlcuBirimi.ToString();
         }
 
+        int gelenTuketilenBesinID = 0;
         private void btnEklemeAksamYemegi_Click(object sender, EventArgs e)
         {
             bool sayiMi;
@@ -106,6 +109,12 @@ namespace DIYET_PROJE
                             dgvAksamKullanicininListesi.Columns[i].Visible = false;
                         }
 
+                        TuketilenBesin tb = new TuketilenBesin();
+                        tb.Ogun = Ogun.Aksam_Yemegi;
+                        tb.BesinBilgileriID = tuketilenBesinID;
+                        tb.KullaniciID = Form5.gelenID;
+                        tb.TuketilenTarih = DateTime.Today;
+                        _tuketilenBesinRepository.Add(tb);
 
                     }
 
@@ -122,10 +131,28 @@ namespace DIYET_PROJE
 
 
         BesinBilgileri silinen;
+        string isim = string.Empty;
+
         private void btnSilmeAksamYemegi_Click(object sender, EventArgs e)
         {
             silinecekBesinID = Convert.ToInt32(dgvAksamKullanicininListesi.CurrentRow.Cells[0].Value);
             silinen = _kaloriTakipDBContext.BesinBilgileri.Where(x => x.ID == silinecekBesinID).FirstOrDefault();
+
+            foreach (var item in tuketilenAksamYemegiListesi)
+            {
+                if (item.BesinAdi == silinen.BesinAdi)
+                    isim = item.BesinAdi;
+            }
+
+            var yeni = _kaloriTakipDBContext.TuketilenBesinler.Where(x => x.BesinBilgileri.BesinAdi == isim).Select(x => x.ID).FirstOrDefault();
+            var silinecek = _kaloriTakipDBContext.TuketilenBesinler.Where(x => x.ID == yeni).FirstOrDefault();
+
+            silinecek.Ogun = Ogun.Aksam_Yemegi;
+            silinecek.BesinBilgileriID = silinecekBesinID;
+            silinecek.KullaniciID = Form5.gelenID;
+            silinecek.TuketilenTarih = DateTime.Today;
+            silinecek.Status = Status.Deleted;
+            _kaloriTakipDBContext.SaveChanges();
 
             tuketilenAksamYemegiListesi.Remove(silinen);
 

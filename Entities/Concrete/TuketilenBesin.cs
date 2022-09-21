@@ -12,12 +12,13 @@ namespace Entities.Concrete
     {
 
         public int ID { get; set; }
-        public List<Kullanici> Kullanicilar { get; set; }
-        public List<BesinBilgileri> BesinBilgileri { get; set; }
 
-
-
+        public virtual int? KullaniciID { get; set; }
+        public Kullanici Kullanici { get; set; }
+        public virtual int? BesinBilgileriID { get; set; }
+        public BesinBilgileri BesinBilgileri { get; set; }
         public Ogun Ogun { get; set; }
+
         public DateTime TuketilenTarih { get; set; }
         public DateTime CreatedDate { get; set; } = DateTime.Now;
         public DateTime? ModifiedDate { get; set; }
@@ -26,6 +27,5 @@ namespace Entities.Concrete
         public string DeletedBy { get; set; }
         public string ModifiedBy { get; set; }
         public Status Status { get; set; } = Status.Active;
-
     }
 }

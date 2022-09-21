@@ -20,8 +20,6 @@ namespace Entities.Concrete
         public float Yag { get; set; }
         public float ToplamKalori { get; set; }
 
-
-
         public List<MakroBesinRaporu> MakroBesinRaporlari { get; set; }
         public List<TuketilenBesin> TuketilenBesinler { get; set; }
 

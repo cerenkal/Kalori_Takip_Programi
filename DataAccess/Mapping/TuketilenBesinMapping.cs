@@ -16,7 +16,9 @@ namespace DataAccess.Mapping
             this.HasKey(x => x.ID);
             this.Property(x => x.ID).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity).IsRequired();
 
+
             this.Property(x => x.Ogun).HasColumnName("Ogun");
+
 
             // bağlantıları diğer mappinglerde vardiye gerek yok
 
@@ -24,21 +26,27 @@ namespace DataAccess.Mapping
             this.Property(x => x.ModifiedBy).HasMaxLength(50);
             this.Property(x => x.DeletedBy).HasMaxLength(50);
 
+
             this.Property(x => x.CreatedDate).IsRequired();
             this.Property(x => x.DeletedDate).IsOptional();
             this.Property(x => x.ModifiedDate).IsOptional();
 
+
             this.Property(x => x.Status).HasColumnName("Statu");
 
-            this.HasMany(x => x.BesinBilgileri)
-                .WithMany(tb => tb.TuketilenBesinler)
-                 .Map(x =>
-                 {
-                     x.MapLeftKey("BesinBilgileriRefID");
-                     x.MapRightKey("TuketilenBesinRefID");
-                     x.ToTable("TuketilenBesinBilgisi");
 
-                 });
+            this.HasOptional(tb => tb.BesinBilgileri)
+                 .WithMany(k => k.TuketilenBesinler)
+                 .HasForeignKey(tb => tb.BesinBilgileriID);
+
+
+
+            this.HasOptional(tb => tb.Kullanici)
+                  .WithMany(k => k.TuketilenBesinler)
+                  .HasForeignKey(tb => tb.KullaniciID);
+
+
         }
     }
+    
 }

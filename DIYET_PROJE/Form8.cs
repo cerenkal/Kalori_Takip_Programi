@@ -58,5 +58,19 @@ namespace DIYET_PROJE
             frm15.Show();
             this.Hide();
         }
+
+        private void btnAnasayfaRaporlar_Click(object sender, EventArgs e)
+        {
+            Form18 frm18 = new Form18();
+            frm18.Show();
+            this.Hide();
+        }
+
+        private void btnAnasayfaPratikTariflerVeEgzersizler_Click(object sender, EventArgs e)
+        {
+            Form17 frm17 = new Form17();
+            frm17.Show();
+            this.Hide();
+        }
     }
 }

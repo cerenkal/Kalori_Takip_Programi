@@ -1,5 +1,7 @@
-﻿using DataAccess.Context;
+﻿using DataAccess.ConcreteRepository;
+using DataAccess.Context;
 using Entities.Concrete;
+using Entities.Enums;
 using Entities.Fonksiyonlar;
 using System;
 using System.Collections.Generic;
@@ -16,14 +18,15 @@ namespace DIYET_PROJE
     public partial class Form14 : Form
     {
         KaloriTakipDBContext _kaloriTakipDBContext;
+        EgzersizVerisiRepository egzersizVerisiRepository;
         public static int egzeriszToplamKalori;
-
-        List<EgzersizVerisi> Egzersiz;
+        List<EgzersizVerisi> egzersizListe;
         public Form14()
         {
             InitializeComponent();
             _kaloriTakipDBContext = new KaloriTakipDBContext();
-            Egzersiz = new List<EgzersizVerisi>();
+            egzersizVerisiRepository = new EgzersizVerisiRepository(_kaloriTakipDBContext);
+            egzersizListe = new List<EgzersizVerisi>();
         }
 
         
@@ -31,7 +34,7 @@ namespace DIYET_PROJE
         {
             dgvEgzersizListe.DataSource = _kaloriTakipDBContext.EgzersizVerileri.Select(x => new { x.ID, x.Egzersiz, x.KaloriDegeri }).ToList();
 
-            dgvEgzersizListe.Columns[0].Width = 0;
+            dgvEgzersizListe.Columns[0].Width = 30;
             dgvEgzersizListe.Columns[1].Width = 200;
             dgvEgzersizListe.Columns[2].Width = 200;
 
@@ -40,12 +43,13 @@ namespace DIYET_PROJE
 
         int secilenID;
         EgzersizVerisi eklenecekEgzersiz;
+        Egzersiz gelenEgzersizAdi;
        
         private void dgvEgzersizListe_SelectionChanged(object sender, EventArgs e)
         {
             secilenID = Convert.ToInt32(dgvEgzersizListe.CurrentRow.Cells[0].Value);
             eklenecekEgzersiz = _kaloriTakipDBContext.EgzersizVerileri.Where(x => x.ID == secilenID).FirstOrDefault();
-            //MessageBox.Show(secilenID.ToString());
+            gelenEgzersizAdi = _kaloriTakipDBContext.EgzersizVerileri.Where(x => x.ID == secilenID).Select(x => x.Egzersiz).FirstOrDefault();
         }
 
         int miktar;
@@ -54,11 +58,15 @@ namespace DIYET_PROJE
             bool sayiMi;
             int sayi;
 
+
+
             if (Fonksiyonlar.BosMu(this.Controls) == false)
             {
                 do
                 {
                     sayiMi = int.TryParse(txtEgzersizMiktar.Text, out sayi);
+
+
 
                     if (!sayiMi)
                     {
@@ -66,74 +74,88 @@ namespace DIYET_PROJE
                         sayiMi = true;
                     }
 
+
+
                     else if (sayi < 0)
                     {
-
                         MessageBox.Show("Lutfen sadece pozitif sayılar giriniz");
                         sayiMi = true;
                     }
                     else
                     {
-
-                        Egzersiz.Add(eklenecekEgzersiz);
+                        miktar = Convert.ToInt32(txtEgzersizMiktar.Text);
+                        egzersizListe.Add(eklenecekEgzersiz);
                         dgvEgzersizKullanicininListesi.DataSource = null;
-                        dgvEgzersizKullanicininListesi.DataSource = Egzersiz;
-
+                        dgvEgzersizKullanicininListesi.DataSource = egzersizListe;
                         dgvEgzersizKullanicininListesi.Columns[0].Visible = false;
                         dgvEgzersizKullanicininListesi.Columns[1].Width = 120;
-
-
                         for (int i = 2; i < 10; i++)
-                        {
                             dgvEgzersizKullanicininListesi.Columns[i].Visible = false;
-                        }
 
-                        miktar = Convert.ToInt32(txtEgzersizMiktar.Text);
+
+
+                        EgzersizVerisi ev = new EgzersizVerisi();
+                        ev.Egzersiz = gelenEgzersizAdi;
+                        ev.KaloriDegeri = ev.KaloriDegeriHesapla(miktar, gelenEgzersizAdi);
+                        ev.KullaniciID = Form5.gelenID;
+                        egzersizVerisiRepository.Add(ev);
+
                     }
+
+
 
                 } while (!sayiMi);
 
 
+
             }
 
-            else
-            {
-                MessageBox.Show("Lütfen egzersiz sürenizi giriniz");
-            }
+
+
+            else MessageBox.Show("Lütfen egzersiz sürenizi giriniz");
 
         }
 
         int silinecekID;
         EgzersizVerisi silinecekEgzersiz;
-
-
-
+        Egzersiz isim;
 
         private void btnEgzersizSilme_Click(object sender, EventArgs e)
         {
             silinecekID = Convert.ToInt32(dgvEgzersizKullanicininListesi.CurrentRow.Cells[0].Value);
             silinecekEgzersiz = _kaloriTakipDBContext.EgzersizVerileri.Where(x => x.ID == silinecekID).FirstOrDefault();
 
-            Egzersiz.Remove(silinecekEgzersiz);
-
-            dgvEgzersizKullanicininListesi.DataSource = null;
-            dgvEgzersizKullanicininListesi.DataSource = Egzersiz;
-
-            dgvEgzersizKullanicininListesi.Columns[0].Visible = false;
-            dgvEgzersizKullanicininListesi.Columns[1].Width = 120;
-
-
-            for (int i = 2; i < 10; i++)
+            foreach (var item in egzersizListe)
             {
-                dgvEgzersizKullanicininListesi.Columns[i].Visible = false;
+                if (item.Egzersiz == silinecekEgzersiz.Egzersiz)
+                    isim = item.Egzersiz;
             }
 
 
+            var yeni = _kaloriTakipDBContext.EgzersizVerileri.Where(x => x.Egzersiz == isim).Select(x => x.ID).FirstOrDefault();
+
+
+            var silinecek = _kaloriTakipDBContext.EgzersizVerileri.Where(x => x.ID == yeni).FirstOrDefault();
+
+
+            silinecek.Egzersiz = gelenEgzersizAdi;
+            silinecek.KaloriDegeri = silinecek.KaloriDegeriHesapla(miktar, gelenEgzersizAdi);
+            silinecek.KullaniciID = Form5.gelenID;
+            silinecek.Status = Status.Deleted;
+            _kaloriTakipDBContext.SaveChanges();
+
+            egzersizListe.Remove(silinecekEgzersiz);
+            dgvEgzersizKullanicininListesi.DataSource = null;
+            dgvEgzersizKullanicininListesi.DataSource = egzersizListe;
+            dgvEgzersizKullanicininListesi.Columns[0].Visible = false;
+            dgvEgzersizKullanicininListesi.Columns[1].Width = 120;
+            for (int i = 2; i < 10; i++)
+                dgvEgzersizKullanicininListesi.Columns[i].Visible = false;
         }
 
         private void btnEgzersiGeri_Click(object sender, EventArgs e)
         {
-            foreach (var item in Egzersiz)
+            foreach (var item in egzersizListe)
             {
                 egzeriszToplamKalori += item.KaloriDegeri * miktar;
             }

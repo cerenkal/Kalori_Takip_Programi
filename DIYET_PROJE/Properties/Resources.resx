@@ -154,8 +154,8 @@
   <data name="Artboard 22" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Artboard 22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Untitled-41" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Untitled-41.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="search_FILL0_wght400_GRAD0_opsz48 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search_FILL0_wght400_GRAD0_opsz48 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bolonez-soslu-spagetti" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bolonez-soslu-spagetti.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -168,6 +168,9 @@
   </data>
   <data name="Artboard 6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Artboard 6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TİKKKK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TİKKKK.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="arrow_back_FILL0_wght400_GRAD0_opsz48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\arrow_back_FILL0_wght400_GRAD0_opsz48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -262,14 +265,14 @@
   <data name="add_FILL0_wght400_GRAD0_opsz481" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add_FILL0_wght400_GRAD0_opsz481.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="search_FILL0_wght400_GRAD0_opsz48 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\search_FILL0_wght400_GRAD0_opsz48 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="png-transparent-symbol-plus-and-minus-signs-meno-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\png-transparent-symbol-plus-and-minus-signs-meno-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="backColor ters" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\backColor ters.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="png-transparent-symbol-plus-and-minus-signs-meno-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\png-transparent-symbol-plus-and-minus-signs-meno-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="search_FILL0_wght400_GRAD0_opsz48 (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search_FILL0_wght400_GRAD0_opsz48 (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Artboard 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Artboard 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -316,7 +319,10 @@
   <data name="Artboard 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Artboard 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="search_FILL0_wght400_GRAD0_opsz48 (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\search_FILL0_wght400_GRAD0_opsz48 (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Untitled-41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Untitled-41.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="YENİTİKKKK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\YENİTİKKKK.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

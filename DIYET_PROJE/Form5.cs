@@ -31,6 +31,7 @@ namespace DIYET_PROJE
         }
 
         public static int gelenID;
+        public static double ilkHedef = 0;
 
         private void btnGirisYapForm5_Click(object sender, EventArgs e)
         {
@@ -47,12 +48,9 @@ namespace DIYET_PROJE
                     {
                         var gelen = kaloriTakipDBContext.Kullanicilar.Where(x => x.Mail == txtEmailGirisYap.Text.Trim() && x.KullaniciSifre == txtSifreGirisYap.Text.Trim()).FirstOrDefault();
 
-                        gelen.ModifiedBy = "eski kullanıcı";
-                        kaloriTakipDBContext.SaveChanges();
+                        gelen.ModifiedBy = "eski kullanıcı"; kaloriTakipDBContext.SaveChanges();
 
-                        frm7 = new Form7();
-                        frm7.Show();
-                        this.Hide();
+                        frm7 = new Form7(); frm7.Show(); this.Hide();
 
                     }
 
@@ -64,14 +62,11 @@ namespace DIYET_PROJE
 
                     }
 
-
                 }
-
 
                 else
                 {
                     gelenID = kaloriTakipDBContext.Kullanicilar.Where(x => x.Mail == txtEmailGirisYap.Text && x.KullaniciSifre == txtSifreGirisYap.Text).Select(x => x.ID).FirstOrDefault();
-
 
                     if (gelenID > 0)
                     {
@@ -79,30 +74,25 @@ namespace DIYET_PROJE
 
                         Aktivite aktivite = kaloriTakipDBContext.AktiviteBilgileri.Where(x => x.ID == gelen).Select(x => x.Aktivite).FirstOrDefault();
 
+                        if (aktivite == Aktivite.Pek_Hareketli_Degil) ilkHedef = 1300 * 1.2;
 
-                        if (aktivite == Aktivite.Pek_Hareketli_Degil) Form7.hedef = 1300 * 1.2;
+                        else if (aktivite == Aktivite.Az_Hareketli) ilkHedef = 1300 * 1.375;
 
-                        else if (aktivite == Aktivite.Az_Hareketli) Form7.hedef = 1300 * 1.375;
+                        else if (aktivite == Aktivite.Aktif) ilkHedef = 1300 * 1.55;
 
-                        else if (aktivite == Aktivite.Aktif) Form7.hedef = 1300 * 1.55;
-
-                        else if (aktivite == Aktivite.Cok_Hareketli) Form7.hedef = 1300 * 1.9;
-
+                        else if (aktivite == Aktivite.Cok_Hareketli) ilkHedef = 1300 * 1.9;
 
                         int gelen2 = (int)kaloriTakipDBContext.Kullanicilar.Where(x => x.KullniciHedefBilgileriID != null && x.ID == Form5.gelenID).Select(x => x.KullniciHedefBilgileriID).FirstOrDefault();
 
                         Hedef hedef = kaloriTakipDBContext.KullaniciHedefBilgileri.Where(x => x.ID == gelen).Select(x => x.Hedef).FirstOrDefault();
 
-                        if (hedef== Hedef.Kilo_Almak) Form7.hedef = Form7.hedef + 200;
+                        if (hedef == Hedef.Kilo_Almak) ilkHedef += 200;
 
-                        else if (hedef == Hedef.Kilo_Korumak) Form7.hedef = Form7.hedef + 0;
+                        //else if (hedef == Hedef.Kilo_Korumak) degisenHedef =de 0;
 
-                        else if (hedef == Hedef.Kilo_Vermek) Form7.hedef = Form7.hedef - 200;
+                        else if (hedef == Hedef.Kilo_Vermek) ilkHedef -= 200;
 
-
-                        frm8 = new Form8();
-                        frm8.Show();
-                        this.Hide();
+                        frm8 = new Form8(); frm8.Show(); this.Hide();
 
                     }
 
@@ -117,6 +107,8 @@ namespace DIYET_PROJE
             }
 
             else MessageBox.Show("Giriş yapmak için lütfen gerekli bilgileri giriniz");
+
+
         }
 
 
