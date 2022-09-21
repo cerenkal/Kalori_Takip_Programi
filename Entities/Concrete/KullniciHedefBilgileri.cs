@@ -37,13 +37,13 @@ namespace Entities.Concrete
             switch (hedef)
             {
                 case Hedef.Kilo_Almak:
-                    katSayi = 1.2F;
+                    katSayi = 200;
                     break;
                 case Hedef.Kilo_Vermek:
-                    katSayi = 0.8F;
+                    katSayi = -200;
                     break;
                 case Hedef.Kilo_Korumak:
-                    katSayi = 1;
+                    katSayi = 0;
                     break;
 
             }

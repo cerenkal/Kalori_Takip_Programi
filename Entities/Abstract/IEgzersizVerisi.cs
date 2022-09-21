@@ -14,8 +14,6 @@ namespace Entities.Abstract
 
         Egzersiz Egzersiz { get; set; }
 
-        int Suresi { get; set; }
-
         int KaloriDegeri { get; set; }
 
         List<Kullanici> Kullanicilar { get; set; }

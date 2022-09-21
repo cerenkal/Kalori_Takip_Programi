@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entities.Fonksiyonlar;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -39,6 +40,23 @@ namespace DIYET_PROJE
             frm9.Show();
             this.Hide();
 
+        }
+
+        Form9 frm9 = new Form9();
+
+        private void btnAnasayfaHedefler_Click(object sender, EventArgs e)
+        {
+            Fonksiyonlar.TemizleLable(frm9.Controls);
+            Form7 frm7 = new Form7();
+            frm7.Show();
+            this.Hide();
+        }
+
+        private void btnAnasayfaKacKalori_Click(object sender, EventArgs e)
+        {
+            Form15 frm15 = new Form15();
+            frm15.Show();
+            this.Hide();
         }
     }
 }

@@ -34,14 +34,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dgvKahvaltiKullaniciListesi = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.txtKahvaltiMiktar = new System.Windows.Forms.TextBox();
             this.btnGeriKahvaltiEkle = new DIYET_PROJE.RJButton();
             this.btnSilKahvalti = new DIYET_PROJE.RJButton();
             this.btnEkleKahvalti = new DIYET_PROJE.RJButton();
-            this.btnAnasayfaKahvalti = new DIYET_PROJE.RJButton();
             this.btnKahvaltiAra = new System.Windows.Forms.Button();
+            this.lblKahvaltıOlcu = new System.Windows.Forms.Label();
+            this.dgvKahvaltiKullaniciListesi = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKahvaltiListe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKahvaltiKullaniciListesi)).BeginInit();
@@ -57,7 +57,6 @@
             this.txtKahvalti.TabIndex = 21;
             this.txtKahvalti.Text = "Lütfen aradığınız ürünü giriniz";
             this.txtKahvalti.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtKahvalti_MouseClick);
-            this.txtKahvalti.TextChanged += new System.EventHandler(this.txtKahvalti_TextChanged);
             // 
             // dgvKahvaltiListe
             // 
@@ -66,9 +65,10 @@
             this.dgvKahvaltiListe.Location = new System.Drawing.Point(16, 228);
             this.dgvKahvaltiListe.Name = "dgvKahvaltiListe";
             this.dgvKahvaltiListe.RowHeadersWidth = 50;
+            this.dgvKahvaltiListe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvKahvaltiListe.Size = new System.Drawing.Size(496, 200);
             this.dgvKahvaltiListe.TabIndex = 20;
-            this.dgvKahvaltiListe.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKahvaltiListe_CellContentClick);
+            this.dgvKahvaltiListe.SelectionChanged += new System.EventHandler(this.dgvKahvaltiListe_SelectionChanged);
             // 
             // label1
             // 
@@ -81,7 +81,6 @@
             this.label1.TabIndex = 19;
             this.label1.Text = "KAHVALTI";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -91,7 +90,7 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(14, 47);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(159, 33);
+            this.label2.Size = new System.Drawing.Size(199, 41);
             this.label2.TabIndex = 26;
             this.label2.Text = "Kahvaltı Ekle";
             // 
@@ -103,7 +102,7 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label3.Location = new System.Drawing.Point(17, 80);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(300, 15);
+            this.label3.Size = new System.Drawing.Size(356, 18);
             this.label3.TabIndex = 27;
             this.label3.Text = "Lütfen kahvaltınızda tükettiğiniz tüm besinleri ekleyiniz";
             // 
@@ -112,7 +111,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Image = global::DIYET_PROJE.Properties.Resources.womfit_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(936, 526);
+            this.pictureBox1.Location = new System.Drawing.Point(624, 497);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(77, 84);
@@ -120,31 +119,21 @@
             this.pictureBox1.TabIndex = 37;
             this.pictureBox1.TabStop = false;
             // 
-            // dgvKahvaltiKullaniciListesi
-            // 
-            this.dgvKahvaltiKullaniciListesi.BackgroundColor = System.Drawing.Color.White;
-            this.dgvKahvaltiKullaniciListesi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvKahvaltiKullaniciListesi.Location = new System.Drawing.Point(519, 228);
-            this.dgvKahvaltiKullaniciListesi.Name = "dgvKahvaltiKullaniciListesi";
-            this.dgvKahvaltiKullaniciListesi.RowHeadersWidth = 51;
-            this.dgvKahvaltiKullaniciListesi.Size = new System.Drawing.Size(496, 200);
-            this.dgvKahvaltiKullaniciListesi.TabIndex = 38;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(131, 446);
+            this.label5.Location = new System.Drawing.Point(16, 446);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 20);
+            this.label5.Size = new System.Drawing.Size(81, 25);
             this.label5.TabIndex = 40;
             this.label5.Text = "Miktar : ";
             // 
             // txtKahvaltiMiktar
             // 
-            this.txtKahvaltiMiktar.Location = new System.Drawing.Point(201, 443);
+            this.txtKahvaltiMiktar.Location = new System.Drawing.Point(86, 443);
             this.txtKahvaltiMiktar.Name = "txtKahvaltiMiktar";
-            this.txtKahvaltiMiktar.Size = new System.Drawing.Size(157, 26);
+            this.txtKahvaltiMiktar.Size = new System.Drawing.Size(157, 30);
             this.txtKahvaltiMiktar.TabIndex = 42;
             // 
             // btnGeriKahvaltiEkle
@@ -165,6 +154,7 @@
             this.btnGeriKahvaltiEkle.TabIndex = 25;
             this.btnGeriKahvaltiEkle.TextColor = System.Drawing.Color.Black;
             this.btnGeriKahvaltiEkle.UseVisualStyleBackColor = false;
+            this.btnGeriKahvaltiEkle.Click += new System.EventHandler(this.btnGeriKahvaltiEkle_Click);
             // 
             // btnSilKahvalti
             // 
@@ -178,12 +168,13 @@
             this.btnSilKahvalti.FlatAppearance.BorderSize = 0;
             this.btnSilKahvalti.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSilKahvalti.ForeColor = System.Drawing.Color.Black;
-            this.btnSilKahvalti.Location = new System.Drawing.Point(914, 434);
+            this.btnSilKahvalti.Location = new System.Drawing.Point(656, 436);
             this.btnSilKahvalti.Name = "btnSilKahvalti";
             this.btnSilKahvalti.Size = new System.Drawing.Size(45, 45);
             this.btnSilKahvalti.TabIndex = 24;
             this.btnSilKahvalti.TextColor = System.Drawing.Color.Black;
             this.btnSilKahvalti.UseVisualStyleBackColor = false;
+            this.btnSilKahvalti.Click += new System.EventHandler(this.btnSilKahvalti_Click);
             // 
             // btnEkleKahvalti
             // 
@@ -204,25 +195,7 @@
             this.btnEkleKahvalti.TabIndex = 23;
             this.btnEkleKahvalti.TextColor = System.Drawing.Color.Black;
             this.btnEkleKahvalti.UseVisualStyleBackColor = false;
-            // 
-            // btnAnasayfaKahvalti
-            // 
-            this.btnAnasayfaKahvalti.BackColor = System.Drawing.Color.Transparent;
-            this.btnAnasayfaKahvalti.BackgroundColor = System.Drawing.Color.Transparent;
-            this.btnAnasayfaKahvalti.BackgroundImage = global::DIYET_PROJE.Properties.Resources._171532;
-            this.btnAnasayfaKahvalti.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAnasayfaKahvalti.BorderColor = System.Drawing.Color.LightCoral;
-            this.btnAnasayfaKahvalti.BorderRadius = 0;
-            this.btnAnasayfaKahvalti.BorderSize = 0;
-            this.btnAnasayfaKahvalti.FlatAppearance.BorderSize = 0;
-            this.btnAnasayfaKahvalti.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAnasayfaKahvalti.ForeColor = System.Drawing.Color.Black;
-            this.btnAnasayfaKahvalti.Location = new System.Drawing.Point(86, 538);
-            this.btnAnasayfaKahvalti.Name = "btnAnasayfaKahvalti";
-            this.btnAnasayfaKahvalti.Size = new System.Drawing.Size(40, 40);
-            this.btnAnasayfaKahvalti.TabIndex = 22;
-            this.btnAnasayfaKahvalti.TextColor = System.Drawing.Color.Black;
-            this.btnAnasayfaKahvalti.UseVisualStyleBackColor = false;
+            this.btnEkleKahvalti.Click += new System.EventHandler(this.btnEkleKahvalti_Click);
             // 
             // btnKahvaltiAra
             // 
@@ -234,12 +207,35 @@
             this.btnKahvaltiAra.Size = new System.Drawing.Size(37, 34);
             this.btnKahvaltiAra.TabIndex = 43;
             this.btnKahvaltiAra.UseVisualStyleBackColor = false;
+            this.btnKahvaltiAra.Click += new System.EventHandler(this.btnKahvaltiAra_Click);
+            // 
+            // lblKahvaltıOlcu
+            // 
+            this.lblKahvaltıOlcu.AutoSize = true;
+            this.lblKahvaltıOlcu.BackColor = System.Drawing.Color.Transparent;
+            this.lblKahvaltıOlcu.Location = new System.Drawing.Point(272, 446);
+            this.lblKahvaltıOlcu.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblKahvaltıOlcu.Name = "lblKahvaltıOlcu";
+            this.lblKahvaltıOlcu.Size = new System.Drawing.Size(56, 25);
+            this.lblKahvaltıOlcu.TabIndex = 52;
+            this.lblKahvaltıOlcu.Text = "gram";
+            // 
+            // dgvKahvaltiKullaniciListesi
+            // 
+            this.dgvKahvaltiKullaniciListesi.BackgroundColor = System.Drawing.Color.White;
+            this.dgvKahvaltiKullaniciListesi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvKahvaltiKullaniciListesi.Location = new System.Drawing.Point(519, 230);
+            this.dgvKahvaltiKullaniciListesi.Name = "dgvKahvaltiKullaniciListesi";
+            this.dgvKahvaltiKullaniciListesi.RowHeadersWidth = 51;
+            this.dgvKahvaltiKullaniciListesi.Size = new System.Drawing.Size(182, 200);
+            this.dgvKahvaltiKullaniciListesi.TabIndex = 38;
             // 
             // Form10
             // 
             this.BackgroundImage = global::DIYET_PROJE.Properties.Resources.WhatsApp_Image_2022_09_07_at_22_471;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1024, 621);
+            this.ClientSize = new System.Drawing.Size(730, 621);
+            this.Controls.Add(this.lblKahvaltıOlcu);
             this.Controls.Add(this.btnKahvaltiAra);
             this.Controls.Add(this.txtKahvaltiMiktar);
             this.Controls.Add(this.label5);
@@ -250,7 +246,6 @@
             this.Controls.Add(this.btnGeriKahvaltiEkle);
             this.Controls.Add(this.btnSilKahvalti);
             this.Controls.Add(this.btnEkleKahvalti);
-            this.Controls.Add(this.btnAnasayfaKahvalti);
             this.Controls.Add(this.txtKahvalti);
             this.Controls.Add(this.dgvKahvaltiListe);
             this.Controls.Add(this.label1);
@@ -270,16 +265,16 @@
         private RJButton btnGeriKahvaltiEkle;
         private RJButton btnSilKahvalti;
         private RJButton btnEkleKahvalti;
-        private RJButton btnAnasayfaKahvalti;
         private System.Windows.Forms.TextBox txtKahvalti;
         private System.Windows.Forms.DataGridView dgvKahvaltiListe;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DataGridView dgvKahvaltiKullaniciListesi;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtKahvaltiMiktar;
         private System.Windows.Forms.Button btnKahvaltiAra;
+        private System.Windows.Forms.Label lblKahvaltıOlcu;
+        private System.Windows.Forms.DataGridView dgvKahvaltiKullaniciListesi;
     }
 }

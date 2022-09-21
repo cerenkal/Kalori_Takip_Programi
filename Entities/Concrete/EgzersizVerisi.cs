@@ -10,20 +10,11 @@ namespace Entities.Concrete
 {
     public class EgzersizVerisi : IEgzersizVerisi, IBaseEntity
     {
-        private int kaloriDegeri;
+    
 
         public int ID { get; set; }
         public Egzersiz Egzersiz { get; set; }
-        public int Suresi { get; set; }
-        public int KaloriDegeri
-        {
-            get => kaloriDegeri;
-            set
-            {
-                kaloriDegeri = KaloriDegeriHesapla(Suresi, Egzersiz);
-            }
-
-        }
+        public int KaloriDegeri { get; set; }
         public List<Kullanici> Kullanicilar { get; set; }
         public DateTime CreatedDate { get; set; } = DateTime.Now;
         public DateTime? ModifiedDate { get; set; }
@@ -32,7 +23,7 @@ namespace Entities.Concrete
         public string DeletedBy { get; set; }
         public string ModifiedBy { get; set; }
         public Status Status { get; set; } = Status.Active;
-
+       
 
         public int KaloriDegeriHesapla(int sure, Egzersiz egzersiz)
         {

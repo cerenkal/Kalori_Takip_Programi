@@ -70,10 +70,10 @@ namespace DIYET_PROJE
                     {
                         kullanici.Add(yeniKullanici);
                         Fonksiyonlar.Temizle(this.Controls);
-                        //_kaloriTakipDBContext.Kullanicilar.Add(yeniKullanici);
-                        //_kaloriTakipDBContext.SaveChanges();
+                        _kaloriTakipDBContext.Kullanicilar.Add(yeniKullanici);
+                        _kaloriTakipDBContext.SaveChanges();
 
-                        kullaniciRepository.Add(yeniKullanici);
+                        //kullaniciRepository.Add(yeniKullanici);
 
                         frm5 = new Form5();
                         frm5.Show();

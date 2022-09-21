@@ -69,7 +69,6 @@
     <Compile Include="Concrete\EgzersizVerisi.cs" />
     <Compile Include="Concrete\Kullanici.cs" />
     <Compile Include="Concrete\KullniciHedefBilgileri.cs" />
-    <Compile Include="Concrete\Listeleme.cs" />
     <Compile Include="Concrete\Makaleler.cs" />
     <Compile Include="Concrete\MakroBesinRaporu.cs" />
     <Compile Include="Concrete\SuVerisi.cs" />
