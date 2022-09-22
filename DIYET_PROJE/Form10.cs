@@ -25,12 +25,10 @@ namespace DIYET_PROJE
         public static float toplamYag;
         public static float toplamProtein;
 
-
         public static List<BesinBilgileri> tuketilenkkahvaltıListesi;
         KaloriTakipDBContext _kaloriTakipDBContext;
         TuketilenBesinRepository _tuketilenBesinRepository;
       
-
         public Form10()
         {
             InitializeComponent();
@@ -60,7 +58,6 @@ namespace DIYET_PROJE
         }
 
         BesinBilgileri eklenen;
-
         private void dgvKahvaltiListe_SelectionChanged(object sender, EventArgs e)
         {
             tuketilenBesinID = Convert.ToInt32(dgvKahvaltiListe.CurrentRow.Cells[0].Value);
@@ -70,8 +67,7 @@ namespace DIYET_PROJE
 
         }
 
-        int gelenTuketilenBesinID = 0;
-
+        //Tüketilen kahvaltının eklendiği kod
         private void btnEkleKahvalti_Click(object sender, EventArgs e)
         {
             bool sayiMi;
@@ -85,14 +81,14 @@ namespace DIYET_PROJE
 
                     if (!sayiMi)
                     {
-                        MessageBox.Show("Lutfen sadece sayısal degerler giriniz");
+                        MessageBox.Show("Lütfen sadece sayısal değerler giriniz");
                         sayiMi = true;
                     }
 
                     else if (sayi < 0)
                     {
 
-                        MessageBox.Show("Lutfen sadece pozitif sayılar giriniz");
+                        MessageBox.Show("Lütfen sadece pozitif sayılar giriniz");
                         sayiMi = true;
                     }
                     else
@@ -108,7 +104,6 @@ namespace DIYET_PROJE
                         for (int i = 2; i < 16; i++)
                         { dgvKahvaltiKullaniciListesi.Columns[i].Visible = false; }
                            
-
                         TuketilenBesin tb = new TuketilenBesin();
                         tb.Ogun = Ogun.Kahvalti;
                         tb.BesinBilgileriID = tuketilenBesinID;
@@ -125,16 +120,14 @@ namespace DIYET_PROJE
 
             else
             {
-                MessageBox.Show("Lütfen secilen besin için miktar giriniz");
+                MessageBox.Show("Lütfen seçilen besin için miktar giriniz");
             }
         }
-
-
 
         BesinBilgileri silinen;
         string isim = string.Empty;
 
-
+        //Tüketilen kahvaltının listeden çıkarıldığı kod
         private void btnSilKahvalti_Click(object sender, EventArgs e)
         {
             silinecekBesinID = Convert.ToInt32(dgvKahvaltiKullaniciListesi.CurrentRow.Cells[0].Value);
@@ -157,13 +150,10 @@ namespace DIYET_PROJE
             _kaloriTakipDBContext.SaveChanges();
 
             tuketilenkkahvaltıListesi.Remove(silinen);
-
             dgvKahvaltiKullaniciListesi.DataSource = null;
             dgvKahvaltiKullaniciListesi.DataSource = tuketilenkkahvaltıListesi;
-
             dgvKahvaltiKullaniciListesi.Columns[0].Visible = false;
             dgvKahvaltiKullaniciListesi.Columns[1].Width = 120;
-
 
             for (int i = 2; i < 16; i++)
             {
@@ -176,10 +166,10 @@ namespace DIYET_PROJE
         {
             foreach (var item in tuketilenkkahvaltıListesi)
             {
-                toplamKalori = item.Kalori * Convert.ToInt32(txtKahvaltiMiktar.Text);
-                toplamCarb = item.Karbonhidrat * Convert.ToInt32(txtKahvaltiMiktar.Text);
-                toplamProtein = item.Protein * Convert.ToInt32(txtKahvaltiMiktar.Text);
-                toplamYag = item.Yag * Convert.ToInt32(txtKahvaltiMiktar.Text);
+                toplamKalori += item.Kalori * Convert.ToInt32(txtKahvaltiMiktar.Text);
+                toplamCarb += item.Karbonhidrat * Convert.ToInt32(txtKahvaltiMiktar.Text);
+                toplamProtein += item.Protein * Convert.ToInt32(txtKahvaltiMiktar.Text);
+                toplamYag += item.Yag * Convert.ToInt32(txtKahvaltiMiktar.Text);
             }
 
             Form9 frm9 = new Form9();
@@ -187,6 +177,5 @@ namespace DIYET_PROJE
             this.Hide();
         }
 
-        
     }
 }

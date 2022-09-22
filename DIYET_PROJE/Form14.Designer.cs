@@ -39,6 +39,7 @@
             this.dgvEgzersizListe = new System.Windows.Forms.DataGridView();
             this.txtEgzersizMiktar = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEgzersizKullanicininListesi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEgzersizListe)).BeginInit();
@@ -106,7 +107,7 @@
             this.btnEgzersizSilme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEgzersizSilme.ForeColor = System.Drawing.Color.Black;
             this.btnEgzersizSilme.Location = new System.Drawing.Point(800, 405);
-            this.btnEgzersizSilme.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEgzersizSilme.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEgzersizSilme.Name = "btnEgzersizSilme";
             this.btnEgzersizSilme.Size = new System.Drawing.Size(60, 55);
             this.btnEgzersizSilme.TabIndex = 48;
@@ -128,7 +129,7 @@
             this.btnEgzersizEkleme.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnEgzersizEkleme.ForeColor = System.Drawing.Color.Black;
             this.btnEgzersizEkleme.Location = new System.Drawing.Point(564, 405);
-            this.btnEgzersizEkleme.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEgzersizEkleme.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEgzersizEkleme.Name = "btnEgzersizEkleme";
             this.btnEgzersizEkleme.Size = new System.Drawing.Size(60, 55);
             this.btnEgzersizEkleme.TabIndex = 47;
@@ -162,7 +163,7 @@
             this.dgvEgzersizKullanicininListesi.BackgroundColor = System.Drawing.Color.White;
             this.dgvEgzersizKullanicininListesi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEgzersizKullanicininListesi.Location = new System.Drawing.Point(632, 197);
-            this.dgvEgzersizKullanicininListesi.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvEgzersizKullanicininListesi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvEgzersizKullanicininListesi.Name = "dgvEgzersizKullanicininListesi";
             this.dgvEgzersizKullanicininListesi.RowHeadersWidth = 51;
             this.dgvEgzersizKullanicininListesi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -174,7 +175,7 @@
             this.dgvEgzersizListe.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvEgzersizListe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEgzersizListe.Location = new System.Drawing.Point(128, 197);
-            this.dgvEgzersizListe.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvEgzersizListe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvEgzersizListe.Name = "dgvEgzersizListe";
             this.dgvEgzersizListe.RowHeadersWidth = 51;
             this.dgvEgzersizListe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -184,10 +185,11 @@
             // 
             // txtEgzersizMiktar
             // 
-            this.txtEgzersizMiktar.Location = new System.Drawing.Point(189, 419);
-            this.txtEgzersizMiktar.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEgzersizMiktar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtEgzersizMiktar.Location = new System.Drawing.Point(189, 418);
+            this.txtEgzersizMiktar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtEgzersizMiktar.Name = "txtEgzersizMiktar";
-            this.txtEgzersizMiktar.Size = new System.Drawing.Size(64, 22);
+            this.txtEgzersizMiktar.Size = new System.Drawing.Size(64, 26);
             this.txtEgzersizMiktar.TabIndex = 53;
             // 
             // label5
@@ -195,12 +197,23 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(126, 417);
+            this.label5.Location = new System.Drawing.Point(126, 419);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(70, 25);
             this.label5.TabIndex = 52;
             this.label5.Text = "Süre : ";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(260, 420);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(69, 25);
+            this.label4.TabIndex = 54;
+            this.label4.Text = "dakika";
             // 
             // Form14
             // 
@@ -209,6 +222,7 @@
             this.BackgroundImage = global::DIYET_PROJE.Properties.Resources.WhatsApp_Image_2022_09_07_at_22_471;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1024, 621);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.txtEgzersizMiktar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.dgvEgzersizKullanicininListesi);
@@ -220,7 +234,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form14";
             this.Text = "Form14";
             this.Load += new System.EventHandler(this.Form14_Load);
@@ -245,5 +259,6 @@
         private System.Windows.Forms.DataGridView dgvEgzersizListe;
         private System.Windows.Forms.TextBox txtEgzersizMiktar;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
     }
 }

@@ -70,7 +70,7 @@ namespace DIYET_PROJE
 
                     if (!sayiMi)
                     {
-                        MessageBox.Show("Lutfen sadece sayısal degerler giriniz");
+                        MessageBox.Show("Lütfen sadece sayısal değerler giriniz");
                         sayiMi = true;
                     }
 
@@ -78,7 +78,7 @@ namespace DIYET_PROJE
 
                     else if (sayi < 0)
                     {
-                        MessageBox.Show("Lutfen sadece pozitif sayılar giriniz");
+                        MessageBox.Show("Lütfen sadece pozitif sayılar giriniz");
                         sayiMi = true;
                     }
                     else
@@ -91,14 +91,6 @@ namespace DIYET_PROJE
                         dgvEgzersizKullanicininListesi.Columns[1].Width = 120;
                         for (int i = 2; i < 10; i++)
                             dgvEgzersizKullanicininListesi.Columns[i].Visible = false;
-
-
-
-                        EgzersizVerisi ev = new EgzersizVerisi();
-                        ev.Egzersiz = gelenEgzersizAdi;
-                        ev.KaloriDegeri = ev.KaloriDegeriHesapla(miktar, gelenEgzersizAdi);
-                        ev.KullaniciID = Form5.gelenID;
-                        egzersizVerisiRepository.Add(ev);
 
                     }
 
@@ -132,17 +124,6 @@ namespace DIYET_PROJE
             }
 
 
-            var yeni = _kaloriTakipDBContext.EgzersizVerileri.Where(x => x.Egzersiz == isim).Select(x => x.ID).FirstOrDefault();
-
-
-            var silinecek = _kaloriTakipDBContext.EgzersizVerileri.Where(x => x.ID == yeni).FirstOrDefault();
-
-
-            silinecek.Egzersiz = gelenEgzersizAdi;
-            silinecek.KaloriDegeri = silinecek.KaloriDegeriHesapla(miktar, gelenEgzersizAdi);
-            silinecek.KullaniciID = Form5.gelenID;
-            silinecek.Status = Status.Deleted;
-            _kaloriTakipDBContext.SaveChanges();
 
             egzersizListe.Remove(silinecekEgzersiz);
             dgvEgzersizKullanicininListesi.DataSource = null;

@@ -460,11 +460,11 @@ namespace DIYET_PROJE
             // 
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label14.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label14.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label14.Location = new System.Drawing.Point(36, 83);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(624, 20);
+            this.label14.Size = new System.Drawing.Size(591, 21);
             this.label14.TabIndex = 106;
             this.label14.Text = "Güncel kilonuzu girerek, günlük tüketmeniz gereken su miktarını hesaplayabilirsin" +
     "iz";

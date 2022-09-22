@@ -256,7 +256,7 @@
             this.label13.Location = new System.Drawing.Point(376, 48);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(228, 39);
+            this.label13.Size = new System.Drawing.Size(219, 38);
             this.label13.TabIndex = 14;
             this.label13.Text = "Vücut Analizi";
             // 
@@ -326,9 +326,9 @@
             this.lblVKI.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblVKI.Location = new System.Drawing.Point(753, 181);
             this.lblVKI.Name = "lblVKI";
-            this.lblVKI.Size = new System.Drawing.Size(102, 25);
+            this.lblVKI.Size = new System.Drawing.Size(17, 25);
             this.lblVKI.TabIndex = 36;
-            this.lblVKI.Text = "SonucVKI";
+            this.lblVKI.Text = " ";
             // 
             // lblVYO
             // 
@@ -338,9 +338,9 @@
             this.lblVYO.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblVYO.Location = new System.Drawing.Point(753, 239);
             this.lblVYO.Name = "lblVYO";
-            this.lblVYO.Size = new System.Drawing.Size(112, 25);
+            this.lblVYO.Size = new System.Drawing.Size(17, 25);
             this.lblVYO.TabIndex = 37;
-            this.lblVYO.Text = "SonucVYO";
+            this.lblVYO.Text = " ";
             // 
             // lblBMH
             // 
@@ -350,9 +350,9 @@
             this.lblBMH.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblBMH.Location = new System.Drawing.Point(753, 296);
             this.lblBMH.Name = "lblBMH";
-            this.lblBMH.Size = new System.Drawing.Size(113, 25);
+            this.lblBMH.Size = new System.Drawing.Size(17, 25);
             this.lblBMH.TabIndex = 38;
-            this.lblBMH.Text = "SonucBMH";
+            this.lblBMH.Text = " ";
             // 
             // Form3
             // 

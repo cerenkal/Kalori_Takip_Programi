@@ -25,11 +25,10 @@ namespace DIYET_PROJE
             this.Hide();
         }
 
-        Form3 frm3;
         private void btnAnasayfaVucutAnalizi_Click(object sender, EventArgs e)
         {
 
-            frm3 = new Form3();
+            Form3 frm3 = new Form3();
             frm3.Show();
             this.Hide();
         }
@@ -42,11 +41,9 @@ namespace DIYET_PROJE
 
         }
 
-        Form9 frm9 = new Form9();
 
         private void btnAnasayfaHedefler_Click(object sender, EventArgs e)
         {
-            Fonksiyonlar.TemizleLable(frm9.Controls);
             Form7 frm7 = new Form7();
             frm7.Show();
             this.Hide();
