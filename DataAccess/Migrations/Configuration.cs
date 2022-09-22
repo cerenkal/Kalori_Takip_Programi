@@ -21,6 +21,8 @@
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method
             //  to avoid creating duplicate seed data.
 
+
+
             //BALIKLAR VE DENİZ ÜRÜNLERİ
 
             BesinBilgileri somon = new BesinBilgileri() { BesinAdi = "Somon", OlcuBirimi = OlcuBirimi.Gram, Kalori = 2.08F, Karbonhidrat = 0, Protein = 0.19F, Yag = 0.13F, CreatedBy = "Ayşe" };
@@ -493,7 +495,7 @@
             context.BesinBilgileri.Add(SiyahZeytin);
 
             BesinBilgileri YesilZeytin = new BesinBilgileri() { BesinAdi = "Yeşil Zeytin", OlcuBirimi = OlcuBirimi.Adet, Kalori = 6F, Karbonhidrat = 0.15F, Protein = 0.05F, Yag = 0.61F, GramKarsiligi = 4, CreatedBy = "Ayşe" };
-            context.BesinBilgileri.Add(YesilErik);
+            context.BesinBilgileri.Add(YesilZeytin);
 
             BesinBilgileri Bal = new BesinBilgileri() { BesinAdi = "Bal", OlcuBirimi = OlcuBirimi.TatliKasigi, Kalori = 30F, Karbonhidrat = 8.25F, Protein = 0.04F, Yag = 0F, GramKarsiligi = 10, CreatedBy = "Ayşe" };
             context.BesinBilgileri.Add(Bal);
@@ -2291,6 +2293,69 @@
 
             BesinBilgileri tekila = new BesinBilgileri() { BesinAdi = "Tekila(şat bardağı)", OlcuBirimi = OlcuBirimi.MLitre, Kalori = 138, Karbonhidrat = 7.5F, Protein = 0, Yag = 0, CreatedBy = "Tuba" };
             context.BesinBilgileri.Add(tekila);
+
+
+            EgzersizVerisi GucAntreman = new EgzersizVerisi() { Egzersiz = Egzersiz.GucAntremani, KaloriDegeri = 5, CreatedBy = "Tuba" };
+            context.EgzersizVerileri.Add(GucAntreman);
+
+            EgzersizVerisi yuruyus = new EgzersizVerisi() { Egzersiz = Egzersiz.Yuruyus, KaloriDegeri = 4, CreatedBy = "Tuba" };
+            context.EgzersizVerileri.Add(yuruyus);
+
+            EgzersizVerisi bisileteBinme = new EgzersizVerisi() { Egzersiz = Egzersiz.BisikleteBinme, KaloriDegeri = 3, CreatedBy = "Tuba" };
+            context.EgzersizVerileri.Add(bisileteBinme);
+
+
+            EgzersizVerisi kosu = new EgzersizVerisi() { Egzersiz = Egzersiz.Kosu, KaloriDegeri = 6, CreatedBy = "Tuba" };
+            context.EgzersizVerileri.Add(kosu);
+
+            EgzersizVerisi kondisyonBisikleti = new EgzersizVerisi() { Egzersiz = Egzersiz.KondisyonBisikleti, KaloriDegeri = 4, CreatedBy = "Tuba" };
+            context.EgzersizVerileri.Add(kondisyonBisikleti);
+
+            EgzersizVerisi yoga = new EgzersizVerisi() { Egzersiz = Egzersiz.Yoga, KaloriDegeri = 2, CreatedBy = "Tuba" };
+            context.EgzersizVerileri.Add(yoga);
+
+            EgzersizVerisi yuzme = new EgzersizVerisi() { Egzersiz = Egzersiz.Yuzme, KaloriDegeri = 5, CreatedBy = "Tuba" };
+            context.EgzersizVerileri.Add(yuzme);
+
+            EgzersizVerisi boks = new EgzersizVerisi() { Egzersiz = Egzersiz.Boks, KaloriDegeri = 6, CreatedBy = "Tuba" };
+            context.EgzersizVerileri.Add(boks);
+
+            EgzersizVerisi daireselAntreman = new EgzersizVerisi() { Egzersiz = Egzersiz.DaireselAntreman, KaloriDegeri = 4, CreatedBy = "Tuba" };
+            context.EgzersizVerileri.Add(daireselAntreman);
+
+
+            EgzersizVerisi dans = new EgzersizVerisi() { Egzersiz = Egzersiz.DansEtmek, KaloriDegeri = 6, CreatedBy = "Tuba" };
+            context.EgzersizVerileri.Add(dans);
+
+
+            EgzersizVerisi evdeYapilanEgzersiz = new EgzersizVerisi() { Egzersiz = Egzersiz.EvdeYapilanEgzersiz, KaloriDegeri = 3, CreatedBy = "Tuba" };
+            context.EgzersizVerileri.Add(evdeYapilanEgzersiz);
+
+            EgzersizVerisi fonksiyonel = new EgzersizVerisi() { Egzersiz = Egzersiz.FonskiyonelAntreman, KaloriDegeri = 8, CreatedBy = "Tuba" };
+            context.EgzersizVerileri.Add(fonksiyonel);
+
+
+            EgzersizVerisi futbol = new EgzersizVerisi() { Egzersiz = Egzersiz.Futbol, KaloriDegeri = 6, CreatedBy = "Tuba" };
+            context.EgzersizVerileri.Add(futbol);
+
+            EgzersizVerisi kickboks = new EgzersizVerisi() { Egzersiz = Egzersiz.KickBoks, KaloriDegeri = 4, CreatedBy = "Tuba" };
+            context.EgzersizVerileri.Add(kickboks);
+
+            EgzersizVerisi kurek = new EgzersizVerisi() { Egzersiz = Egzersiz.Kurek, KaloriDegeri = 2, CreatedBy = "Tuba" };
+            context.EgzersizVerileri.Add(kurek);
+
+
+            EgzersizVerisi voleybol = new EgzersizVerisi() { Egzersiz = Egzersiz.Voleybol, KaloriDegeri = 4, CreatedBy = "Tuba" };
+            context.EgzersizVerileri.Add(voleybol);
+
+            EgzersizVerisi basketbol = new EgzersizVerisi() { Egzersiz = Egzersiz.Basketbol, KaloriDegeri = 5, CreatedBy = "Tuba" };
+            context.EgzersizVerileri.Add(basketbol);
+
+            EgzersizVerisi jim = new EgzersizVerisi() { Egzersiz = Egzersiz.Jimnastik, KaloriDegeri = 3, CreatedBy = "Tuba" };
+            context.EgzersizVerileri.Add(jim);
+
+            EgzersizVerisi zumba = new EgzersizVerisi() { Egzersiz = Egzersiz.Zumba, KaloriDegeri = 5, CreatedBy = "Tuba" };
+            context.EgzersizVerileri.Add(zumba);
 
 
 

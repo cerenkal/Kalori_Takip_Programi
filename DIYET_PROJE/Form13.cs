@@ -173,10 +173,10 @@ namespace DIYET_PROJE
         {
             foreach (var item in tuketilenAperatifYemegiListesi)
             {
-                toplamKalori = item.Kalori * Convert.ToInt32(txtAperatifMiktar.Text);
-                toplamCarb = item.Karbonhidrat * Convert.ToInt32(txtAperatifMiktar.Text);
-                toplamProtein = item.Protein * Convert.ToInt32(txtAperatifMiktar.Text);
-                toplamYag = item.Yag * Convert.ToInt32(txtAperatifMiktar.Text);
+                toplamKalori += item.Kalori * Convert.ToInt32(txtAperatifMiktar.Text);
+                toplamCarb += item.Karbonhidrat * Convert.ToInt32(txtAperatifMiktar.Text);
+                toplamProtein += item.Protein * Convert.ToInt32(txtAperatifMiktar.Text);
+                toplamYag += item.Yag * Convert.ToInt32(txtAperatifMiktar.Text);
             }
 
             Form9 frm9 = new Form9();

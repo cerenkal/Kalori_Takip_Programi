@@ -42,11 +42,21 @@ namespace DIYET_PROJE
             chartRapor.Series["Makro"].Points.Add(oy2);
             chartRapor.Series["Makro"].Points.Add(oy3);
 
+            lblRaporKalori.Text = Form9.toplamKalori.ToString();
+            double toplamKalori = Convert.ToDouble(lblRaporKalori.Text);
+            lblRaporKarbonhidrat.Text = Form9.toplamCarb.ToString();
+            lblRaporProtein.Text = Form9.toplamProtein.ToString();
+            lblRaporYag.Text = Form9.toplamYag.ToString();
+
+            float toplamGr = oy1 + oy2 + oy3;
+            int yuzdeKarbon = Convert.ToInt32((oy1 * 100) / toplamGr);
+            int yuzdeProtein = Convert.ToInt32((oy2 * 100) / toplamGr);
+            int yuzdeYag = Convert.ToInt32((oy1 * 100) / toplamGr);
 
             //x ekseninde öğrenci isimlerini belirleme
-            chartRapor.Series["Makro"].Points[0].AxisLabel = "Karbonhidrat";
-            chartRapor.Series["Makro"].Points[1].AxisLabel = "Protein";
-            chartRapor.Series["Makro"].Points[2].AxisLabel = "Yag";
+            chartRapor.Series["Makro"].Points[0].AxisLabel = $"Karbonhidrat %{yuzdeKarbon}";
+            chartRapor.Series["Makro"].Points[1].AxisLabel = $"Protein %{yuzdeProtein}";
+            chartRapor.Series["Makro"].Points[2].AxisLabel = $"Yağ %{yuzdeYag}";
 
 
 
@@ -55,10 +65,7 @@ namespace DIYET_PROJE
             chartRapor.Series["Makro"].Points[1].Color = Color.LightCoral;
             chartRapor.Series["Makro"].Points[2].Color = Color.Violet;
 
-            lblRaporKalori.Text = Form9.toplamKalori.ToString();
-            lblRaporKarbonhidrat.Text =  Form9.toplamCarb.ToString();
-            lblRaporProtein.Text =   Form9.toplamProtein.ToString();
-            lblRaporYag.Text =  Form9.toplamYag.ToString();
+            
         }
 
         private void btnRaporGeri_Click(object sender, EventArgs e)

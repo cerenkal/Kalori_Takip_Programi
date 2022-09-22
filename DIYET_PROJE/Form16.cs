@@ -26,6 +26,8 @@ namespace DIYET_PROJE
 
         public int n = 0;
         public int parca;
+
+        //Sayfadaki bardak görsellerinin açılışta görünmemesi kodu
         private void Form16_Load_1(object sender, EventArgs e)
         {
             pictureBox1.Visible = false;
@@ -51,6 +53,28 @@ namespace DIYET_PROJE
 
 
         }
+        int toplamSu;
+        private void btnSuHesapla_Click(object sender, EventArgs e)
+        {
+            //kiloya göre tüketilecek su miktarı hesaplama
+
+            var gelen = kaloriTakipDBContext.Kullanicilar.Where(x => x.ID == Form5.gelenID).FirstOrDefault();
+
+            SuVerisi sv = new SuVerisi();
+
+            toplamSu = (int)(Convert.ToInt32(txtSuVerisiKilo.Text) * 0.35) * 100;
+            parca = toplamSu / 10;
+            lblSuHedefi.Text = $"{toplamSu} ml";
+
+            sv.SuMiktari = n * parca;
+            sv.TuketilenTarih = DateTime.Now;
+            suVerisiRepository.Add(sv);
+
+            gelen.SuVerisiID = sv.ID;
+            kaloriTakipDBContext.SaveChanges();
+
+
+        }
 
         private void btnSuEkle_Click_1(object sender, EventArgs e)
         {
@@ -58,12 +82,10 @@ namespace DIYET_PROJE
             if (toplamSu >0 )
             {
 
-
                 pictureBox1.Visible = true;
                 label5.Visible = true;
                 label5.Text = $"{parca} ml";
                 n++;
-                int sonuc = n;
 
                 if (n == 2)
                 {
@@ -135,29 +157,8 @@ namespace DIYET_PROJE
 
         }
 
-        int toplamSu;
-        private void btnSuHesapla_Click(object sender, EventArgs e)
-        {
-
-            // kiloyu burda da sormalıyız bence analiz sayfasına hiçuğramazsa ozamn su hesbıda yapamıyız
-
-            var gelen = kaloriTakipDBContext.Kullanicilar.Where(x => x.ID == Form5.gelenID).FirstOrDefault();
-
-            SuVerisi sv = new SuVerisi();
-
-            toplamSu = (int)(Convert.ToInt32(txtSuVerisiKilo.Text)* 0.35) * 100;
-            parca = toplamSu / 10;
-            lblSuHedefi.Text = $"{toplamSu} ml";
-
-            sv.SuMiktari = n * parca;
-            sv.TuketilenTarih = DateTime.Now;
-            suVerisiRepository.Add(sv);
-
-            gelen.SuVerisiID = sv.ID;
-            kaloriTakipDBContext.SaveChanges();
-
-
-        }
+     
+       
 
         private void btnSuSil_Click(object sender, EventArgs e)
         {
@@ -217,11 +218,9 @@ namespace DIYET_PROJE
             }
         }
 
-
-        Form8 frm8;
         private void btnSuTakibiGeri_Click(object sender, EventArgs e)
         {
-            frm8 = new Form8();
+            Form8 frm8 = new Form8();
             frm8.Show();
             this.Hide();
            

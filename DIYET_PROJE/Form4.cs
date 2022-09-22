@@ -40,10 +40,10 @@ namespace DIYET_PROJE
 
         private void btnUyeOlForm4_Click(object sender, EventArgs e)
         {
-
-       
+            // textler boş geçilememe kontrolü
             if (Fonksiyonlar.BosMu(this.Controls) == false)
             {
+               //kullanıcının mail adresine göre üye olup olmadığı kontrol ediliyor. Aynı mail adresiyle kayıt yapmaya izin verilmiyor
                 Status gelen = _kaloriTakipDBContext.Kullanicilar.Where(x => x.Mail == txtEmailUyeOl.Text).Select(x => x.Status).FirstOrDefault();
 
                 if (gelen == Status.Active)
@@ -55,6 +55,7 @@ namespace DIYET_PROJE
               
                 else
                 {
+                    //yeni kullanıcı kayıt alanı
                     yeniKullanici = new Kullanici();
 
                     yeniKullanici.KullaniciAdi = txtAdUyeOl.Text.Trim(); ;
@@ -65,7 +66,7 @@ namespace DIYET_PROJE
                     yeniKullanici.ModifiedBy = txtEmailUyeOl.Text.Trim(); 
                     yeniKullanici.sifreBelirle(yeniKullanici.KullaniciSifre).Trim(); 
 
-
+                    //şifrenin doğru olduğu durumunda çalışan kod
                     if (yeniKullanici.KullaniciSifre != String.Empty)
                     {
                         kullanici.Add(yeniKullanici);
@@ -73,21 +74,18 @@ namespace DIYET_PROJE
                         _kaloriTakipDBContext.Kullanicilar.Add(yeniKullanici);
                         _kaloriTakipDBContext.SaveChanges();
 
-                        //kullaniciRepository.Add(yeniKullanici);
-
                         frm5 = new Form5();
                         frm5.Show();
                         this.Hide();
 
                     }
 
-
+                    //şifrenin hatalı olduğu durumda çalışan kod
                     else
                     {
                         MessageBox.Show("Lütfen belirtilen kriterlerde şifre girişi yapınız");
                         txtSifreUyeOl.Clear();
                         txtSifreTekrar.Clear();
-                        //Fonksiyonlar.Temizle(this.Controls);
                     }
 
                 }
@@ -96,10 +94,6 @@ namespace DIYET_PROJE
 
             else MessageBox.Show("Üye Kayıt için gerekli olan bilgiler boş geçilemez");
 
-
-
-
-
         }
 
         private void btnGeriUyeOl_Click(object sender, EventArgs e)
@@ -107,11 +101,6 @@ namespace DIYET_PROJE
            Form2 frm2 = new Form2();
             frm2.Show();
             this.Hide();
-        }
-
-        private void Form4_Load(object sender, EventArgs e)
-        {
-
-        }
+        }   
     }
 }

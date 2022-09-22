@@ -16,32 +16,28 @@ namespace DIYET_PROJE
         {
             InitializeComponent();
         }
-        public static Form5 frm5;
+        
         private void btnGirisYapForm2_Click(object sender, EventArgs e)
         {
-            
-            frm5 = new Form5();
+            //Giriş sayfasına yönlendirir
+            Form5 frm5 = new Form5();
             frm5.Show();
             this.Hide();
         }
 
-        public static Form4 frm4;
-
         private void btnUyeOlForm2_Click(object sender, EventArgs e)
         {
-           
-            frm4= new Form4();
+           // Üye olma sayfasına yönlendirir
+            Form4 frm4= new Form4();
             frm4.Show();
             this.Hide();
             
         }
 
- 
-       
-        public static Form3 frm3;
         private void btnUyeOlmadanDevamEt_Click(object sender, EventArgs e)
         {
-            frm3 = new Form3();
+            //Üye olmadan gidilebilen sayfa(vücut analizi)
+            Form3 frm3 = new Form3();
             frm3.Show();
             this.Hide();
         }

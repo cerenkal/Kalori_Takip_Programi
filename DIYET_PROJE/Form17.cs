@@ -25,10 +25,6 @@ namespace DIYET_PROJE
             _kaloriTakipDBContext = new KaloriTakipDBContext();
         }
 
-      
-
-      
-
         private void dgvTariflerListele_SelectionChanged(object sender, EventArgs e)
         {
             secilenTarifID = Convert.ToInt32(dgvTariflerListele.CurrentRow.Cells[0].Value);
@@ -57,7 +53,6 @@ namespace DIYET_PROJE
         }
 
      
-
         private void rbMakaleler_CheckedChanged(object sender, EventArgs e)
         {
             dgvTariflerListele.DataSource = null;
@@ -75,7 +70,6 @@ namespace DIYET_PROJE
             dgvTariflerListele.DataSource = _kaloriTakipDBContext.Tarifler.Select(x => new { x.ID, x.TarifAdi }).ToList();
             dgvTariflerListele.Columns[0].Width = 40;
             dgvTariflerListele.Columns[1].Width = 230;
-
 
         }
 

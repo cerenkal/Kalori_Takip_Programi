@@ -19,8 +19,6 @@ namespace DIYET_PROJE
 
         KaloriTakipDBContext kaloriTakipDBContext;
         AktiviteBilgileriRepository aktiviteBilgileriRepository;
-        Form6 frm6;
-
         public static double hedef = 0;
         public Form7()
         {
@@ -31,10 +29,9 @@ namespace DIYET_PROJE
 
         private void btnPekHareketliDegil_Click(object sender, EventArgs e)
         {
-
-
+            //sayacın 0 büyük olma durumunda eski kullanıcı aktivite bilgisini değiştiriyor, else durumunda kayıt esnasında aktivite bilgisi belirleniyor
             if (Form5.frm7sayac > 0)
-            {
+            { 
                 int gelenAktiviteID = (int)kaloriTakipDBContext.Kullanicilar.Where(x => x.AktiviteBilgileriID != null && x.ID == Form5.gelenID).Select(x => x.AktiviteBilgileriID).FirstOrDefault();
                 var degisenKisi = kaloriTakipDBContext.Kullanicilar.Where(x => x.AktiviteBilgileriID == gelenAktiviteID).FirstOrDefault();
                 AktiviteBilgileri ab2 = new AktiviteBilgileri();
@@ -61,7 +58,7 @@ namespace DIYET_PROJE
             kaloriTakipDBContext.SaveChanges();
             hedef = 1300 * 1.2;
 
-            frm6 = new Form6();
+            Form6 frm6 = new Form6();
             frm6.Show();
             this.Hide();
 
@@ -97,7 +94,7 @@ namespace DIYET_PROJE
             kaloriTakipDBContext.SaveChanges();
             hedef = 1300 * 1.375;
 
-            frm6 = new Form6();
+            Form6 frm6 = new Form6();
             frm6.Show();
             this.Hide();
 
@@ -131,7 +128,7 @@ namespace DIYET_PROJE
             kaloriTakipDBContext.SaveChanges();
             hedef = 1300 * 1.55;
 
-            frm6 = new Form6();
+            Form6 frm6 = new Form6();
             frm6.Show();
             this.Hide();
             ;
@@ -165,8 +162,8 @@ namespace DIYET_PROJE
            
             kaloriTakipDBContext.SaveChanges();
             hedef = 1300 * 1.9;
-
-            frm6 = new Form6();
+            
+            Form6 frm6 = new Form6();
             frm6.Show();
             this.Hide();
 

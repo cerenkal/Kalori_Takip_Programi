@@ -14,10 +14,7 @@ namespace DIYET_PROJE
 {
     public partial class Form9 : Form
     {
-        public static Form9 frm9;
         KaloriTakipDBContext _kaloriTakipDBContext;
-
-
         public static float toplamKalori;
         public static float toplamCarb;
         public static float toplamYag;
@@ -40,6 +37,8 @@ namespace DIYET_PROJE
 
         private void Form9_Load(object sender, EventArgs e)
         {
+            //Kullanıcıların tükettiği besinlere göre kalori değerlerinin hesaplanması
+
             lblKaloriKahvalti.Text = Form10.toplamKalori.ToString();
             lblKarbonhidratKahvalti.Text = Form10.toplamCarb.ToString();
             lblProteinKahvalti.Text = Form10.toplamProtein.ToString();
@@ -73,9 +72,16 @@ namespace DIYET_PROJE
 
             int kl;
 
-            if (Form5.ilkHedef <= 0)
+            int sonrakiGirisHedefi = Convert.ToInt32(Form5.sonrakiGirisHedefi);
+            int toplam = sonrakiGirisHedefi + Form14.egzeriszToplamKalori;
+            double kalori = Convert.ToDouble(lblAlinanKalori.Text);
+            int hedefNet = Convert.ToInt32(Form6.hedefNet);
+            
+
+            //ilk giriş yaptığında hesaplanan hedef ve giriş yapan kullanıcı hedef değiştirdiğinde çalışan kod
+            if (Form6.hedefNet > 0)
             {
-                if (Convert.ToInt32(lblAlinanKalori.Text) <= ((int)Form6.hedefNet + Form14.egzeriszToplamKalori))
+                if ((int)kalori <= hedefNet + Form14.egzeriszToplamKalori)
                 {
                     if (Form14.egzeriszToplamKalori > 0) kl = (int)Form6.hedefNet + Form14.egzeriszToplamKalori;
                     else kl = (int)Form6.hedefNet;
@@ -83,54 +89,61 @@ namespace DIYET_PROJE
                     prbGunlukKaloriHedef.Minimum = 0;
                     prbGunlukKaloriHedef.Maximum = kl;
 
-
-                    if (Convert.ToInt32(lblAlinanKalori.Text) > 0) prbGunlukKaloriHedef.Value = kl - Convert.ToInt32(lblAlinanKalori.Text);
+                    if (kalori > 0) prbGunlukKaloriHedef.Value = kl - (int)kalori;
                     else prbGunlukKaloriHedef.Value = kl;
+
 
                 }
                 else
                 {
-                    if (Form14.egzeriszToplamKalori > 0) kl = (int)Form6.hedefNet + Form14.egzeriszToplamKalori;
-                    else kl = (int)Form6.hedefNet;
-                    prbGunlukKaloriHedef.Minimum = 0;
-                    prbGunlukKaloriHedef.Maximum = kl;
-                    prbGunlukKaloriHedef.Value = 0;
-                    prbGunlukKaloriHedef.BackColor = Color.Red;
+
+                    if (Form14.egzeriszToplamKalori > 0)
+                    { kl = (int)Form6.hedefNet + Form14.egzeriszToplamKalori; }
+                    else
+                    {
+                        kl = (int)Form6.hedefNet;
+                        prbGunlukKaloriHedef.Minimum = 0;
+                        prbGunlukKaloriHedef.Maximum = kl;
+                        prbGunlukKaloriHedef.Value = 0;
+                        prbGunlukKaloriHedef.BackColor = Color.Red;
+                    
+                    }
 
                 }
+
             }
 
-
-            else
+            else //eski kullanıcının tekrardan giriş yaptığında son seçtiği hedef ve aktiviteye göre günlük hedef kalorinin hesaplanması
             {
-                if (Convert.ToInt32(lblAlinanKalori.Text) <= ((int)Form5.ilkHedef + Form14.egzeriszToplamKalori))
-                {
-                    if (Form14.egzeriszToplamKalori > 0) kl = (int)Form5.ilkHedef + +Form14.egzeriszToplamKalori;
-                    else kl = (int)Form5.ilkHedef;
+
+                if (kalori <= toplam)
+                { 
+                    if (Form14.egzeriszToplamKalori > 0) kl = (int)Form5.sonrakiGirisHedefi + Form14.egzeriszToplamKalori;
+                    else kl = (int)Form5.sonrakiGirisHedefi;
 
                     prbGunlukKaloriHedef.Minimum = 0;
                     prbGunlukKaloriHedef.Maximum = kl;
 
-                    if (Convert.ToInt32(lblAlinanKalori.Text) > 0) prbGunlukKaloriHedef.Value = kl - Convert.ToInt32(lblAlinanKalori.Text);
+                    if (kalori > 0) 
+                        prbGunlukKaloriHedef.Value = kl - (int)kalori;
                     else prbGunlukKaloriHedef.Value = kl;
 
 
                 }
                 else
                 {
-                    if (Form14.egzeriszToplamKalori > 0) kl = (int)Form5.ilkHedef + Form14.egzeriszToplamKalori;
-                    else kl = (int)Form5.ilkHedef;
+                    if (Form14.egzeriszToplamKalori > 0) kl = (int)Form5.sonrakiGirisHedefi + Form14.egzeriszToplamKalori;
+                    else kl = (int)Form5.sonrakiGirisHedefi;
                     prbGunlukKaloriHedef.Minimum = 0;
                     prbGunlukKaloriHedef.Maximum = kl;
                     prbGunlukKaloriHedef.Value = 0;
                     prbGunlukKaloriHedef.BackColor = Color.Red;
 
+
                 }
             }
-
 
             lblHedef.Text = kl.ToString();
-
 
         }
 

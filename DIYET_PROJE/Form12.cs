@@ -69,7 +69,6 @@ namespace DIYET_PROJE
             lblOlcu.Text = eklenen.OlcuBirimi.ToString();
         }
 
-        int gelenTuketilenBesinID = 0;
         private void btnEklemeAksamYemegi_Click(object sender, EventArgs e)
         {
             bool sayiMi;
@@ -174,10 +173,10 @@ namespace DIYET_PROJE
         {
             foreach (var item in tuketilenAksamYemegiListesi)
             {
-                toplamKalori = item.Kalori * Convert.ToInt32(txtAksamMiktar.Text);
-                toplamCarb = item.Karbonhidrat * Convert.ToInt32(txtAksamMiktar.Text);
-                toplamProtein = item.Protein * Convert.ToInt32(txtAksamMiktar.Text);
-                toplamYag = item.Yag * Convert.ToInt32(txtAksamMiktar.Text);
+                toplamKalori += item.Kalori * Convert.ToInt32(txtAksamMiktar.Text);
+                toplamCarb += item.Karbonhidrat * Convert.ToInt32(txtAksamMiktar.Text);
+                toplamProtein += item.Protein * Convert.ToInt32(txtAksamMiktar.Text);
+                toplamYag += item.Yag * Convert.ToInt32(txtAksamMiktar.Text);
             }
 
             Form9 frm9 = new Form9();
