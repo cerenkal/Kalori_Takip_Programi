@@ -89,7 +89,12 @@ namespace DIYET_PROJE
                 } while (!sayiMi);
             }
 
-           
+            else
+            {
+                MessageBox.Show("Kalori bilgisi için lütfen miktar bilgisini giriniz");
+            }
+
+
         }
 
         private void btnKacKaloriGeri_Click(object sender, EventArgs e)
